@@ -1,0 +1,52 @@
+import React from 'react';
+import FooterTwo from '@/components/footers/FooterTwo';
+import HeaderTwo from '@/components/headers/HeaderTwo';
+import StrickyHeaderTwo from '@/components/headers/StrickyHeaderTwo';
+import BrandOne from '@/features/home-one/BrandOne';
+import AboutTwo from '@/features/home-two/AboutTwo';
+import BlogTwo from '@/features/home-two/BlogTwo';
+import ContactTwo from '@/features/home-two/ContactTwo';
+import CounterTwo from '@/features/home-two/CounterTwo';
+import CtaOne from '@/features/home-two/CtaOne';
+import FeatureTwo from '@/features/home-two/FeatureTwo';
+import FindTransport from '@/features/home-two/FindTransport';
+import MainSlider from '@/features/home-two/MainSlider';
+import OfficeLocation from '@/features/home-two/OfficeLocation';
+import PricingTwo from '@/features/home-two/PricingTwo';
+import ProjectTwo from '@/features/home-two/ProjectTwo';
+import ServicesTwo from '@/features/home-two/ServicesTwo';
+import TeamTwo from '@/features/home-two/TeamTwo';
+import TestimonialTwo from '@/features/home-two/TestimonialTwo';
+import VideoTwo from '@/features/home-two/VideoTwo';
+import WhyChooseTwo from '@/features/home-two/WhyChooseTwo';
+
+const page: React.FC = () => {
+    return (
+        <div className="page-wrapper">
+            <HeaderTwo />
+
+            <MainSlider />
+            <FeatureTwo />
+            <AboutTwo />
+            <ServicesTwo />
+            <WhyChooseTwo />
+            <CtaOne />
+            <ProjectTwo />
+            <OfficeLocation />
+            <CounterTwo />
+            <FindTransport />
+            <VideoTwo />
+            <TestimonialTwo />
+            <PricingTwo />
+            <ContactTwo />
+            <TeamTwo />
+            <BlogTwo />
+            <BrandOne />
+
+            <FooterTwo />
+            <StrickyHeaderTwo />
+        </div>
+    );
+};
+
+export default page;
