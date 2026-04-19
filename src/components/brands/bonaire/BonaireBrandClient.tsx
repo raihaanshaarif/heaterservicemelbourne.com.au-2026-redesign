@@ -1,0 +1,1113 @@
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Link from "next/link";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 25 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
+};
+
+const BonaireBrandClient: React.FC = () => {
+  const { ref: headerRef, inView: headerInView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const { ref: servicesRef, inView: servicesInView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const { ref: benefitsRef, inView: benefitsInView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const { ref: systemsRef, inView: systemsInView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+
+  return (
+    <>
+      {/* Hero Section */}
+      <section
+        style={{
+          background: "linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundBlendMode: "overlay",
+          paddingTop: "140px",
+          paddingBottom: "140px",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        {/* Animated gradient background */}
+        <div
+          style={{
+            position: "absolute",
+            top: "-50%",
+            right: "-10%",
+            width: "500px",
+            height: "500px",
+            background:
+              "radial-gradient(circle, rgba(185,28,28,0.2) 0%, transparent 70%)",
+            borderRadius: "50%",
+            filter: "blur(60px)",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            bottom: "-20%",
+            left: "-5%",
+            width: "400px",
+            height: "400px",
+            background:
+              "radial-gradient(circle, rgba(239,68,68,0.15) 0%, transparent 70%)",
+            borderRadius: "50%",
+            filter: "blur(60px)",
+          }}
+        />
+
+        <div className="container position-relative" style={{ zIndex: 2 }}>
+          <motion.div
+            ref={headerRef}
+            initial="hidden"
+            animate={headerInView ? "visible" : "hidden"}
+            variants={containerVariants}
+            className="row align-items-center"
+          >
+            <div className="col-lg-7">
+              <motion.div variants={itemVariants}>
+                <span
+                  style={{
+                    display: "inline-block",
+                    fontSize: "13px",
+                    fontWeight: 700,
+                    letterSpacing: "1.2px",
+                    textTransform: "uppercase",
+                    color: "#ef4444",
+                    paddingBottom: "8px",
+                    borderBottom: "2px solid #ef4444",
+                    marginBottom: "20px",
+                  }}
+                >
+                  Bonaire Heating Specialists
+                </span>
+              </motion.div>
+
+              <motion.h1
+                variants={itemVariants}
+                className="fw-bold"
+                style={{
+                  color: "#fff",
+                  fontSize: "64px",
+                  lineHeight: "1.15",
+                  marginBottom: "24px",
+                  letterSpacing: "-1px",
+                  fontWeight: 800,
+                }}
+              >
+                Professional Bonaire Heating Solutions Melbourne
+              </motion.h1>
+
+              <motion.p
+                variants={itemVariants}
+                style={{
+                  color: "#ddd",
+                  fontSize: "18px",
+                  lineHeight: "1.8",
+                  marginBottom: "36px",
+                  maxWidth: "650px",
+                  fontWeight: 400,
+                }}
+              >
+                Expert installation, repair and maintenance for Bonaire gas
+                ducted heating, hydronic heating systems and split system
+                heating. Same-day service and 24/7 emergency support across
+                Melbourne.
+              </motion.p>
+
+              <motion.div variants={itemVariants} className="d-flex gap-3">
+                <a
+                  href="tel:0405133761"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #b91c1c 0%, #ef4444 100%)",
+                    color: "#fff",
+                    fontWeight: 700,
+                    fontSize: "15px",
+                    padding: "15px 36px",
+                    border: "none",
+                    borderRadius: "8px",
+                    boxShadow:
+                      "0 12px 32px rgba(185,28,28,0.4), 0 8px 16px rgba(0,0,0,0.2)",
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    transition: "all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.target as HTMLElement).style.transform =
+                      "translateY(-2px)";
+                    (e.target as HTMLElement).style.boxShadow =
+                      "0 16px 40px rgba(185,28,28,0.5), 0 12px 20px rgba(0,0,0,0.25)";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.target as HTMLElement).style.transform = "translateY(0)";
+                    (e.target as HTMLElement).style.boxShadow =
+                      "0 12px 32px rgba(185,28,28,0.4), 0 8px 16px rgba(0,0,0,0.2)";
+                  }}
+                >
+                  <i
+                    className="fas fa-phone-alt"
+                    style={{ fontSize: "14px" }}
+                  ></i>
+                  Call Now: 0405 133 761
+                </a>
+                <Link
+                  href="/contact"
+                  style={{
+                    background: "rgba(255,255,255,0.08)",
+                    color: "#fff",
+                    fontWeight: 600,
+                    fontSize: "15px",
+                    padding: "15px 36px",
+                    border: "1.5px solid rgba(255,255,255,0.15)",
+                    borderRadius: "8px",
+                    cursor: "pointer",
+                    textDecoration: "none",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.target as HTMLElement).style.borderColor =
+                      "rgba(239,68,68,0.4)";
+                    (e.target as HTMLElement).style.backgroundColor =
+                      "rgba(239,68,68,0.1)";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.target as HTMLElement).style.borderColor =
+                      "rgba(255,255,255,0.15)";
+                    (e.target as HTMLElement).style.backgroundColor =
+                      "rgba(255,255,255,0.08)";
+                  }}
+                >
+                  <i
+                    className="fas fa-envelope"
+                    style={{ fontSize: "14px" }}
+                  ></i>
+                  Get Free Quote
+                </Link>
+              </motion.div>
+
+              <motion.div
+                variants={itemVariants}
+                style={{ marginTop: "48px", display: "flex", gap: "32px" }}
+              >
+                {[
+                  { icon: "fa-tachometer-alt", text: "Same-Day Service" },
+                  { icon: "fa-certificate", text: "Full Warranty" },
+                  { icon: "fa-headset", text: "24/7 Emergency" },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      display: "flex",
+                      gap: "12px",
+                      alignItems: "flex-start",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        background:
+                          "linear-gradient(135deg, rgba(239,68,68,0.2) 0%, rgba(239,68,68,0.1) 100%)",
+                        border: "1px solid rgba(239,68,68,0.3)",
+                        borderRadius: "8px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <i
+                        className={`fas ${item.icon}`}
+                        style={{ color: "#ef4444", fontSize: "16px" }}
+                      ></i>
+                    </div>
+                    <span
+                      style={{
+                        color: "#fff",
+                        fontSize: "14px",
+                        fontWeight: 600,
+                        marginTop: "4px",
+                      }}
+                    >
+                      {item.text}
+                    </span>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+
+            <div className="col-lg-5">
+              <motion.div
+                variants={itemVariants}
+                style={{
+                  textAlign: "center",
+                  fontSize: "160px",
+                  opacity: 0.1,
+                  color: "#ef4444",
+                }}
+              >
+                <i className="fas fa-fire"></i>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section
+        style={{
+          background: "linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%)",
+          paddingTop: "100px",
+          paddingBottom: "100px",
+        }}
+      >
+        <div className="container">
+          <motion.div
+            ref={servicesRef}
+            initial="hidden"
+            animate={servicesInView ? "visible" : "hidden"}
+            variants={containerVariants}
+            className="row gy-5"
+          >
+            {[
+              {
+                icon: "fa-wrench",
+                title: "Emergency Heating Repairs",
+                description:
+                  "24/7 emergency repair service for all Bonaire heating systems. Fast response across all Melbourne suburbs.",
+              },
+              {
+                icon: "fa-hammer",
+                title: "Professional Installation",
+                description:
+                  "Expert Bonaire heating system installation with precision sizing and full warranty compliance.",
+              },
+              {
+                icon: "fa-sync-alt",
+                title: "Maintenance & Service",
+                description:
+                  "Annual preventative maintenance for optimal heating performance and extended system lifespan.",
+              },
+              {
+                icon: "fa-shield-check",
+                title: "Genuine Parts",
+                description:
+                  "Only genuine Bonaire parts used with full manufacturer warranty protection on all work.",
+              },
+              {
+                icon: "fa-certificate",
+                title: "Licensed & Insured",
+                description:
+                  "Fully licensed technicians with comprehensive insurance coverage for your complete protection.",
+              },
+              {
+                icon: "fa-lightbulb",
+                title: "Expert Consultation",
+                description:
+                  "Professional heating system assessment and expert recommendations for your specific needs.",
+              },
+            ].map((service, i) => (
+              <div key={i} className="col-md-6 col-lg-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={
+                    servicesInView
+                      ? { opacity: 1, y: 0 }
+                      : { opacity: 0, y: 20 }
+                  }
+                  transition={{ delay: i * 0.08 }}
+                  whileHover={{ y: -12 }}
+                  style={{
+                    background:
+                      "linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.88) 100%)",
+                    border: "1px solid rgba(185,28,28,0.1)",
+                    borderRadius: "12px",
+                    padding: "36px 28px",
+                    backdropFilter: "blur(10px)",
+                    textAlign: "left",
+                    position: "relative",
+                    overflow: "hidden",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      height: "3px",
+                      background:
+                        "linear-gradient(90deg, #b91c1c 0%, #ef4444 100%)",
+                    }}
+                  />
+
+                  <div
+                    style={{
+                      width: "52px",
+                      height: "52px",
+                      background:
+                        "linear-gradient(135deg, rgba(185,28,28,0.12) 0%, rgba(239,68,68,0.08) 100%)",
+                      border: "1px solid rgba(185,28,28,0.2)",
+                      borderRadius: "10px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginBottom: "20px",
+                      fontSize: "22px",
+                      color: "#b91c1c",
+                    }}
+                  >
+                    <i className={`fas ${service.icon}`}></i>
+                  </div>
+
+                  <h5
+                    style={{
+                      color: "#1a1a1a",
+                      fontSize: "18px",
+                      fontWeight: 700,
+                      marginBottom: "12px",
+                      letterSpacing: "-0.3px",
+                    }}
+                  >
+                    {service.title}
+                  </h5>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      color: "#666",
+                      lineHeight: "1.7",
+                      margin: 0,
+                    }}
+                  >
+                    {service.description}
+                  </p>
+                </motion.div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Why Choose Bonaire Heating */}
+      <section style={{ paddingTop: "100px", paddingBottom: "100px" }}>
+        <div className="container">
+          <motion.div
+            ref={benefitsRef}
+            initial="hidden"
+            animate={benefitsInView ? "visible" : "hidden"}
+            variants={containerVariants}
+            className="text-center mb-5"
+            style={{ marginBottom: "80px" }}
+          >
+            <motion.div
+              variants={itemVariants}
+              style={{ marginBottom: "20px" }}
+            >
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "12px",
+                  fontWeight: 700,
+                  letterSpacing: "1.2px",
+                  textTransform: "uppercase",
+                  color: "#b91c1c",
+                  paddingBottom: "8px",
+                  borderBottom: "2px solid #b91c1c",
+                }}
+              >
+                Why Choose Bonaire
+              </span>
+            </motion.div>
+
+            <motion.h2
+              variants={itemVariants}
+              className="fw-bold"
+              style={{
+                color: "#1a1a1a",
+                fontSize: "48px",
+                lineHeight: "1.1",
+                marginBottom: "20px",
+                letterSpacing: "-1px",
+                fontWeight: 800,
+              }}
+            >
+              Superior Heating Solutions for Melbourne
+            </motion.h2>
+
+            <motion.p
+              variants={itemVariants}
+              style={{
+                maxWidth: 650,
+                margin: "0 auto",
+                fontSize: "16px",
+                lineHeight: "1.8",
+                color: "#666",
+                fontWeight: 400,
+              }}
+            >
+              Bonaire heating systems deliver efficient, reliable warmth for
+              Melbourne winters with advanced technology and proven durability.
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            animate={benefitsInView ? "visible" : "hidden"}
+            variants={containerVariants}
+            className="row gy-5"
+          >
+            {[
+              {
+                icon: "fa-bolt",
+                title: "Energy Efficiency",
+                description:
+                  "Advanced inverter technology and smart controls minimize energy consumption while maximizing heating performance.",
+              },
+              {
+                icon: "fa-snowflake",
+                title: "Consistent Warmth",
+                description:
+                  "Reliable, even heating throughout your home on cold Melbourne winter days with precise temperature control.",
+              },
+              {
+                icon: "fa-globe",
+                title: "Australian Heritage",
+                description:
+                  "Decades of engineering excellence designed specifically for Australian climate conditions and requirements.",
+              },
+              {
+                icon: "fa-volume-off",
+                title: "Quiet Operation",
+                description:
+                  "Bonaire heating systems operate whisper-quiet, providing comfort without noise distraction.",
+              },
+              {
+                icon: "fa-cogs",
+                title: "Smart Controls",
+                description:
+                  "Modern temperature management and scheduling options for personalized comfort and energy savings.",
+              },
+              {
+                icon: "fa-shield-check",
+                title: "Proven Reliability",
+                description:
+                  "Trusted by Melbourne families for decades with comprehensive warranty and exceptional durability.",
+              },
+            ].map((benefit, i) => (
+              <div key={i} className="col-md-6 col-lg-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={
+                    benefitsInView
+                      ? { opacity: 1, y: 0 }
+                      : { opacity: 0, y: 20 }
+                  }
+                  transition={{ delay: i * 0.08 }}
+                  whileHover={{ y: -8 }}
+                  style={{
+                    background:
+                      "linear-gradient(135deg, rgba(185,28,28,0.06) 0%, rgba(239,68,68,0.04) 100%)",
+                    border: "1px solid rgba(185,28,28,0.12)",
+                    borderRadius: "12px",
+                    padding: "36px 28px",
+                    textAlign: "left",
+                    backdropFilter: "blur(10px)",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "56px",
+                      height: "56px",
+                      background:
+                        "linear-gradient(135deg, rgba(185,28,28,0.15) 0%, rgba(239,68,68,0.1) 100%)",
+                      border: "1.5px solid rgba(185,28,28,0.25)",
+                      borderRadius: "12px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginBottom: "20px",
+                      fontSize: "24px",
+                      color: "#b91c1c",
+                    }}
+                  >
+                    <i className={`fas ${benefit.icon}`}></i>
+                  </div>
+
+                  <h5
+                    style={{
+                      color: "#1a1a1a",
+                      fontSize: "18px",
+                      fontWeight: 700,
+                      marginBottom: "12px",
+                      letterSpacing: "-0.3px",
+                    }}
+                  >
+                    {benefit.title}
+                  </h5>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      color: "#666",
+                      lineHeight: "1.7",
+                      margin: 0,
+                    }}
+                  >
+                    {benefit.description}
+                  </p>
+                </motion.div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Bonaire Heating Systems */}
+      <section
+        style={{
+          background: "linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%)",
+          paddingTop: "100px",
+          paddingBottom: "100px",
+        }}
+      >
+        <div className="container">
+          <motion.div
+            ref={systemsRef}
+            initial="hidden"
+            animate={systemsInView ? "visible" : "hidden"}
+            variants={containerVariants}
+            className="text-center mb-5"
+            style={{ marginBottom: "80px" }}
+          >
+            <motion.div
+              variants={itemVariants}
+              style={{ marginBottom: "20px" }}
+            >
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "12px",
+                  fontWeight: 700,
+                  letterSpacing: "1.2px",
+                  textTransform: "uppercase",
+                  color: "#b91c1c",
+                  paddingBottom: "8px",
+                  borderBottom: "2px solid #b91c1c",
+                }}
+              >
+                Full Range
+              </span>
+            </motion.div>
+
+            <motion.h2
+              variants={itemVariants}
+              className="fw-bold"
+              style={{
+                color: "#1a1a1a",
+                fontSize: "48px",
+                lineHeight: "1.1",
+                marginBottom: "20px",
+                letterSpacing: "-1px",
+                fontWeight: 800,
+              }}
+            >
+              Bonaire Heating Systems We Install & Service
+            </motion.h2>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            animate={systemsInView ? "visible" : "hidden"}
+            variants={containerVariants}
+            className="row gy-5"
+          >
+            {[
+              {
+                title: "Bonaire Gas Ducted Heating",
+                subtitle: "Efficient Whole-Home Heating",
+                features: [
+                  "Compact Series systems",
+                  "Navigator advanced controls",
+                  "PowerStar high capacity",
+                  "Zone control optimization",
+                ],
+                icon: "fa-fire",
+              },
+              {
+                title: "Bonaire Hydronic Heating",
+                subtitle: "Premium Radiant Heat System",
+                features: [
+                  "Underfloor heating systems",
+                  "Wall heating radiators",
+                  "Smart temperature control",
+                  "Energy-efficient operation",
+                ],
+                icon: "fa-bolt",
+              },
+              {
+                title: "Bonaire Split System Heating",
+                subtitle: "Flexible Zone Heating",
+                features: [
+                  "Wall-mounted indoor units",
+                  "Ceiling cassette options",
+                  "Wifi smart controls",
+                  "Quiet operation design",
+                ],
+                icon: "fa-wind",
+              },
+            ].map((system, i) => (
+              <div key={i} className="col-lg-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={
+                    systemsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                  }
+                  transition={{ delay: i * 0.15 }}
+                  whileHover={{ y: -16, scale: 1.02 }}
+                  style={{
+                    background:
+                      "linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.88) 100%)",
+                    backdropFilter: "blur(20px)",
+                    border: "1px solid rgba(185,28,28,0.1)",
+                    borderRadius: "14px",
+                    padding: "48px 36px",
+                    boxShadow:
+                      "0 8px 32px rgba(0,0,0,0.05), 0 20px 60px rgba(0,0,0,0.03)",
+                    position: "relative",
+                    overflow: "hidden",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      height: "3px",
+                      background:
+                        "linear-gradient(90deg, #b91c1c 0%, #ef4444 50%, #dc2626 100%)",
+                    }}
+                  />
+
+                  <div
+                    style={{
+                      width: "64px",
+                      height: "64px",
+                      background:
+                        "linear-gradient(135deg, rgba(185,28,28,0.15) 0%, rgba(239,68,68,0.1) 100%)",
+                      border: "1.5px solid rgba(185,28,28,0.25)",
+                      borderRadius: "14px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginBottom: "24px",
+                      fontSize: "28px",
+                      color: "#b91c1c",
+                    }}
+                  >
+                    <i className={`fas ${system.icon}`}></i>
+                  </div>
+
+                  <h4
+                    style={{
+                      color: "#1a1a1a",
+                      fontSize: "22px",
+                      fontWeight: 700,
+                      marginBottom: "8px",
+                      letterSpacing: "-0.5px",
+                    }}
+                  >
+                    {system.title}
+                  </h4>
+
+                  <p
+                    style={{
+                      color: "#b91c1c",
+                      fontSize: "13px",
+                      fontWeight: 600,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.5px",
+                      marginBottom: "24px",
+                    }}
+                  >
+                    {system.subtitle}
+                  </p>
+
+                  <ul
+                    style={{
+                      listStyle: "none",
+                      padding: 0,
+                      margin: 0,
+                    }}
+                  >
+                    {system.features.map((feature, j) => (
+                      <li
+                        key={j}
+                        style={{
+                          fontSize: "14px",
+                          color: "#333",
+                          marginBottom: "14px",
+                          display: "flex",
+                          gap: "12px",
+                          alignItems: "flex-start",
+                        }}
+                      >
+                        <span
+                          style={{
+                            color: "#b91c1c",
+                            fontWeight: 700,
+                            fontSize: "16px",
+                            marginTop: "-2px",
+                          }}
+                        >
+                          ✓
+                        </span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a
+                    href="tel:0405133761"
+                    style={{
+                      marginTop: "28px",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      color: "#b91c1c",
+                      fontWeight: 700,
+                      fontSize: "13px",
+                      textDecoration: "none",
+                      transition: "all 0.3s ease",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.target as HTMLElement).style.color = "#ef4444";
+                      (e.target as HTMLElement).style.transform =
+                        "translateX(4px)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.target as HTMLElement).style.color = "#b91c1c";
+                      (e.target as HTMLElement).style.transform =
+                        "translateX(0)";
+                    }}
+                  >
+                    <i
+                      className="fas fa-phone-alt"
+                      style={{ fontSize: "11px" }}
+                    ></i>
+                    Call for Details
+                  </a>
+                </motion.div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section style={{ paddingTop: "100px", paddingBottom: "100px" }}>
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={containerVariants}
+            className="text-center mb-5"
+            style={{ marginBottom: "80px" }}
+          >
+            <motion.div
+              variants={itemVariants}
+              style={{ marginBottom: "20px" }}
+            >
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "12px",
+                  fontWeight: 700,
+                  letterSpacing: "1.2px",
+                  textTransform: "uppercase",
+                  color: "#b91c1c",
+                  paddingBottom: "8px",
+                  borderBottom: "2px solid #b91c1c",
+                }}
+              >
+                Common Questions
+              </span>
+            </motion.div>
+
+            <motion.h2
+              variants={itemVariants}
+              className="fw-bold"
+              style={{
+                color: "#1a1a1a",
+                fontSize: "48px",
+                lineHeight: "1.1",
+                marginBottom: "20px",
+                letterSpacing: "-1px",
+                fontWeight: 800,
+              }}
+            >
+              Bonaire Heating FAQs
+            </motion.h2>
+          </motion.div>
+
+          <div className="row">
+            <div className="col-lg-8 offset-lg-2">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={containerVariants}
+                className="d-flex flex-column gap-4"
+              >
+                {[
+                  {
+                    q: "Which Bonaire heating system is best for my home?",
+                    a: "The best system depends on your home size and layout. Gas ducted heating suits whole-home heating, hydronic is ideal for new homes or renovations, and split systems work well for zone heating. We assess your needs and recommend the perfect solution.",
+                  },
+                  {
+                    q: "Can I install Bonaire hydronic heating in an existing home?",
+                    a: "Yes! Hydronic heating can be retrofitted into existing homes, though renovation scope varies. We evaluate your home's compatibility and provide cost-effective installation options.",
+                  },
+                  {
+                    q: "How often should I service my Bonaire heating system?",
+                    a: "Annual pre-winter servicing is essential to ensure safe, efficient operation. This prevents breakdowns during cold months and extends system lifespan significantly.",
+                  },
+                  {
+                    q: "Do you provide emergency heating repairs?",
+                    a: "Absolutely! We offer 24/7 emergency heating repair service for all Bonaire systems across Melbourne. Call 0405 133 761 for immediate assistance during winter heating emergencies.",
+                  },
+                  {
+                    q: "Are your technicians licensed for heating installations?",
+                    a: "Yes, all our technicians are fully licensed, insured, and factory-trained for Bonaire heating systems. We guarantee genuine parts and professional workmanship with full warranty compliance.",
+                  },
+                  {
+                    q: "What areas of Melbourne do you service?",
+                    a: "We provide professional Bonaire heating installation, repair, and maintenance throughout all Melbourne suburbs with same-day service available. Contact us for your specific location.",
+                  },
+                ].map((item, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.05 }}
+                    style={{
+                      background:
+                        "linear-gradient(135deg, rgba(185,28,28,0.08) 0%, rgba(239,68,68,0.05) 100%)",
+                      border: "1px solid rgba(185,28,28,0.12)",
+                      borderRadius: "12px",
+                      padding: "28px",
+                      backdropFilter: "blur(10px)",
+                    }}
+                  >
+                    <h5
+                      style={{
+                        color: "#1a1a1a",
+                        fontSize: "16px",
+                        fontWeight: 700,
+                        marginBottom: "12px",
+                        letterSpacing: "-0.3px",
+                      }}
+                    >
+                      <i
+                        className="fas fa-circle-question"
+                        style={{
+                          color: "#b91c1c",
+                          marginRight: "12px",
+                          fontSize: "14px",
+                        }}
+                      ></i>
+                      {item.q}
+                    </h5>
+                    <p
+                      style={{
+                        color: "#666",
+                        fontSize: "14px",
+                        lineHeight: "1.8",
+                        margin: 0,
+                      }}
+                    >
+                      {item.a}
+                    </p>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section
+        style={{
+          background: "linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)",
+          paddingTop: "100px",
+          paddingBottom: "100px",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            top: "-50%",
+            right: "-10%",
+            width: "500px",
+            height: "500px",
+            background:
+              "radial-gradient(circle, rgba(185,28,28,0.15) 0%, transparent 70%)",
+            borderRadius: "50%",
+            filter: "blur(60px)",
+          }}
+        />
+
+        <div className="container position-relative" style={{ zIndex: 2 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <h2
+              className="fw-bold mb-4"
+              style={{
+                color: "#fff",
+                fontSize: "44px",
+                marginBottom: "24px",
+                letterSpacing: "-1px",
+                fontWeight: 800,
+              }}
+            >
+              Ready for Expert Bonaire Heating?
+            </h2>
+
+            <p
+              style={{
+                fontSize: "16px",
+                color: "#ddd",
+                marginBottom: "36px",
+                maxWidth: "700px",
+                margin: "0 auto 36px",
+                lineHeight: "1.8",
+              }}
+            >
+              Professional Bonaire heating installation, emergency repairs, and
+              comprehensive maintenance from fully licensed technicians.
+              Same-day service available across Melbourne with genuine parts and
+              full warranty protection.
+            </p>
+
+            <div className="d-flex gap-3 justify-content-center flex-wrap mb-4">
+              <a
+                href="tel:0405133761"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #b91c1c 0%, #ef4444 100%)",
+                  color: "#fff",
+                  fontWeight: 700,
+                  fontSize: "15px",
+                  padding: "16px 40px",
+                  border: "none",
+                  borderRadius: "8px",
+                  boxShadow:
+                    "0 12px 32px rgba(185,28,28,0.4), 0 8px 16px rgba(0,0,0,0.2)",
+                  cursor: "pointer",
+                  textDecoration: "none",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "12px",
+                  transition: "all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)",
+                }}
+                onMouseEnter={(e) => {
+                  (e.target as HTMLElement).style.transform =
+                    "translateY(-2px)";
+                  (e.target as HTMLElement).style.boxShadow =
+                    "0 16px 40px rgba(185,28,28,0.5), 0 12px 20px rgba(0,0,0,0.25)";
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as HTMLElement).style.transform = "translateY(0)";
+                  (e.target as HTMLElement).style.boxShadow =
+                    "0 12px 32px rgba(185,28,28,0.4), 0 8px 16px rgba(0,0,0,0.2)";
+                }}
+              >
+                <i
+                  className="fas fa-phone-alt"
+                  style={{ fontSize: "14px" }}
+                ></i>
+                Call: 0405 133 761
+              </a>
+              <Link
+                href="/contact"
+                style={{
+                  background: "rgba(239,68,68,0.15)",
+                  color: "#fff",
+                  fontWeight: 600,
+                  fontSize: "15px",
+                  padding: "16px 40px",
+                  border: "1.5px solid rgba(239,68,68,0.3)",
+                  borderRadius: "8px",
+                  cursor: "pointer",
+                  textDecoration: "none",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "12px",
+                  transition: "all 0.3s ease",
+                }}
+              >
+                <i className="fas fa-envelope" style={{ fontSize: "14px" }}></i>
+                Get Free Quote
+              </Link>
+            </div>
+
+            <p
+              style={{
+                fontSize: "13px",
+                color: "#999",
+                margin: 0,
+              }}
+            >
+              24/7 Emergency Service | Genuine Bonaire Parts | Licensed &
+              Insured | Full Warranty Protection
+            </p>
+          </motion.div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default BonaireBrandClient;

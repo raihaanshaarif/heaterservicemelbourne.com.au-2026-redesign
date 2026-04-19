@@ -107,6 +107,10 @@ const MultiPageManuList: React.FC = () => {
         </ul>
       </li>
 
+      <li className={currentPath === "/service-areas" ? "current" : ""}>
+        <Link href="/service-areas">Service Areas</Link>
+      </li>
+
       <li className={`dropdown ${findLocation(pagesList) ? "current" : ""}`}>
         <a href="#">Pages</a>
         <ul className="shadow-box">

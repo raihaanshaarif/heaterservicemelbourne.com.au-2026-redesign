@@ -246,7 +246,7 @@ const Page: React.FC = () => {
                   style={{ fontSize: "1rem", lineHeight: "1.8" }}
                 >
                   2-4 hour emergency response across Melbourne. Transparent
-                  pricing. 12-month warranty on all repairs.
+                  pricing. Limited warranty on all repairs.
                 </p>
 
                 <div className="d-flex gap-3 mb-5 flex-wrap">
@@ -324,7 +324,7 @@ const Page: React.FC = () => {
                       fontWeight: 600,
                     }}
                   >
-                    ✓ 12-MONTH WARRANTY
+                    ✓ LIMITED WARRANTY
                   </span>
                   <span
                     className="px-3 py-2 rounded-2"
@@ -477,9 +477,8 @@ const Page: React.FC = () => {
                     </strong>{" "}
                     We&apos;re available 24/7/365 for emergency repairs, provide
                     transparent pricing with quotes before work, and back every
-                    repair with a 12-month warranty. Our VBA-licensed
-                    technicians have 15+ years experience with all hydronic
-                    system types.
+                    repair with a Limited Warranty. Our VBA-licensed technicians
+                    have 15+ years experience with all hydronic system types.
                   </p>
                 </motion.div>
 
@@ -834,7 +833,7 @@ const Page: React.FC = () => {
                         ></i>
                         <div>
                           <strong style={{ color: "#1a1a1a" }}>
-                            12-Month Warranty
+                            Limited Warranty
                           </strong>
                           <p
                             className="text-secondary mb-0"
@@ -922,7 +921,7 @@ const Page: React.FC = () => {
                                 id: 4,
                                 question: "Is repair work guaranteed?",
                                 answer:
-                                  "Yes! All repair work includes a 12-month warranty. If the same issue recurs within 12 months, we fix it at no charge. We stand behind our work with complete confidence. Parts also come with manufacturer warranties.",
+                                  "Yes! All repair work includes a Limited Warranty.  We stand behind our work with complete confidence. Parts also come with manufacturer warranties.",
                               },
                               {
                                 id: 5,

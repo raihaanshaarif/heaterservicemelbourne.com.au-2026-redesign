@@ -227,7 +227,7 @@ const Page: React.FC = () => {
                   className="text-secondary mb-5"
                   style={{ fontSize: "1rem", lineHeight: "1.8" }}
                 >
-                  VBA licensed. Transparent pricing. 12-month warranty on all
+                  VBA licensed. Transparent pricing. Limited warranty on all
                   emergency repairs.
                 </p>
 
@@ -882,7 +882,7 @@ const Page: React.FC = () => {
                                 question:
                                   "Is emergency repair work guaranteed?",
                                 answer:
-                                  "Yes. All emergency repairs include 12-month warranty. If the same issue recurs within 12 months, we fix it at no charge.",
+                                  "Yes. All emergency repairs include Limited warranty. If the same issue recurs within 12 months, we fix it at no charge.",
                               },
                               {
                                 id: 5,

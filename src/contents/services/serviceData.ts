@@ -19,7 +19,7 @@ export const servicesData: ServiceItem[] = [
   {
     id: 1,
     title: "Hydronic Heating",
-    link: "/services",
+    link: "/hydronic-heating",
     image: ServicesOne11,
     iconClass: "icon-professional-services",
     count: "01",
@@ -28,7 +28,7 @@ export const servicesData: ServiceItem[] = [
   {
     id: 2,
     title: "Gas Ducted Heating",
-    link: "/services",
+    link: "/gas-ducted-heating",
     image: ServicesOne12,
     iconClass: "icon-professional-services",
     count: "02",
@@ -37,7 +37,7 @@ export const servicesData: ServiceItem[] = [
   {
     id: 3,
     title: "Split Systems",
-    link: "/services",
+    link: "/split-system-air-conditioning",
     image: ServicesOne13,
     iconClass: "icon-professional-services",
     count: "03",
@@ -46,7 +46,7 @@ export const servicesData: ServiceItem[] = [
   {
     id: 4,
     title: "Emergency Services",
-    link: "/contact",
+    link: "/emergency-services",
     image: ServicesOne14,
     iconClass: "icon-truck",
     count: "04",
