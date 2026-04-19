@@ -11,162 +11,231 @@ const brandData = [
   {
     name: "Braemar",
     slug: "braemar",
-    heritage: "Australian heating leader with 50+ years of expertise in ducted heating systems",
+    heritage:
+      "Australian heating leader with 50+ years of expertise in ducted heating systems",
     advantage1: "Pioneered compact ducted heating design for Australian homes",
     advantage2: "Navigator advanced controls with zone management technology",
-    products: ["Compact Series", "PowerStar High Capacity", "Navigator Controls"],
+    products: [
+      "Compact Series",
+      "PowerStar High Capacity",
+      "Navigator Controls",
+    ],
     certifications: "Energy Rating 4-6 stars, HVAC Industry certified",
-    uniqueFeature: "Proven reliability in harsh Australian climates with bushfire-resistant design",
+    uniqueFeature:
+      "Proven reliability in harsh Australian climates with bushfire-resistant design",
   },
   {
     name: "Brivis",
     slug: "brivis",
-    heritage: "Australian manufacturer specializing in efficient gas ducted heating since 1984",
-    advantage1: "Expert in energy-efficient gas heating with low operating costs",
-    advantage2: "SmartComfort technology reduces energy consumption by up to 30%",
+    heritage:
+      "Australian manufacturer specializing in efficient gas ducted heating since 1984",
+    advantage1:
+      "Expert in energy-efficient gas heating with low operating costs",
+    advantage2:
+      "SmartComfort technology reduces energy consumption by up to 30%",
     products: ["Evolution Series", "SmartComfort Controller", "Zone Plus"],
-    certifications: "Energy Star rated, Australian Standard certified, Eco-friendly",
-    uniqueFeature: "Specifically designed for Australia's varied climates with adaptive heating",
+    certifications:
+      "Energy Star rated, Australian Standard certified, Eco-friendly",
+    uniqueFeature:
+      "Specifically designed for Australia's varied climates with adaptive heating",
   },
   {
     name: "Mitsubishi Electric",
     slug: "mitsubishi-electric",
-    heritage: "Global leader in heat pump technology with 60+ years of HVAC innovation",
-    advantage1: "Pioneered inverter technology for efficient heating and cooling",
+    heritage:
+      "Global leader in heat pump technology with 60+ years of HVAC innovation",
+    advantage1:
+      "Pioneered inverter technology for efficient heating and cooling",
     advantage2: "Hyper-Heating technology operates efficiently down to -15°C",
     products: ["Zubadan Series", "Premium Inverter", "City Multi"],
-    certifications: "Energy Star certified, ASHP member, Global sustainability leader",
-    uniqueFeature: "Advanced inverter compressor maintains comfort while minimizing energy use",
+    certifications:
+      "Energy Star certified, ASHP member, Global sustainability leader",
+    uniqueFeature:
+      "Advanced inverter compressor maintains comfort while minimizing energy use",
   },
   {
     name: "Panasonic",
     slug: "panasonic",
-    heritage: "Japanese technology pioneer with 100+ years of manufacturing excellence",
-    advantage1: "Nanoe-X technology purifies air while heating for healthier homes",
+    heritage:
+      "Japanese technology pioneer with 100+ years of manufacturing excellence",
+    advantage1:
+      "Nanoe-X technology purifies air while heating for healthier homes",
     advantage2: "Superior quiet operation with noise levels as low as 19dB",
     products: ["Etherea Series", "Compact Wall Units", "Nanoe-X Filter"],
     certifications: "ISO 9001 certified, Energy Star Champion, EPEAT Gold",
-    uniqueFeature: "Nanoe-X air purification technology integrated into heating systems",
+    uniqueFeature:
+      "Nanoe-X air purification technology integrated into heating systems",
   },
   {
     name: "LG",
     slug: "lg",
-    heritage: "South Korean tech giant with 75+ years of consumer electronics leadership",
-    advantage1: "AI-powered temperature prediction adjusts heating automatically",
-    advantage2: "Dual Inverter Compressor provides 40% energy savings vs conventional units",
+    heritage:
+      "South Korean tech giant with 75+ years of consumer electronics leadership",
+    advantage1:
+      "AI-powered temperature prediction adjusts heating automatically",
+    advantage2:
+      "Dual Inverter Compressor provides 40% energy savings vs conventional units",
     products: ["Dual Inverter", "Artcool Series", "Plasmacluster"],
-    certifications: "LEED certifiable, Energy Star Most Efficient, Korean Green Certification",
-    uniqueFeature: "Artificial Intelligence learns your heating patterns and optimizes comfort",
+    certifications:
+      "LEED certifiable, Energy Star Most Efficient, Korean Green Certification",
+    uniqueFeature:
+      "Artificial Intelligence learns your heating patterns and optimizes comfort",
   },
   {
     name: "Samsung",
     slug: "samsung",
-    heritage: "Leading global electronics manufacturer with advanced heat pump innovation",
-    advantage1: "WindFree technology provides comfort without direct cold air drafts",
+    heritage:
+      "Leading global electronics manufacturer with advanced heat pump innovation",
+    advantage1:
+      "WindFree technology provides comfort without direct cold air drafts",
     advantage2: "Smart Home integration with Google and Alexa compatibility",
     products: ["WindFree Elite", "SmartThings Connect", "Quantum Dot Display"],
-    certifications: "Energy Star certified, SmartThings certified, Samsung Quality assured",
-    uniqueFeature: "WindFree comfort mode eliminates cold air drafts for perfect warmth",
+    certifications:
+      "Energy Star certified, SmartThings certified, Samsung Quality assured",
+    uniqueFeature:
+      "WindFree comfort mode eliminates cold air drafts for perfect warmth",
   },
   {
     name: "Fujitsu",
     slug: "fujitsu",
-    heritage: "Japanese precision engineering leader specializing in high-efficiency cooling and heating",
+    heritage:
+      "Japanese precision engineering leader specializing in high-efficiency cooling and heating",
     advantage1: "Highest SEER ratings in the industry for maximum efficiency",
     advantage2: "Reliable compressor technology proven in extreme climates",
     products: ["Halcyon Series", "Professional Grade Compressor", "EcoCool"],
-    certifications: "Energy Star Certified, Hyper-Inverter technology, HVAC Industry Leader",
-    uniqueFeature: "Professional-grade reliability used by commercial HVAC contractors",
+    certifications:
+      "Energy Star Certified, Hyper-Inverter technology, HVAC Industry Leader",
+    uniqueFeature:
+      "Professional-grade reliability used by commercial HVAC contractors",
   },
   {
     name: "Toshiba",
     slug: "toshiba",
-    heritage: "Japanese industrial pioneer with decades of heating technology development",
+    heritage:
+      "Japanese industrial pioneer with decades of heating technology development",
     advantage1: "Powerful heating output rated for Australia's coldest winters",
     advantage2: "Compact design suitable for apartments and small spaces",
     products: ["ForceFlow", "Super Compressor", "Compact Ductless"],
-    certifications: "Energy Star certified, Japanese Standard certified, HVAC proven",
-    uniqueFeature: "ForceFlow technology delivers powerful heating even in extreme cold",
+    certifications:
+      "Energy Star certified, Japanese Standard certified, HVAC proven",
+    uniqueFeature:
+      "ForceFlow technology delivers powerful heating even in extreme cold",
   },
   {
     name: "Carrier",
     slug: "carrier",
-    heritage: "American HVAC pioneer that invented modern air conditioning in 1902",
-    advantage1: "100+ years of commercial HVAC expertise applied to residential systems",
-    advantage2: "Infinity Series offers smart home compatibility and diagnostics",
-    products: ["Infinity Series", "Comfort Node Control", "Performance Compressor"],
-    certifications: "Energy Star certified, AHRI listed, Commercial Grade reliability",
-    uniqueFeature: "Commercial-grade durability with residential comfort features",
+    heritage:
+      "American HVAC pioneer that invented modern air conditioning in 1902",
+    advantage1:
+      "100+ years of commercial HVAC expertise applied to residential systems",
+    advantage2:
+      "Infinity Series offers smart home compatibility and diagnostics",
+    products: [
+      "Infinity Series",
+      "Comfort Node Control",
+      "Performance Compressor",
+    ],
+    certifications:
+      "Energy Star certified, AHRI listed, Commercial Grade reliability",
+    uniqueFeature:
+      "Commercial-grade durability with residential comfort features",
   },
   {
     name: "Hitachi",
     slug: "hitachi",
-    heritage: "Japanese industrial conglomerate with 110+ years of technology leadership",
-    advantage1: "Twin Rotary Compressor for ultra-smooth operation and reliability",
-    advantage2: "RAS-AJ series with advanced inverter for precise temperature control",
+    heritage:
+      "Japanese industrial conglomerate with 110+ years of technology leadership",
+    advantage1:
+      "Twin Rotary Compressor for ultra-smooth operation and reliability",
+    advantage2:
+      "RAS-AJ series with advanced inverter for precise temperature control",
     products: ["Twin Rotary System", "Advanced Inverter", "RAS-AJ Series"],
-    certifications: "Energy Star certified, Japanese top efficiency rated, Industrial proven",
-    uniqueFeature: "Twin Rotary Compressor technology reduces vibration and noise significantly",
+    certifications:
+      "Energy Star certified, Japanese top efficiency rated, Industrial proven",
+    uniqueFeature:
+      "Twin Rotary Compressor technology reduces vibration and noise significantly",
   },
   {
     name: "Haier",
     slug: "haier",
     heritage: "Chinese technology leader with 30+ years of heating innovation",
-    advantage1: "Most affordable premium heating brand without compromising quality",
-    advantage2: "Smart IoT controls for remote heating management from smartphone",
+    advantage1:
+      "Most affordable premium heating brand without compromising quality",
+    advantage2:
+      "Smart IoT controls for remote heating management from smartphone",
     products: ["Smart WiFi Series", "EcoComfort", "IoT Thermal Control"],
-    certifications: "Energy Star certified, UL certified, Global warranty support",
-    uniqueFeature: "Smart IoT integration at affordable price point for budget-conscious buyers",
+    certifications:
+      "Energy Star certified, UL certified, Global warranty support",
+    uniqueFeature:
+      "Smart IoT integration at affordable price point for budget-conscious buyers",
   },
   {
     name: "Kaden",
     slug: "kaden",
-    heritage: "European heating specialist with 40+ years of district heating expertise",
+    heritage:
+      "European heating specialist with 40+ years of district heating expertise",
     advantage1: "District heating system integration for multi-unit properties",
     advantage2: "Hydro-Comfort technology uses water-based heating efficiency",
     products: ["District Heating", "Hydro-Comfort", "Commercial Scalable"],
-    certifications: "European Quality certified, ISO 9001, District Heating specialist",
-    uniqueFeature: "Hydro-Comfort technology perfect for apartment blocks and shared heating",
+    certifications:
+      "European Quality certified, ISO 9001, District Heating specialist",
+    uniqueFeature:
+      "Hydro-Comfort technology perfect for apartment blocks and shared heating",
   },
   {
     name: "Sharp",
     slug: "sharp",
-    heritage: "Japanese technology innovator with 100+ years in advanced manufacturing",
+    heritage:
+      "Japanese technology innovator with 100+ years in advanced manufacturing",
     advantage1: "Plasmacluster Ion technology sanitizes air while heating",
     advantage2: "Low refrigerant R32 environment-friendly formulation",
     products: ["Plasmacluster", "Eco R32", "Premium Inverter"],
-    certifications: "Energy Star certified, Refrigerant eco-certified, Technology pioneer",
-    uniqueFeature: "Plasmacluster Ion technology kills viruses and bacteria during heating",
+    certifications:
+      "Energy Star certified, Refrigerant eco-certified, Technology pioneer",
+    uniqueFeature:
+      "Plasmacluster Ion technology kills viruses and bacteria during heating",
   },
   {
     name: "Breezair",
     slug: "breezair",
-    heritage: "Australian evaporative cooler specialist adapting for heating market",
-    advantage1: "Evaporative cooling paired with electric heating for balanced climate control",
-    advantage2: "Eco-friendly with significantly lower power consumption than refrigerated systems",
+    heritage:
+      "Australian evaporative cooler specialist adapting for heating market",
+    advantage1:
+      "Evaporative cooling paired with electric heating for balanced climate control",
+    advantage2:
+      "Eco-friendly with significantly lower power consumption than refrigerated systems",
     products: ["Evaporative Hybrid", "Eco Heat", "Climate Balance"],
-    certifications: "Australian Standard certified, Energy efficient rating, Sustainability leader",
-    uniqueFeature: "Unique hybrid evaporative-heating system perfect for dry Australian climate",
+    certifications:
+      "Australian Standard certified, Energy efficient rating, Sustainability leader",
+    uniqueFeature:
+      "Unique hybrid evaporative-heating system perfect for dry Australian climate",
   },
   {
     name: "ActronAir",
     slug: "actronair",
-    heritage: "Australian brand specializing in premium ductless heating and cooling",
+    heritage:
+      "Australian brand specializing in premium ductless heating and cooling",
     advantage1: "50 years of Australian HVAC expertise with local support",
-    advantage2: "SHX Inverter technology with smart zone control for every room",
+    advantage2:
+      "SHX Inverter technology with smart zone control for every room",
     products: ["SHX Series", "Quantum Inverter", "Zone Control Pro"],
-    certifications: "Australian made where possible, Energy efficient, Service certified",
-    uniqueFeature: "Australian brand with local service support and Australian custom technology",
+    certifications:
+      "Australian made where possible, Energy efficient, Service certified",
+    uniqueFeature:
+      "Australian brand with local service support and Australian custom technology",
   },
   {
     name: "Rinnai",
     slug: "rinnai",
     heritage: "Japanese heating pioneer specializing in gas heating since 1920",
     advantage1: "80+ years perfecting gas heating efficiency and safety",
-    advantage2: "Modulating burner technology adjusts output for maximum comfort and savings",
+    advantage2:
+      "Modulating burner technology adjusts output for maximum comfort and savings",
     products: ["OptiComfort", "Modulating Burner", "Continuous Flow"],
-    certifications: "Energy Star certified, Gas Safety certified, Industry endorsed",
-    uniqueFeature: "Modulating burner technology provides the most efficient gas heating available",
+    certifications:
+      "Energy Star certified, Gas Safety certified, Industry endorsed",
+    uniqueFeature:
+      "Modulating burner technology provides the most efficient gas heating available",
   },
   {
     name: "Vulcan",
@@ -175,28 +244,35 @@ const brandData = [
     advantage1: "Specialized in ductless wall-mounted heating for flexibility",
     advantage2: "QuickHeat technology reaches target temperature 20% faster",
     products: ["QuickHeat", "FlexiZone", "Smart Controller"],
-    certifications: "Australian Standard certified, Performance rated, Reliability proven",
-    uniqueFeature: "QuickHeat technology gets your home warm 20% faster than competitors",
+    certifications:
+      "Australian Standard certified, Performance rated, Reliability proven",
+    uniqueFeature:
+      "QuickHeat technology gets your home warm 20% faster than competitors",
   },
   {
     name: "York",
     slug: "york",
-    heritage: "American commercial HVAC leader bringing residential solutions to homes",
+    heritage:
+      "American commercial HVAC leader bringing residential solutions to homes",
     advantage1: "70+ years of commercial cooling/heating engineering expertise",
     advantage2: "Affinity Series with Sensible Control for predictable comfort",
     products: ["Affinity Series", "Sensible Control", "Performance Rated"],
     certifications: "Energy Star certified, AHRI listed, Commercial proven",
-    uniqueFeature: "Commercial HVAC engineering adapted for residential reliability",
+    uniqueFeature:
+      "Commercial HVAC engineering adapted for residential reliability",
   },
   {
     name: "Celair",
     slug: "celair",
     heritage: "Australian specialty brand focused on split system innovation",
     advantage1: "Compact design optimized for Australian apartment living",
-    advantage2: "Silent-Comfort technology with noise levels under 22dB at night setting",
+    advantage2:
+      "Silent-Comfort technology with noise levels under 22dB at night setting",
     products: ["Silent-Comfort", "Compact Ductless", "Ultra-Quiet"],
-    certifications: "Australian standard certified, Noise performance rated, Compact specialist",
-    uniqueFeature: "Silent-Comfort technology delivers whisper-quiet heating for peaceful homes",
+    certifications:
+      "Australian standard certified, Noise performance rated, Compact specialist",
+    uniqueFeature:
+      "Silent-Comfort technology delivers whisper-quiet heating for peaceful homes",
   },
 ];
 
@@ -1322,7 +1398,9 @@ export default ${componentName}BrandClient;
 async function main() {
   const baseComponentPath = path.join(projectRoot, "src/components/brands");
 
-  console.log("🚀 Adding brand-specific differentiation to all brand pages...\n");
+  console.log(
+    "🚀 Adding brand-specific differentiation to all brand pages...\n",
+  );
 
   let updated = 0;
   let failed = 0;
@@ -1333,7 +1411,7 @@ async function main() {
       const brandComponentDir = path.join(baseComponentPath, brand.slug);
       const clientComponentPath = path.join(
         brandComponentDir,
-        `${componentName}BrandClient.tsx`
+        `${componentName}BrandClient.tsx`,
       );
 
       fs.writeFileSync(clientComponentPath, generateClientComponent(brand));

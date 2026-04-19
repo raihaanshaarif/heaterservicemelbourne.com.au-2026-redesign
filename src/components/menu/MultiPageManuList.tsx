@@ -111,46 +111,14 @@ const MultiPageManuList: React.FC = () => {
         <Link href="/service-areas">Service Areas</Link>
       </li>
 
-      <li className={`dropdown ${findLocation(pagesList) ? "current" : ""}`}>
-        <a href="#">Pages</a>
-        <ul className="shadow-box">
-          {pagesList.map((item: MenuItem) => (
-            <li
-              key={item?.id}
-              className={currentPath === item?.url ? "current" : ""}
-            >
-              <Link href={item?.url}>{item?.text}</Link>
-            </li>
-          ))}
-        </ul>
+      <li className={currentPath === "/brands" ? "current" : ""}>
+        <Link href="/brands">Brands</Link>
       </li>
 
-      {/* <li className={`dropdown ${findLocation(shopList) ? "current" : ""}`}>
-        <a href="#">Shop</a>
-        <ul className="shadow-box">
-          {shopList.map((item: MenuItem) => (
-            <li
-              key={item?.id}
-              className={currentPath === item?.url ? "current" : ""}
-            >
-              <Link href={item?.url}>{item?.text}</Link>
-            </li>
-          ))}
-        </ul>
-      </li> */}
-      {/* <li className={`dropdown ${findLocation(blogList) ? "current" : ""}`}>
-        <a href="#">Blog</a>
-        <ul className="shadow-box">
-          {blogList.map((item: MenuItem) => (
-            <li
-              key={item?.id}
-              className={currentPath === item?.url ? "current" : ""}
-            >
-              <Link href={item?.url}>{item?.text}</Link>
-            </li>
-          ))}
-        </ul>
-      </li> */}
+      <li className={currentPath === "/self-care" ? "current" : ""}>
+        <Link href="/self-care">Self Care</Link>
+      </li>
+
       <li className={currentPath === "/contact" ? "current" : ""}>
         <Link href="/contact">Contact</Link>
       </li>
