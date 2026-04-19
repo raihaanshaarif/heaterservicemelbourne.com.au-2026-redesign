@@ -43,11 +43,49 @@ const checkListData: CheckItem[] = [
 const WhyChooseOne: React.FC = () => {
   const [freight, setFreight] = useState<string>("Split System ");
   const [valueRange, setValueRange] = useState<number>(500);
+  const [isLoading, setIsLoading] = useState(false);
+  const [formMessage, setFormMessage] = useState("");
   const min: number = 0;
   const max: number = 2000;
   const percentage: number = ((valueRange - min) / (max - min)) * 100;
-  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
+    setFormMessage("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      service: freight || "General Inquiry",
+      message: "",
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setFormMessage(
+          "Quote request sent successfully! We'll contact you soon.",
+        );
+        form.reset();
+        setFreight("Split System ");
+      } else {
+        setFormMessage("Failed to send request. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setFormMessage("An error occurred. Please try again later.");
+    } finally {
+      setIsLoading(false);
+    }
   };
   return (
     <section className="why-choose-one" id="contact">
@@ -60,14 +98,14 @@ const WhyChooseOne: React.FC = () => {
                 <div className="section-title__tagline-box">
                   <span className="section-title__tagline-border"></span>
                   <div className="section-title__shape-1">
-                    <i className="fas fa-plane"></i>
+                    <i className="fas fa-cogs"></i>
                   </div>
 
                   <h6 className="section-title__tagline">Why Choose us</h6>
 
                   <span className="section-title__tagline-border"></span>
                   <div className="section-title__shape-2">
-                    <i className="fas fa-plane"></i>
+                    <i className="fas fa-cogs"></i>
                   </div>
                 </div>
 
@@ -163,13 +201,6 @@ const WhyChooseOne: React.FC = () => {
                           placeholder: "Phone",
                           icon: "icon-phone-call",
                         },
-                        {
-                          name: "date",
-                          type: "date",
-                          placeholder: "Date",
-                          icon: "icon-calendar",
-                          id: "datepicker",
-                        },
                       ].map((field, index) => (
                         <div className="col-xl-6 col-lg-6 col-md-6" key={index}>
                           <div className="input-box">
@@ -177,15 +208,10 @@ const WhyChooseOne: React.FC = () => {
                               type={field.type}
                               name={field.name}
                               placeholder={field.placeholder}
-                              id={field.id}
                             />
-                            {field?.type !== "date" ? (
-                              <div className="icon">
-                                <span className={field.icon}></span>
-                              </div>
-                            ) : (
-                              ""
-                            )}
+                            <div className="icon">
+                              <span className={field.icon}></span>
+                            </div>
                           </div>
                         </div>
                       ))}
@@ -227,8 +253,16 @@ const WhyChooseOne: React.FC = () => {
                       {/* SUBMIT */}
                       <div className="col-xl-12">
                         <div className="why-choose-one__form-btn">
-                          <button type="submit" className="thm-btn">
-                            Contact Us
+                          <button
+                            type="submit"
+                            disabled={isLoading}
+                            className="thm-btn"
+                            style={{
+                              opacity: isLoading ? 0.6 : 1,
+                              cursor: isLoading ? "not-allowed" : "pointer",
+                            }}
+                          >
+                            {isLoading ? "Sending..." : "Contact Us"}
                             <span>
                               <i className="icon-right-arrow"></i>
                             </span>
@@ -237,7 +271,26 @@ const WhyChooseOne: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="result"></div>
+                    {formMessage && (
+                      <div
+                        style={{
+                          marginTop: "15px",
+                          padding: "12px 15px",
+                          borderRadius: "6px",
+                          textAlign: "center",
+                          backgroundColor: formMessage.includes("successfully")
+                            ? "#d4edda"
+                            : "#f8d7da",
+                          color: formMessage.includes("successfully")
+                            ? "#155724"
+                            : "#721c24",
+                          fontSize: "14px",
+                          lineHeight: "1.5",
+                        }}
+                      >
+                        {formMessage}
+                      </div>
+                    )}
                   </form>
                 </div>
               </FadeInAdvanced>

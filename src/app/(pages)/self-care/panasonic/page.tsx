@@ -1,18 +1,181 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import SelfCareBrandClient from "@/components/self-care/SelfCareBrandClient";
 
-export const metadata: Metadata = {
-  title: "Panasonic - Error Codes & Troubleshooting Guide Melbourne",
-  description: "Panasonic Heat Pump / Split System error codes, troubleshooting guide, and maintenance tips. Expert help for panasonic heating systems.",
-  keywords: "panasonic error codes, panasonic troubleshooting, panasonic maintenance, heat pump / split system",
-  openGraph: {
-    title: "Panasonic - Error Codes & Troubleshooting Guide",
-    description: "Complete error code database and troubleshooting guide for Panasonic heating systems.",
-    url: "https://heatingservicemelbourne.com.au/self-care/panasonic",
-  },
+const brand = {
+  "name": "Panasonic",
+  "slug": "panasonic",
+  "systemType": "",
+  "commonErrors": [
+    {
+      "code": "H1",
+      "title": "Indoor PCB Malfunction",
+      "severity": "HIGH",
+      "description": "Indoor board error",
+      "action": "Power cycle both units. Check connections.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H2",
+      "title": "Outdoor PCB Failure",
+      "severity": "HIGH",
+      "description": "Outdoor board not responding",
+      "action": "Verify power. Check wiring to outdoor.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H3",
+      "title": "Temperature Sensor Defect",
+      "severity": "HIGH",
+      "description": "Sensor malfunction",
+      "action": "Clean sensor. Reset system. Check connections.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H4",
+      "title": "Indoor Blower Error",
+      "severity": "HIGH",
+      "description": "Indoor fan not operating",
+      "action": "Clean filter. Verify power supply.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H5",
+      "title": "Outdoor Fan Failure",
+      "severity": "HIGH",
+      "description": "Condenser fan not running",
+      "action": "Remove ice/debris. Clean unit.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H6",
+      "title": "Low Refrigerant Pressure",
+      "severity": "URGENT",
+      "description": "Critical refrigerant loss",
+      "action": "Stop operation. Professional service needed.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H7",
+      "title": "High Pressure Fault",
+      "severity": "URGENT",
+      "description": "Pressure exceeds safe limits",
+      "action": "Shut down immediately. Check condenser.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H8",
+      "title": "Compressor Overload",
+      "severity": "HIGH",
+      "description": "Compressor protection triggered",
+      "action": "Allow cooling 30 mins. Check airflow.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H9",
+      "title": "Nanoe-X Generator Error",
+      "severity": "MEDIUM",
+      "description": "Ion generator malfunction",
+      "action": "Clean generator electrode. Check power.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H10",
+      "title": "Gas Charge Incorrect",
+      "severity": "URGENT",
+      "description": "Wrong refrigerant type",
+      "action": "Professional evacuation and recharge required.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H11",
+      "title": "Remote Battery Low",
+      "severity": "LOW",
+      "description": "Remote control battery depleted",
+      "action": "Replace batteries immediately.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H12",
+      "title": "Remote Signal Loss",
+      "severity": "MEDIUM",
+      "description": "Remote not communicating",
+      "action": "Replace batteries. Clean sensor.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H13",
+      "title": "Defrost System Error",
+      "severity": "MEDIUM",
+      "description": "Heating defrost malfunction",
+      "action": "Check outdoor coil. Manual defrost mode.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H14",
+      "title": "Mode Error",
+      "severity": "LOW",
+      "description": "Incorrect mode selected",
+      "action": "Verify thermostat mode setting.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H15",
+      "title": "Indoor Filter Clogged",
+      "severity": "MEDIUM",
+      "description": "Air filter requires replacement",
+      "action": "Clean or replace filter.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H16",
+      "title": "Outdoor Coil Frozen",
+      "severity": "MEDIUM",
+      "description": "Ice on outdoor unit",
+      "action": "Manual defrost or COOL mode.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H17",
+      "title": "Electrical Fault",
+      "severity": "HIGH",
+      "description": "Circuit issue detected",
+      "action": "Check breaker and wiring.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H18",
+      "title": "Refrigerant Valve Issue",
+      "severity": "HIGH",
+      "description": "Expansion valve malfunction",
+      "action": "Professional refrigeration service needed.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H19",
+      "title": "Drain Problem",
+      "severity": "HIGH",
+      "description": "Condensate drainage failure",
+      "action": "Clear drain line. Check placement.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "H20",
+      "title": "Unit Communication Error",
+      "severity": "URGENT",
+      "description": "Indoor/outdoor units not synced",
+      "action": "Power cycle both. Check cables.",
+      "serviceType": "split-system"
+    }
+  ],
+  "maintenanceTips": []
 };
 
-export default function SelfCareBrandPage() {
-  const brandData = {"name":"Panasonic","slug":"panasonic","systemType":"Heat Pump / Split System","commonErrors":[{"code":"H00","issue":"Operation code","solution":"Normal operation indicator. Check setpoint temperature if concerned."},{"code":"H01","issue":"Temperature sensor error","solution":"Check room temperature sensor for obstruction or damage."},{"code":"H02","issue":"Outdoor unit error","solution":"Verify outdoor unit power connection. Restart system."},{"code":"H03","issue":"Communication error between units","solution":"Check all wiring connections. Ensure units are powered on."}],"maintenanceTips":["Nanoe-X air purification runs during operation - very beneficial","Monthly filter cleaning recommended for optimal performance","Quiet operation is normal - extremely low noise design","Professional service annually to maintain warranty and efficiency","Cold weather operation optimized - no need to switch to second unit"]};
-  return <SelfCareBrandClient brand={brandData} />;
+export const metadata: Metadata = {
+  title: "Panasonic Error Codes & Troubleshooting | Melbourne Heating Guide",
+  description: "Comprehensive Panasonic error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
+  keywords: "Panasonic error codes, , heating troubleshooting, Melbourne",
+};
+
+export default function BrandSelfCarePage() {
+  return <SelfCareBrandClient brand={brand} />;
 }

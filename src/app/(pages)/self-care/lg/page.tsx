@@ -1,18 +1,181 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import SelfCareBrandClient from "@/components/self-care/SelfCareBrandClient";
 
-export const metadata: Metadata = {
-  title: "LG - Error Codes & Troubleshooting Guide Melbourne",
-  description: "LG Heat Pump / Split System error codes, troubleshooting guide, and maintenance tips. Expert help for lg heating systems.",
-  keywords: "lg error codes, lg troubleshooting, lg maintenance, heat pump / split system",
-  openGraph: {
-    title: "LG - Error Codes & Troubleshooting Guide",
-    description: "Complete error code database and troubleshooting guide for LG heating systems.",
-    url: "https://heatingservicemelbourne.com.au/self-care/lg",
-  },
+const brand = {
+  "name": "LG",
+  "slug": "lg",
+  "systemType": "",
+  "commonErrors": [
+    {
+      "code": "P1",
+      "title": "AI Prediction System Error",
+      "severity": "HIGH",
+      "description": "Machine learning module malfunction",
+      "action": "Restart system. Update firmware if available.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P2",
+      "title": "Indoor Sensor Fault",
+      "severity": "HIGH",
+      "description": "Indoor temperature sensor error",
+      "action": "Clean sensor. Power cycle unit.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P3",
+      "title": "Outdoor Sensor Fault",
+      "severity": "HIGH",
+      "description": "Outdoor sensor malfunction",
+      "action": "Check sensor area for debris.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P4",
+      "title": "Indoor Fan Error",
+      "severity": "HIGH",
+      "description": "Indoor blower not working",
+      "action": "Clean filter. Check power supply.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P5",
+      "title": "Outdoor Fan Error",
+      "severity": "HIGH",
+      "description": "Outdoor fan malfunction",
+      "action": "Check for blockage. Clean unit.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P6",
+      "title": "Refrigerant Leak",
+      "severity": "URGENT",
+      "description": "Low refrigerant pressure",
+      "action": "Professional service for leak detection.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P7",
+      "title": "High Discharge Pressure",
+      "severity": "URGENT",
+      "description": "Abnormal pressure detected",
+      "action": "Shut down. Check condenser.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P8",
+      "title": "Compressor Protection",
+      "severity": "HIGH",
+      "description": "Compressor overload detected",
+      "action": "Allow cooling. Check airflow.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P9",
+      "title": "Refrigerant Type Error",
+      "severity": "URGENT",
+      "description": "Incompatible refrigerant",
+      "action": "Professional evacuation and recharge.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P10",
+      "title": "High Discharge Temp",
+      "severity": "HIGH",
+      "description": "Abnormal output temperature",
+      "action": "Clean condenser. Check airflow.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P11",
+      "title": "Remote Not Responding",
+      "severity": "MEDIUM",
+      "description": "Remote control connection lost",
+      "action": "Replace batteries. Check signal.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P12",
+      "title": "Defrost Failure",
+      "severity": "MEDIUM",
+      "description": "Winter heating defrost error",
+      "action": "Check outdoor coil ice.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P13",
+      "title": "Mode Selection Error",
+      "severity": "LOW",
+      "description": "Wrong operating mode",
+      "action": "Select correct mode (COOL/HEAT).",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P14",
+      "title": "Filter Alert",
+      "severity": "MEDIUM",
+      "description": "Air filter needs replacement",
+      "action": "Replace filter immediately.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P15",
+      "title": "Outdoor Icing",
+      "severity": "MEDIUM",
+      "description": "Outdoor coil frozen",
+      "action": "Manual defrost or COOL mode.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P16",
+      "title": "Power Supply Issue",
+      "severity": "HIGH",
+      "description": "Electrical problem detected",
+      "action": "Check circuit breaker. Verify wiring.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P17",
+      "title": "TXV Malfunction",
+      "severity": "HIGH",
+      "description": "Expansion valve error",
+      "action": "Refrigeration service required.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P18",
+      "title": "Water Drainage Error",
+      "severity": "HIGH",
+      "description": "Condensate drain blocked",
+      "action": "Clear drain line immediately.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P19",
+      "title": "Noise Detection",
+      "severity": "MEDIUM",
+      "description": "Abnormal unit noise",
+      "action": "Professional inspection recommended.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "P20",
+      "title": "Network Disconnection",
+      "severity": "URGENT",
+      "description": "Unit/indoor communication lost",
+      "action": "Check control cable. Power reset.",
+      "serviceType": "split-system"
+    }
+  ],
+  "maintenanceTips": []
 };
 
-export default function SelfCareBrandPage() {
-  const brandData = {"name":"LG","slug":"lg","systemType":"Heat Pump / Split System","commonErrors":[{"code":"E1","issue":"Indoor temperature sensor error","solution":"Check sensor location and power connection. Ensure no air leaks."},{"code":"C1","issue":"Communication error","solution":"Power cycle both units. Check remote battery and connection."},{"code":"CH3","issue":"Indoor unit error","solution":"Restart system. Check power supply and circuit breaker."},{"code":"CH6","issue":"Outdoor pressure error","solution":"Professional service needed. Call licensed technician immediately."}],"maintenanceTips":["AI temperature prediction learns your preferences - accuracy improves over time","Dual Inverter Compressor provides 40% energy savings","Check smartphone app regularly for energy consumption tracking","Professional filter service recommended quarterly","Use WiFi connectivity for scheduling and remote monitoring"]};
-  return <SelfCareBrandClient brand={brandData} />;
+export const metadata: Metadata = {
+  title: "LG Error Codes & Troubleshooting | Melbourne Heating Guide",
+  description: "Comprehensive LG error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
+  keywords: "LG error codes, , heating troubleshooting, Melbourne",
+};
+
+export default function BrandSelfCarePage() {
+  return <SelfCareBrandClient brand={brand} />;
 }

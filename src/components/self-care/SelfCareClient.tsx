@@ -4,6 +4,28 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
+import Image from "next/image";
+
+// Brand logos
+import BraemerLogo from "@/assets/images/brands/Braemar.png";
+import BrivisLogo from "@/assets/images/brands/Brivis.png";
+import MitsubishiLogo from "@/assets/images/brands/mitsubishi.png";
+import PanasonicLogo from "@/assets/images/brands/Panasonic.png";
+import LGLogo from "@/assets/images/brands/Lg.png";
+import SamsungLogo from "@/assets/images/brands/Samsung.png";
+import FujitsuLogo from "@/assets/images/brands/Fujitsu.png";
+import ToshibaLogo from "@/assets/images/brands/Toshiba.png";
+import CarrierLogo from "@/assets/images/brands/Carrier.png";
+import HitachiLogo from "@/assets/images/brands/Hitachi.png";
+import HaierLogo from "@/assets/images/brands/Haier.png";
+import KadenLogo from "@/assets/images/brands/Kaden.png";
+import SharpLogo from "@/assets/images/brands/Sharp.png";
+import BreezairLogo from "@/assets/images/brands/breezeair.png";
+import ActronairLogo from "@/assets/images/brands/ActronAir.png";
+import RinnaiLogo from "@/assets/images/brands/Rinnai.png";
+import VulcanLogo from "@/assets/images/brands/Vulcan.png";
+import YorkLogo from "@/assets/images/brands/York.png";
+import CelairLogo from "@/assets/images/brands/Celair.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -54,25 +76,25 @@ const SelfCareClient: React.FC = () => {
   });
 
   const brands = [
-    { name: "Braemar", slug: "braemar", icon: "fa-fire" },
-    { name: "Brivis", slug: "brivis", icon: "fa-fire" },
-    { name: "Mitsubishi", slug: "mitsubishi-electric", icon: "fa-snowflake" },
-    { name: "Panasonic", slug: "panasonic", icon: "fa-wind" },
-    { name: "LG", slug: "lg", icon: "fa-wind" },
-    { name: "Samsung", slug: "samsung", icon: "fa-wind" },
-    { name: "Fujitsu", slug: "fujitsu", icon: "fa-snowflake" },
-    { name: "Toshiba", slug: "toshiba", icon: "fa-wind" },
-    { name: "Carrier", slug: "carrier", icon: "fa-snowflake" },
-    { name: "Hitachi", slug: "hitachi", icon: "fa-snowflake" },
-    { name: "Haier", slug: "haier", icon: "fa-wind" },
-    { name: "Kaden", slug: "kaden", icon: "fa-bolt" },
-    { name: "Sharp", slug: "sharp", icon: "fa-wind" },
-    { name: "Breezair", slug: "breezair", icon: "fa-fire" },
-    { name: "ActronAir", slug: "actronair", icon: "fa-wind" },
-    { name: "Rinnai", slug: "rinnai", icon: "fa-fire" },
-    { name: "Vulcan", slug: "vulcan", icon: "fa-wind" },
-    { name: "York", slug: "york", icon: "fa-snowflake" },
-    { name: "Celair", slug: "celair", icon: "fa-wind" },
+    { name: "Braemar", slug: "braemar", logo: BraemerLogo },
+    { name: "Brivis", slug: "brivis", logo: BrivisLogo },
+    { name: "Mitsubishi", slug: "mitsubishi-electric", logo: MitsubishiLogo },
+    { name: "Panasonic", slug: "panasonic", logo: PanasonicLogo },
+    { name: "LG", slug: "lg", logo: LGLogo },
+    { name: "Samsung", slug: "samsung", logo: SamsungLogo },
+    { name: "Fujitsu", slug: "fujitsu", logo: FujitsuLogo },
+    { name: "Toshiba", slug: "toshiba", logo: ToshibaLogo },
+    { name: "Carrier", slug: "carrier", logo: CarrierLogo },
+    { name: "Hitachi", slug: "hitachi", logo: HitachiLogo },
+    { name: "Haier", slug: "haier", logo: HaierLogo },
+    { name: "Kaden", slug: "kaden", logo: KadenLogo },
+    { name: "Sharp", slug: "sharp", logo: SharpLogo },
+    { name: "Breezair", slug: "breezair", logo: BreezairLogo },
+    { name: "ActronAir", slug: "actronair", logo: ActronairLogo },
+    { name: "Rinnai", slug: "rinnai", logo: RinnaiLogo },
+    { name: "Vulcan", slug: "vulcan", logo: VulcanLogo },
+    { name: "York", slug: "york", logo: YorkLogo },
+    { name: "Celair", slug: "celair", logo: CelairLogo },
   ];
 
   return (
@@ -81,8 +103,8 @@ const SelfCareClient: React.FC = () => {
       <section
         style={{
           background: "linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)",
-          paddingTop: "140px",
-          paddingBottom: "80px",
+          paddingTop: "80px",
+          paddingBottom: "70px",
           position: "relative",
           overflow: "hidden",
         }}
@@ -152,7 +174,10 @@ const SelfCareClient: React.FC = () => {
                   maxWidth: "650px",
                 }}
               >
-                Comprehensive self-care guides for all heating services in Melbourne. Find error codes, troubleshooting steps, and maintenance tips for hydronic heating, gas ducted systems, split systems, and emergency repairs.
+                Comprehensive self-care guides for all heating services in
+                Melbourne. Find error codes, troubleshooting steps, and
+                maintenance tips for hydronic heating, gas ducted systems, split
+                systems, and emergency repairs.
               </motion.p>
 
               <motion.div variants={itemVariants} className="d-flex gap-3">
@@ -189,7 +214,7 @@ const SelfCareClient: React.FC = () => {
       </section>
 
       {/* Safety Notice */}
-      <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
+      <section style={{ paddingTop: "50px", paddingBottom: "50px" }}>
         <div className="container">
           <motion.div
             ref={guideRef}
@@ -197,95 +222,88 @@ const SelfCareClient: React.FC = () => {
             animate={guideInView ? "visible" : "hidden"}
             variants={containerVariants}
           >
-            <div
+            <motion.div
+              variants={itemVariants}
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(220,38,38,0.1) 0%, rgba(239,68,68,0.08) 100%)",
-                border: "2px solid rgba(220,38,38,0.3)",
-                borderRadius: "12px",
-                padding: "48px 40px",
-                marginBottom: "60px",
+                  "linear-gradient(90deg, rgba(185,28,28,0.05) 0%, rgba(220,38,38,0.03) 100%)",
+                border: "1px solid rgba(185,28,28,0.15)",
+                borderRadius: "8px",
+                padding: "16px 24px",
+                marginBottom: "35px",
+                display: "flex",
+                alignItems: "center",
+                gap: "14px",
               }}
             >
-              <motion.div
-                variants={itemVariants}
-                className="d-flex gap-3 align-items-start mb-4"
+              <div
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  background:
+                    "linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                  fontSize: "16px",
+                  color: "#fff",
+                }}
               >
-                <div
+                ⚠️
+              </div>
+              <div>
+                <p
                   style={{
-                    width: "48px",
-                    height: "48px",
-                    background:
-                      "linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexShrink: 0,
-                    fontSize: "24px",
-                    color: "#fff",
+                    color: "#b91c1c",
+                    fontSize: "13px",
+                    fontWeight: 700,
+                    margin: 0,
+                    letterSpacing: "0.5px",
+                    textTransform: "uppercase",
                   }}
                 >
-                  ⚠️
-                </div>
-                <div>
-                  <h3
-                    style={{
-                      color: "#b91c1c",
-                      fontSize: "22px",
-                      fontWeight: 700,
-                      marginBottom: "16px",
-                      marginTop: 0,
-                    }}
-                  >
-                    Important Safety Notice
-                  </h3>
-                  <ul
-                    style={{
-                      color: "#666",
-                      fontSize: "15px",
-                      lineHeight: "1.8",
-                      margin: 0,
-                      paddingLeft: "24px",
-                    }}
-                  >
-                    <li style={{ marginBottom: "12px" }}>
-                      Always turn off your heating system before attempting any
-                      troubleshooting
-                    </li>
-                    <li style={{ marginBottom: "12px" }}>
-                      If you&apos;re unsure about any procedure, contact a
-                      licensed technician immediately
-                    </li>
-                    <li style={{ marginBottom: "12px" }}>
-                      Never attempt electrical repairs or refrigerant handling
-                      yourself
-                    </li>
-                    <li>
-                      Gas heating systems require professional servicing for
-                      safety compliance
-                    </li>
-                  </ul>
-                </div>
-              </motion.div>
-            </div>
+                  Safety Notice:
+                </p>
+                <p
+                  style={{
+                    color: "#6b7280",
+                    fontSize: "13px",
+                    lineHeight: "1.5",
+                    margin: 0,
+                  }}
+                >
+                  Turn off system before troubleshooting. Don&apos;t attempt
+                  electrical or refrigerant work. Contact licensed technicians
+                  for gas systems.
+                </p>
+              </div>
+            </motion.div>
 
             {/* Quick Help Guide */}
-            <div style={{ marginBottom: "60px" }}>
+            <div style={{ marginBottom: "30px" }}>
               <motion.h2
                 variants={itemVariants}
                 style={{
                   color: "#1a1a1a",
                   fontSize: "36px",
                   fontWeight: 700,
-                  marginBottom: "40px",
+                  marginBottom: "24px",
                   letterSpacing: "-1px",
                 }}
               >
                 Quick Help Guide
               </motion.h2>
 
-              <div className="row g-4">
+              <div
+                style={{
+                  display: "flex",
+                  gap: "16px",
+                  flexWrap: "nowrap",
+                  overflowX: "auto",
+                }}
+              >
                 {[
                   {
                     num: "1",
@@ -313,7 +331,14 @@ const SelfCareClient: React.FC = () => {
                     desc: "If the problem persists, contact our licensed technicians immediately",
                   },
                 ].map((step, i) => (
-                  <div key={i} className="col-md-6 col-lg-4">
+                  <div
+                    key={i}
+                    style={{
+                      flex: "0 0 calc(20% - 12.8px)",
+                      minWidth: "180px",
+                      display: "flex",
+                    }}
+                  >
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       animate={
@@ -329,6 +354,9 @@ const SelfCareClient: React.FC = () => {
                         borderRadius: "12px",
                         padding: "32px 28px",
                         textAlign: "center",
+                        display: "flex",
+                        flexDirection: "column",
+                        width: "100%",
                       }}
                     >
                       <div
@@ -378,404 +406,134 @@ const SelfCareClient: React.FC = () => {
         </div>
       </section>
 
-      {/* Service-Specific Troubleshooting */}
+      {/* CTA: Quick Call Section */}
       <section
         style={{
-          background: "linear-gradient(135deg, #f9f9f9 0%, #f5f5f5 100%)",
-          paddingTop: "100px",
-          paddingBottom: "100px",
+          background:
+            "linear-gradient(135deg, rgba(185,28,28,0.08) 0%, rgba(220,38,38,0.05) 100%)",
+          paddingTop: "50px",
+          paddingBottom: "50px",
+          borderTop: "1px solid rgba(185,28,28,0.15)",
+          borderBottom: "1px solid rgba(185,28,28,0.15)",
         }}
       >
         <div className="container">
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={containerVariants}
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="row align-items-center g-4"
           >
-            <motion.div
-              variants={itemVariants}
-              style={{ textAlign: "center", marginBottom: "60px" }}
-            >
-              <span
+            <div className="col-md-6">
+              <div>
+                <h3
+                  style={{
+                    color: "#1a1a1a",
+                    fontSize: "24px",
+                    fontWeight: 700,
+                    marginBottom: "12px",
+                  }}
+                >
+                  Urgent Issue?
+                </h3>
+                <p
+                  style={{
+                    color: "#666",
+                    fontSize: "14px",
+                    lineHeight: "1.6",
+                    margin: 0,
+                  }}
+                >
+                  Our technicians are standing by for 24/7 emergency repairs
+                </p>
+              </div>
+            </div>
+
+            <div className="col-md-6">
+              <div
                 style={{
-                  display: "inline-block",
-                  fontSize: "12px",
-                  fontWeight: 700,
-                  letterSpacing: "1.2px",
-                  textTransform: "uppercase",
-                  color: "#b91c1c",
-                  paddingBottom: "8px",
-                  borderBottom: "2px solid #b91c1c",
-                  marginBottom: "20px",
+                  display: "flex",
+                  gap: "12px",
+                  flexWrap: "wrap",
+                  justifyContent: "flex-end",
                 }}
               >
-                All Services Covered
-              </span>
-              <h2
-                style={{
-                  color: "#1a1a1a",
-                  fontSize: "44px",
-                  fontWeight: 700,
-                  marginBottom: "20px",
-                  letterSpacing: "-1px",
-                }}
-              >
-                Service-Specific Troubleshooting
-              </h2>
-              <p
-                style={{
-                  color: "#666",
-                  fontSize: "16px",
-                  maxWidth: "700px",
-                  margin: "0 auto",
-                  lineHeight: "1.8",
-                }}
-              >
-                We specialize in all major heating systems in Melbourne. Find troubleshooting tips specific to your system type below.
-              </p>
-            </motion.div>
+                <a
+                  href="tel:0405133761"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #b91c1c 0%, #ef4444 100%)",
+                    color: "#fff",
+                    fontWeight: 700,
+                    fontSize: "14px",
+                    padding: "12px 28px",
+                    borderRadius: "6px",
+                    textDecoration: "none",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "10px",
+                    boxShadow: "0 4px 12px rgba(185,28,28,0.3)",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                    e.currentTarget.style.boxShadow =
+                      "0 8px 20px rgba(185,28,28,0.4)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow =
+                      "0 4px 12px rgba(185,28,28,0.3)";
+                  }}
+                >
+                  <i
+                    className="fas fa-phone-alt"
+                    style={{ fontSize: "13px", fontFamily: "Font Awesome" }}
+                  ></i>
+                  Call Now
+                </a>
 
-            <div className="row g-4">
-              {[
-                {
-                  title: "Hydronic Heating",
-                  icon: "fa-droplet",
-                  color: "#3b82f6",
-                  issues: [
-                    "No heat from floor or radiators",
-                    "Water leaks or strange sounds",
-                    "Uneven heating distribution",
-                    "System won't turn on",
-                  ],
-                  quick: "Check water level in expansion tank and ensure pump is running. Listen for air in the pipes.",
-                  cta: "/hydronic-heating",
-                },
-                {
-                  title: "Gas Ducted Heating",
-                  icon: "fa-fire",
-                  color: "#ef5350",
-                  issues: [
-                    "Furnace not igniting",
-                    "Weak airflow from vents",
-                    "Strange burning odor",
-                    "Thermostat not responding",
-                  ],
-                  quick: "Check that gas valve is on and thermostat is set to HEAT. Replace furnace filter if dirty.",
-                  cta: "/gas-ducted-heating",
-                },
-                {
-                  title: "Split Systems",
-                  icon: "fa-wind",
-                  color: "#06b6d4",
-                  issues: [
-                    "Indoor unit not cooling/heating",
-                    "Water leaking from unit",
-                    "Error codes displayed",
-                    "Remote control not working",
-                  ],
-                  quick: "Verify indoor and outdoor units are powered on. Check if filters need cleaning. Check remote batteries.",
-                  cta: "/split-system-air-conditioning",
-                },
-                {
-                  title: "Emergency Services",
-                  icon: "fa-phone",
-                  color: "#dc2626",
-                  issues: [
-                    "Complete system failure",
-                    "Gas smell or safety concerns",
-                    "Urgent repairs needed",
-                    "After-hours breakdowns",
-                  ],
-                  quick: "Turn off your system immediately and call us. Don't attempt repairs on dangerous issues.",
-                  cta: "/emergency-services",
-                },
-              ].map((service, i) => (
-                <div key={i} className="col-md-6 col-lg-3">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1 }}
-                    style={{
-                      background: "linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.88) 100%)",
-                      border: "1px solid rgba(185,28,28,0.1)",
-                      borderRadius: "12px",
-                      padding: "32px 28px",
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      position: "relative",
-                      overflow: "hidden",
-                    }}
-                  >
-                    <div
-                      style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        height: "4px",
-                        background: service.color,
-                      }}
-                    />
-
-                    <div
-                      style={{
-                        fontSize: "40px",
-                        color: service.color,
-                        marginBottom: "16px",
-                      }}
-                    >
-                      <i
-                        className={`fas ${service.icon}`}
-                        style={{ fontFamily: "Font Awesome" }}
-                      ></i>
-                    </div>
-
-                    <h5
-                      style={{
-                        color: "#1a1a1a",
-                        fontSize: "18px",
-                        fontWeight: 700,
-                        marginBottom: "12px",
-                      }}
-                    >
-                      {service.title}
-                    </h5>
-
-                    <div style={{ marginBottom: "20px", flexGrow: 1 }}>
-                      <p
-                        style={{
-                          color: "#666",
-                          fontSize: "13px",
-                          fontWeight: 600,
-                          textTransform: "uppercase",
-                          letterSpacing: "0.5px",
-                          marginBottom: "12px",
-                          marginTop: 0,
-                        }}
-                      >
-                        Common Issues
-                      </p>
-                      <ul
-                        style={{
-                          listStyle: "none",
-                          padding: 0,
-                          margin: 0,
-                        }}
-                      >
-                        {service.issues.map((issue, j) => (
-                          <li
-                            key={j}
-                            style={{
-                              fontSize: "13px",
-                              color: "#666",
-                              marginBottom: "8px",
-                              paddingLeft: "20px",
-                              position: "relative",
-                            }}
-                          >
-                            <span
-                              style={{
-                                position: "absolute",
-                                left: 0,
-                                color: service.color,
-                                fontWeight: 700,
-                              }}
-                            >
-                              •
-                            </span>
-                            {issue}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div
-                      style={{
-                        background: "rgba(185,28,28,0.05)",
-                        border: "1px solid rgba(185,28,28,0.1)",
-                        borderRadius: "8px",
-                        padding: "12px",
-                        marginBottom: "16px",
-                        fontSize: "13px",
-                        color: "#666",
-                        lineHeight: "1.6",
-                      }}
-                    >
-                      <strong style={{ color: "#333", display: "block", marginBottom: "4px" }}>
-                        Quick Tip:
-                      </strong>
-                      {service.quick}
-                    </div>
-
-                    <Link
-                      href={service.cta}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        gap: "8px",
-                        background: "transparent",
-                        color: service.color,
-                        fontSize: "14px",
-                        fontWeight: 700,
-                        textDecoration: "none",
-                        padding: "10px",
-                        border: `1.5px solid ${service.color}`,
-                        borderRadius: "6px",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                      }}
-                      onMouseEnter={(e) => {
-                        const el = e.currentTarget;
-                        el.style.background = service.color;
-                        el.style.color = "#fff";
-                      }}
-                      onMouseLeave={(e) => {
-                        const el = e.currentTarget;
-                        el.style.background = "transparent";
-                        el.style.color = service.color;
-                      }}
-                    >
-                      Learn More
-                      <i
-                        className="fas fa-arrow-right"
-                        style={{ fontSize: "12px", fontFamily: "Font Awesome" }}
-                      ></i>
-                    </Link>
-                  </motion.div>
-                </div>
-              ))}
+                <Link
+                  href="/contact"
+                  style={{
+                    background: "transparent",
+                    color: "#b91c1c",
+                    fontWeight: 600,
+                    fontSize: "14px",
+                    padding: "12px 28px",
+                    border: "1.5px solid rgba(185,28,28,0.25)",
+                    borderRadius: "6px",
+                    textDecoration: "none",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "10px",
+                    transition: "all 0.3s ease",
+                    cursor: "pointer",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = "rgba(185,28,28,0.05)";
+                    e.currentTarget.style.borderColor = "rgba(185,28,28,0.4)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "transparent";
+                    e.currentTarget.style.borderColor = "rgba(185,28,28,0.25)";
+                  }}
+                >
+                  <i
+                    className="fas fa-calendar"
+                    style={{ fontSize: "13px", fontFamily: "Font Awesome" }}
+                  ></i>
+                  Book Service
+                </Link>
+              </div>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* 24/7 Emergency Service */}
-      <section
-        style={{
-          background:
-            "linear-gradient(135deg, rgba(185,28,28,0.1) 0%, rgba(239,68,68,0.05) 100%)",
-          paddingTop: "80px",
-          paddingBottom: "80px",
-          borderTop: "2px solid rgba(185,28,28,0.2)",
-          borderBottom: "2px solid rgba(185,28,28,0.2)",
-        }}
-      >
-        <div className="container">
-          <motion.div
-            ref={emergencyRef}
-            initial="hidden"
-            animate={emergencyInView ? "visible" : "hidden"}
-            variants={containerVariants}
-            className="text-center"
-          >
-            <motion.div
-              variants={itemVariants}
-              style={{ marginBottom: "20px" }}
-            >
-              <span
-                style={{
-                  display: "inline-block",
-                  fontSize: "12px",
-                  fontWeight: 700,
-                  letterSpacing: "1.2px",
-                  textTransform: "uppercase",
-                  color: "#b91c1c",
-                  paddingBottom: "8px",
-                  borderBottom: "2px solid #b91c1c",
-                }}
-              >
-                Available Now
-              </span>
-            </motion.div>
-
-            <motion.h2
-              variants={itemVariants}
-              style={{
-                color: "#1a1a1a",
-                fontSize: "44px",
-                fontWeight: 700,
-                marginBottom: "24px",
-                letterSpacing: "-1px",
-              }}
-            >
-              24/7 Emergency Heating Service
-            </motion.h2>
-
-            <motion.p
-              variants={itemVariants}
-              style={{
-                fontSize: "16px",
-                color: "#666",
-                marginBottom: "40px",
-                maxWidth: "700px",
-                margin: "0 auto 40px",
-                lineHeight: "1.8",
-              }}
-            >
-              System completely down? Strange noises or burning smell? Heating
-              failure in winter? Our licensed technicians are available 24/7 for
-              emergency repairs across all Melbourne suburbs.
-            </motion.p>
-
-            <motion.div
-              variants={itemVariants}
-              className="d-flex gap-3 justify-content-center flex-wrap"
-            >
-              <a
-                href="tel:0405133761"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #b91c1c 0%, #ef4444 100%)",
-                  color: "#fff",
-                  fontWeight: 700,
-                  fontSize: "16px",
-                  padding: "18px 40px",
-                  border: "none",
-                  borderRadius: "8px",
-                  boxShadow:
-                    "0 12px 32px rgba(185,28,28,0.4), 0 8px 16px rgba(0,0,0,0.2)",
-                  cursor: "pointer",
-                  textDecoration: "none",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "12px",
-                }}
-              >
-                <i
-                  className="fas fa-phone-alt"
-                  style={{ fontSize: "16px", fontFamily: "Font Awesome" }}
-                ></i>
-                Call Now: 0405 133 761
-              </a>
-              <div
-                style={{
-                  fontSize: "14px",
-                  color: "#666",
-                  marginTop: "12px",
-                  width: "100%",
-                }}
-              >
-                <i
-                  className="fas fa-check"
-                  style={{ color: "#b91c1c", marginRight: "8px" }}
-                ></i>
-                Same-Day Service Available
-                <span style={{ margin: "0 8px" }}>•</span>
-                <i
-                  className="fas fa-check"
-                  style={{ color: "#b91c1c", marginRight: "8px" }}
-                ></i>
-                Licensed Technicians
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Common Error Codes */}
-      <section style={{ paddingTop: "100px", paddingBottom: "100px" }}>
+      <section style={{ paddingTop: "70px", paddingBottom: "70px" }}>
         <div className="container">
           <motion.div
             ref={codesRef}
@@ -785,14 +543,14 @@ const SelfCareClient: React.FC = () => {
           >
             <motion.div
               variants={itemVariants}
-              style={{ textAlign: "center", marginBottom: "60px" }}
+              style={{ textAlign: "center", marginBottom: "35px" }}
             >
               <h2
                 style={{
                   color: "#1a1a1a",
                   fontSize: "44px",
                   fontWeight: 700,
-                  marginBottom: "20px",
+                  marginBottom: "16px",
                   letterSpacing: "-1px",
                 }}
               >
@@ -930,12 +688,124 @@ const SelfCareClient: React.FC = () => {
         </div>
       </section>
 
+      {/* CTA: Can't Find Error Code */}
+      <section
+        style={{
+          background: "linear-gradient(135deg, #b91c1c 0%, #dc2626 100%)",
+          paddingTop: "45px",
+          paddingBottom: "45px",
+        }}
+      >
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-center"
+          >
+            <h3
+              style={{
+                color: "#fff",
+                fontSize: "26px",
+                fontWeight: 700,
+                marginBottom: "12px",
+              }}
+            >
+              Can&apos;t Find Your Error Code?
+            </h3>
+            <p
+              style={{
+                color: "rgba(255,255,255,0.9)",
+                fontSize: "15px",
+                marginBottom: "28px",
+                maxWidth: "500px",
+                margin: "0 auto 28px",
+              }}
+            >
+              Our expert technicians can diagnose and fix any heating system
+              issue. Get instant support now.
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                gap: "12px",
+                justifyContent: "center",
+                flexWrap: "wrap",
+              }}
+            >
+              <a
+                href="tel:0405133761"
+                style={{
+                  background: "#fff",
+                  color: "#b91c1c",
+                  fontWeight: 700,
+                  fontSize: "14px",
+                  padding: "13px 32px",
+                  borderRadius: "6px",
+                  textDecoration: "none",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  boxShadow: "0 4px 16px rgba(0,0,0,0.2)",
+                  transition: "all 0.3s ease",
+                  cursor: "pointer",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
+              >
+                <i
+                  className="fas fa-phone-alt"
+                  style={{ fontSize: "13px", fontFamily: "Font Awesome" }}
+                ></i>
+                Call 0405 133 761
+              </a>
+
+              <Link
+                href="/contact"
+                style={{
+                  background: "rgba(255,255,255,0.15)",
+                  color: "#fff",
+                  fontWeight: 600,
+                  fontSize: "14px",
+                  padding: "13px 32px",
+                  border: "1.5px solid rgba(255,255,255,0.3)",
+                  borderRadius: "6px",
+                  textDecoration: "none",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  transition: "all 0.3s ease",
+                  cursor: "pointer",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "rgba(255,255,255,0.25)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255,255,255,0.15)";
+                }}
+              >
+                <i
+                  className="fas fa-headset"
+                  style={{ fontSize: "13px", fontFamily: "Font Awesome" }}
+                ></i>
+                Talk to Expert
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Brand Selector */}
       <section
         style={{
           background: "linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%)",
-          paddingTop: "100px",
-          paddingBottom: "100px",
+          paddingTop: "70px",
+          paddingBottom: "70px",
         }}
       >
         <div className="container">
@@ -947,7 +817,7 @@ const SelfCareClient: React.FC = () => {
           >
             <motion.div
               variants={itemVariants}
-              style={{ textAlign: "center", marginBottom: "60px" }}
+              style={{ textAlign: "center", marginBottom: "35px" }}
             >
               <span
                 style={{
@@ -959,7 +829,7 @@ const SelfCareClient: React.FC = () => {
                   color: "#b91c1c",
                   paddingBottom: "8px",
                   borderBottom: "2px solid #b91c1c",
-                  marginBottom: "20px",
+                  marginBottom: "16px",
                 }}
               >
                 Select Your Brand
@@ -969,7 +839,7 @@ const SelfCareClient: React.FC = () => {
                   color: "#1a1a1a",
                   fontSize: "44px",
                   fontWeight: 700,
-                  marginBottom: "20px",
+                  marginBottom: "16px",
                   letterSpacing: "-1px",
                 }}
               >
@@ -1030,15 +900,24 @@ const SelfCareClient: React.FC = () => {
                     >
                       <div
                         style={{
-                          fontSize: "32px",
-                          color: "#b91c1c",
+                          height: "60px",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
                           marginBottom: "12px",
                         }}
                       >
-                        <i
-                          className={`fas ${brand.icon}`}
-                          style={{ fontFamily: "Font Awesome" }}
-                        ></i>
+                        <Image
+                          src={brand.logo}
+                          alt={brand.name}
+                          width={80}
+                          height={60}
+                          style={{
+                            objectFit: "contain",
+                            maxWidth: "100%",
+                            maxHeight: "100%",
+                          }}
+                        />
                       </div>
                       <h5
                         style={{
@@ -1071,7 +950,7 @@ const SelfCareClient: React.FC = () => {
       </section>
 
       {/* Maintenance Tips */}
-      <section style={{ paddingTop: "100px", paddingBottom: "100px" }}>
+      <section style={{ paddingTop: "70px", paddingBottom: "70px" }}>
         <div className="container">
           <motion.div
             ref={maintenanceRef}
@@ -1081,7 +960,7 @@ const SelfCareClient: React.FC = () => {
           >
             <motion.div
               variants={itemVariants}
-              style={{ textAlign: "center", marginBottom: "60px" }}
+              style={{ textAlign: "center", marginBottom: "35px" }}
             >
               <span
                 style={{
@@ -1093,7 +972,7 @@ const SelfCareClient: React.FC = () => {
                   color: "#b91c1c",
                   paddingBottom: "8px",
                   borderBottom: "2px solid #b91c1c",
-                  marginBottom: "20px",
+                  marginBottom: "16px",
                 }}
               >
                 Preventative Care
@@ -1103,7 +982,7 @@ const SelfCareClient: React.FC = () => {
                   color: "#1a1a1a",
                   fontSize: "44px",
                   fontWeight: 700,
-                  marginBottom: "20px",
+                  marginBottom: "0px",
                   letterSpacing: "-1px",
                 }}
               >
@@ -1235,8 +1114,8 @@ const SelfCareClient: React.FC = () => {
       <section
         style={{
           background: "linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)",
-          paddingTop: "100px",
-          paddingBottom: "100px",
+          paddingTop: "70px",
+          paddingBottom: "70px",
         }}
       >
         <div className="container">
@@ -1292,6 +1171,17 @@ const SelfCareClient: React.FC = () => {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: "12px",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-3px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 16px 40px rgba(185,28,28,0.5), 0 12px 24px rgba(0,0,0,0.25)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 12px 32px rgba(185,28,28,0.4), 0 8px 16px rgba(0,0,0,0.2)";
                 }}
               >
                 <i
@@ -1315,6 +1205,15 @@ const SelfCareClient: React.FC = () => {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: "12px",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "rgba(239,68,68,0.25)";
+                  e.currentTarget.style.borderColor = "rgba(239,68,68,0.5)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(239,68,68,0.15)";
+                  e.currentTarget.style.borderColor = "rgba(239,68,68,0.3)";
                 }}
               >
                 <i

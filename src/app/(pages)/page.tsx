@@ -6,7 +6,6 @@ import ServicesOne from "@/features/home-one/ServicesOne";
 import SlidingTextOne from "@/features/home-one/SlidingTextOne";
 import TestimonialThree from "@/features/home-three/TestimonialThree";
 import BlogTwo from "@/features/home-two/BlogTwo";
-import FindTransport from "@/features/home-two/FindTransport";
 import TeamTwo from "@/features/home-two/TeamTwo";
 import React from "react";
 

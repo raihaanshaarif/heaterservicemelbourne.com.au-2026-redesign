@@ -1,18 +1,181 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import SelfCareBrandClient from "@/components/self-care/SelfCareBrandClient";
 
-export const metadata: Metadata = {
-  title: "York - Error Codes & Troubleshooting Guide Melbourne",
-  description: "York Heat Pump / Split System error codes, troubleshooting guide, and maintenance tips. Expert help for york heating systems.",
-  keywords: "york error codes, york troubleshooting, york maintenance, heat pump / split system",
-  openGraph: {
-    title: "York - Error Codes & Troubleshooting Guide",
-    description: "Complete error code database and troubleshooting guide for York heating systems.",
-    url: "https://heatingservicemelbourne.com.au/self-care/york",
-  },
+const brand = {
+  "name": "York",
+  "slug": "york",
+  "systemType": "",
+  "commonErrors": [
+    {
+      "code": "Y1",
+      "title": "Commercial Unit Error",
+      "severity": "HIGH",
+      "description": "Control board malfunction",
+      "action": "Power cycle immediately.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y2",
+      "title": "Multip Sensor Fault",
+      "severity": "HIGH",
+      "description": "Sensor error",
+      "action": "Check connections. Clean.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y3",
+      "title": "Compressor Error",
+      "severity": "HIGH",
+      "description": "Compressor not running",
+      "action": "Check supply. Verify contactor.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y4",
+      "title": "3-Phase Fan Error",
+      "severity": "HIGH",
+      "description": "Three-phase fan malfunction",
+      "action": "Check motor power supply.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y5",
+      "title": "Refrigerant Critical",
+      "severity": "URGENT",
+      "description": "Refrigerant loss",
+      "action": "Professional leak detection.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y6",
+      "title": "High Pressure",
+      "severity": "URGENT",
+      "description": "Pressure over limit",
+      "action": "Shut down. Check condenser.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y7",
+      "title": "Compressor Protection",
+      "severity": "HIGH",
+      "description": "Overload protection",
+      "action": "Cool down 30 minutes.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y8",
+      "title": "Wrong Gas",
+      "severity": "URGENT",
+      "description": "Incorrect refrigerant",
+      "action": "Professional evacuation.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y9",
+      "title": "Discharge Temp Error",
+      "severity": "HIGH",
+      "description": "Output temp abnormal",
+      "action": "Clean condenser.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y10",
+      "title": "Outside Board Error",
+      "severity": "HIGH",
+      "description": "Outdoor board fault",
+      "action": "Check power connections.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y11",
+      "title": "Remote Error",
+      "severity": "MEDIUM",
+      "description": "Remote unit error",
+      "action": "Replace batteries.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y12",
+      "title": "Commercial Defrost",
+      "severity": "MEDIUM",
+      "description": "Defrost cycle error",
+      "action": "Check outdoor ice.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y13",
+      "title": "Mode Error",
+      "severity": "LOW",
+      "description": "Wrong mode",
+      "action": "Set correct mode.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y14",
+      "title": "Commercial Filter",
+      "severity": "MEDIUM",
+      "description": "Filter clogged",
+      "action": "Replace filter.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y15",
+      "title": "Outdoor Freeze",
+      "severity": "MEDIUM",
+      "description": "Coil iced",
+      "action": "Defrost mode.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y16",
+      "title": "3-Phase Power",
+      "severity": "HIGH",
+      "description": "Power phase issue",
+      "action": "Check breaker configuration.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y17",
+      "title": "Valve Error",
+      "severity": "HIGH",
+      "description": "Valve malfunction",
+      "action": "Refrigeration service.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y18",
+      "title": "Drain Error",
+      "severity": "HIGH",
+      "description": "Drain line blocked",
+      "action": "Clear drain line.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y19",
+      "title": "Noise",
+      "severity": "MEDIUM",
+      "description": "Abnormal noise",
+      "action": "Professional inspection.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "Y20",
+      "title": "Communication Error",
+      "severity": "URGENT",
+      "description": "Units not synced",
+      "action": "Check cables. Power reset.",
+      "serviceType": "split-system"
+    }
+  ],
+  "maintenanceTips": []
 };
 
-export default function SelfCareBrandPage() {
-  const brandData = {"name":"York","slug":"york","systemType":"Heat Pump / Split System","commonErrors":[{"code":"10","issue":"Low pressure","solution":"Check for leaks. Professional service needed."},{"code":"20","issue":"High pressure","solution":"Check outdoor unit airflow. Clear any blockages."},{"code":"60","issue":"System fault","solution":"Note error code. Call professional service immediately."},{"code":"CC","issue":"Communication error","solution":"Verify all connections. Restart both units."}],"maintenanceTips":["Commercial HVAC engineering adapted for residential reliability","70+ years of commercial expertise ensures durability","Affinity Series offers Sensible Control for predictable comfort","Professional annual maintenance critical for performance","Outdoor unit placement and clearance critical for efficiency"]};
-  return <SelfCareBrandClient brand={brandData} />;
+export const metadata: Metadata = {
+  title: "York Error Codes & Troubleshooting | Melbourne Heating Guide",
+  description: "Comprehensive York error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
+  keywords: "York error codes, , heating troubleshooting, Melbourne",
+};
+
+export default function BrandSelfCarePage() {
+  return <SelfCareBrandClient brand={brand} />;
 }

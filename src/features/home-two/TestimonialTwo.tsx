@@ -67,12 +67,12 @@ export default function TestimonialTwo() {
           <div className="section-title__tagline-box">
             <span className="section-title__tagline-border"></span>
             <div className="section-title__shape-1">
-              <i className="fas fa-plane"></i>
+              <i className="fas fa-cogs"></i>
             </div>
             <h6 className="section-title__tagline">Client Feedback</h6>
             <span className="section-title__tagline-border"></span>
             <div className="section-title__shape-2">
-              <i className="fas fa-plane"></i>
+              <i className="fas fa-cogs"></i>
             </div>
           </div>
           <h3 className="section-title__title">

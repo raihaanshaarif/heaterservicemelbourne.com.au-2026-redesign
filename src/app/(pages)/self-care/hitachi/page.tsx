@@ -1,18 +1,181 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import SelfCareBrandClient from "@/components/self-care/SelfCareBrandClient";
 
-export const metadata: Metadata = {
-  title: "Hitachi - Error Codes & Troubleshooting Guide Melbourne",
-  description: "Hitachi Heat Pump / Split System error codes, troubleshooting guide, and maintenance tips. Expert help for hitachi heating systems.",
-  keywords: "hitachi error codes, hitachi troubleshooting, hitachi maintenance, heat pump / split system",
-  openGraph: {
-    title: "Hitachi - Error Codes & Troubleshooting Guide",
-    description: "Complete error code database and troubleshooting guide for Hitachi heating systems.",
-    url: "https://heatingservicemelbourne.com.au/self-care/hitachi",
-  },
+const brand = {
+  "name": "Hitachi",
+  "slug": "hitachi",
+  "systemType": "",
+  "commonErrors": [
+    {
+      "code": "R1",
+      "title": "Twin Rotary Compressor Error",
+      "severity": "HIGH",
+      "description": "Dual compressor synchronization fault",
+      "action": "Power cycle system immediately.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R2",
+      "title": "Sensor Malfunction",
+      "severity": "HIGH",
+      "description": "Temperature/pressure sensor error",
+      "action": "Check connections. Clean sensor.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R3",
+      "title": "Compressor Fault",
+      "severity": "HIGH",
+      "description": "Compressor not operating",
+      "action": "Check electrical supply. Verify power.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R4",
+      "title": "Fan Motor Error",
+      "severity": "HIGH",
+      "description": "Fan motor malfunction",
+      "action": "Check motor power and operation.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R5",
+      "title": "Low Refrigerant",
+      "severity": "URGENT",
+      "description": "Critical refrigerant loss",
+      "action": "Professional service for leak detection.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R6",
+      "title": "High Pressure Error",
+      "severity": "URGENT",
+      "description": "System pressure too high",
+      "action": "Shut down. Check condenser.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R7",
+      "title": "Temperature Sensor Fail",
+      "severity": "HIGH",
+      "description": "Sensor malfunction",
+      "action": "Clean and check wiring.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R8",
+      "title": "Outdoor Board Error",
+      "severity": "HIGH",
+      "description": "Outdoor PCB fault",
+      "action": "Check power and connections.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R9",
+      "title": "Wrong Refrigerant",
+      "severity": "URGENT",
+      "description": "Incorrect gas type detected",
+      "action": "Professional evacuation and recharge.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R10",
+      "title": "Compressor Overload",
+      "severity": "HIGH",
+      "description": "Overload protection triggered",
+      "action": "Cool for 30 mins. Check airflow.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R11",
+      "title": "Link Communication Bad",
+      "severity": "URGENT",
+      "description": "Unit communication lost",
+      "action": "Check cable. Power cycle.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R12",
+      "title": "Filter Alert",
+      "severity": "MEDIUM",
+      "description": "Air filter replacement needed",
+      "action": "Replace filter immediately.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R13",
+      "title": "Drain Blocked",
+      "severity": "HIGH",
+      "description": "Condensate drainage blocked",
+      "action": "Clear drain line immediately.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R14",
+      "title": "Defrost Malfunction",
+      "severity": "MEDIUM",
+      "description": "Heating defrost error",
+      "action": "Check outdoor coil ice.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R15",
+      "title": "Mode Error",
+      "severity": "LOW",
+      "description": "Wrong operating mode",
+      "action": "Select correct mode (COOL/HEAT).",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R16",
+      "title": "Valve Error",
+      "severity": "HIGH",
+      "description": "Expansion valve fault",
+      "action": "Refrigeration service required.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R17",
+      "title": "Power Error",
+      "severity": "HIGH",
+      "description": "Electrical supply problem",
+      "action": "Check breaker and wiring.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R18",
+      "title": "Outdoor Freeze",
+      "severity": "MEDIUM",
+      "description": "Outdoor coil frozen",
+      "action": "Defrost mode or COOL mode.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R19",
+      "title": "Remote Error",
+      "severity": "MEDIUM",
+      "description": "Remote control malfunction",
+      "action": "Replace batteries. Check signal.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "R20",
+      "title": "Abnormal Noise",
+      "severity": "MEDIUM",
+      "description": "Strange system sounds",
+      "action": "Professional inspection recommended.",
+      "serviceType": "split-system"
+    }
+  ],
+  "maintenanceTips": []
 };
 
-export default function SelfCareBrandPage() {
-  const brandData = {"name":"Hitachi","slug":"hitachi","systemType":"Heat Pump / Split System","commonErrors":[{"code":"01","issue":"Operation","solution":"Normal operation code. Unit actively heating."},{"code":"02","issue":"Air thermo sensor error","solution":"Check sensor for damage or dust accumulation."},{"code":"03","issue":"Pipe temperature sensor error","solution":"Inspect for damage or blockage. Call professional if persists."},{"code":"06","issue":"Liquid level error","solution":"Professional service needed immediately for refrigerant check."}],"maintenanceTips":["Twin Rotary Compressor reduces vibration - extremely quiet","Advanced inverter technology provides precise temperature control","Monthly filter cleaning maintains optimal efficiency","Professional annual service essential for warranty","Outdoor unit placement critical - ensure adequate clearance"]};
-  return <SelfCareBrandClient brand={brandData} />;
+export const metadata: Metadata = {
+  title: "Hitachi Error Codes & Troubleshooting | Melbourne Heating Guide",
+  description: "Comprehensive Hitachi error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
+  keywords: "Hitachi error codes, , heating troubleshooting, Melbourne",
+};
+
+export default function BrandSelfCarePage() {
+  return <SelfCareBrandClient brand={brand} />;
 }

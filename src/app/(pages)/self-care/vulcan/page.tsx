@@ -1,18 +1,181 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import SelfCareBrandClient from "@/components/self-care/SelfCareBrandClient";
 
-export const metadata: Metadata = {
-  title: "Vulcan - Error Codes & Troubleshooting Guide Melbourne",
-  description: "Vulcan Ductless / Wall-Mounted error codes, troubleshooting guide, and maintenance tips. Expert help for vulcan heating systems.",
-  keywords: "vulcan error codes, vulcan troubleshooting, vulcan maintenance, ductless / wall-mounted",
-  openGraph: {
-    title: "Vulcan - Error Codes & Troubleshooting Guide",
-    description: "Complete error code database and troubleshooting guide for Vulcan heating systems.",
-    url: "https://heatingservicemelbourne.com.au/self-care/vulcan",
-  },
+const brand = {
+  "name": "Vulcan",
+  "slug": "vulcan",
+  "systemType": "",
+  "commonErrors": [
+    {
+      "code": "V1",
+      "title": "QuickHeat Startup Error",
+      "severity": "MEDIUM",
+      "description": "Rapid heat generation system fault",
+      "action": "Allow normal warmup time. Check supply.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V2",
+      "title": "Temperature Sensor Fault",
+      "severity": "HIGH",
+      "description": "Sensor malfunction",
+      "action": "Clean sensor. Check connections.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V3",
+      "title": "Blower Motor Error",
+      "severity": "HIGH",
+      "description": "Indoor fan not running",
+      "action": "Clean filter. Verify power supply.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V4",
+      "title": "Outdoor Fan Error",
+      "severity": "HIGH",
+      "description": "Condenser fan malfunction",
+      "action": "Check obstruction. Clean unit.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V5",
+      "title": "Refrigerant Leak",
+      "severity": "URGENT",
+      "description": "Refrigerant loss detected",
+      "action": "Professional leak detection.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V6",
+      "title": "High Pressure Error",
+      "severity": "URGENT",
+      "description": "Pressure exceeds limit",
+      "action": "Shut down. Check condenser.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V7",
+      "title": "Compressor Overload",
+      "severity": "HIGH",
+      "description": "Protection triggered",
+      "action": "Cool for 30 minutes.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V8",
+      "title": "Wrong Gas Type",
+      "severity": "URGENT",
+      "description": "Incorrect refrigerant",
+      "action": "Professional service immediately.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V9",
+      "title": "Discharge Temp High",
+      "severity": "HIGH",
+      "description": "Output temperature excessive",
+      "action": "Clean condenser. Check flow.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V10",
+      "title": "Outdoor Board Fault",
+      "severity": "HIGH",
+      "description": "PCB malfunction",
+      "action": "Check power connections.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V11",
+      "title": "Remote Error",
+      "severity": "MEDIUM",
+      "description": "Remote not working",
+      "action": "Replace batteries.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V12",
+      "title": "Defrost Malfunction",
+      "severity": "MEDIUM",
+      "description": "Winter heating defrost error",
+      "action": "Check outdoor ice.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V13",
+      "title": "Mode Error",
+      "severity": "LOW",
+      "description": "Wrong mode selected",
+      "action": "Set correct mode.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V14",
+      "title": "Filter Alert",
+      "severity": "MEDIUM",
+      "description": "Filter needs replacement",
+      "action": "Replace immediately.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V15",
+      "title": "Outdoor Freeze",
+      "severity": "MEDIUM",
+      "description": "Coil icing",
+      "action": "Defrost mode.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V16",
+      "title": "Power Error",
+      "severity": "HIGH",
+      "description": "Electrical problem",
+      "action": "Check breaker.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V17",
+      "title": "Valve Error",
+      "severity": "HIGH",
+      "description": "Expansion valve fault",
+      "action": "Refrigeration service.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V18",
+      "title": "Drain Blocked",
+      "severity": "HIGH",
+      "description": "Condensate drainage failed",
+      "action": "Clear drain line.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V19",
+      "title": "Noise",
+      "severity": "MEDIUM",
+      "description": "Abnormal sounds",
+      "action": "Professional inspection.",
+      "serviceType": "split-system"
+    },
+    {
+      "code": "V20",
+      "title": "Communication Error",
+      "severity": "URGENT",
+      "description": "Units not communicating",
+      "action": "Check cables. Power cycle.",
+      "serviceType": "split-system"
+    }
+  ],
+  "maintenanceTips": []
 };
 
-export default function SelfCareBrandPage() {
-  const brandData = {"name":"Vulcan","slug":"vulcan","systemType":"Ductless / Wall-Mounted","commonErrors":[{"code":"E01","issue":"Communication error","solution":"Check remote batteries. Power cycle indoor and outdoor units."},{"code":"E02","issue":"Indoor sensor error","solution":"Verify sensor is clean and unobstructed."},{"code":"E05","issue":"Outdoor unit error","solution":"Check power supply to outdoor unit and wiring."},{"code":"E06","issue":"Compressor error","solution":"Professional service required for diagnostics."}],"maintenanceTips":["QuickHeat technology reaches comfort 20% faster","Australian innovation - 40+ years ductless heating expertise","Bi-weekly filter cleaning maintained peak performance","Wall-mounted units require clear space for air intake/exhaust","Annual professional service recommended for longevity"]};
-  return <SelfCareBrandClient brand={brandData} />;
+export const metadata: Metadata = {
+  title: "Vulcan Error Codes & Troubleshooting | Melbourne Heating Guide",
+  description: "Comprehensive Vulcan error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
+  keywords: "Vulcan error codes, , heating troubleshooting, Melbourne",
+};
+
+export default function BrandSelfCarePage() {
+  return <SelfCareBrandClient brand={brand} />;
 }

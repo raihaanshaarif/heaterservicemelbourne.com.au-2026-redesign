@@ -74,21 +74,22 @@ const FooterOne: React.FC = () => {
               <FadeInAdvanced variant={"fadeInUp"} delay={200}>
                 <div className="footer-widget__column footer-widget__usefull-link">
                   <div className="footer-widget__title-box">
-                    <h3 className="footer-widget__title">Quick Links</h3>
+                    <h3 className="footer-widget__title">Navigation</h3>
                   </div>
                   <div className="footer-widget__link-box">
                     <ul className="footer-widget__link list-unstyled">
                       <li>
-                        <Link href="/about">About Us</Link>
+                        <Link href="/about">About</Link>
+                      </li>
+
+                      <li>
+                        <Link href="/service-areas">Service Areas</Link>
                       </li>
                       <li>
-                        <Link href="/projects">Portfolio</Link>
+                        <Link href="/brands">Brands</Link>
                       </li>
                       <li>
-                        <Link href="/faqs">Help & FAQs</Link>
-                      </li>
-                      <li>
-                        <Link href="/blog">Blog</Link>
+                        <Link href="/self-care">Self Care</Link>
                       </li>
                       <li>
                         <Link href="/contact">Contact</Link>
@@ -106,16 +107,18 @@ const FooterOne: React.FC = () => {
                   </div>
                   <ul className="footer-widget__link list-unstyled">
                     <li>
-                      <Link href="/services">Hydronic Heating</Link>
+                      <Link href="/hydronic-heating">Hydronic Heating</Link>
                     </li>
                     <li>
-                      <Link href="/services">Gas Ducted Heating</Link>
+                      <Link href="/gas-ducted-heating">Gas Ducted Heating</Link>
                     </li>
                     <li>
-                      <Link href="/services">Split Systems</Link>
+                      <Link href="/split-system-air-conditioning">
+                        Split Systems
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/contact">Emergency Services</Link>
+                      <Link href="/emergency-services">Emergency Services</Link>
                     </li>
                   </ul>
                 </div>
@@ -144,8 +147,8 @@ const FooterOne: React.FC = () => {
                       </div>
                       <div className="content">
                         <p>
-                          <a href="mailto:faisalexpertise@gmail.com">
-                            faisalexpertise@gmail.com
+                          <a href="mailto:heating.melbourne@gmail.com">
+                            heating.melbourne@gmail.com
                           </a>
                         </p>
                       </div>

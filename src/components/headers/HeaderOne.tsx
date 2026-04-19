@@ -6,16 +6,14 @@ import Link from "next/link";
 import Image from "next/image";
 import MainManuList from "../menu/MainManuList";
 const HeaderOne: React.FC = () => {
-  const { setIsSearch, setIsSidebar, setIsMobileManu } = useTransportContext();
+  const { setIsSidebar, setIsMobileManu } = useTransportContext();
   const handleMobileManu = (): void => {
     setIsMobileManu((pre: boolean) => !pre);
   };
   const handleSidebar = (): void => {
     setIsSidebar((pre) => !pre);
   };
-  const handleSearch = (): void => {
-    setIsSearch((pre: boolean) => !pre);
-  };
+
   return (
     <header className="main-header">
       <div className="main-menu__top">
@@ -37,8 +35,8 @@ const HeaderOne: React.FC = () => {
               </div>
               <div className="text">
                 <p>
-                  <a href="mailto:faisalexpertise@gmail.com">
-                    faisalexpertise@gmail.com
+                  <a href="mailto:heating.melbourne@gmail.com">
+                    heating.melbourne@gmail.com
                   </a>
                 </p>
               </div>

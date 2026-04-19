@@ -4,11 +4,6 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { MenuItem } from "@/contents/navmenu/navType";
 import {
-  blogList,
-  homeList,
-  pagesList,
-  servicesList,
-  shopList,
   hydronicList,
   gasDuctedList,
   splitSystemList,

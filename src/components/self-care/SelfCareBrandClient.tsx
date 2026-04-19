@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
@@ -33,8 +33,11 @@ interface BrandData {
   systemType: string;
   commonErrors: Array<{
     code: string;
-    issue: string;
-    solution: string;
+    title: string;
+    severity: string;
+    description: string;
+    action: string;
+    serviceType: string;
   }>;
   maintenanceTips: string[];
 }
@@ -42,6 +45,28 @@ interface BrandData {
 interface Props {
   brand: BrandData;
 }
+
+const getSeverityColor = (severity: string) => {
+  switch (severity) {
+    case "URGENT":
+      return "#dc2626";
+    case "HIGH":
+      return "#ea580c";
+    case "MEDIUM":
+      return "#eab308";
+    case "LOW":
+      return "#16a34a";
+    default:
+      return "#666";
+  }
+};
+
+const SERVICE_TYPES = {
+  "gas-ducted": "Gas Ducted Heating",
+  "split-system": "Split System Air Conditioning",
+  hydronic: "Hydronic Heating",
+  "ai-heat-pump": "AI Heat Pump",
+};
 
 const SelfCareBrandClient: React.FC<Props> = ({ brand }) => {
   const { ref: heroRef, inView: heroInView } = useInView({
@@ -110,24 +135,6 @@ const SelfCareBrandClient: React.FC<Props> = ({ brand }) => {
               Back to Self-Care Guide
             </Link>
 
-            <motion.div variants={itemVariants}>
-              <span
-                style={{
-                  display: "inline-block",
-                  fontSize: "13px",
-                  fontWeight: 700,
-                  letterSpacing: "1.2px",
-                  textTransform: "uppercase",
-                  color: "#ef4444",
-                  paddingBottom: "8px",
-                  borderBottom: "2px solid #ef4444",
-                  marginBottom: "20px",
-                }}
-              >
-                {brand.systemType}
-              </span>
-            </motion.div>
-
             <motion.h1
               variants={itemVariants}
               style={{
@@ -153,8 +160,8 @@ const SelfCareBrandClient: React.FC<Props> = ({ brand }) => {
               }}
             >
               Complete error code database and troubleshooting guide for{" "}
-              {brand.name} {brand.systemType} systems. Find solutions to common
-              issues or contact our experts.
+              {brand.name} systems. Find solutions to common issues or contact
+              our experts.
             </motion.p>
 
             <motion.div variants={itemVariants} className="d-flex gap-3">
@@ -211,7 +218,7 @@ const SelfCareBrandClient: React.FC<Props> = ({ brand }) => {
                   letterSpacing: "-1px",
                 }}
               >
-                Common Error Codes & Troubleshooting
+                {brand.name} Error Codes
               </h2>
               <p
                 style={{
@@ -219,17 +226,18 @@ const SelfCareBrandClient: React.FC<Props> = ({ brand }) => {
                   fontSize: "16px",
                   lineHeight: "1.8",
                   maxWidth: "700px",
+                  marginBottom: "40px",
                 }}
               >
-                Find your error code below and follow the troubleshooting steps.
-                If the issue persists after attempting these solutions, contact
-                our licensed technicians.
+                Complete error code reference for {brand.name} systems. Each
+                error code includes severity level, description, and
+                troubleshooting steps.
               </p>
             </motion.div>
 
-            <div className="row g-4">
+            <div className="row g-3">
               {brand.commonErrors.map((error, i) => (
-                <div key={i} className="col-md-6">
+                <div key={i} className="col-lg-4 col-md-6">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={
@@ -239,87 +247,128 @@ const SelfCareBrandClient: React.FC<Props> = ({ brand }) => {
                     }
                     transition={{ delay: i * 0.08 }}
                     style={{
-                      background:
-                        "linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.88) 100%)",
-                      border: "1px solid rgba(185,28,28,0.1)",
-                      borderRadius: "12px",
-                      padding: "36px 32px",
+                      background: "#fff",
+                      border: "1px solid #e5e7eb",
+                      borderRadius: "8px",
+                      padding: "24px",
                       position: "relative",
+                      height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
+                      transition: "all 0.3s ease",
+                      cursor: "pointer",
                     }}
                   >
+                    {/* Error Code Badge */}
                     <div
                       style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        height: "3px",
-                        background:
-                          "linear-gradient(90deg, #b91c1c 0%, #ef4444 100%)",
-                        borderTopLeftRadius: "12px",
-                        borderTopRightRadius: "12px",
-                      }}
-                    />
-
-                    <div
-                      style={{
-                        background:
-                          "linear-gradient(135deg, #b91c1c 0%, #ef4444 100%)",
-                        color: "#fff",
-                        fontSize: "24px",
-                        fontWeight: 700,
-                        padding: "12px 24px",
-                        borderRadius: "6px",
-                        display: "inline-block",
-                        marginBottom: "20px",
-                      }}
-                    >
-                      {error.code}
-                    </div>
-
-                    <h5
-                      style={{
-                        color: "#1a1a1a",
-                        fontSize: "18px",
-                        fontWeight: 700,
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
                         marginBottom: "16px",
                       }}
                     >
-                      {error.issue}
+                      <div
+                        style={{
+                          background: "#b91c1c",
+                          color: "#fff",
+                          fontSize: "16px",
+                          fontWeight: 700,
+                          padding: "8px 16px",
+                          borderRadius: "4px",
+                        }}
+                      >
+                        {error.code}
+                      </div>
+                      <span
+                        style={{
+                          background: getSeverityColor(error.severity),
+                          color: "#fff",
+                          fontSize: "10px",
+                          fontWeight: 700,
+                          padding: "4px 10px",
+                          borderRadius: "3px",
+                        }}
+                      >
+                        {error.severity}
+                      </span>
+                    </div>
+
+                    {/* Title */}
+                    <h5
+                      style={{
+                        color: "#1a1a1a",
+                        fontSize: "16px",
+                        fontWeight: 700,
+                        marginBottom: "10px",
+                        lineHeight: "1.4",
+                      }}
+                    >
+                      {error.title}
                     </h5>
 
+                    {/* Description */}
+                    <p
+                      style={{
+                        color: "#6b7280",
+                        fontSize: "13px",
+                        lineHeight: "1.6",
+                        marginBottom: "12px",
+                        flex: 1,
+                      }}
+                    >
+                      {error.description}
+                    </p>
+
+                    {/* Action */}
                     <div style={{ marginBottom: "16px" }}>
-                      <h6
-                        style={{
-                          color: "#666",
-                          fontSize: "13px",
-                          fontWeight: 700,
-                          textTransform: "uppercase",
-                          letterSpacing: "0.5px",
-                          marginBottom: "8px",
-                        }}
-                      >
-                        <i
-                          className="fas fa-wrench"
-                          style={{
-                            color: "#b91c1c",
-                            marginRight: "8px",
-                            fontFamily: "Font Awesome",
-                          }}
-                        ></i>
-                        Troubleshooting Steps
-                      </h6>
                       <p
                         style={{
-                          color: "#666",
-                          fontSize: "14px",
-                          lineHeight: "1.8",
+                          color: "#374151",
+                          fontSize: "13px",
+                          lineHeight: "1.6",
                           margin: 0,
+                          fontWeight: 500,
                         }}
                       >
-                        {error.solution}
+                        {error.action}
                       </p>
                     </div>
+
+                    {/* Call Button */}
+                    <a
+                      href="tel:0405133761"
+                      style={{
+                        background: "#b91c1c",
+                        color: "#fff",
+                        fontWeight: 600,
+                        fontSize: "13px",
+                        padding: "10px 16px",
+                        border: "none",
+                        borderRadius: "6px",
+                        textDecoration: "none",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "8px",
+                        transition: "all 0.3s ease",
+                        cursor: "pointer",
+                        marginTop: "auto",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = "#991818";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = "#b91c1c";
+                      }}
+                    >
+                      <i
+                        className="fas fa-phone-alt"
+                        style={{ fontSize: "12px", fontFamily: "Font Awesome" }}
+                      ></i>
+                      Call Now
+                    </a>
                   </motion.div>
                 </div>
               ))}

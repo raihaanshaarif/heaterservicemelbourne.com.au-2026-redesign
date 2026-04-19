@@ -178,12 +178,12 @@ const AboutOne: React.FC = () => {
                 <div className="section-title__tagline-box">
                   <span className="section-title__tagline-border"></span>
                   <div className="section-title__shape-1">
-                    <i className="fas fa-plane"></i>
+                    <i className="fas fa-cogs"></i>
                   </div>
                   <h6 className="section-title__tagline">ABOUT US</h6>
                   <span className="section-title__tagline-border"></span>
                   <div className="section-title__shape-2">
-                    <i className="fas fa-plane"></i>
+                    <i className="fas fa-cogs"></i>
                   </div>
                 </div>
                 <h3 className="section-title__title">
@@ -276,12 +276,12 @@ const AboutOne: React.FC = () => {
                   <div className="about-one__author-details">
                     <div className="about-one__author-img-box">
                       <div className="about-one__author-img">
-                        <Image
+                        {/* <Image
                           src={AboutOneAuthorImg1}
                           width={72}
                           height={72}
                           alt="about"
-                        />
+                        /> */}
                       </div>
                     </div>
                     <div className="about-one__author-content">
@@ -289,14 +289,14 @@ const AboutOne: React.FC = () => {
                       <p>Founder & Specialist</p>
                     </div>
                   </div>
-                  <div className="about-one__author-sign">
+                  {/* <div className="about-one__author-sign">
                     <Image
                       src={AboutOneAuthorSign}
                       width={86}
                       height={70}
                       alt="about"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
