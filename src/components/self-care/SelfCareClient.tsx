@@ -152,10 +152,7 @@ const SelfCareClient: React.FC = () => {
                   maxWidth: "650px",
                 }}
               >
-                Having trouble with your heating system? Find error codes,
-                troubleshooting guides, and maintenance tips for all major
-                heating brands. Our comprehensive error code database covers gas
-                ducted heating, hydronic systems, and heat pumps.
+                Comprehensive self-care guides for all heating services in Melbourne. Find error codes, troubleshooting steps, and maintenance tips for hydronic heating, gas ducted systems, split systems, and emergency repairs.
               </motion.p>
 
               <motion.div variants={itemVariants} className="d-flex gap-3">
@@ -376,6 +373,279 @@ const SelfCareClient: React.FC = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Service-Specific Troubleshooting */}
+      <section
+        style={{
+          background: "linear-gradient(135deg, #f9f9f9 0%, #f5f5f5 100%)",
+          paddingTop: "100px",
+          paddingBottom: "100px",
+        }}
+      >
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={containerVariants}
+          >
+            <motion.div
+              variants={itemVariants}
+              style={{ textAlign: "center", marginBottom: "60px" }}
+            >
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "12px",
+                  fontWeight: 700,
+                  letterSpacing: "1.2px",
+                  textTransform: "uppercase",
+                  color: "#b91c1c",
+                  paddingBottom: "8px",
+                  borderBottom: "2px solid #b91c1c",
+                  marginBottom: "20px",
+                }}
+              >
+                All Services Covered
+              </span>
+              <h2
+                style={{
+                  color: "#1a1a1a",
+                  fontSize: "44px",
+                  fontWeight: 700,
+                  marginBottom: "20px",
+                  letterSpacing: "-1px",
+                }}
+              >
+                Service-Specific Troubleshooting
+              </h2>
+              <p
+                style={{
+                  color: "#666",
+                  fontSize: "16px",
+                  maxWidth: "700px",
+                  margin: "0 auto",
+                  lineHeight: "1.8",
+                }}
+              >
+                We specialize in all major heating systems in Melbourne. Find troubleshooting tips specific to your system type below.
+              </p>
+            </motion.div>
+
+            <div className="row g-4">
+              {[
+                {
+                  title: "Hydronic Heating",
+                  icon: "fa-droplet",
+                  color: "#3b82f6",
+                  issues: [
+                    "No heat from floor or radiators",
+                    "Water leaks or strange sounds",
+                    "Uneven heating distribution",
+                    "System won't turn on",
+                  ],
+                  quick: "Check water level in expansion tank and ensure pump is running. Listen for air in the pipes.",
+                  cta: "/hydronic-heating",
+                },
+                {
+                  title: "Gas Ducted Heating",
+                  icon: "fa-fire",
+                  color: "#ef5350",
+                  issues: [
+                    "Furnace not igniting",
+                    "Weak airflow from vents",
+                    "Strange burning odor",
+                    "Thermostat not responding",
+                  ],
+                  quick: "Check that gas valve is on and thermostat is set to HEAT. Replace furnace filter if dirty.",
+                  cta: "/gas-ducted-heating",
+                },
+                {
+                  title: "Split Systems",
+                  icon: "fa-wind",
+                  color: "#06b6d4",
+                  issues: [
+                    "Indoor unit not cooling/heating",
+                    "Water leaking from unit",
+                    "Error codes displayed",
+                    "Remote control not working",
+                  ],
+                  quick: "Verify indoor and outdoor units are powered on. Check if filters need cleaning. Check remote batteries.",
+                  cta: "/split-system-air-conditioning",
+                },
+                {
+                  title: "Emergency Services",
+                  icon: "fa-phone",
+                  color: "#dc2626",
+                  issues: [
+                    "Complete system failure",
+                    "Gas smell or safety concerns",
+                    "Urgent repairs needed",
+                    "After-hours breakdowns",
+                  ],
+                  quick: "Turn off your system immediately and call us. Don't attempt repairs on dangerous issues.",
+                  cta: "/emergency-services",
+                },
+              ].map((service, i) => (
+                <div key={i} className="col-md-6 col-lg-3">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.1 }}
+                    style={{
+                      background: "linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.88) 100%)",
+                      border: "1px solid rgba(185,28,28,0.1)",
+                      borderRadius: "12px",
+                      padding: "32px 28px",
+                      height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      position: "relative",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        height: "4px",
+                        background: service.color,
+                      }}
+                    />
+
+                    <div
+                      style={{
+                        fontSize: "40px",
+                        color: service.color,
+                        marginBottom: "16px",
+                      }}
+                    >
+                      <i
+                        className={`fas ${service.icon}`}
+                        style={{ fontFamily: "Font Awesome" }}
+                      ></i>
+                    </div>
+
+                    <h5
+                      style={{
+                        color: "#1a1a1a",
+                        fontSize: "18px",
+                        fontWeight: 700,
+                        marginBottom: "12px",
+                      }}
+                    >
+                      {service.title}
+                    </h5>
+
+                    <div style={{ marginBottom: "20px", flexGrow: 1 }}>
+                      <p
+                        style={{
+                          color: "#666",
+                          fontSize: "13px",
+                          fontWeight: 600,
+                          textTransform: "uppercase",
+                          letterSpacing: "0.5px",
+                          marginBottom: "12px",
+                          marginTop: 0,
+                        }}
+                      >
+                        Common Issues
+                      </p>
+                      <ul
+                        style={{
+                          listStyle: "none",
+                          padding: 0,
+                          margin: 0,
+                        }}
+                      >
+                        {service.issues.map((issue, j) => (
+                          <li
+                            key={j}
+                            style={{
+                              fontSize: "13px",
+                              color: "#666",
+                              marginBottom: "8px",
+                              paddingLeft: "20px",
+                              position: "relative",
+                            }}
+                          >
+                            <span
+                              style={{
+                                position: "absolute",
+                                left: 0,
+                                color: service.color,
+                                fontWeight: 700,
+                              }}
+                            >
+                              •
+                            </span>
+                            {issue}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div
+                      style={{
+                        background: "rgba(185,28,28,0.05)",
+                        border: "1px solid rgba(185,28,28,0.1)",
+                        borderRadius: "8px",
+                        padding: "12px",
+                        marginBottom: "16px",
+                        fontSize: "13px",
+                        color: "#666",
+                        lineHeight: "1.6",
+                      }}
+                    >
+                      <strong style={{ color: "#333", display: "block", marginBottom: "4px" }}>
+                        Quick Tip:
+                      </strong>
+                      {service.quick}
+                    </div>
+
+                    <Link
+                      href={service.cta}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "8px",
+                        background: "transparent",
+                        color: service.color,
+                        fontSize: "14px",
+                        fontWeight: 700,
+                        textDecoration: "none",
+                        padding: "10px",
+                        border: `1.5px solid ${service.color}`,
+                        borderRadius: "6px",
+                        transition: "all 0.3s ease",
+                        cursor: "pointer",
+                      }}
+                      onMouseEnter={(e) => {
+                        const el = e.currentTarget;
+                        el.style.background = service.color;
+                        el.style.color = "#fff";
+                      }}
+                      onMouseLeave={(e) => {
+                        const el = e.currentTarget;
+                        el.style.background = "transparent";
+                        el.style.color = service.color;
+                      }}
+                    >
+                      Learn More
+                      <i
+                        className="fas fa-arrow-right"
+                        style={{ fontSize: "12px", fontFamily: "Font Awesome" }}
+                      ></i>
+                    </Link>
+                  </motion.div>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>
