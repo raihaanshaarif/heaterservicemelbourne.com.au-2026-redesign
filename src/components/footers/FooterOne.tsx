@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { trackPhoneClick } from "@/lib/gtm";
 import FooterLogo from "@/assets/images/resources/footer-logo.png";
 import FadeInAdvanced from "../elements/FadeInAdvanced";
 import Link from "next/link";
@@ -21,7 +22,10 @@ const FooterOne: React.FC = () => {
                   If you need heating & cooling services, technical support,{" "}
                   <br /> or have any other questions, we’re here to help.
                 </h3>
-                <Link href="tel:0405133761">
+                <Link
+                  href="tel:0405133761"
+                  onClick={() => trackPhoneClick("footer_cta")}
+                >
                   <button className="footer-widget__newsletter-btn thm-btn">
                     0405 133 761
                     <span>
@@ -137,7 +141,12 @@ const FooterOne: React.FC = () => {
                       </div>
                       <div className="content">
                         <p>
-                          <a href="tel:0405133761">0405 133 761</a>
+                          <a
+                            href="tel:0405133761"
+                            onClick={() => trackPhoneClick("footer_contact")}
+                          >
+                            0405 133 761
+                          </a>
                         </p>
                       </div>
                     </li>

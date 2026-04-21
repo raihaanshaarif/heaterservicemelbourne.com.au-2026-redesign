@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Breezair Services Melbourne | Expert Technicians",
     description: "Professional Breezair system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/breezair",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function BreezairPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Breezair Specialists",
+            name: "Heater Service Melbourne - Breezair Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/breezair.png",
             description: "Expert Breezair heating system services in Melbourne",
             telephone: "+61405133761",

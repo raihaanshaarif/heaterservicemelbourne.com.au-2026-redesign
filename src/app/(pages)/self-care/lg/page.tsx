@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "LG Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive LG error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "LG error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive LG error code database with troubleshooting guides for split system and ducted reverse cycle air conditioning in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "LG error codes, LG troubleshooting, LG split system and ducted reverse cycle Melbourne, LG heater fault codes, LG error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/lg",
+  },
+  openGraph: {
+    title: "LG Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your LG split system and ducted reverse cycle system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/lg",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

@@ -60,7 +60,7 @@ export default function ServicesOne() {
                         src={service?.image}
                         width={308}
                         height={256}
-                        alt={service?.title}
+                        alt={`${service?.title} service in Melbourne - Professional heating solutions`}
                       />
                     </div>
                     <div className="services-one__icon">

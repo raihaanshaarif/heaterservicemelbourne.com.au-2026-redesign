@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Braemar Services Melbourne | Expert Technicians",
     description: "Professional Braemar system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/braemar",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function BraemarPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Braemar Specialists",
+            name: "Heater Service Melbourne - Braemar Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/braemar.png",
             description: "Expert Braemar heating system services in Melbourne",
             telephone: "+61405133761",

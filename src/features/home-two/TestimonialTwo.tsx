@@ -119,7 +119,7 @@ export default function TestimonialTwo() {
                           src={TestimonialTwoShape1}
                           width={163}
                           height={164}
-                          alt="shape"
+                          alt="Testimonial design element - Client feedback for heating services"
                         />
                       </div>
                       <div className="testimonial-two__quote">
@@ -141,7 +141,7 @@ export default function TestimonialTwo() {
                             src={item.clientImage}
                             width={65}
                             height={65}
-                            alt={item.name}
+                            alt={`${item.name} - ${item.designation}, heating service customer review`}
                           />
                         </div>
                         <div className="testimonial-two__client-content">

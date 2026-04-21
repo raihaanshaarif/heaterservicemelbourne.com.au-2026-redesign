@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "ActronAir Services Melbourne | Expert Technicians",
     description: "Professional ActronAir system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/actronair",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function ActronAirPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - ActronAir Specialists",
+            name: "Heater Service Melbourne - ActronAir Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/actronair.png",
             description: "Expert ActronAir heating system services in Melbourne",
             telephone: "+61405133761",

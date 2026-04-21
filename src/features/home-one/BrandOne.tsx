@@ -72,7 +72,7 @@ export default function BrandOne() {
                           src={brand?.image}
                           width={110}
                           height={100}
-                          alt="Brand Image"
+                          alt={`Heating system brand partner - Professional HVAC solution provider`}
                         />
                       </Link>
                     </div>

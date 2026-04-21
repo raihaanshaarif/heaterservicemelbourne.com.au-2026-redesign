@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "Kaden Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive Kaden error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "Kaden error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive Kaden error code database with troubleshooting guides for split systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "Kaden error codes, Kaden troubleshooting, Kaden split system Melbourne, Kaden heater fault codes, Kaden error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/kaden",
+  },
+  openGraph: {
+    title: "Kaden Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your Kaden split system system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/kaden",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

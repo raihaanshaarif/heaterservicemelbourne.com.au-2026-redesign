@@ -14,6 +14,8 @@ export const metadata: Metadata = {
       "Expert Bonaire installation, repair & maintenance. 24/7 emergency service available.",
     url: "https://heaterservicemelbourne.com.au/brands/bonaire",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
   },
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/brands/bonaire",

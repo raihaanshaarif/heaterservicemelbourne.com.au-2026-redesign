@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "Breezair Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive Breezair error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "Breezair error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive Breezair error code database with troubleshooting guides for evaporative cooling systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "Breezair error codes, Breezair troubleshooting, Breezair evaporative cooling Melbourne, Breezair heater fault codes, Breezair error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/breezair",
+  },
+  openGraph: {
+    title: "Breezair Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your Breezair evaporative cooling system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/breezair",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Vulcan Services Melbourne | Expert Technicians",
     description: "Professional Vulcan system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/vulcan",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function VulcanPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Vulcan Specialists",
+            name: "Heater Service Melbourne - Vulcan Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/vulcan.png",
             description: "Expert Vulcan heating system services in Melbourne",
             telephone: "+61405133761",

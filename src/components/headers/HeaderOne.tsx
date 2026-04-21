@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { trackPhoneClick } from "@/lib/gtm";
 import logoOne from "@/assets/images/resources/logo-1.png";
 import useTransportContext from "../context/useTransportContext";
 import Link from "next/link";
@@ -121,7 +122,11 @@ const HeaderOne: React.FC = () => {
                 </a>
               </div>
               <div className="main-menu__btn-box">
-                <Link href="tel:0405133761" className="thm-btn">
+                <Link
+                  href="tel:0405133761"
+                  className="thm-btn"
+                  onClick={() => trackPhoneClick("header_cta")}
+                >
                   0405 133 761
                   <span>
                     <i className="icon-right-arrow"></i>

@@ -35,7 +35,7 @@ const AboutOne: React.FC = () => {
                     <Image
                       src={AboutOneImg1}
                       style={{ width: "100%", height: "auto" }}
-                      alt=""
+                      alt="About Heating Service Melbourne - Professional HVAC team and hydronic heating expertise"
                     />
                   </div>
                   <div className="about-one__review-and-experience-box">
@@ -112,7 +112,7 @@ const AboutOne: React.FC = () => {
                       src={AboutOneShape1}
                       width={98}
                       height={110}
-                      alt="about"
+                      alt="Decorative design element for about section - Heating service Melbourne"
                     />
                   </div>
                   <div className="about-one__shape-2">
@@ -120,7 +120,7 @@ const AboutOne: React.FC = () => {
                       src={AboutOneShape2}
                       width={131}
                       height={115}
-                      alt="about"
+                      alt="Decorative design element for about section - HVAC expertise"
                     />
                   </div>
                 </div>

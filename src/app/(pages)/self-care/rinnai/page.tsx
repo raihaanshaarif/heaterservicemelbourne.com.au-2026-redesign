@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "Rinnai Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive Rinnai error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "Rinnai error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive Rinnai error code database with troubleshooting guides for gas ducted heating systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "Rinnai error codes, Rinnai troubleshooting, Rinnai gas ducted heating Melbourne, Rinnai heater fault codes, Rinnai error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/rinnai",
+  },
+  openGraph: {
+    title: "Rinnai Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your Rinnai gas ducted heating system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/rinnai",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "Braemar Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive Braemar error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "Braemar error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive Braemar error code database with troubleshooting guides for gas ducted heating systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "Braemar error codes, Braemar troubleshooting, Braemar gas ducted heating Melbourne, Braemar heater fault codes, Braemar error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/braemar",
+  },
+  openGraph: {
+    title: "Braemar Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your Braemar gas ducted heating system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/braemar",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

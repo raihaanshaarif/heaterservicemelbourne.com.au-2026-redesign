@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "York Services Melbourne | Expert Technicians",
     description: "Professional York system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/york",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function YorkPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - York Specialists",
+            name: "Heater Service Melbourne - York Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/york.png",
             description: "Expert York heating system services in Melbourne",
             telephone: "+61405133761",

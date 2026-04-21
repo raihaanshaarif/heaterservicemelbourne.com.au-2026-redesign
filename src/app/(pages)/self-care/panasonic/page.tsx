@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "Panasonic Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive Panasonic error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "Panasonic error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive Panasonic error code database with troubleshooting guides for split system and ducted air conditioning in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "Panasonic error codes, Panasonic troubleshooting, Panasonic split system and ducted Melbourne, Panasonic heater fault codes, Panasonic error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/panasonic",
+  },
+  openGraph: {
+    title: "Panasonic Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your Panasonic split system and ducted system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/panasonic",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

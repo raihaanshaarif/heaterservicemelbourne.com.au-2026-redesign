@@ -14,10 +14,20 @@ const BannerOne: React.FC = () => {
     <section className="banner-one" id="home">
       <div className="banner-one__pattern"></div>
       <div className="banner-one__img">
-        <Image src={BannerOneImg1} width={800} height={500} alt="Image" />
+        <Image
+          src={BannerOneImg1}
+          width={800}
+          height={500}
+          alt="Professional heating service technician in Melbourne - HVAC expert"
+        />
       </div>
       <div className="banner-one__shape-3 float-bob-y">
-        <Image src={BannerOneShape3} width={286} height={270} alt="Image" />
+        <Image
+          src={BannerOneShape3}
+          width={286}
+          height={270}
+          alt="Decorative heating service design element"
+        />
       </div>
       <div className="banner-one__line-shpae1"></div>
       <div className="banner-one__line-shpae2"></div>
@@ -25,14 +35,16 @@ const BannerOne: React.FC = () => {
         <div className="banner-one__inner">
           <div className="banner-one__content-box">
             <p className="banner-one__sub-title">
-              Expert Heating Service & Installation in Melbourne
+              Professional Heating & Hydronic Services in Melbourne
             </p>
-            <h2 className="banner-one__title">
-              Heater Service <br />
+            <h1 className="banner-one__title">
+              {" "}
+              Heating & <br />
+              Hydronic Repairs <br />
               <TypingEffect
-                strings={["Repair", "Maintenance", "Emergency Repair"]}
+                strings={["Service", "Repair", "Maintenance", "24/7 Emergency"]}
               />
-            </h2>
+            </h1>
             <p className="banner-one__text">
               Expert heating solutions in Melbourne. We specialize in Hydronic,{" "}
               <br /> Gas Ducted, and Split Systems for your home and office.

@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "Hitachi Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive Hitachi error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "Hitachi error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive Hitachi error code database with troubleshooting guides for split system and ducted air conditioning in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "Hitachi error codes, Hitachi troubleshooting, Hitachi split system and ducted Melbourne, Hitachi heater fault codes, Hitachi error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/hitachi",
+  },
+  openGraph: {
+    title: "Hitachi Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your Hitachi split system and ducted system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/hitachi",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

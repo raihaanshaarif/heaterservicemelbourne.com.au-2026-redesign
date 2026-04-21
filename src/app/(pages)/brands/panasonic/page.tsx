@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Panasonic Services Melbourne | Expert Technicians",
     description: "Professional Panasonic system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/panasonic",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function PanasonicPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Panasonic Specialists",
+            name: "Heater Service Melbourne - Panasonic Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/panasonic.png",
             description: "Expert Panasonic heating system services in Melbourne",
             telephone: "+61405133761",

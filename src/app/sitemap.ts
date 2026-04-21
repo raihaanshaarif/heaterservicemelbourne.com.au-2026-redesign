@@ -3,7 +3,7 @@
 
 import { MetadataRoute } from "next";
 
-// All Melbourne suburbs for dynamic suburb pages
+// All Melbourne suburbs for dynamic suburb pages (matches filesystem directories)
 const MELBOURNE_SUBURBS = [
   "armadale",
   "ashwood",
@@ -31,7 +31,8 @@ const MELBOURNE_SUBURBS = [
   "brighton-east",
   "broadmeadows",
   "bundoora",
-  "burwood",
+  "burwood-3125",
+  "burwood-chadstone",
   "burwood-east",
   "caulfield",
   "chadstone",
@@ -62,6 +63,92 @@ const MELBOURNE_SUBURBS = [
   "glen-waverley",
   "greensborough",
   "hallam",
+  "hampton",
+  "hampton-park",
+  "heatherton",
+  "highett",
+  "hillside",
+  "hoppers-crossing",
+  "keilor",
+  "keilor-downs",
+  "keilor-lodge",
+  "kings-park",
+  "knoxfield",
+  "lakes-entrance",
+  "lalor",
+  "langwarrin",
+  "lara",
+  "laverton",
+  "laverton-north",
+  "lilydale",
+  "little-river",
+  "macleod",
+  "maroondah",
+  "melbourne-airport",
+  "melbourne-cbd",
+  "melbourne-east",
+  "melbourne-south",
+  "melton",
+  "melton-south",
+  "mordialloc",
+  "mornington",
+  "mount-eliza",
+  "mount-evelyn",
+  "mount-waverley",
+  "narre-warren",
+  "narre-warren-north",
+  "narre-warren-south",
+  "north-melbourne",
+  "northcote",
+  "oakleigh",
+  "oakleigh-south",
+  "pakenham",
+  "pakenham-south",
+  "pakenham-upper",
+  "parkdale",
+  "pascoe-vale",
+  "pascoe-vale-south",
+  "point-cook",
+  "point-leo",
+  "port-melbourne",
+  "ringwood",
+  "ringwood-east",
+  "ringwood-north",
+  "rivervale",
+  "rowville",
+  "sandringham",
+  "scoresby",
+  "seaford",
+  "skye",
+  "somerville",
+  "south-melbourne",
+  "south-morang",
+  "southbank",
+  "springvale",
+  "springvale-south",
+  "st-albans",
+  "st-kilda",
+  "st-kilda-east",
+  "sunshine",
+  "sunshine-north",
+  "sunshine-west",
+  "tarneit",
+  "tooradin",
+  "toorak",
+  "truemans",
+  "tyabb",
+  "upper-ferntree-gully",
+  "wantirna",
+  "wantirna-south",
+  "werribee",
+  "werribee-south",
+  "wheelers-hill",
+  "yallambie",
+  "yarra-glen",
+  "yarra-junction",
+  "yarraville",
+  "yellingbo",
+  "yering",
 ];
 
 // Services for service pages
@@ -75,14 +162,76 @@ const SERVICES = [
   { path: "/emergency-services", name: "Emergency Services" },
 ];
 
-// Brands for brand pages (add your brands)
+// Service sub-pages (individual service detail pages)
+const SERVICE_SUB_PAGES = [
+  "/gas-ducted-heating/emergency-gas-ducted-repair-melbourne",
+  "/gas-ducted-heating/gas-ducted-installation-melbourne",
+  "/gas-ducted-heating/gas-heater-repair-melbourne",
+  "/gas-ducted-heating/gas-heater-replacement-maintenance-melbourne",
+  "/gas-ducted-heating/gas-heater-service-and-maintenance-melbourne",
+  "/hydronic-heating/emergency-hydronic-repair-melbourne",
+  "/hydronic-heating/hydronic-heater-installation-melbourne",
+  "/hydronic-heating/hydronic-heater-repair-melbourne",
+  "/hydronic-heating/hydronic-heater-service-maintainance-melbourne",
+  "/hydronic-heating/underfloor-slab-heating-repair-melbourne",
+  "/split-system-air-conditioning/ac-deep-cleaning-sanitization-melbourne",
+  "/split-system-air-conditioning/emergency-split-system-repair-melbourne",
+  "/split-system-air-conditioning/multi-head-system-service-melbourne",
+  "/split-system-air-conditioning/split-system-installation-melbourne",
+  "/split-system-air-conditioning/split-system-repair-melbourne",
+  "/emergency-services/ac-breakdown-rescue-melbourne",
+  "/emergency-services/emergency-gas-ducted-repair-melbourne",
+  "/emergency-services/emergency-gas-leak-repair-melbourne",
+  "/emergency-services/emergency-hydronic-repair-melbourne",
+  "/emergency-services/emergency-split-system-repair-melbourne",
+  "/emergency-services/hydronic-leak-repair",
+];
+
+// Self-care brand pages matching filesystem directories (no bonaire)
+const SELF_CARE_BRANDS = [
+  "actronair",
+  "braemar",
+  "breezair",
+  "brivis",
+  "carrier",
+  "celair",
+  "fujitsu",
+  "haier",
+  "hitachi",
+  "kaden",
+  "lg",
+  "mitsubishi-electric",
+  "panasonic",
+  "rinnai",
+  "samsung",
+  "sharp",
+  "toshiba",
+  "vulcan",
+  "york",
+];
+
+// All brand pages matching filesystem directories
 const BRANDS = [
   "actronair",
-  "daikin",
+  "bonaire",
+  "braemar",
+  "breezair",
+  "brivis",
+  "carrier",
+  "celair",
   "fujitsu",
-  "midea",
+  "haier",
+  "hitachi",
+  "kaden",
+  "lg",
+  "mitsubishi-electric",
   "panasonic",
+  "rinnai",
+  "samsung",
+  "sharp",
   "toshiba",
+  "vulcan",
+  "york",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -126,12 +275,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
-    {
-      url: `${baseUrl}/faqs`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
   ];
 
   // Service pages
@@ -142,14 +285,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  // Dynamic suburb pages for each service
-  const suburbPages: MetadataRoute.Sitemap = SERVICES.flatMap((service) =>
-    MELBOURNE_SUBURBS.map((suburb) => ({
-      url: `${baseUrl}${service.path}/${suburb}`,
+  // Dynamic suburb pages under /service-areas/{suburb}
+  const suburbPages: MetadataRoute.Sitemap = MELBOURNE_SUBURBS.map(
+    (suburb) => ({
+      url: `${baseUrl}/service-areas/${suburb}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
-    })),
+    }),
+  );
+
+  // Service sub-pages (individual service detail pages)
+  const serviceSubPages: MetadataRoute.Sitemap = SERVICE_SUB_PAGES.map(
+    (path) => ({
+      url: `${baseUrl}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    }),
   );
 
   // Brand pages
@@ -160,7 +313,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...servicePages, ...suburbPages, ...brandPages];
+  // Self-care main page + brand sub-pages
+  const selfCarePages: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/self-care`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    ...SELF_CARE_BRANDS.map((brand) => ({
+      url: `${baseUrl}/self-care/${brand}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+  ];
+
+  return [
+    ...staticPages,
+    ...servicePages,
+    ...serviceSubPages,
+    ...suburbPages,
+    ...brandPages,
+    ...selfCarePages,
+  ];
 }
 
 /*

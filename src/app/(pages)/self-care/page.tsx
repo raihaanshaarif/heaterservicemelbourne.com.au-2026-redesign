@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     title: "Heating System Self-Care & Troubleshooting",
     description:
       "Comprehensive error code database and troubleshooting guides for all heating brands. Expert tips for home maintenance.",
-    url: "https://heatingservicemelbourne.com.au/self-care",
-    siteName: "Heating Service Melbourne",
+    url: "https://heaterservicemelbourne.com.au/self-care",
+    siteName: "Heater Service Melbourne",
     locale: "en_AU",
     type: "website",
   },

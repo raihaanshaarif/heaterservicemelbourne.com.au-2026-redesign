@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Haier Services Melbourne | Expert Technicians",
     description: "Professional Haier system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/haier",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function HaierPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Haier Specialists",
+            name: "Heater Service Melbourne - Haier Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/haier.png",
             description: "Expert Haier heating system services in Melbourne",
             telephone: "+61405133761",

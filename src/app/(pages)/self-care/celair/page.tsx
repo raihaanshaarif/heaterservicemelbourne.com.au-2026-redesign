@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "Celair Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive Celair error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "Celair error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive Celair error code database with troubleshooting guides for evaporative cooling systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "Celair error codes, Celair troubleshooting, Celair evaporative cooling Melbourne, Celair heater fault codes, Celair error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/celair",
+  },
+  openGraph: {
+    title: "Celair Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your Celair evaporative cooling system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/celair",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Samsung Services Melbourne | Expert Technicians",
     description: "Professional Samsung system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/samsung",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function SamsungPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Samsung Specialists",
+            name: "Heater Service Melbourne - Samsung Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/samsung.png",
             description: "Expert Samsung heating system services in Melbourne",
             telephone: "+61405133761",

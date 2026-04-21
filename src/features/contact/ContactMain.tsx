@@ -2,6 +2,7 @@
 
 import FadeInAdvanced from "@/components/elements/FadeInAdvanced";
 import { useState } from "react";
+import { trackFormSubmission, trackAdsConversion } from "@/lib/gtm";
 
 const ContactMain = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -32,6 +33,8 @@ const ContactMain = () => {
       if (response.ok) {
         setFormMessage("Message sent successfully! We'll be in touch soon.");
         form.reset();
+        trackFormSubmission("contact_form");
+        trackAdsConversion("contact_form_lead");
       } else {
         setFormMessage("Failed to send message. Please try again.");
       }

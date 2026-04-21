@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Hitachi Services Melbourne | Expert Technicians",
     description: "Professional Hitachi system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/hitachi",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function HitachiPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Hitachi Specialists",
+            name: "Heater Service Melbourne - Hitachi Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/hitachi.png",
             description: "Expert Hitachi heating system services in Melbourne",
             telephone: "+61405133761",

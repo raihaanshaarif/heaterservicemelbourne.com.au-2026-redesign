@@ -13,7 +13,23 @@ import React from "react";
 import TestimonialTwo from "@/features/home-two/TestimonialTwo";
 
 export const metadata: Metadata = {
-  title: "About Us | Tanspot - Logistics and Transportation NextJS Template",
+  title: "About Us | Heater Service Melbourne - Licensed Heating Specialists",
+  description:
+    "Learn about Heater Service Melbourne. Licensed HVAC technicians servicing all Melbourne suburbs. 10+ years experience in hydronic heating, gas ducted heating & split systems.",
+  keywords:
+    "about heating service melbourne, licensed heating technicians melbourne, HVAC specialists melbourne, Clayton South heating experts",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/about",
+  },
+  openGraph: {
+    title: "About Heater Service Melbourne | Licensed Heating Specialists",
+    description:
+      "Licensed HVAC technicians with 10+ years experience. Hydronic heating, gas ducted heating and split systems across all Melbourne suburbs.",
+    url: "https://heaterservicemelbourne.com.au/about",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 const page: React.FC = () => {

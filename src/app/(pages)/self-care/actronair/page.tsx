@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "ActronAir Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive ActronAir error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "ActronAir error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive ActronAir error code database with troubleshooting guides for ducted and split systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "ActronAir error codes, ActronAir troubleshooting, ActronAir ducted and split system Melbourne, ActronAir heater fault codes, ActronAir error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/actronair",
+  },
+  openGraph: {
+    title: "ActronAir Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your ActronAir ducted and split system system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/actronair",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

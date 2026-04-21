@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Brivis Services Melbourne | Expert Technicians",
     description: "Professional Brivis system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/brivis",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function BrivisPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Brivis Specialists",
+            name: "Heater Service Melbourne - Brivis Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/brivis.png",
             description: "Expert Brivis heating system services in Melbourne",
             telephone: "+61405133761",

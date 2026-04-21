@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "LG Services Melbourne | Expert Technicians",
     description: "Professional LG system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/lg",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function LGPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - LG Specialists",
+            name: "Heater Service Melbourne - LG Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/lg.png",
             description: "Expert LG heating system services in Melbourne",
             telephone: "+61405133761",

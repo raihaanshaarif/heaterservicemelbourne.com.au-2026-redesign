@@ -46,7 +46,7 @@ export default function FaqOne() {
                     src={FaqOneImg1}
                     width={378}
                     height={378}
-                    alt="Image"
+                    alt="Frequently asked questions about heating services Melbourne - HVAC FAQ guide"
                   />
                 </div>
                 <div className="faq-one__experience-box">

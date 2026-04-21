@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Sharp Services Melbourne | Expert Technicians",
     description: "Professional Sharp system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/sharp",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function SharpPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Sharp Specialists",
+            name: "Heater Service Melbourne - Sharp Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/sharp.png",
             description: "Expert Sharp heating system services in Melbourne",
             telephone: "+61405133761",

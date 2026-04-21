@@ -172,8 +172,19 @@ const brand = {
 
 export const metadata: Metadata = {
   title: "Toshiba Error Codes & Troubleshooting | Melbourne Heating Guide",
-  description: "Comprehensive Toshiba error code database with 20+ brand-specific error codes. Find exact solutions for  systems.",
-  keywords: "Toshiba error codes, , heating troubleshooting, Melbourne",
+  description: "Comprehensive Toshiba error code database with troubleshooting guides for split systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
+  keywords: "Toshiba error codes, Toshiba troubleshooting, Toshiba split system Melbourne, Toshiba heater fault codes, Toshiba error code guide",
+  alternates: {
+    canonical: "https://heaterservicemelbourne.com.au/self-care/toshiba",
+  },
+  openGraph: {
+    title: "Toshiba Error Codes & Troubleshooting Guide | Melbourne",
+    description: "Fix your Toshiba split system system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
+    url: "https://heaterservicemelbourne.com.au/self-care/toshiba",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function BrandSelfCarePage() {

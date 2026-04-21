@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Celair Services Melbourne | Expert Technicians",
     description: "Professional Celair system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/celair",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function CelairPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Celair Specialists",
+            name: "Heater Service Melbourne - Celair Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/celair.png",
             description: "Expert Celair heating system services in Melbourne",
             telephone: "+61405133761",

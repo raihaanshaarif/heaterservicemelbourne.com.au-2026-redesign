@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     title: "Kaden Services Melbourne | Expert Technicians",
     description: "Professional Kaden system installation, repair and maintenance. Same-day emergency service.",
     type: "website",
+    siteName: "Heater Service Melbourne",
+    locale: "en_AU",
     url: "https://heaterservicemelbourne.com.au/brands/kaden",
   },
   alternates: {
@@ -25,7 +27,7 @@ export default function KadenPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Heating Service Melbourne - Kaden Specialists",
+            name: "Heater Service Melbourne - Kaden Specialists",
             image: "https://heaterservicemelbourne.com.au/assets/images/brands/kaden.png",
             description: "Expert Kaden heating system services in Melbourne",
             telephone: "+61405133761",
