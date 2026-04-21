@@ -74,7 +74,10 @@ export default function ServicesOne() {
                     </h4>
                     <p className="services-one__text">{service.text}</p>
                     <div className="services-one__btn-box">
-                      <Link href={service.link}>
+                      <Link
+                        href={service.link}
+                        aria-label={`Learn more about ${service.title}`}
+                      >
                         Read More <span className="icon-right-arrow"></span>
                       </Link>
                     </div>

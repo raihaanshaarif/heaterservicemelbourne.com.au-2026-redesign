@@ -24,6 +24,7 @@ const DefaultBanner: React.FC<ThisBanner> = ({
               width={440}
               height={430}
               alt={`${title} page banner - Professional heating services Melbourne`}
+              priority
             />
           </div>
           <div className="page-header__shape-1 float-bob-y">
@@ -31,7 +32,8 @@ const DefaultBanner: React.FC<ThisBanner> = ({
               src={headerShape}
               width={267}
               height={269}
-              alt={`${title} section design element`}
+              alt=""
+              loading="lazy"
             />
           </div>
           <h3>{title}</h3>

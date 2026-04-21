@@ -19,6 +19,7 @@ const BannerOne: React.FC = () => {
           width={800}
           height={500}
           alt="Professional heating service technician in Melbourne - HVAC expert"
+          priority
         />
       </div>
       <div className="banner-one__shape-3 float-bob-y">
@@ -26,7 +27,8 @@ const BannerOne: React.FC = () => {
           src={BannerOneShape3}
           width={286}
           height={270}
-          alt="Decorative heating service design element"
+          alt=""
+          loading="lazy"
         />
       </div>
       <div className="banner-one__line-shpae1"></div>

@@ -220,7 +220,11 @@ const AboutOne: React.FC = () => {
               </div>
               <div className="about-one__btn-and-author-box">
                 <div className="about-one__btn-box">
-                  <Link href="/about" className="thm-btn">
+                  <Link
+                    href="/about"
+                    className="thm-btn"
+                    aria-label="Read more about Heater Service Melbourne"
+                  >
                     Read More
                     <span>
                       <i className="icon-right-arrow"></i>
