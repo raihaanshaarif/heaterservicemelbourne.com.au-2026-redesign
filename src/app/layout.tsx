@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/assets/images/og-image.png",
+        url: "https://heaterservicemelbourne.com.au/og-image.png",
         width: 1200,
         height: 630,
         alt: "Heater Service Melbourne | Professional Heating & Hydronic Services",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "Heater Service Melbourne | Gas Ducted, Hydronic & Split Systems",
     description:
       "Expert heating services across Melbourne. Gas ducted, hydronic, split systems and 24/7 emergency repairs.",
-    images: ["/assets/images/og-image.png"],
+    images: ["https://heaterservicemelbourne.com.au/og-image.png"],
   },
   robots: {
     index: true,
