@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { generateServiceSchema } from "@/utils/seo/jsonLd";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { SEOBreadcrumbs } from "@/components/seo/SEOBreadcrumbs";
+import { ServiceAreasNearYou } from "@/components/seo/ServiceAreasNearYou";
 import ServiceDetailsImg1 from "@/assets/images/services/service-details-img-1.jpg";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import { WhyProfessionalMatters } from "@/components/hydronic/WhyProfessionalMatters";
@@ -227,6 +231,27 @@ const Page: React.FC = () => {
         title="Multi-Head Split System Service Melbourne – Multi-Zone AC Installation and Maintenance"
         subTitle="Multi-Head System Service"
         titleLink="/split-system-air-conditioning"
+      />
+
+      {/* JSON-LD Schema */}
+      <JSONLDScript
+        schema={generateServiceSchema(
+          "Multi-Head System Service",
+          "Installation and maintenance of multi-zone split system air conditioning systems",
+          "https://heaterservicemelbourne.com.au/split-system-air-conditioning",
+        )}
+        id="multihead-service-schema"
+      />
+
+      {/* Breadcrumbs */}
+      <SEOBreadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Split System AC", url: "/split-system-air-conditioning" },
+          { name: "Multi-Head Service", url: "#" },
+        ]}
+        schema={true}
       />
 
       <section
@@ -973,6 +998,13 @@ const Page: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Service Areas Near You - Internal Linking */}
+      <ServiceAreasNearYou
+        limit={12}
+        title="Multi-Head Service Areas"
+        subtitle="Multi-zone AC installation and service across all Melbourne suburbs"
+      />
     </>
   );
 };

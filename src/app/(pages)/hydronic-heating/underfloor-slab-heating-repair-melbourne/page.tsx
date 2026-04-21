@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { generateServiceSchema } from "@/utils/seo/jsonLd";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { SEOBreadcrumbs } from "@/components/seo/SEOBreadcrumbs";
+import { ServiceAreasNearYou } from "@/components/seo/ServiceAreasNearYou";
 import ServiceDetailsImg1 from "@/assets/images/services/service-details-img-1.jpg";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import { WhyProfessionalMatters } from "@/components/hydronic/WhyProfessionalMatters";
@@ -188,6 +192,27 @@ const Page: React.FC = () => {
         title="Underfloor Slab Heating Repair Melbourne – No Concrete Breaking"
         subTitle="Advanced Thermal Imaging Leak Detection & Repair Services"
         titleLink="/hydronic-heating"
+      />
+
+      {/* JSON-LD Schema */}
+      <JSONLDScript
+        schema={generateServiceSchema(
+          "Underfloor Slab Heating Repair",
+          "Advanced thermal imaging leak detection and repair for underfloor heating systems",
+          "https://heaterservicemelbourne.com.au/hydronic-heating",
+        )}
+        id="underfloor-repair-schema"
+      />
+
+      {/* Breadcrumbs */}
+      <SEOBreadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Hydronic Heating", url: "/hydronic-heating" },
+          { name: "Underfloor Repair", url: "#" },
+        ]}
+        schema={true}
       />
 
       {/* HERO */}
@@ -938,6 +963,13 @@ const Page: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Service Areas Near You - Internal Linking */}
+      <ServiceAreasNearYou
+        limit={12}
+        title="Underfloor Repair Service Areas"
+        subtitle="Advanced thermal imaging repair service across all Melbourne suburbs"
+      />
     </>
   );
 };

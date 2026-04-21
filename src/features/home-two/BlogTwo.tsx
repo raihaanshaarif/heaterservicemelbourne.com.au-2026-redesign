@@ -2,9 +2,11 @@
 
 import FadeInAdvanced from "@/components/elements/FadeInAdvanced";
 import TextAnimation from "@/components/elements/TextAnimation";
-import { blogData } from "@/contents/blog/blogData";
 import Image from "next/image";
 import Link from "next/link";
+
+// Dummy data for BlogTwo component (blog content file was removed during cleanup)
+const blogData: any[] = [];
 
 export default function BlogTwo() {
   const blog = blogData.filter((item) => item?.id <= 3);

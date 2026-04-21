@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { generateServiceSchema } from "@/utils/seo/jsonLd";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { SEOBreadcrumbs } from "@/components/seo/SEOBreadcrumbs";
+import { ServiceAreasNearYou } from "@/components/seo/ServiceAreasNearYou";
 import ServiceDetailsImg1 from "@/assets/images/services/service-details-img-1.jpg";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import { WhyProfessionalMatters } from "@/components/hydronic/WhyProfessionalMatters";
@@ -207,6 +211,27 @@ const Page: React.FC = () => {
         title="Hydronic Heater Installation Melbourne – Professional System Design & Installation"
         subTitle="Expert Hydronic Heating Installation"
         titleLink="/hydronic-heating"
+      />
+
+      {/* JSON-LD Schema */}
+      <JSONLDScript
+        schema={generateServiceSchema(
+          "Hydronic Heating Installation",
+          "Professional hydronic heating system design and installation across Melbourne",
+          "https://heaterservicemelbourne.com.au/hydronic-heating",
+        )}
+        id="hydronic-installation-schema"
+      />
+
+      {/* Breadcrumbs */}
+      <SEOBreadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Hydronic Heating", url: "/hydronic-heating" },
+          { name: "Installation", url: "#" },
+        ]}
+        schema={true}
       />
 
       {/* HERO SECTION WITH SPLIT LAYOUT */}
@@ -1058,6 +1083,13 @@ const Page: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Service Areas Near You - Internal Linking */}
+      <ServiceAreasNearYou
+        limit={12}
+        title="Installation Service Areas"
+        subtitle="Professional installation available across all Melbourne suburbs"
+      />
     </>
   );
 };

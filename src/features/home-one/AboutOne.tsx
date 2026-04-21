@@ -42,44 +42,16 @@ const AboutOne: React.FC = () => {
                     <div className="about-one__review-box">
                       <ul className="list-unstyled about-one__review-list">
                         <li>
-                          <div className="about-one__review-img">
-                            <Image
-                              src={AboutOneReviewImg11}
-                              width={54}
-                              height={54}
-                              alt="about"
-                            />
-                          </div>
+                          <div className="about-one__review-img"></div>
                         </li>
                         <li>
-                          <div className="about-one__review-img">
-                            <Image
-                              src={AboutOneReviewImg12}
-                              width={54}
-                              height={54}
-                              alt="about"
-                            />
-                          </div>
+                          <div className="about-one__review-img"></div>
                         </li>
                         <li>
-                          <div className="about-one__review-img">
-                            <Image
-                              src={AboutOneReviewImg13}
-                              width={54}
-                              height={54}
-                              alt="about"
-                            />
-                          </div>
+                          <div className="about-one__review-img"></div>
                         </li>
                         <li>
-                          <div className="about-one__review-img">
-                            <Image
-                              src={AboutOneReviewImg14}
-                              width={54}
-                              height={54}
-                              alt="about"
-                            />
-                          </div>
+                          <div className="about-one__review-img"></div>
                         </li>
                       </ul>
                       <div className="about-one__review-star">
@@ -104,24 +76,7 @@ const AboutOne: React.FC = () => {
                         Years Of <br /> Experience
                       </p>
                     </div>
-                    <div className="about-one__video-link">
-                      <a
-                        href="#"
-                        className="video-popup"
-                        onClick={(e) =>
-                          handleVideoClick(
-                            e,
-                            `https://www.youtube.com/watch?v=rbFoRH2deeY`,
-                          )
-                        }
-                      >
-                        <div className="about-one__video-icon">
-                          <span className="fa fa-play"></span>
-                          <i className="ripple"></i>
-                        </div>
-                      </a>
-                      <h4 className="about-one__video-title">Watch Video</h4>
-                    </div>
+                    <div className="about-one__video-link"></div>
                   </div>
                   <div className="about-one__circle-text">
                     <div className="about-one__round-text-box">

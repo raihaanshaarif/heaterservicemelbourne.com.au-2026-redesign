@@ -1,3 +1,10 @@
+"use client";
+import { Metadata } from "next";
+import { generateServiceMetadata } from "@/utils/seo/metadata";
+import { generateServiceSchema } from "@/utils/seo/jsonLd";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { SEOBreadcrumbs } from "@/components/seo/SEOBreadcrumbs";
+import { ServiceAreasNearYou } from "@/components/seo/ServiceAreasNearYou";
 import {
   ServiceItem,
   hydronicHeatingData,
@@ -7,10 +14,32 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+
 const page: React.FC = () => {
   return (
     <>
       <DefaultBanner title="Hydronic Heating Services" />
+
+      {/* JSON-LD Schema for Local SEO */}
+      <JSONLDScript
+        schema={generateServiceSchema(
+          "Hydronic Heating Installation & Repair",
+          "Professional hydronic heating installation, repair, maintenance, and emergency services across Melbourne",
+          "https://heaterservicemelbourne.com.au/hydronic-heating",
+        )}
+        id="hydronic-schema"
+      />
+
+      {/* Breadcrumb Navigation with Schema */}
+      <SEOBreadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Hydronic Heating", url: "/hydronic-heating" },
+        ]}
+        schema={true}
+      />
+
       <section className="services-one services-page">
         <div className="container">
           <div className="row">
@@ -48,6 +77,13 @@ const page: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Service Areas Near You - Internal Linking */}
+      <ServiceAreasNearYou
+        limit={12}
+        title="Hydronic Heating Service Areas"
+        subtitle="Professional hydronic heating services available across Melbourne"
+      />
     </>
   );
 };

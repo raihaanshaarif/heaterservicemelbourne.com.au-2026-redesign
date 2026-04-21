@@ -1,178 +1,257 @@
-import React, { useState } from 'react';
-import { motion } from "framer-motion"
-import useTransportContext from '../context/useTransportContext';
-import type { MenuItem } from '../../contents/navmenu/navType';
-import { blogList, homeList, pagesList, servicesList, shopList } from '../../contents/navmenu/navItem';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import useTransportContext from "../context/useTransportContext";
+import type { MenuItem } from "../../contents/navmenu/navType";
+import {
+  hydronicList,
+  gasDuctedList,
+  splitSystemList,
+  emergencyList,
+} from "../../contents/navmenu/navItem";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const MobileManuList: React.FC = () => {
-    const { setIsMobileManu } = useTransportContext();
-    const [isHome, setIsHome] = useState<boolean>(false);
-    const [isPages, setIsPages] = useState<boolean>(false);
-    const [isServices, setIsServices] = useState<boolean>(false);
-    const [isShop, setIsShop] = useState<boolean>(false);
-    const [isBlog, setIsBlog] = useState<boolean>(false);
-    const currentPath = usePathname();
-    const findLocation = (array: MenuItem[]): boolean => {
-        return array.some(item => item?.url === currentPath);
-    };
-    const closeMobileManu = () => {
-        setIsMobileManu(false)
-        setIsHome(false)
-        setIsPages(false)
-        setIsServices(false)
-        setIsShop(false)
-        setIsBlog(false)
-    }
-    const handleHome = () => {
-        setIsHome((pre) => (!pre))
-    }
+  const { setIsMobileManu } = useTransportContext();
+  const [isServicesOpen, setIsServicesOpen] = useState<boolean>(false);
+  const [isHydronicOpen, setIsHydronicOpen] = useState<boolean>(false);
+  const [isGasDuctedOpen, setIsGasDuctedOpen] = useState<boolean>(false);
+  const [isSplitSystemOpen, setIsSplitSystemOpen] = useState<boolean>(false);
+  const [isEmergencyOpen, setIsEmergencyOpen] = useState<boolean>(false);
+  const currentPath = usePathname();
 
-    const handlePages = () => {
-        setIsPages((pre) => (!pre))
-    }
-    const handleServices = () => {
-        setIsServices((pre) => (!pre))
-    }
-    const handleShop = () => {
-        setIsShop((pre) => (!pre))
-    }
-    const handleBlog = () => {
-        setIsBlog((pre) => (!pre))
-    }
+  const findLocation = (array: MenuItem[]): boolean => {
+    return array.some((item) => item?.url === currentPath);
+  };
 
-    return (
-        <ul className="main-menu__list mobileManulist">
-            <li className="dropdown">
-                <a href="#" className={`${isHome || findLocation(homeList) ? "expanded" : ""}`}>
-                    Home
-                    <button className={`${isHome ? "expanded" : ""}`} onClick={handleHome} > <i className="fa fa-angle-down"></i></button>
-                </a>
-                <ul className="shadow-box" style={{ display: `${isHome ? "block" : "none"}` }}>
-                    {
-                        homeList.map((Item: MenuItem) => (
-                            <motion.li
-                                onClick={closeMobileManu}
-                                initial={{ x: -70, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                transition={{
-                                    duration: 0.1 * Item?.id,
-                                    ease: "easeOut"
-                                }}
-                                viewport={{ amount: 0.01, once: true }}
-                                key={Item?.id} className={`${currentPath === Item?.url ? "current" : ""}`}>
-                                <Link href={Item?.url}>{Item?.text}</Link>
-                            </motion.li>
-                        ))
-                    }
-                </ul>
-            </li>
-            <li className={`${currentPath === "/about" ? "current" : ""}`} onClick={closeMobileManu}>
-                <Link href="/about">About Us</Link>
-            </li>
-            <li className="dropdown">
-                <a href="#" className={`${isPages || findLocation(pagesList) ? "expanded" : ""}`}>
-                    Pages
-                    <button onClick={handlePages} className={`${isPages ? "expanded" : ""}`} > <i className="fa fa-angle-down"></i></button>
-                </a>
-                <ul className="shadow-box" style={{ display: `${isPages ? "block" : "none"}` }}>
-                    {
-                        pagesList.map((Item: MenuItem) => (
-                            <motion.li
-                                onClick={closeMobileManu}
-                                initial={{ x: -70, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                transition={{
-                                    duration: 0.1 * Item?.id,
-                                    ease: "easeOut"
-                                }}
-                                viewport={{ amount: 0.01, once: true }}
-                                key={Item?.id} className={`${currentPath === Item?.url ? "current" : ""}`}>
-                                <Link href={Item?.url}>{Item?.text}</Link>
-                            </motion.li>
-                        ))
-                    }
-                </ul>
-            </li>
-            <li className="dropdown">
-                <a href="#" className={`${isServices || findLocation(servicesList) ? "expanded" : ""}`}>
-                    Services
-                    <button className={`${isServices ? "expanded" : ""}`} onClick={handleServices} > <i className="fa fa-angle-down"></i></button>
-                </a>
-                <ul className="shadow-box" style={{ display: `${isServices ? "block" : "none"}` }}>
-                    {
-                        servicesList.map((Item: MenuItem) => (
-                            <motion.li
-                                onClick={closeMobileManu}
-                                initial={{ x: -70, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                transition={{
-                                    duration: 0.1 * Item?.id,
-                                    ease: "easeOut"
-                                }}
-                                viewport={{ amount: 0.01, once: true }}
-                                key={Item?.id} className={`${currentPath === Item?.url ? "current" : ""}`} >
-                                <Link href={Item?.url}>{Item?.text}</Link>
-                            </motion.li>
-                        ))
-                    }
-                </ul>
-            </li>
-            <li className="dropdown">
-                <a href="#" className={`${isShop || findLocation(shopList) ? "expanded" : ""}`}>
-                    Shop
-                    <button className={`${isShop ? "expanded" : ""}`} onClick={handleShop} > <i className="fa fa-angle-down"></i></button>
+  const closeMobileManu = () => {
+    setIsMobileManu(false);
+    setIsServicesOpen(false);
+    setIsHydronicOpen(false);
+    setIsGasDuctedOpen(false);
+    setIsSplitSystemOpen(false);
+    setIsEmergencyOpen(false);
+  };
 
-                </a>
-                <ul className="shadow-box" style={{ display: `${isShop ? "block" : "none"}` }}>
-                    {
-                        shopList.map((Item: MenuItem) => (
-                            <motion.li
-                                onClick={closeMobileManu}
-                                initial={{ x: -70, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                transition={{
-                                    duration: 0.1 * Item?.id,
-                                    ease: "easeOut"
-                                }}
-                                viewport={{ amount: 0.01, once: true }}
-                                key={Item?.id} className={`${currentPath === Item?.url ? "current" : ""}`} >
-                                <Link href={Item?.url}>{Item?.text}</Link>
-                            </motion.li>
-                        ))
-                    }
-                </ul>
-            </li>
-            <li className="dropdown">
-                <a href="#" className={`${isBlog || findLocation(blogList) ? "expanded" : ""}`}>
-                    Blog
-                    <button className={`${isBlog ? "expanded" : ""}`} onClick={handleBlog} > <i className="fa fa-angle-down"></i></button>
-                </a>
-                <ul className="shadow-box" style={{ display: `${isBlog ? "block" : "none"}` }}>
-                    {
-                        blogList.map((Item: MenuItem) => (
-                            <motion.li
-                                onClick={closeMobileManu}
-                                initial={{ x: -70, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                transition={{
-                                    duration: 0.1 * Item?.id,
-                                    ease: "easeOut"
-                                }}
-                                viewport={{ amount: 0.01, once: true }}
-                                key={Item?.id} className={`${currentPath === Item?.url ? "current" : ""}`} >
-                                <Link href={Item?.url}>{Item?.text}</Link>
-                            </motion.li>
-                        ))
-                    }
-                </ul>
-            </li>
-            <li className={`${currentPath === "/contact" ? "current" : ""}`} onClick={closeMobileManu}>
-                <Link href="/contact">Contact</Link>
-            </li>
+  return (
+    <ul className="main-menu__list mobileManulist">
+      <li
+        className={`${currentPath === "/" ? "current" : ""}`}
+        onClick={closeMobileManu}
+      >
+        <Link href="/">Home</Link>
+      </li>
+
+      <li
+        className={`${currentPath === "/about" ? "current" : ""}`}
+        onClick={closeMobileManu}
+      >
+        <Link href="/about">About</Link>
+      </li>
+
+      <li
+        className={`dropdown ${
+          findLocation(hydronicList) ||
+          findLocation(gasDuctedList) ||
+          findLocation(splitSystemList) ||
+          findLocation(emergencyList)
+            ? "current"
+            : ""
+        }`}
+      >
+        <a
+          href="#"
+          className={`${isServicesOpen ? "expanded" : ""}`}
+          onClick={(event) => {
+            event.preventDefault();
+            setIsServicesOpen((prev) => !prev);
+          }}
+        >
+          Services
+          <button className={`${isServicesOpen ? "expanded" : ""}`}>
+            <i className="fa fa-angle-down"></i>
+          </button>
+        </a>
+
+        <ul
+          className="shadow-box"
+          style={{ display: isServicesOpen ? "block" : "none" }}
+        >
+          <li
+            className={`dropdown ${findLocation(hydronicList) ? "current" : ""}`}
+          >
+            <a
+              href="#"
+              className={`${isHydronicOpen ? "expanded" : ""}`}
+              onClick={(event) => {
+                event.preventDefault();
+                setIsHydronicOpen((prev) => !prev);
+              }}
+            >
+              Hydronic Heating
+              <button className={`${isHydronicOpen ? "expanded" : ""}`}>
+                <i className="fa fa-angle-down"></i>
+              </button>
+            </a>
+            <ul
+              className="shadow-box"
+              style={{ display: isHydronicOpen ? "block" : "none" }}
+            >
+              {hydronicList.map((item: MenuItem) => (
+                <motion.li
+                  onClick={closeMobileManu}
+                  initial={{ x: -70, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.1 * item?.id, ease: "easeOut" }}
+                  viewport={{ amount: 0.01, once: true }}
+                  key={item?.id}
+                  className={`${currentPath === item?.url ? "current" : ""}`}
+                >
+                  <Link href={item?.url}>{item?.text}</Link>
+                </motion.li>
+              ))}
+            </ul>
+          </li>
+
+          <li
+            className={`dropdown ${findLocation(gasDuctedList) ? "current" : ""}`}
+          >
+            <a
+              href="#"
+              className={`${isGasDuctedOpen ? "expanded" : ""}`}
+              onClick={(event) => {
+                event.preventDefault();
+                setIsGasDuctedOpen((prev) => !prev);
+              }}
+            >
+              Gas Ducted
+              <button className={`${isGasDuctedOpen ? "expanded" : ""}`}>
+                <i className="fa fa-angle-down"></i>
+              </button>
+            </a>
+            <ul
+              className="shadow-box"
+              style={{ display: isGasDuctedOpen ? "block" : "none" }}
+            >
+              {gasDuctedList.map((item: MenuItem) => (
+                <motion.li
+                  onClick={closeMobileManu}
+                  initial={{ x: -70, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.1 * item?.id, ease: "easeOut" }}
+                  viewport={{ amount: 0.01, once: true }}
+                  key={item?.id}
+                  className={`${currentPath === item?.url ? "current" : ""}`}
+                >
+                  <Link href={item?.url}>{item?.text}</Link>
+                </motion.li>
+              ))}
+            </ul>
+          </li>
+
+          <li
+            className={`dropdown ${findLocation(splitSystemList) ? "current" : ""}`}
+          >
+            <a
+              href="#"
+              className={`${isSplitSystemOpen ? "expanded" : ""}`}
+              onClick={(event) => {
+                event.preventDefault();
+                setIsSplitSystemOpen((prev) => !prev);
+              }}
+            >
+              Split Systems
+              <button className={`${isSplitSystemOpen ? "expanded" : ""}`}>
+                <i className="fa fa-angle-down"></i>
+              </button>
+            </a>
+            <ul
+              className="shadow-box"
+              style={{ display: isSplitSystemOpen ? "block" : "none" }}
+            >
+              {splitSystemList.map((item: MenuItem) => (
+                <motion.li
+                  onClick={closeMobileManu}
+                  initial={{ x: -70, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.1 * item?.id, ease: "easeOut" }}
+                  viewport={{ amount: 0.01, once: true }}
+                  key={item?.id}
+                  className={`${currentPath === item?.url ? "current" : ""}`}
+                >
+                  <Link href={item?.url}>{item?.text}</Link>
+                </motion.li>
+              ))}
+            </ul>
+          </li>
+
+          <li
+            className={`dropdown ${findLocation(emergencyList) ? "current" : ""}`}
+          >
+            <a
+              href="#"
+              className={`${isEmergencyOpen ? "expanded" : ""}`}
+              onClick={(event) => {
+                event.preventDefault();
+                setIsEmergencyOpen((prev) => !prev);
+              }}
+            >
+              Emergency
+              <button className={`${isEmergencyOpen ? "expanded" : ""}`}>
+                <i className="fa fa-angle-down"></i>
+              </button>
+            </a>
+            <ul
+              className="shadow-box"
+              style={{ display: isEmergencyOpen ? "block" : "none" }}
+            >
+              {emergencyList.map((item: MenuItem) => (
+                <motion.li
+                  onClick={closeMobileManu}
+                  initial={{ x: -70, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.1 * item?.id, ease: "easeOut" }}
+                  viewport={{ amount: 0.01, once: true }}
+                  key={item?.id}
+                  className={`${currentPath === item?.url ? "current" : ""}`}
+                >
+                  <Link href={item?.url}>{item?.text}</Link>
+                </motion.li>
+              ))}
+            </ul>
+          </li>
         </ul>
-    );
+      </li>
+
+      <li
+        className={`${currentPath === "/service-areas" ? "current" : ""}`}
+        onClick={closeMobileManu}
+      >
+        <Link href="/service-areas">Service Areas</Link>
+      </li>
+
+      <li
+        className={`${currentPath === "/brands" ? "current" : ""}`}
+        onClick={closeMobileManu}
+      >
+        <Link href="/brands">Brands</Link>
+      </li>
+
+      <li
+        className={`${currentPath === "/self-care" ? "current" : ""}`}
+        onClick={closeMobileManu}
+      >
+        <Link href="/self-care">Self Care</Link>
+      </li>
+
+      <li
+        className={`${currentPath === "/contact" ? "current" : ""}`}
+        onClick={closeMobileManu}
+      >
+        <Link href="/contact">Contact</Link>
+      </li>
+    </ul>
+  );
 };
 
 export default MobileManuList;

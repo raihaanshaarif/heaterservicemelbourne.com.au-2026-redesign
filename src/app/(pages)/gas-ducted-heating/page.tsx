@@ -1,4 +1,11 @@
 "use client";
+
+import { Metadata } from "next";
+import { generateServiceMetadata } from "@/utils/seo/metadata";
+import { generateServiceSchema } from "@/utils/seo/jsonLd";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { SEOBreadcrumbs } from "@/components/seo/SEOBreadcrumbs";
+import { ServiceAreasNearYou } from "@/components/seo/ServiceAreasNearYou";
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
@@ -104,6 +111,26 @@ const Page: React.FC = () => {
       <DefaultBanner
         title="Gas Ducted Heating Melbourne – Installation, Repair, Service & Replacement"
         subTitle="Gas Ducted Heating Services"
+      />
+
+      {/* JSON-LD Schema for Local SEO */}
+      <JSONLDScript
+        schema={generateServiceSchema(
+          "Gas Ducted Heating Installation & Repair",
+          "Professional gas ducted heating installation, repair, maintenance, and emergency services across Melbourne",
+          "https://heaterservicemelbourne.com.au/gas-ducted-heating",
+        )}
+        id="gas-ducted-schema"
+      />
+
+      {/* Breadcrumb Navigation with Schema */}
+      <SEOBreadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Gas Ducted Heating", url: "/gas-ducted-heating" },
+        ]}
+        schema={true}
       />
 
       {/* HERO SECTION */}
@@ -683,6 +710,13 @@ const Page: React.FC = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Service Areas Near You - Internal Linking */}
+      <ServiceAreasNearYou
+        limit={12}
+        title="Gas Ducted Heating Service Areas"
+        subtitle="Professional gas heating services available across Melbourne"
+      />
     </>
   );
 };

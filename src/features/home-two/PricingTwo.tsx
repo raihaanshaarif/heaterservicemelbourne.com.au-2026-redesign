@@ -2,8 +2,10 @@
 
 import FadeInAdvanced from "@/components/elements/FadeInAdvanced";
 import TextAnimation from "@/components/elements/TextAnimation";
-import { pricingData } from "@/contents/pricing/pricingData";
 import Link from "next/link";
+
+// Dummy data for PricingTwo component (pricing content file was removed during cleanup)
+const pricingData: any[] = [];
 
 export default function PricingTwo() {
   return (
@@ -49,7 +51,7 @@ export default function PricingTwo() {
                       </h3>
                     </div>
                     <ul className="list-unstyled pricing-one__price-list">
-                      {plan.features.map((feature, index) => (
+                      {plan.features.map((feature: any, index: number) => (
                         <li key={index}>
                           <div className="icon">
                             <span className="icon-check"></span>

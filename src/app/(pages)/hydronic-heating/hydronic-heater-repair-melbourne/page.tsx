@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { generateServiceSchema } from "@/utils/seo/jsonLd";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { SEOBreadcrumbs } from "@/components/seo/SEOBreadcrumbs";
+import { ServiceAreasNearYou } from "@/components/seo/ServiceAreasNearYou";
 import ServiceDetailsImg1 from "@/assets/images/services/service-details-img-1.jpg";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import { WhyProfessionalMatters } from "@/components/hydronic/WhyProfessionalMatters";
@@ -205,6 +209,27 @@ const Page: React.FC = () => {
         title="Hydronic Heating Repair Melbourne – 24/7 Emergency Service"
         subTitle="Fast, Professional & Reliable Repair Solutions"
         titleLink="/hydronic-heating"
+      />
+
+      {/* JSON-LD Schema */}
+      <JSONLDScript
+        schema={generateServiceSchema(
+          "Hydronic Heating Repair",
+          "Fast and reliable hydronic heating repair services across Melbourne",
+          "https://heaterservicemelbourne.com.au/hydronic-heating",
+        )}
+        id="hydronic-repair-schema"
+      />
+
+      {/* Breadcrumbs */}
+      <SEOBreadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Hydronic Heating", url: "/hydronic-heating" },
+          { name: "Repair", url: "#" },
+        ]}
+        schema={true}
       />
 
       {/* HERO SECTION WITH SPLIT LAYOUT */}
@@ -1170,6 +1195,13 @@ const Page: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Service Areas Near You - Internal Linking */}
+      <ServiceAreasNearYou
+        limit={12}
+        title="Repair Service Areas"
+        subtitle="Fast repair service available across all Melbourne suburbs"
+      />
     </>
   );
 };

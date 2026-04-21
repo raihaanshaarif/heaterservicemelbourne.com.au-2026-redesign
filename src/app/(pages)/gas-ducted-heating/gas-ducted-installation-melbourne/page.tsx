@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { generateServiceSchema } from "@/utils/seo/jsonLd";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { SEOBreadcrumbs } from "@/components/seo/SEOBreadcrumbs";
+import { ServiceAreasNearYou } from "@/components/seo/ServiceAreasNearYou";
 import ServiceDetailsImg1 from "@/assets/images/services/service-details-img-1.jpg";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import { WhyProfessionalMatters } from "@/components/hydronic/WhyProfessionalMatters";
@@ -246,6 +250,27 @@ const Page: React.FC = () => {
         title="Gas Ducted Heating Installation Melbourne – Professional System Design & Installation"
         subTitle="Expert Gas Ducted Heating Installation"
         titleLink="/gas-ducted-heating"
+      />
+
+      {/* JSON-LD Schema */}
+      <JSONLDScript
+        schema={generateServiceSchema(
+          "Gas Ducted Heating Installation",
+          "Professional gas ducted heating system design and installation across Melbourne",
+          "https://heaterservicemelbourne.com.au/gas-ducted-heating",
+        )}
+        id="gas-installation-schema"
+      />
+
+      {/* Breadcrumbs */}
+      <SEOBreadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Gas Ducted Heating", url: "/gas-ducted-heating" },
+          { name: "Installation", url: "#" },
+        ]}
+        schema={true}
       />
 
       {/* HERO SECTION */}
@@ -1011,6 +1036,13 @@ const Page: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Service Areas Near You - Internal Linking */}
+      <ServiceAreasNearYou
+        limit={12}
+        title="Installation Service Areas"
+        subtitle="Professional installation available across all Melbourne suburbs"
+      />
     </>
   );
 };

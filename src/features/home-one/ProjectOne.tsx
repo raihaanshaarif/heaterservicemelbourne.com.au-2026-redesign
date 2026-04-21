@@ -7,7 +7,10 @@ import Image from "next/image";
 import TextAnimation from "@/components/elements/TextAnimation";
 import FadeInAdvanced from "@/components/elements/FadeInAdvanced";
 import Link from "next/link";
-import { ProjectOneItem, projectsData } from "@/contents/project/projectData";
+// import { ProjectOneItem, projectsData } from "@/contents/project/projectData";
+
+// Dummy data for ProjectOne component (projectsData file was removed during cleanup)
+const projectsData: any[] = [];
 
 export default function ProjectOne() {
   const [openLightBox, setOpenLightBox] = useState<boolean>(false);
@@ -55,7 +58,7 @@ export default function ProjectOne() {
         <div className="container">
           <div className="row">
             {/*Project One Single Start*/}
-            {projectsData.map((project: ProjectOneItem, idx) => (
+            {projectsData.map((project: any, idx) => (
               <div className="col-xl-3 col-lg-6 col-md-6" key={project?.id}>
                 <FadeInAdvanced
                   variant={project?.variant}

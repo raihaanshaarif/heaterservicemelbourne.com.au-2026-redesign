@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { generateServiceSchema } from "@/utils/seo/jsonLd";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { SEOBreadcrumbs } from "@/components/seo/SEOBreadcrumbs";
+import { ServiceAreasNearYou } from "@/components/seo/ServiceAreasNearYou";
 import ServiceDetailsImg1 from "@/assets/images/services/service-details-img-1.jpg";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import { WhyProfessionalMatters } from "@/components/hydronic/WhyProfessionalMatters";
@@ -188,6 +192,27 @@ const Page: React.FC = () => {
         title="🚨 Emergency Hydronic Repair Melbourne – 24/7 Available"
         subTitle="Heating Failed? We Arrive Within 2-4 Hours"
         titleLink="/hydronic-heating"
+      />
+
+      {/* JSON-LD Schema */}
+      <JSONLDScript
+        schema={generateServiceSchema(
+          "Emergency Hydronic Heating Repair",
+          "24/7 emergency hydronic heating repair service in Melbourne with 2-4 hour response time",
+          "https://heaterservicemelbourne.com.au/hydronic-heating",
+        )}
+        id="emergency-hydronic-repair-schema"
+      />
+
+      {/* Breadcrumbs */}
+      <SEOBreadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Hydronic Heating", url: "/hydronic-heating" },
+          { name: "Emergency Repair", url: "#" },
+        ]}
+        schema={true}
       />
 
       {/* HERO SECTION */}
@@ -1108,6 +1133,13 @@ const Page: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Service Areas Near You - Internal Linking */}
+      <ServiceAreasNearYou
+        limit={12}
+        title="Emergency Repair Service Areas"
+        subtitle="24/7 emergency response available across Melbourne suburbs"
+      />
     </>
   );
 };
