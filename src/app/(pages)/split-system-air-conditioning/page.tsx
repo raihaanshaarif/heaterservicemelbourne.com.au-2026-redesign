@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     url: "https://heaterservicemelbourne.com.au/split-system-air-conditioning",
     siteName: "Heater Service Melbourne",
     locale: "en_AU",
+    images: [
+      {
+        url: "https://heaterservicemelbourne.com.au/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Heater Service Melbourne | Professional Heating & Hydronic Services",
+      },
+    ],
     type: "website",
   },
 };
