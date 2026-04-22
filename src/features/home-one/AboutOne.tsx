@@ -244,8 +244,8 @@ const AboutOne: React.FC = () => {
                       </div>
                     </div>
                     <div className="about-one__author-content">
-                      <h4>Faisal Khan</h4>
-                      <p>Founder & Specialist</p>
+                      {/* <h4>Faisal Khan</h4>
+                      <p>Founder & Specialist</p> */}
                     </div>
                   </div>
                   {/* <div className="about-one__author-sign">
