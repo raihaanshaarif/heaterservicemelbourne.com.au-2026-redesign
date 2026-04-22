@@ -184,7 +184,10 @@ const AreaCard: React.FC<AreaCardProps> = ({ name }) => {
       className="h-100 w-100"
       style={{ minWidth: "0" }}
     >
-      <Link href={`/service-areas/${name.toLowerCase().replace(/\s+/g, "-")}`} className="text-decoration-none">
+      <Link
+        href={`/service-areas/${name.toLowerCase().replace(/\s+/g, "-")}`}
+        className="text-decoration-none"
+      >
         <motion.div
           className="p-3 p-sm-4 rounded-4 h-100 text-center cursor-pointer d-flex flex-column align-items-center justify-content-center"
           style={{
