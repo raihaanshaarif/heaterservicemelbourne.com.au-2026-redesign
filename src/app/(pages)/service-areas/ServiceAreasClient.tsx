@@ -181,18 +181,20 @@ const AreaCard: React.FC<AreaCardProps> = ({ name }) => {
       animate={inView ? "visible" : "hidden"}
       variants={itemVariants}
       whileHover={{ scale: 1.06 }}
-      className="h-100"
+      className="h-100 w-100"
+      style={{ minWidth: "0" }}
     >
-      <Link href={`/service-areas/${name.toLowerCase().replace(/\s+/g, "-")}`}>
+      <Link href={`/service-areas/${name.toLowerCase().replace(/\s+/g, "-")}`} className="text-decoration-none">
         <motion.div
-          className="p-4 rounded-4 h-100 text-center cursor-pointer d-flex flex-column align-items-center justify-content-center"
+          className="p-3 p-sm-4 rounded-4 h-100 text-center cursor-pointer d-flex flex-column align-items-center justify-content-center"
           style={{
             background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
             border: "1.5px solid rgba(185,28,28,0.1)",
             boxShadow:
               "0 4px 20px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.8)",
             transition: "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)",
-            minHeight: "110px",
+            minHeight: "90px",
+            minWidth: "0",
             position: "relative",
             overflow: "hidden",
           }}
@@ -417,9 +419,9 @@ const Page: React.FC = () => {
               Our Service Areas
             </motion.h3>
 
-            <div className="row g-3">
+            <div className="row g-2 g-sm-3">
               {serviceAreas.map((area) => (
-                <div key={area} className="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div key={area} className="col-6 col-sm-6 col-md-3 col-lg-2">
                   <AreaCard name={area} />
                 </div>
               ))}
