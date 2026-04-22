@@ -3,14 +3,7 @@
 import React from "react";
 import AboutOneShape1 from "@/assets/images/shapes/about-one-shape-1.png";
 import AboutOneShape2 from "@/assets/images/shapes/about-one-shape-2.png";
-import AboutOneAuthorSign from "@/assets/images/resources/about-one-author-sign.png";
 import AboutOneImg1 from "@/assets/images/resources/about-one-img-1.jpg";
-import AboutOneReviewImg11 from "@/assets/images/resources/about-one-review-img-1-1.jpg";
-import AboutOneReviewImg12 from "@/assets/images/resources/about-one-review-img-1-2.jpg";
-import AboutOneReviewImg13 from "@/assets/images/resources/about-one-review-img-1-3.jpg";
-import AboutOneReviewImg14 from "@/assets/images/resources/about-one-review-img-1-4.jpg";
-import AboutOneAuthorImg1 from "@/assets/images/resources/about-one-author-img-1.jpg";
-import useTransportContext from "@/components/context/useTransportContext";
 import FadeInAdvanced from "@/components/elements/FadeInAdvanced";
 import Image from "next/image";
 import CounterUp from "@/components/elements/CounterUp";
@@ -18,7 +11,6 @@ import Link from "next/link";
 import TextAnimation from "@/components/elements/TextAnimation";
 
 const AboutOne: React.FC = () => {
-  const { handleVideoClick } = useTransportContext();
   return (
     <section className="about-one" id="about">
       <div className="container">
