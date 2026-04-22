@@ -347,7 +347,7 @@ const Page: React.FC = () => {
                       fontWeight: 600,
                     }}
                   >
-                    &#10003; VBA LICENSED
+                    &#10003; LICENSED
                   </span>
                   <span
                     className="px-3 py-2 rounded-2"
@@ -709,7 +709,7 @@ const Page: React.FC = () => {
                       We service all Melbourne suburbs
                     </strong>{" "}
                     for gas ducted heating maintenance, from inner city
-                    apartments to outer metropolitan homes. Our VBA licensed gas
+                    apartments to outer metropolitan homes. Our licensed gas
                     fitters travel to all areas of Greater Melbourne.
                   </p>
                   <div className="row gy-3 mt-4">
@@ -1007,7 +1007,7 @@ const Page: React.FC = () => {
                       letterSpacing: "0.5px",
                     }}
                   >
-                    &#10003; ALL MELBOURNE SUBURBS &bull; &#10003; VBA LICENSED
+                    &#10003; ALL MELBOURNE SUBURBS &bull; &#10003; LICENSED
                     &bull; &#10003; FIXED PRICE &bull; &#10003; 20-POINT CHECK
                   </p>
                 </motion.div>

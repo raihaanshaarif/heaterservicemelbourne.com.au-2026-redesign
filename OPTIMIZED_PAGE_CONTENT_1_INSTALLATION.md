@@ -114,7 +114,7 @@ Professional sizing considers:
 
 **H3 Subsection:** Compliance & Safety Standards
 
-- VBA licensed gas fitter installation
+- licensed gas fitter installation
 - Victorian Building Code compliance
 - Industry standard installation practices
 - Manufacturer specifications followed exactly
@@ -397,7 +397,7 @@ A: Yes. We provide a free in-home assessment where we evaluate your home, discus
 ### TRUST SIGNALS SECTION (Strategic Placement)
 
 **Licensed & Insured Heading:**
-✓ VBA Licensed Plumber & Gas Fitter
+✓ Licensed Plumber & Gas Fitter
 ✓ Fully Insured (Public Liability & Professional Indemnity)
 ✓ 25-Year System Warranty
 ✓ 2-Year Labor Warranty

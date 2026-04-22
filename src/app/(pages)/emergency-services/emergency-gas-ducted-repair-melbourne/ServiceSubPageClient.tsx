@@ -165,7 +165,7 @@ const faqData = [
     id: 3,
     question: "Is a gas ducted repair safe to do as an emergency?",
     answer:
-      "Yes, when performed by a VBA registered gas fitter. Under Australian regulations, all gas appliance repair work — including emergency repairs — must be carried out by licensed gas fitters. Our technicians hold current VBA registration and carry gas detection equipment to ensure every repair is performed safely and to code.",
+      "Yes, when performed by a   registered gas fitter. Under Australian regulations, all gas appliance repair work — including emergency repairs — must be carried out by licensed gas fitters. Our technicians hold current   registration and carry gas detection equipment to ensure every repair is performed safely and to code.",
   },
   {
     id: 4,
@@ -282,7 +282,7 @@ const Page: React.FC = () => {
                     }}
                   >
                     <i className="fas fa-exclamation-triangle me-2"></i>24/7 GAS
-                    DUCTED EMERGENCY — VBA LICENSED
+                    DUCTED EMERGENCY — LICENSED
                   </span>
                 </div>
                 <h1
@@ -302,14 +302,14 @@ const Page: React.FC = () => {
                   24/7 emergency response for gas ducted heating failures across
                   Melbourne. No heat in winter, ignition failures, gas valve
                   faults, heat exchanger issues, and complete system breakdowns
-                  — VBA licensed gas fitters dispatched fast to get your heating
+                  — licensed gas fitters dispatched fast to get your heating
                   back online.
                 </p>
                 <p
                   className="text-secondary mb-5"
                   style={{ fontSize: "1rem", lineHeight: "1.8" }}
                 >
-                  VBA registered gas fitters. All major brands. Target 4-hour
+                  registered gas fitters. All major brands. Target 4-hour
                   response. Parts on board.
                 </p>
                 <div className="d-flex gap-3 mb-5 flex-wrap">
@@ -388,7 +388,7 @@ const Page: React.FC = () => {
                       border: "1px solid #fecaca",
                     }}
                   >
-                    &#10003; VBA LICENSED
+                    &#10003; LICENSED
                   </span>
                   <span
                     className="px-3 py-2 rounded-2"
@@ -414,7 +414,7 @@ const Page: React.FC = () => {
               >
                 <Image
                   src={ServiceDetailsImg1}
-                  alt="Emergency gas ducted heating repair Melbourne – VBA licensed gas fitter attending urgent ducted heater breakdown"
+                  alt="Emergency gas ducted heating repair Melbourne –   licensed gas fitter attending urgent ducted heater breakdown"
                   className="img-fluid rounded-4"
                   priority
                   style={{
@@ -437,7 +437,7 @@ const Page: React.FC = () => {
                 >
                   <p className="mb-0 small">
                     <strong style={{ fontSize: "0.95rem" }}>
-                      VBA Licensed Gas Fitters
+                      Licensed Gas Fitters
                     </strong>
                     <br />
                     <span style={{ fontSize: "0.85rem", opacity: 0.9 }}>
@@ -527,8 +527,8 @@ const Page: React.FC = () => {
                     Gas ducted heating failures in Melbourne winter are genuine
                     emergencies — particularly for households with young
                     children, elderly residents, or people with medical
-                    conditions. Our VBA licensed gas fitters are available 24/7
-                    to diagnose and resolve every category of gas ducted heating
+                    conditions. Our licensed gas fitters are available 24/7 to
+                    diagnose and resolve every category of gas ducted heating
                     failure.
                   </p>
                 </motion.div>
@@ -619,8 +619,7 @@ const Page: React.FC = () => {
                     </div>
                     <h2 className="section-title__title">
                       <TextAnimation animationStyle="style1">
-                        VBA Licensed — Every Gas Emergency{" "}
-                        <span>Done Safely</span>
+                        Licensed — Every Gas Emergency <span>Done Safely</span>
                       </TextAnimation>
                     </h2>
                   </div>
@@ -629,11 +628,11 @@ const Page: React.FC = () => {
                     style={{ fontSize: "1.05rem", lineHeight: "1.8" }}
                   >
                     Under Australian regulations, all gas appliance repair work
-                    must be performed by a VBA registered gas fitter. This is
-                    not optional — unlicensed gas work is illegal and dangerous.
-                    Our technicians hold current VBA registration, carry gas a
-                    detection equipment, and follow all safe work procedures for
-                    every emergency repair.
+                    must be performed by a registered gas fitter. This is not
+                    optional — unlicensed gas work is illegal and dangerous. Our
+                    technicians hold current registration, carry gas a detection
+                    equipment, and follow all safe work procedures for every
+                    emergency repair.
                   </p>
                   <div
                     className="p-4 rounded-3"
@@ -930,8 +929,8 @@ const Page: React.FC = () => {
                     }}
                   >
                     24/7 emergency gas ducted heating repair across all
-                    Melbourne suburbs. VBA licensed gas fitters. All major
-                    brands. Target 4-hour response.
+                    Melbourne suburbs. licensed gas fitters. All major brands.
+                    Target 4-hour response.
                   </p>
                   <div className="d-flex gap-3 justify-content-center flex-wrap">
                     <motion.div
@@ -971,7 +970,7 @@ const Page: React.FC = () => {
                       letterSpacing: "0.5px",
                     }}
                   >
-                    &#10003; 24/7 EMERGENCY &bull; &#10003; VBA LICENSED &bull;
+                    &#10003; 24/7 EMERGENCY &bull; &#10003; LICENSED &bull;
                     &#10003; ALL BRANDS &bull; &#10003; CARBON MONOXIDE SAFE
                     &bull; &#10003; ALL MELBOURNE
                   </p>

@@ -304,8 +304,8 @@ const Page: React.FC = () => {
                 >
                   Boiler shutdown, hydronic leak, cold zones, or pressure loss —
                   our emergency hydronic heating technicians respond across
-                  Melbourne within 4 hours. VBA licensed for boiler and gas
-                  work. We carry parts for all major brands.
+                  Melbourne within 4 hours. licensed for boiler and gas work. We
+                  carry parts for all major brands.
                 </p>
                 <div className="d-flex gap-3 mb-5 flex-wrap">
                   <motion.div
@@ -383,7 +383,7 @@ const Page: React.FC = () => {
                       border: "1px solid #fecaca",
                     }}
                   >
-                    &#10003; VBA LICENSED
+                    &#10003; LICENSED
                   </span>
                   <span
                     className="px-3 py-2 rounded-2"
@@ -899,7 +899,7 @@ const Page: React.FC = () => {
                     }}
                   >
                     24/7 emergency hydronic repair across all Melbourne suburbs.
-                    VBA licensed technicians. 4-hour response window. All major
+                    licensed technicians. 4-hour response window. All major
                     boiler brands serviced.
                   </p>
                   <div className="d-flex gap-3 justify-content-center flex-wrap">
@@ -941,8 +941,8 @@ const Page: React.FC = () => {
                     }}
                   >
                     &#10003; 24/7 AVAILABLE &bull; &#10003; 4-HR RESPONSE &bull;
-                    &#10003; VBA LICENSED &bull; &#10003; ALL BOILER BRANDS
-                    &bull; &#10003; ALL MELBOURNE
+                    &#10003; LICENSED &bull; &#10003; ALL BOILER BRANDS &bull;
+                    &#10003; ALL MELBOURNE
                   </p>
                 </motion.div>
               </div>

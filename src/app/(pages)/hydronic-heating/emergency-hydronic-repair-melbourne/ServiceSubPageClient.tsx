@@ -252,7 +252,7 @@ const Page: React.FC = () => {
                   className="text-secondary mb-5"
                   style={{ fontSize: "1rem", lineHeight: "1.8" }}
                 >
-                  VBA licensed. Transparent pricing. Limited warranty on all
+                  licensed. Transparent pricing. Limited warranty on all
                   emergency repairs.
                 </p>
 
@@ -337,7 +337,7 @@ const Page: React.FC = () => {
                       fontWeight: 600,
                     }}
                   >
-                    ✓ VBA LICENSED
+                    ✓ LICENSED
                   </span>
                 </div>
               </div>
@@ -466,9 +466,9 @@ const Page: React.FC = () => {
                     style={{ fontSize: "1.05rem", lineHeight: "1.8" }}
                   >
                     When heating fails, you need immediate professional help. We
-                    arrive fast with VBA-licensed technicians equipped to
-                    diagnose and fix hydronic emergencies on-site, often within
-                    the same day.
+                    arrive fast with -licensed technicians equipped to diagnose
+                    and fix hydronic emergencies on-site, often within the same
+                    day.
                   </p>
                   <p
                     className="text-secondary"
@@ -1077,7 +1077,7 @@ const Page: React.FC = () => {
                     }}
                   >
                     Don&apos;t wait. Call now for 24/7 emergency dispatch. We
-                    respond within 2-4 hours with professional VBA-licensed
+                    respond within 2-4 hours with professional -licensed
                     technicians.
                   </p>
                   <div className="d-flex gap-3 justify-content-center flex-wrap">

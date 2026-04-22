@@ -183,7 +183,7 @@ const faqData = [
     id: 6,
     question: "Do you handle gas and refrigerant emergencies?",
     answer:
-      "Yes. Gas emergencies are attended by VBA registered gas fitters who carry gas detection equipment and the tools required to locate and make safe any gas leak before repairing the fault. Refrigerant-related emergencies on split or ducted systems are handled by ARCtick licensed technicians in compliance with Australian regulations.",
+      "Yes. Gas emergencies are attended by   registered gas fitters who carry gas detection equipment and the tools required to locate and make safe any gas leak before repairing the fault. Refrigerant-related emergencies on split or ducted systems are handled by ARCtick licensed technicians in compliance with Australian regulations.",
   },
   {
     id: 7,
@@ -306,7 +306,7 @@ const Page: React.FC = () => {
                   className="text-secondary mb-5"
                   style={{ fontSize: "1rem", lineHeight: "1.8" }}
                 >
-                  VBA licensed for gas. ARCtick licensed for refrigerants. All
+                  licensed for gas. ARCtick licensed for refrigerants. All
                   brands. Parts on board.
                 </p>
                 <div className="d-flex gap-3 mb-5 flex-wrap">
@@ -638,15 +638,15 @@ const Page: React.FC = () => {
                     }}
                   >
                     <strong style={{ color: "#d32f2f", fontSize: "1rem" }}>
-                      <i className="fas fa-certificate me-2"></i>VBA Licensed
-                      Gas • ARCtick Licensed Refrigerants
+                      <i className="fas fa-certificate me-2"></i> Licensed Gas •
+                      ARCtick Licensed Refrigerants
                     </strong>
                     <p
                       className="mb-0 mt-2 text-secondary"
                       style={{ lineHeight: "1.7" }}
                     >
-                      Gas appliance emergencies require VBA registered gas
-                      fitters — we hold current registration. AC and refrigerant
+                      Gas appliance emergencies require registered gas fitters —
+                      we hold current registration. AC and refrigerant
                       emergencies require ARCtick licensing — all our AC
                       technicians hold current licences. Every emergency repair
                       is fully compliant with Australian safety and licensing

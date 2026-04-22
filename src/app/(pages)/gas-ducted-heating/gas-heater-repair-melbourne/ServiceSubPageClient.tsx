@@ -281,10 +281,9 @@ const Page: React.FC = () => {
                   style={{ fontSize: "1.1rem", lineHeight: "1.8" }}
                 >
                   Fast, reliable gas ducted heating repairs across all Melbourne
-                  suburbs. Our VBA licensed gas fitters diagnose and fix all
-                  faults — from ignition failures and no-heat faults to zone
-                  control issues and gas valve problems — with same-day
-                  availability.
+                  suburbs. Our licensed gas fitters diagnose and fix all faults
+                  — from ignition failures and no-heat faults to zone control
+                  issues and gas valve problems — with same-day availability.
                 </p>
                 <p
                   className="text-secondary mb-5"
@@ -1008,7 +1007,7 @@ const Page: React.FC = () => {
                       letterSpacing: "0.5px",
                     }}
                   >
-                    &#10003; ALL MELBOURNE SUBURBS &bull; &#10003; VBA LICENSED
+                    &#10003; ALL MELBOURNE SUBURBS &bull; &#10003; LICENSED
                     &bull; &#10003; SAME-DAY SERVICE &bull; &#10003; FIXED PRICE
                   </p>
                 </motion.div>

@@ -384,7 +384,7 @@ const Page: React.FC = () => {
                       border: "1px solid #fecaca",
                     }}
                   >
-                    &#10003; VBA LICENSED
+                    &#10003; LICENSED
                   </span>
                   <span
                     className="px-3 py-2 rounded-2"
@@ -555,7 +555,7 @@ const Page: React.FC = () => {
                         icon: "fas fa-fire",
                         title: "Boiler Connection Leak",
                         description:
-                          "Leaks at the boiler flow and return connections, fill valve, pressure gauge connections, and heat exchanger interfaces. Boiler connection leaks require careful isolation before repair. We carry out all boiler connection repairs in accordance with VBA licensing requirements and manufacturer specifications.",
+                          "Leaks at the boiler flow and return connections, fill valve, pressure gauge connections, and heat exchanger interfaces. Boiler connection leaks require careful isolation before repair. We carry out all boiler connection repairs in accordance with   licensing requirements and manufacturer specifications.",
                       },
                       {
                         icon: "fas fa-layer-group",
@@ -902,8 +902,8 @@ const Page: React.FC = () => {
                     }}
                   >
                     Expert hydronic leak detection and repair across all
-                    Melbourne suburbs. Slab leak specialists. VBA licensed.
-                    Pressure testing and full system certification included.
+                    Melbourne suburbs. Slab leak specialists. licensed. Pressure
+                    testing and full system certification included.
                   </p>
                   <div className="d-flex gap-3 justify-content-center flex-wrap">
                     <motion.div
@@ -944,8 +944,8 @@ const Page: React.FC = () => {
                     }}
                   >
                     &#10003; SLAB LEAK DETECTION &bull; &#10003; THERMAL IMAGING
-                    &bull; &#10003; VBA LICENSED &bull; &#10003; ALL BOILER
-                    BRANDS &bull; &#10003; ALL MELBOURNE
+                    &bull; &#10003; LICENSED &bull; &#10003; ALL BOILER BRANDS
+                    &bull; &#10003; ALL MELBOURNE
                   </p>
                 </motion.div>
               </div>

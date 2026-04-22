@@ -46,7 +46,7 @@ const services: ServiceCard[] = [
     id: 2,
     title: "Gas Ducted Heating",
     description:
-      "Expert gas ducted heating installation, servicing, repair, and emergency maintenance. VBA registered gas fitters with full diagnostics.",
+      "Expert gas ducted heating installation, servicing, repair, and emergency maintenance.   registered gas fitters with full diagnostics.",
     icon: "fas fa-fire",
     link: "/gas-ducted-heating",
     subServices: [
@@ -505,7 +505,7 @@ const SuburbPageClient: React.FC<SuburbPageClientProps> = ({
                   icon: "fas fa-certificate",
                   title: "Fully Licensed & Insured",
                   description:
-                    "ARCtick and VBA registered with comprehensive insurance coverage.",
+                    "ARCtick and   registered with comprehensive insurance coverage.",
                 },
                 {
                   icon: "fas fa-tools",
@@ -672,7 +672,7 @@ const SuburbPageClient: React.FC<SuburbPageClientProps> = ({
                   },
                   {
                     q: "Are your technicians licensed?",
-                    a: "Yes. All our technicians hold current ARCtick refrigerant handling licenses and VBA gas fitting licenses for lawful repairs.",
+                    a: "Yes. All our technicians hold current ARCtick refrigerant handling licenses and   gas fitting licenses for lawful repairs.",
                   },
                 ].map((item, idx) => (
                   <motion.div

@@ -264,7 +264,7 @@ const Page: React.FC = () => {
                 >
                   Don&apos;t let a faulty heating system leave your family
                   shivering. When your hydronic system fails, we respond fast
-                  with VBA-licensed technicians available 24/7.
+                  with -licensed technicians available 24/7.
                 </p>
                 <p
                   className="text-secondary mb-5"
@@ -360,7 +360,7 @@ const Page: React.FC = () => {
                       fontWeight: 600,
                     }}
                   >
-                    ✓ VBA LICENSED
+                    ✓ LICENSED
                   </span>
                 </div>
               </div>
@@ -502,7 +502,7 @@ const Page: React.FC = () => {
                     </strong>{" "}
                     We&apos;re available 24/7/365 for emergency repairs, provide
                     transparent pricing with quotes before work, and back every
-                    repair with a Limited Warranty. Our VBA-licensed technicians
+                    repair with a Limited Warranty. Our -licensed technicians
                     have 15+ years experience with all hydronic system types.
                   </p>
                 </motion.div>
@@ -684,7 +684,7 @@ const Page: React.FC = () => {
                         className="text-secondary"
                         style={{ lineHeight: "1.7" }}
                       >
-                        Our VBA-licensed technicians complete the repair using
+                        Our -licensed technicians complete the repair using
                         quality replacement parts. We repair or replace—pump,
                         valve, thermostat, radiator, boiler components, or pipes
                         as needed.
@@ -1041,7 +1041,7 @@ const Page: React.FC = () => {
                                 id: 9,
                                 question: "Can I repair the system myself?",
                                 answer:
-                                  "Hydronic systems are complex and require professional expertise. DIY repairs risk damaging the system, voiding warranties, and creating safety hazards (gas, water damage, electrical). Most jurisdictions require licensed technicians. Always hire a VBA-licensed professional.",
+                                  "Hydronic systems are complex and require professional expertise. DIY repairs risk damaging the system, voiding warranties, and creating safety hazards (gas, water damage, electrical). Most jurisdictions require licensed technicians. Always hire a  -licensed professional.",
                               },
                               {
                                 id: 10,
@@ -1126,7 +1126,7 @@ const Page: React.FC = () => {
                     }}
                   >
                     We&apos;re available 24/7 with rapid response times. Our
-                    VBA-licensed technicians will diagnose and fix your hydronic
+                    -licensed technicians will diagnose and fix your hydronic
                     system fast.
                   </p>
                   <div className="d-flex gap-3 justify-content-center flex-wrap">

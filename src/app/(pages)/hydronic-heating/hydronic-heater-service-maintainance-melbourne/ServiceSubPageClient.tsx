@@ -253,7 +253,7 @@ const Page: React.FC = () => {
                   style={{ fontSize: "1rem", lineHeight: "1.8" }}
                 >
                   Professional maintenance service to keep your system running
-                  smoothly. VBA licensed technicians serving Melbourne.
+                  smoothly. licensed technicians serving Melbourne.
                 </p>
 
                 <div className="d-flex gap-3 mb-5 flex-wrap">
@@ -466,7 +466,7 @@ const Page: React.FC = () => {
                   >
                     Regular professional maintenance keeps your hydronic heating
                     system operating at peak performance, extending its life and
-                    preventing costly emergency repairs. Our VBA-licensed
+                    preventing costly emergency repairs. Our -licensed
                     technicians provide comprehensive 20-point service
                     inspections.
                   </p>
@@ -722,9 +722,9 @@ const Page: React.FC = () => {
                               },
                               {
                                 id: 8,
-                                question: "Are you VBA licensed?",
+                                question: "Are you   licensed?",
                                 answer:
-                                  "Yes. All our technicians are VBA licensed professionals. We're fully insured and certified to service all hydronic heating systems in Melbourne.",
+                                  "Yes. All our technicians are   licensed professionals. We're fully insured and certified to service all hydronic heating systems in Melbourne.",
                               },
                               {
                                 id: 9,

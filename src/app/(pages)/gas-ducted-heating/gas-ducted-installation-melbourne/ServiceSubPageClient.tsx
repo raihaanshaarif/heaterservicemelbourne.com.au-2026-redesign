@@ -218,9 +218,9 @@ const faqData = [
   },
   {
     id: 9,
-    question: "Are your gas fitters VBA licensed?",
+    question: "Are your gas fitters   licensed?",
     answer:
-      "Yes. All our gas fitters are fully licensed with the Victorian Building Authority (VBA), Type A gas appliance certified, and carry full public liability insurance. You can be fully confident in the safety and compliance of our work.",
+      "Yes. All our gas fitters are fully licensed with the Victorian Building Authority ( ), Type A gas appliance certified, and carry full public liability insurance. You can be fully confident in the safety and compliance of our work.",
   },
   {
     id: 10,
@@ -311,7 +311,7 @@ const Page: React.FC = () => {
                   className="text-secondary mb-5"
                   style={{ fontSize: "1rem", lineHeight: "1.8" }}
                 >
-                  Serving all Melbourne suburbs with VBA Licensed gas fitters,
+                  Serving all Melbourne suburbs with Licensed gas fitters,
                   manufacturer warranties, and transparent fixed pricing.
                 </p>
                 <div className="d-flex gap-3 mb-5 flex-wrap">
@@ -369,7 +369,7 @@ const Page: React.FC = () => {
                       fontWeight: 600,
                     }}
                   >
-                    ✓ VBA LICENSED
+                    ✓ LICENSED
                   </span>
                   <span
                     className="px-3 py-2 rounded-2"
@@ -728,7 +728,7 @@ const Page: React.FC = () => {
                       We service all Melbourne suburbs
                     </strong>{" "}
                     — from inner city apartments to outer metropolitan homes.
-                    Our VBA licensed gas fitters are equipped to handle your gas
+                    Our licensed gas fitters are equipped to handle your gas
                     ducted heating installation and servicing needs across all
                     of Greater Melbourne.
                   </p>
@@ -1027,7 +1027,7 @@ const Page: React.FC = () => {
                       letterSpacing: "0.5px",
                     }}
                   >
-                    ✓ ALL MELBOURNE SUBURBS &bull; ✓ VBA LICENSED &bull; ✓
+                    ✓ ALL MELBOURNE SUBURBS &bull; ✓ LICENSED &bull; ✓
                     MANUFACTURER WARRANTY &bull; ✓ FREE ASSESSMENT
                   </p>
                 </motion.div>

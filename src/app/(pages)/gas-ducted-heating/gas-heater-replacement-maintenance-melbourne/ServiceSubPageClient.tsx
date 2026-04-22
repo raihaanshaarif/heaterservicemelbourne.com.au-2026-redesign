@@ -281,10 +281,9 @@ const Page: React.FC = () => {
                   style={{ fontSize: "1.1rem", lineHeight: "1.8" }}
                 >
                   Upgrade from your ageing gas ducted heater to a modern,
-                  high-efficiency system with full installation by VBA licensed
-                  gas fitters. We supply and install all major brands, handle
-                  duct inspection, and manage VEU rebate paperwork on your
-                  behalf.
+                  high-efficiency system with full installation by licensed gas
+                  fitters. We supply and install all major brands, handle duct
+                  inspection, and manage VEU rebate paperwork on your behalf.
                 </p>
                 <p
                   className="text-secondary mb-5"
@@ -348,7 +347,7 @@ const Page: React.FC = () => {
                       fontWeight: 600,
                     }}
                   >
-                    &#10003; VBA LICENSED
+                    &#10003; LICENSED
                   </span>
                   <span
                     className="px-3 py-2 rounded-2"
@@ -943,8 +942,8 @@ const Page: React.FC = () => {
                     }}
                   >
                     Get a free on-site assessment and fully itemised quote. No
-                    obligation, no pressure — just honest advice from VBA
-                    licensed gas heating specialists.
+                    obligation, no pressure — just honest advice from licensed
+                    gas heating specialists.
                   </p>
                   <div className="d-flex gap-3 justify-content-center flex-wrap">
                     <motion.div
@@ -1008,7 +1007,7 @@ const Page: React.FC = () => {
                       letterSpacing: "0.5px",
                     }}
                   >
-                    &#10003; ALL MELBOURNE SUBURBS &bull; &#10003; VBA LICENSED
+                    &#10003; ALL MELBOURNE SUBURBS &bull; &#10003; LICENSED
                     &bull; &#10003; FREE ASSESSMENT &bull; &#10003; MANUFACTURER
                     WARRANTY
                   </p>

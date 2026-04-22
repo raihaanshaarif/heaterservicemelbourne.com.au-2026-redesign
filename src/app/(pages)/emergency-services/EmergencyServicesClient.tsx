@@ -16,7 +16,6 @@ import ProcessOne from "@/features/home-one/ProcessOne";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import { emergencyServicesData } from "@/contents/services/serviceData";
 
-
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -46,7 +45,7 @@ const faqData = [
     id: 3,
     question: "Do you handle gas leak emergencies?",
     answer:
-      "Yes. If you smell gas, leave the property immediately, do not operate any switches, and call the gas emergency line (1800 GAS EMERGENCY) first, then call us. Our licensed gas fitters respond to gas leak emergencies and carry detection equipment to locate and fix the source safely. All our gas work is performed by VBA licensed gas fitters.",
+      "Yes. If you smell gas, leave the property immediately, do not operate any switches, and call the gas emergency line (1800 GAS EMERGENCY) first, then call us. Our licensed gas fitters respond to gas leak emergencies and carry detection equipment to locate and fix the source safely. All our gas work is performed by   licensed gas fitters.",
   },
   {
     id: 4,
@@ -188,7 +187,7 @@ const Page: React.FC = () => {
                   className="text-secondary mb-5"
                   style={{ fontSize: "1rem", lineHeight: "1.8" }}
                 >
-                  VBA licensed gas fitters. ARCtick licensed AC technicians. All
+                  licensed gas fitters. ARCtick licensed AC technicians. All
                   brands. All suburbs.
                 </p>
                 <div className="d-flex gap-3 mb-5 flex-wrap">
@@ -671,9 +670,9 @@ const Page: React.FC = () => {
               },
               {
                 icon: "fas fa-certificate",
-                title: "VBA and ARCtick Licensed",
+                title: "  and ARCtick Licensed",
                 description:
-                  "Gas work by VBA registered gas fitters. AC refrigerant work by ARCtick licensed technicians. Every emergency repair is fully compliant with Australian licensing and safety regulations.",
+                  "Gas work by   registered gas fitters. AC refrigerant work by ARCtick licensed technicians. Every emergency repair is fully compliant with Australian licensing and safety regulations.",
               },
               {
                 icon: "fas fa-tools",
@@ -884,7 +883,7 @@ const Page: React.FC = () => {
           className="mb-5"
           style={{ fontSize: "1.1rem", color: "#fecaca", lineHeight: "1.7" }}
         >
-          24/7 emergency response across all Melbourne suburbs. VBA and ARCtick
+          24/7 emergency response across all Melbourne suburbs. and ARCtick
           licensed. All system types. All brands.
         </p>
         <div className="d-flex gap-3 justify-content-center flex-wrap">

@@ -272,7 +272,7 @@ const Page: React.FC = () => {
                   className="text-secondary mb-5"
                   style={{ fontSize: "1rem", lineHeight: "1.8" }}
                 >
-                  Serving all Melbourne suburbs with VBA Licensed technicians,
+                  Serving all Melbourne suburbs with Licensed technicians,
                   25-year warranties, and transparent pricing.
                 </p>
 
@@ -340,7 +340,7 @@ const Page: React.FC = () => {
                       fontWeight: 600,
                     }}
                   >
-                    ✓ VBA LICENSED
+                    ✓ LICENSED
                   </span>
                   <span
                     className="px-3 py-2 rounded-2"
@@ -698,7 +698,7 @@ const Page: React.FC = () => {
                       We service all Melbourne suburbs
                     </strong>
                     —from inner city apartments to outer metropolitan homes.
-                    Regardless of your location in Greater Melbourne, our VBA
+                    Regardless of your location in Greater Melbourne, our
                     licensed technicians are equipped to handle your hydronic
                     heating installation and maintenance needs.
                   </p>
@@ -1074,7 +1074,7 @@ const Page: React.FC = () => {
                       letterSpacing: "0.5px",
                     }}
                   >
-                    ✓ ALL MELBOURNE SUBURBS • ✓ VBA LICENSED • ✓ WARRANTY • ✓
+                    ✓ ALL MELBOURNE SUBURBS • ✓   LICENSED • ✓ WARRANTY • ✓
                     FREE ASSESSMENT
                   </p>
                 </motion.div> */}

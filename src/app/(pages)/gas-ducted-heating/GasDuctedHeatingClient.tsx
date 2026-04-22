@@ -92,7 +92,7 @@ const faqData = [
     id: 10,
     question: "What areas of Melbourne do you service?",
     answer:
-      "We service all Melbourne suburbs including inner city, northern, southern, eastern, and western corridors. All our gas fitters are VBA licensed and carry full public liability insurance. Contact us to confirm availability in your suburb.",
+      "We service all Melbourne suburbs including inner city, northern, southern, eastern, and western corridors. All our gas fitters are   licensed and carry full public liability insurance. Contact us to confirm availability in your suburb.",
   },
 ];
 
@@ -160,7 +160,7 @@ const Page: React.FC = () => {
               >
                 Melbourne&apos;s trusted gas ducted heating specialists. We
                 install, repair, service, and replace all makes and models of
-                gas ducted heating systems across all Melbourne suburbs. VBA
+                gas ducted heating systems across all Melbourne suburbs.
                 licensed gas fitters. Fixed-price quotes. Same-day availability.
               </p>
               <p
@@ -226,7 +226,7 @@ const Page: React.FC = () => {
                     fontWeight: 600,
                   }}
                 >
-                  &#10003; VBA LICENSED
+                  &#10003; LICENSED
                 </span>
                 <span
                   className="px-3 py-2 rounded-2"
@@ -415,8 +415,8 @@ const Page: React.FC = () => {
             {[
               {
                 icon: "fas fa-certificate",
-                title: "VBA Licensed Gas Fitters",
-                desc: "All our technicians hold current VBA gas fitting licences and carry full public liability insurance for every job.",
+                title: "  Licensed Gas Fitters",
+                desc: "All our technicians hold current   gas fitting licences and carry full public liability insurance for every job.",
               },
               {
                 icon: "fas fa-dollar-sign",
@@ -641,8 +641,8 @@ const Page: React.FC = () => {
                 lineHeight: "1.7",
               }}
             >
-              Call or book online now. All Melbourne suburbs covered. VBA
-              licensed gas fitters. Fixed-price quotes.
+              Call or book online now. All Melbourne suburbs covered. licensed
+              gas fitters. Fixed-price quotes.
             </p>
             <div className="d-flex gap-3 justify-content-center flex-wrap">
               <motion.div
@@ -704,7 +704,7 @@ const Page: React.FC = () => {
                 letterSpacing: "0.5px",
               }}
             >
-              &#10003; ALL MELBOURNE SUBURBS &bull; &#10003; VBA LICENSED &bull;
+              &#10003; ALL MELBOURNE SUBURBS &bull; &#10003; LICENSED &bull;
               &#10003; 24/7 EMERGENCY &bull; &#10003; FIXED PRICE
             </p>
           </motion.div>

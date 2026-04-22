@@ -177,7 +177,7 @@ const faqData = [
     id: 5,
     question: "What gas appliances do you repair after a leak is found?",
     answer:
-      "We repair all gas appliances connected to residential and commercial premises — gas ducted heaters, hydronic heating boilers, gas hot water systems, gas cooktops and ovens, gas fireplaces and log fires, and external gas connections. All repair work is carried out to current Australian gas safety standards by VBA registered gas fitters.",
+      "We repair all gas appliances connected to residential and commercial premises — gas ducted heaters, hydronic heating boilers, gas hot water systems, gas cooktops and ovens, gas fireplaces and log fires, and external gas connections. All repair work is carried out to current Australian gas safety standards by   registered gas fitters.",
   },
   {
     id: 6,
@@ -190,7 +190,7 @@ const faqData = [
     question:
       "Will I receive a compliance certificate after the gas leak repair?",
     answer:
-      "Yes. All gas repair work carried out by our VBA registered gas fitters is accompanied by a compliance certificate (Certificate of Compliance — Electrical Work form, or equivalent gas safety certificate) confirming the work meets Australian gas safety requirements. This is required for insurance and property records.",
+      "Yes. All gas repair work carried out by our   registered gas fitters is accompanied by a compliance certificate (Certificate of Compliance — Electrical Work form, or equivalent gas safety certificate) confirming the work meets Australian gas safety requirements. This is required for insurance and property records.",
   },
   {
     id: 8,
@@ -321,9 +321,9 @@ const Page: React.FC = () => {
                   style={{ fontSize: "1.05rem", lineHeight: "1.8" }}
                 >
                   24/7 emergency gas leak detection and repair across Melbourne.
-                  From appliance connection leaks to pipe faults, our VBA
-                  licensed gas fitters locate every gas leak with professional
-                  detection instruments and repair it safely to compliance.
+                  From appliance connection leaks to pipe faults, our licensed
+                  gas fitters locate every gas leak with professional detection
+                  instruments and repair it safely to compliance.
                 </p>
                 <div className="d-flex gap-3 mb-5 flex-wrap">
                   <motion.div
@@ -401,7 +401,7 @@ const Page: React.FC = () => {
                       border: "1px solid #fecaca",
                     }}
                   >
-                    &#10003; VBA LICENSED
+                    &#10003; LICENSED
                   </span>
                   <span
                     className="px-3 py-2 rounded-2"
@@ -427,7 +427,7 @@ const Page: React.FC = () => {
               >
                 <Image
                   src={ServiceDetailsImg1}
-                  alt="Emergency gas leak repair Melbourne – VBA licensed gas fitter using detection equipment to locate and fix gas leak"
+                  alt="Emergency gas leak repair Melbourne –   licensed gas fitter using detection equipment to locate and fix gas leak"
                   className="img-fluid rounded-4"
                   priority
                   style={{
@@ -701,18 +701,17 @@ const Page: React.FC = () => {
                     }}
                   >
                     <strong style={{ color: "#d32f2f", fontSize: "1rem" }}>
-                      <i className="fas fa-certificate me-2"></i>VBA Licensed
-                      Gas Fitters — Compliance Certificate Issued
+                      <i className="fas fa-certificate me-2"></i> Licensed Gas
+                      Fitters — Compliance Certificate Issued
                     </strong>
                     <p
                       className="mb-0 mt-2 text-secondary"
                       style={{ lineHeight: "1.7" }}
                     >
-                      All gas leak repair work is performed by VBA registered
-                      gas fitters and accompanied by a Certificate of
-                      Compliance. This is a legal requirement in Victoria and is
-                      required for insurance claims and property compliance
-                      records.
+                      All gas leak repair work is performed by registered gas
+                      fitters and accompanied by a Certificate of Compliance.
+                      This is a legal requirement in Victoria and is required
+                      for insurance claims and property compliance records.
                     </p>
                   </div>
                 </motion.div>
@@ -898,7 +897,7 @@ const Page: React.FC = () => {
                     }}
                   >
                     24/7 gas leak emergency response across all Melbourne
-                    suburbs. VBA licensed gas fitters. 1 to 2 hour priority
+                    suburbs. licensed gas fitters. 1 to 2 hour priority
                     response. Compliance certificate issued.
                   </p>
                   <div className="d-flex gap-3 justify-content-center flex-wrap">
@@ -940,7 +939,7 @@ const Page: React.FC = () => {
                     }}
                   >
                     &#10003; 24/7 AVAILABLE &bull; &#10003; 1–2 HR RESPONSE
-                    &bull; &#10003; VBA LICENSED &bull; &#10003; COMPLIANCE CERT
+                    &bull; &#10003; LICENSED &bull; &#10003; COMPLIANCE CERT
                     &bull; &#10003; ALL MELBOURNE
                   </p>
                 </motion.div>

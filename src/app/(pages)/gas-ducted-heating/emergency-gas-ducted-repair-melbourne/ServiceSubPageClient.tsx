@@ -1008,7 +1008,7 @@ const Page: React.FC = () => {
                     }}
                   >
                     &#10003; ALL MELBOURNE SUBURBS &bull; &#10003; 24/7
-                    AVAILABILITY &bull; &#10003; VBA LICENSED &bull; &#10003;
+                    AVAILABILITY &bull; &#10003; LICENSED &bull; &#10003;
                     COMPLIANCE CERT INCLUDED
                   </p>
                 </motion.div>
