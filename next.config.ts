@@ -29,6 +29,22 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      // Remove www from all URLs (force non-www preference)
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.heaterservicemelbourne.com.au",
+          },
+        ],
+        destination: "https://heaterservicemelbourne.com.au/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

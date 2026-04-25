@@ -36,9 +36,6 @@ export const metadata: Metadata = {
   keywords:
     "heating service melbourne, gas ducted heating melbourne, hydronic heating melbourne, split system melbourne, emergency heating repair, licensed gas fitters melbourne",
   metadataBase: new URL("https://heaterservicemelbourne.com.au"),
-  alternates: {
-    canonical: "https://heaterservicemelbourne.com.au",
-  },
   openGraph: {
     title: "Heater Service Melbourne | Gas Ducted, Hydronic & Split Systems",
     description:
