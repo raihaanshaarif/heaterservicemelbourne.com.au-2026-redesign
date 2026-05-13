@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import RinnaiBrandClient from "@/components/brands/rinnai/RinnaiBrandClient";
 
 export const metadata: Metadata = {
-  title: "Rinnai Heating Services Melbourne | Installation & Repairs",
+  title: "Rinnai Heating Services Melbourne",
   description: "Expert Rinnai heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Rinnai Melbourne, Rinnai repair, Rinnai installation, heating systems, air conditioning",
   openGraph: {

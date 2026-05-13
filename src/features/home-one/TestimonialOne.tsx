@@ -12,7 +12,6 @@ import type { Swiper as SwiperType } from "swiper";
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import TextAnimation from "@/components/elements/TextAnimation";
-import Link from "next/link";
 type TestimonialItem = {
   id: number;
   image: string | StaticImageData;
@@ -131,11 +130,7 @@ export default function TestimonialOne() {
                                 </p>
                                 <div className="testimonial-one__client-info-box">
                                   <div className="testimonial-one__client-info">
-                                    <h3>
-                                      <Link href="/testimonials">
-                                        {testimonial?.name}
-                                      </Link>
-                                    </h3>
+                                    <h3>{testimonial?.name}</h3>
                                     <p>{testimonial?.designation}</p>
                                   </div>
                                   <div className="testimonial-one__ratting">

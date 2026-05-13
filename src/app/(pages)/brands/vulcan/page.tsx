@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import VulcanBrandClient from "@/components/brands/vulcan/VulcanBrandClient";
 
 export const metadata: Metadata = {
-  title: "Vulcan Heating Services Melbourne | Installation & Repairs",
+  title: "Vulcan Heating Services Melbourne",
   description: "Expert Vulcan heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Vulcan Melbourne, Vulcan repair, Vulcan installation, heating systems, air conditioning",
   openGraph: {

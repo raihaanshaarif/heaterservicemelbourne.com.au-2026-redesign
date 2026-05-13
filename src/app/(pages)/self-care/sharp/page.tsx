@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Sharp Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Sharp Error Codes Melbourne",
   description: "Comprehensive Sharp error code database with troubleshooting guides for split systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Sharp error codes, Sharp troubleshooting, Sharp split system Melbourne, Sharp heater fault codes, Sharp error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/sharp",
   },
   openGraph: {
-    title: "Sharp Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Sharp Error Codes Melbourne",
     description: "Fix your Sharp split system system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/sharp",
     siteName: "Heater Service Melbourne",

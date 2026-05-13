@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import PanasonicBrandClient from "@/components/brands/panasonic/PanasonicBrandClient";
 
 export const metadata: Metadata = {
-  title: "Panasonic Heating Services Melbourne | Installation & Repairs",
+  title: "Panasonic Heating Services Melbourne",
   description: "Expert Panasonic heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Panasonic Melbourne, Panasonic repair, Panasonic installation, heating systems, air conditioning",
   openGraph: {

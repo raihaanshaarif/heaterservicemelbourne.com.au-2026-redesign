@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "AC Deep Cleaning & Sanitization Melbourne | Split System Clean",
+  title: "AC Deep Cleaning & Sanitization Melbourne",
   description:
     "Professional split system AC deep cleaning and sanitization in Melbourne. Improve air quality, restore efficiency. All brands. Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/split-system-air-conditioning/ac-deep-cleaning-sanitization-melbourne",
   },
   openGraph: {
-    title: "AC Deep Cleaning & Sanitization Melbourne | Split System Clean",
+    title: "AC Deep Cleaning & Sanitization Melbourne",
     description:
       "Professional split system AC deep cleaning and sanitization in Melbourne. Improve air quality, restore efficiency. All brands. Call 0405 133 761.",
     url: "https://heaterservicemelbourne.com.au/split-system-air-conditioning/ac-deep-cleaning-sanitization-melbourne",

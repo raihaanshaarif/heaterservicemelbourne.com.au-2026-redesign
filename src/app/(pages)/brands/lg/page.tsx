@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import LGBrandClient from "@/components/brands/lg/LGBrandClient";
 
 export const metadata: Metadata = {
-  title: "LG Heating Services Melbourne | Installation & Repairs",
+  title: "LG Heating Services Melbourne",
   description: "Expert LG heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "LG Melbourne, LG repair, LG installation, heating systems, air conditioning",
   openGraph: {

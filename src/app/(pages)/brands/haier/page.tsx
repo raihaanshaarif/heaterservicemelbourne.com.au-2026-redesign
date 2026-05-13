@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HaierBrandClient from "@/components/brands/haier/HaierBrandClient";
 
 export const metadata: Metadata = {
-  title: "Haier Heating Services Melbourne | Installation & Repairs",
+  title: "Haier Heating Services Melbourne",
   description: "Expert Haier heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Haier Melbourne, Haier repair, Haier installation, heating systems, air conditioning",
   openGraph: {

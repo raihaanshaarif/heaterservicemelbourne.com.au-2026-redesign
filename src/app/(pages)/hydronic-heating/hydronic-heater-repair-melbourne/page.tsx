@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Hydronic Heater Repair Melbourne | Boiler & System Repairs",
+  title: "Hydronic Heater Repair Melbourne",
   description:
     "Professional hydronic heater and boiler repair in Melbourne. Diagnose and fix all hydronic system faults. Same-day service. Licensed techs. Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/hydronic-heating/hydronic-heater-repair-melbourne",
   },
   openGraph: {
-    title: "Hydronic Heater Repair Melbourne | Boiler & System Repairs",
+    title: "Hydronic Heater Repair Melbourne",
     description:
       "Professional hydronic heater and boiler repair in Melbourne. Diagnose and fix all hydronic system faults. Same-day service. Licensed techs. Call 0405 133 761.",
     url: "https://heaterservicemelbourne.com.au/hydronic-heating/hydronic-heater-repair-melbourne",

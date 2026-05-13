@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Underfloor Slab Heating Repair Melbourne | Hydronic Floor Experts",
+  title: "Underfloor Slab Heating Repair Melbourne",
   description:
     "Specialist underfloor and slab hydronic heating repair in Melbourne. Pipe leak detection, pressure testing and re-commissioning. Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/hydronic-heating/underfloor-slab-heating-repair-melbourne",
   },
   openGraph: {
-    title: "Underfloor Slab Heating Repair Melbourne | Hydronic Floor Experts",
+    title: "Underfloor Slab Heating Repair Melbourne",
     description:
       "Specialist underfloor and slab hydronic heating repair in Melbourne. Pipe leak detection, pressure testing and re-commissioning. Call 0405 133 761.",
     url: "https://heaterservicemelbourne.com.au/hydronic-heating/underfloor-slab-heating-repair-melbourne",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Multi-Head Split System Service Melbourne | Multi-Zone AC",
+  title: "Multi-Head Split System Service Melbourne",
   description:
     "Expert multi-head and multi-zone split system installation, service and repair in Melbourne. All major brands. Free quotes. Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/split-system-air-conditioning/multi-head-system-service-melbourne",
   },
   openGraph: {
-    title: "Multi-Head Split System Service Melbourne | Multi-Zone AC",
+    title: "Multi-Head Split System Service Melbourne",
     description:
       "Expert multi-head and multi-zone split system installation, service and repair in Melbourne. All major brands. Free quotes. Call 0405 133 761.",
     url: "https://heaterservicemelbourne.com.au/split-system-air-conditioning/multi-head-system-service-melbourne",

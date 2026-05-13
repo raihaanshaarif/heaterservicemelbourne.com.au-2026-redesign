@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SelfCareClient from "@/components/self-care/SelfCareClient";
 
 export const metadata: Metadata = {
-  title: "Heating System Self-Care & Troubleshooting Guide Melbourne",
+  title: "Heating Self-Care Guide Melbourne",
   description:
     "Error codes, troubleshooting guides, and maintenance tips for all heating brands. DIY troubleshooting for gas ducted heating, hydronic systems, and heat pumps.",
   keywords:

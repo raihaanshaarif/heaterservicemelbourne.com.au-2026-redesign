@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HydronicHeatingClient from "./HydronicHeatingClient";
 
 export const metadata: Metadata = {
-  title: "Hydronic Heating Melbourne | Installation, Repair & Service",
+  title: "Hydronic Heating Melbourne",
   description:
     "Expert hydronic heating installation, repair and maintenance in Melbourne. Energy-efficient hydronic systems, licensed gas fitters. Free quotes, same-day service available.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/hydronic-heating",
   },
   openGraph: {
-    title: "Hydronic Heating Melbourne | Installation, Repair & Service",
+    title: "Hydronic Heating Melbourne",
     description:
       "Expert hydronic heating installation, repair and maintenance in Melbourne. Energy-efficient systems, licensed gas fitters.",
     url: "https://heaterservicemelbourne.com.au/hydronic-heating",

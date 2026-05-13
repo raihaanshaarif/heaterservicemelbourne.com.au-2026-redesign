@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import YorkBrandClient from "@/components/brands/york/YorkBrandClient";
 
 export const metadata: Metadata = {
-  title: "York Heating Services Melbourne | Installation & Repairs",
+  title: "York Heating Services Melbourne",
   description: "Expert York heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "York Melbourne, York repair, York installation, heating systems, air conditioning",
   openGraph: {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Emergency AC Breakdown Rescue Melbourne | 24/7 Air Con Repair",
+  title: "Emergency AC Breakdown Rescue Melbourne",
   description:
     "Emergency air conditioning breakdown rescue in Melbourne. Available 24/7 for all AC system failures. Fast response, all brands. Call 0405 133 761 now.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/emergency-services/ac-breakdown-rescue-melbourne",
   },
   openGraph: {
-    title: "Emergency AC Breakdown Rescue Melbourne | 24/7 Air Con Repair",
+    title: "Emergency AC Breakdown Rescue Melbourne",
     description:
       "Emergency air conditioning breakdown rescue in Melbourne. Available 24/7 for all AC system failures. Fast response, all brands. Call 0405 133 761 now.",
     url: "https://heaterservicemelbourne.com.au/emergency-services/ac-breakdown-rescue-melbourne",

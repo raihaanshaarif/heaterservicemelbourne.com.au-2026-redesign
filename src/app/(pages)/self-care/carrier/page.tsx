@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Carrier Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Carrier Error Codes Melbourne",
   description: "Comprehensive Carrier error code database with troubleshooting guides for split system and ducted air conditioning in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Carrier error codes, Carrier troubleshooting, Carrier split system and ducted Melbourne, Carrier heater fault codes, Carrier error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/carrier",
   },
   openGraph: {
-    title: "Carrier Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Carrier Error Codes Melbourne",
     description: "Fix your Carrier split system and ducted system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/carrier",
     siteName: "Heater Service Melbourne",

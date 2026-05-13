@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Gas Heater Service & Maintenance Melbourne | Annual Servicing",
+  title: "Gas Heater Service & Maintenance Melbourne",
   description:
     "Professional gas heater servicing and maintenance in Melbourne. Annual service plans, safety checks, carbon monoxide testing. Licensed techs. Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/gas-ducted-heating/gas-heater-service-and-maintenance-melbourne",
   },
   openGraph: {
-    title: "Gas Heater Service & Maintenance Melbourne | Annual Servicing",
+    title: "Gas Heater Service & Maintenance Melbourne",
     description:
       "Professional gas heater servicing and maintenance in Melbourne. Annual service plans, safety checks, carbon monoxide testing. Licensed techs. Call 0405 133 761.",
     url: "https://heaterservicemelbourne.com.au/gas-ducted-heating/gas-heater-service-and-maintenance-melbourne",

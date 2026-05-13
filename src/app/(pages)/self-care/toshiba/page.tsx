@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Toshiba Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Toshiba Error Codes Melbourne",
   description: "Comprehensive Toshiba error code database with troubleshooting guides for split systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Toshiba error codes, Toshiba troubleshooting, Toshiba split system Melbourne, Toshiba heater fault codes, Toshiba error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/toshiba",
   },
   openGraph: {
-    title: "Toshiba Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Toshiba Error Codes Melbourne",
     description: "Fix your Toshiba split system system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/toshiba",
     siteName: "Heater Service Melbourne",

@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Samsung Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Samsung Error Codes Melbourne",
   description: "Comprehensive Samsung error code database with troubleshooting guides for split systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Samsung error codes, Samsung troubleshooting, Samsung split system Melbourne, Samsung heater fault codes, Samsung error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/samsung",
   },
   openGraph: {
-    title: "Samsung Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Samsung Error Codes Melbourne",
     description: "Fix your Samsung split system system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/samsung",
     siteName: "Heater Service Melbourne",

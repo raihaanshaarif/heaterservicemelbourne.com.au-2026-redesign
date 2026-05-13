@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import FujitsuBrandClient from "@/components/brands/fujitsu/FujitsuBrandClient";
 
 export const metadata: Metadata = {
-  title: "Fujitsu Heating Services Melbourne | Installation & Repairs",
+  title: "Fujitsu Heating Services Melbourne",
   description: "Expert Fujitsu heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Fujitsu Melbourne, Fujitsu repair, Fujitsu installation, heating systems, air conditioning",
   openGraph: {

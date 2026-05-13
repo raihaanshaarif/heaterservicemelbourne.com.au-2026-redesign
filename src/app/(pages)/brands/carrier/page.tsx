@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import CarrierBrandClient from "@/components/brands/carrier/CarrierBrandClient";
 
 export const metadata: Metadata = {
-  title: "Carrier Heating Services Melbourne | Installation & Repairs",
+  title: "Carrier Heating Services Melbourne",
   description: "Expert Carrier heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Carrier Melbourne, Carrier repair, Carrier installation, heating systems, air conditioning",
   openGraph: {

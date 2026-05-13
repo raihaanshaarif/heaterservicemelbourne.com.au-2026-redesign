@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Vulcan Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Vulcan Error Codes Melbourne",
   description: "Comprehensive Vulcan error code database with troubleshooting guides for gas ducted heating systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Vulcan error codes, Vulcan troubleshooting, Vulcan gas ducted heating Melbourne, Vulcan heater fault codes, Vulcan error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/vulcan",
   },
   openGraph: {
-    title: "Vulcan Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Vulcan Error Codes Melbourne",
     description: "Fix your Vulcan gas ducted heating system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/vulcan",
     siteName: "Heater Service Melbourne",

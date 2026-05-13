@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Emergency Gas Leak Repair Melbourne | Licensed Gas Fitters 24/7",
+  title: "Emergency Gas Leak Repair Melbourne",
   description:
     "Emergency gas leak detection and repair in Melbourne. If you smell gas, call 0405 133 761 immediately. Licensed   gas fitters available 24/7.",
   keywords:
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       "https://heaterservicemelbourne.com.au/emergency-services/emergency-gas-leak-repair-melbourne",
   },
   openGraph: {
-    title: "Emergency Gas Leak Repair Melbourne | Licensed Gas Fitters 24/7",
+    title: "Emergency Gas Leak Repair Melbourne",
     description:
       "Emergency gas leak detection and repair in Melbourne. If you smell gas, call 0405 133 761 immediately. Licensed   gas fitters available 24/7.",
     url: "https://heaterservicemelbourne.com.au/emergency-services/emergency-gas-leak-repair-melbourne",

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BraemarBrandClient from "@/components/brands/braemar/BraemarBrandClient";
 
 export const metadata: Metadata = {
-  title: "Braemar Heating Services Melbourne | Installation & Repairs",
+  title: "Braemar Heating Services Melbourne",
   description: "Expert Braemar heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Braemar Melbourne, Braemar repair, Braemar installation, heating systems, air conditioning",
   openGraph: {

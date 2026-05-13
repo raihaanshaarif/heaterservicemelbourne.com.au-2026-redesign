@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import SharpBrandClient from "@/components/brands/sharp/SharpBrandClient";
 
 export const metadata: Metadata = {
-  title: "Sharp Heating Services Melbourne | Installation & Repairs",
+  title: "Sharp Heating Services Melbourne",
   description: "Expert Sharp heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Sharp Melbourne, Sharp repair, Sharp installation, heating systems, air conditioning",
   openGraph: {

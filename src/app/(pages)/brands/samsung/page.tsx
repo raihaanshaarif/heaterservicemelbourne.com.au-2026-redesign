@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import SamsungBrandClient from "@/components/brands/samsung/SamsungBrandClient";
 
 export const metadata: Metadata = {
-  title: "Samsung Heating Services Melbourne | Installation & Repairs",
+  title: "Samsung Heating Services Melbourne",
   description: "Expert Samsung heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Samsung Melbourne, Samsung repair, Samsung installation, heating systems, air conditioning",
   openGraph: {

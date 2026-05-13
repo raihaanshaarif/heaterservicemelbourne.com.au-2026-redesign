@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import CelairBrandClient from "@/components/brands/celair/CelairBrandClient";
 
 export const metadata: Metadata = {
-  title: "Celair Heating Services Melbourne | Installation & Repairs",
+  title: "Celair Heating Services Melbourne",
   description: "Expert Celair heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Celair Melbourne, Celair repair, Celair installation, heating systems, air conditioning",
   openGraph: {

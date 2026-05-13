@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SplitSystemClient from "./SplitSystemClient";
 
 export const metadata: Metadata = {
-  title: "Split System Air Conditioning Melbourne | Installation & Repair",
+  title: "Split System Air Conditioning Melbourne",
   description:
     "Expert split system installation, repair and servicing across Melbourne. All major brands including Daikin, Fujitsu, Mitsubishi, Samsung. Free quotes, same-day service.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/split-system-air-conditioning",
   },
   openGraph: {
-    title: "Split System Air Conditioning Melbourne | Installation & Repair",
+    title: "Split System Air Conditioning Melbourne",
     description:
       "Expert split system installation, repair and servicing across Melbourne. All major brands, free quotes, same-day service.",
     url: "https://heaterservicemelbourne.com.au/split-system-air-conditioning",

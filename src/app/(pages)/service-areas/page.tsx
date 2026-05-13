@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceAreasClient from "./ServiceAreasClient";
 
 export const metadata: Metadata = {
-  title: "Heater Service Areas Melbourne | All Suburbs We Cover",
+  title: "Heater Service Areas Melbourne",
   description:
     "Heater Service Melbourne covers 140+ suburbs across greater Melbourne. Gas ducted heating, hydronic heating, split system and emergency repairs in your suburb. Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/service-areas",
   },
   openGraph: {
-    title: "Heater Service Areas Melbourne | 140+ Suburbs Covered",
+    title: "Heater Service Areas Melbourne",
     description:
       "Heater Service Melbourne covers 140+ suburbs. Gas ducted heating, hydronic heating, split systems and 24/7 emergency repairs near you.",
     url: "https://heaterservicemelbourne.com.au/service-areas",

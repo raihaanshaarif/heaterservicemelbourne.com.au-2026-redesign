@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import MitsubishiElectricBrandClient from "@/components/brands/mitsubishi-electric/MitsubishiElectricBrandClient";
 
 export const metadata: Metadata = {
-  title: "Mitsubishi Electric Heating Services Melbourne | Installation & Repairs",
+  title: "Mitsubishi Electric Heating Services Melbourne",
   description: "Expert Mitsubishi Electric heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Mitsubishi Electric Melbourne, Mitsubishi Electric repair, Mitsubishi Electric installation, heating systems, air conditioning",
   openGraph: {

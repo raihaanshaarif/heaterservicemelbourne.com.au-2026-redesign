@@ -4,7 +4,7 @@ import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import BrandsClient from "@/components/brands/BrandsClient";
 
 export const metadata: Metadata = {
-  title: "Heating Brands We Service Melbourne | Rinnai, Brivis, Daikin & More",
+  title: "Heating Brands We Service Melbourne",
   description:
     "Expert service and repair for all major heating brands in Melbourne: Rinnai, Brivis, Braemar, Vulcan, Daikin, Fujitsu, Mitsubishi, Samsung & more. Licensed technicians.",
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/brands",
   },
   openGraph: {
-    title: "Heating Brands Serviced in Melbourne | All Major Brands",
+    title: "Heating Brands We Service Melbourne",
     description:
       "We service and repair all major heating brands in Melbourne. Rinnai, Brivis, Braemar, Daikin, Fujitsu, Mitsubishi and more. Same-day service available.",
     url: "https://heaterservicemelbourne.com.au/brands",

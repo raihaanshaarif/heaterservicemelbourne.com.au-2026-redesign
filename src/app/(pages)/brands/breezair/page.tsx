@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BreezairBrandClient from "@/components/brands/breezair/BreezairBrandClient";
 
 export const metadata: Metadata = {
-  title: "Breezair Heating Services Melbourne | Installation & Repairs",
+  title: "Breezair Heating Services Melbourne",
   description: "Expert Breezair heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Breezair Melbourne, Breezair repair, Breezair installation, heating systems, air conditioning",
   openGraph: {

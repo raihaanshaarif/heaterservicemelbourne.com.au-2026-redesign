@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GasDuctedHeatingClient from "./GasDuctedHeatingClient";
 
 export const metadata: Metadata = {
-  title: "Gas Ducted Heating Melbourne | Installation, Repair & Service",
+  title: "Gas Ducted Heating Melbourne",
   description:
     "Professional gas ducted heating installation, repair and servicing in Melbourne. Licensed gas fitters, all brands serviced. Same-day emergency repairs available.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/gas-ducted-heating",
   },
   openGraph: {
-    title: "Gas Ducted Heating Melbourne | Installation, Repair & Service",
+    title: "Gas Ducted Heating Melbourne",
     description:
       "Professional gas ducted heating installation, repair and servicing in Melbourne. Licensed gas fitters, all brands serviced.",
     url: "https://heaterservicemelbourne.com.au/gas-ducted-heating",

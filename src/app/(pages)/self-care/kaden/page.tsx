@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Kaden Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Kaden Error Codes Melbourne",
   description: "Comprehensive Kaden error code database with troubleshooting guides for split systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Kaden error codes, Kaden troubleshooting, Kaden split system Melbourne, Kaden heater fault codes, Kaden error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/kaden",
   },
   openGraph: {
-    title: "Kaden Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Kaden Error Codes Melbourne",
     description: "Fix your Kaden split system system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/kaden",
     siteName: "Heater Service Melbourne",

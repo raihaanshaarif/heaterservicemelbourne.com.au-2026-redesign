@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Haier Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Haier Error Codes Melbourne",
   description: "Comprehensive Haier error code database with troubleshooting guides for split systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Haier error codes, Haier troubleshooting, Haier split system Melbourne, Haier heater fault codes, Haier error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/haier",
   },
   openGraph: {
-    title: "Haier Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Haier Error Codes Melbourne",
     description: "Fix your Haier split system system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/haier",
     siteName: "Heater Service Melbourne",

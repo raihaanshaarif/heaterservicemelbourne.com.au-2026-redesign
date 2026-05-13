@@ -13,7 +13,6 @@ import Testimonial26 from "@/assets/images/testimonial/testimonial-2-6.jpg";
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import TextAnimation from "@/components/elements/TextAnimation";
-import Link from "next/link";
 
 interface TestimonialItem {
   id: number;
@@ -145,9 +144,7 @@ export default function TestimonialTwo() {
                           />
                         </div>
                         <div className="testimonial-two__client-content">
-                          <h3>
-                            <Link href="/testimonials">{item.name}</Link>
-                          </h3>
+                          <h3>{item.name}</h3>
                           <p>{item.designation}</p>
                         </div>
                       </div>

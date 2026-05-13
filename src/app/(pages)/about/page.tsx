@@ -13,7 +13,7 @@ import React from "react";
 import TestimonialTwo from "@/features/home-two/TestimonialTwo";
 
 export const metadata: Metadata = {
-  title: "About Us | Heater Service Melbourne - Licensed Heating Specialists",
+  title: "About Us | Licensed Heating Specialists",
   description:
     "Learn about Heater Service Melbourne. Licensed HVAC technicians servicing all Melbourne suburbs. 10+ years experience in hydronic heating, gas ducted heating & split systems.",
   keywords:
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/about",
   },
   openGraph: {
-    title: "About Heater Service Melbourne | Licensed Heating Specialists",
+    title: "About Us | Licensed Heating Specialists",
     description:
       "Licensed HVAC technicians with 10+ years experience. Hydronic heating, gas ducted heating and split systems across all Melbourne suburbs.",
     url: "https://heaterservicemelbourne.com.au/about",

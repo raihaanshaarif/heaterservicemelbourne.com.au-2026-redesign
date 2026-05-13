@@ -6,7 +6,7 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Heating Services Melbourne | Gas Ducted, Hydronic & Split Systems",
+  title: "Heating Services Melbourne",
   description:
     "Complete heating services in Melbourne: Gas ducted heating, hydronic heating, split system installation, repair, maintenance and 24/7 emergency service. Licensed technicians.",
   keywords:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "All Heating Services Melbourne | Gas Ducted, Hydronic & Split Systems",
+      "Heating Services Melbourne",
     description:
       "Professional heating installation, repair and maintenance in Melbourne. Gas ducted, hydronic, split systems and 24/7 emergency service.",
     url: "https://heaterservicemelbourne.com.au/services",

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HitachiBrandClient from "@/components/brands/hitachi/HitachiBrandClient";
 
 export const metadata: Metadata = {
-  title: "Hitachi Heating Services Melbourne | Installation & Repairs",
+  title: "Hitachi Heating Services Melbourne",
   description: "Expert Hitachi heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Hitachi Melbourne, Hitachi repair, Hitachi installation, heating systems, air conditioning",
   openGraph: {

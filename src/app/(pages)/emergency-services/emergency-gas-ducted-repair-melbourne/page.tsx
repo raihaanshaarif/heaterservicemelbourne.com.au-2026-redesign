@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Emergency Gas Ducted Repair Melbourne | No Heat? Call Now",
+  title: "Emergency Gas Ducted Repair Melbourne",
   description:
     "Emergency gas ducted heating repair in Melbourne. No heat in winter? Available 24/7. Fast response, all ducted systems repaired. Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/emergency-services/emergency-gas-ducted-repair-melbourne",
   },
   openGraph: {
-    title: "Emergency Gas Ducted Repair Melbourne | No Heat? Call Now",
+    title: "Emergency Gas Ducted Repair Melbourne",
     description:
       "Emergency gas ducted heating repair in Melbourne. No heat in winter? Available 24/7. Fast response, all ducted systems repaired. Call 0405 133 761.",
     url: "https://heaterservicemelbourne.com.au/emergency-services/emergency-gas-ducted-repair-melbourne",

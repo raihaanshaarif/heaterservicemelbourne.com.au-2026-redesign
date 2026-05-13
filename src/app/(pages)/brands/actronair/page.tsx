@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import ActronAirBrandClient from "@/components/brands/actronair/ActronAirBrandClient";
 
 export const metadata: Metadata = {
-  title: "ActronAir Heating Services Melbourne | Installation & Repairs",
+  title: "ActronAir Heating Services Melbourne",
   description: "Expert ActronAir heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "ActronAir Melbourne, ActronAir repair, ActronAir installation, heating systems, air conditioning",
   openGraph: {

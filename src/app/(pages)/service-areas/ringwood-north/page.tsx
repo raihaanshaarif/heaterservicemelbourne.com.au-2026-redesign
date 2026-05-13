@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SuburbPageClient from "../SuburbPageClient";
 
 export const metadata: Metadata = {
-  title: "Heater Service Ringwood North | Gas Ducted, Hydronic & Emergency Repairs",
+  title: "Heater Service Ringwood North",
   description:
     "Professional heating services in Ringwood North, Melbourne VIC. Gas ducted heating, hydronic heating, split system installation & repair and 24/7 emergency service. Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/service-areas/ringwood-north",
   },
   openGraph: {
-    title: "Heater Service Ringwood North | Gas Ducted, Hydronic & Emergency Repairs",
+    title: "Heater Service Ringwood North",
     description:
       "Professional heating services in Ringwood North, Melbourne VIC. Gas ducted heating, hydronic heating, split system and 24/7 emergency service. Call 0405 133 761.",
     url: "https://heaterservicemelbourne.com.au/service-areas/ringwood-north",

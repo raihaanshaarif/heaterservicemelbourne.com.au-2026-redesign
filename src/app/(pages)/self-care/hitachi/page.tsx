@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Hitachi Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Hitachi Error Codes Melbourne",
   description: "Comprehensive Hitachi error code database with troubleshooting guides for split system and ducted air conditioning in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Hitachi error codes, Hitachi troubleshooting, Hitachi split system and ducted Melbourne, Hitachi heater fault codes, Hitachi error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/hitachi",
   },
   openGraph: {
-    title: "Hitachi Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Hitachi Error Codes Melbourne",
     description: "Fix your Hitachi split system and ducted system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/hitachi",
     siteName: "Heater Service Melbourne",

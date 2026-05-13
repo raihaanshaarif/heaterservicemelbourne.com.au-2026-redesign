@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import EmergencyServicesClient from "./EmergencyServicesClient";
 
 export const metadata: Metadata = {
-  title: "24/7 Emergency Heating Repair Melbourne | Same Day Service",
+  title: "24/7 Emergency Heating Repair Melbourne",
   description:
     "Emergency heating repair in Melbourne available 24 hours 7 days a week. No heat in winter? Call 0405 133 761 for same-day emergency heating service.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/emergency-services",
   },
   openGraph: {
-    title: "24/7 Emergency Heating Repair Melbourne | Call 0405 133 761",
+    title: "24/7 Emergency Heating Repair Melbourne",
     description:
       "Emergency heating repair in Melbourne available 24/7. No heat? Call us now for same-day emergency service.",
     url: "https://heaterservicemelbourne.com.au/emergency-services",

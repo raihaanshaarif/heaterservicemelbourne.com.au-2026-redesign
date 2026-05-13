@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Mitsubishi Electric Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Mitsubishi Electric Error Codes Melbourne",
   description: "Comprehensive Mitsubishi Electric error code database with troubleshooting guides for split system and ducted reverse cycle air conditioning in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Mitsubishi Electric error codes, Mitsubishi Electric troubleshooting, Mitsubishi Electric split system and ducted reverse cycle Melbourne, Mitsubishi Electric heater fault codes, Mitsubishi Electric error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/mitsubishi-electric",
   },
   openGraph: {
-    title: "Mitsubishi Electric Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Mitsubishi Electric Error Codes Melbourne",
     description: "Fix your Mitsubishi Electric split system and ducted reverse cycle system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/mitsubishi-electric",
     siteName: "Heater Service Melbourne",

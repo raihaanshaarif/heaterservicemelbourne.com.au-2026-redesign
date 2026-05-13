@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import KadenBrandClient from "@/components/brands/kaden/KadenBrandClient";
 
 export const metadata: Metadata = {
-  title: "Kaden Heating Services Melbourne | Installation & Repairs",
+  title: "Kaden Heating Services Melbourne",
   description: "Expert Kaden heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
   keywords: "Kaden Melbourne, Kaden repair, Kaden installation, heating systems, air conditioning",
   openGraph: {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Split System Installation Melbourne | Supply & Install All Brands",
+  title: "Split System Installation Melbourne",
   description:
     "Professional split system installation in Melbourne. Daikin, Fujitsu, Mitsubishi, Samsung supplied and installed by ARCtick licensed technicians. Free quotes.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/split-system-air-conditioning/split-system-installation-melbourne",
   },
   openGraph: {
-    title: "Split System Installation Melbourne | Supply & Install All Brands",
+    title: "Split System Installation Melbourne",
     description:
       "Professional split system installation in Melbourne. Daikin, Fujitsu, Mitsubishi, Samsung supplied and installed by ARCtick licensed technicians. Free quotes.",
     url: "https://heaterservicemelbourne.com.au/split-system-air-conditioning/split-system-installation-melbourne",

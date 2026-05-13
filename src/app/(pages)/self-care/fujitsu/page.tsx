@@ -171,14 +171,14 @@ const brand = {
 };
 
 export const metadata: Metadata = {
-  title: "Fujitsu Error Codes & Troubleshooting | Melbourne Heating Guide",
+  title: "Fujitsu Error Codes Melbourne",
   description: "Comprehensive Fujitsu error code database with troubleshooting guides for reverse cycle split systems in Melbourne. Find solutions, maintenance tips and when to call a technician.",
   keywords: "Fujitsu error codes, Fujitsu troubleshooting, Fujitsu split system reverse cycle Melbourne, Fujitsu heater fault codes, Fujitsu error code guide",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/self-care/fujitsu",
   },
   openGraph: {
-    title: "Fujitsu Error Codes & Troubleshooting Guide | Melbourne",
+    title: "Fujitsu Error Codes Melbourne",
     description: "Fix your Fujitsu split system reverse cycle system with our comprehensive error code database and troubleshooting guide. Expert solutions for Melbourne homeowners.",
     url: "https://heaterservicemelbourne.com.au/self-care/fujitsu",
     siteName: "Heater Service Melbourne",

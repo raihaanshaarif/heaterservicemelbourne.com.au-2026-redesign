@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Gas Heater Replacement Melbourne | Old Heater Upgrade & Swap",
+  title: "Gas Heater Replacement Melbourne",
   description:
     "Gas heater replacement and upgrade service in Melbourne. Replace old inefficient heaters with modern energy-efficient systems. Free assessment. Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/gas-ducted-heating/gas-heater-replacement-maintenance-melbourne",
   },
   openGraph: {
-    title: "Gas Heater Replacement Melbourne | Old Heater Upgrade & Swap",
+    title: "Gas Heater Replacement Melbourne",
     description:
       "Gas heater replacement and upgrade service in Melbourne. Replace old inefficient heaters with modern energy-efficient systems. Free assessment. Call 0405 133 761.",
     url: "https://heaterservicemelbourne.com.au/gas-ducted-heating/gas-heater-replacement-maintenance-melbourne",

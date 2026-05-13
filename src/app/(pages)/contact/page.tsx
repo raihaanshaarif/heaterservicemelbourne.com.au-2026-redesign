@@ -4,7 +4,7 @@ import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Heater Service Melbourne | Call 0405 133 761",
+  title: "Contact Us | Call 0405 133 761",
   description:
     "Contact Heater Service Melbourne for all heating repairs, installations and emergencies. Call 0405 133 761. 24/7 emergency service across all Melbourne suburbs. Free quotes.",
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/contact",
   },
   openGraph: {
-    title: "Contact Heater Service Melbourne | Call 0405 133 761",
+    title: "Contact Us | Call 0405 133 761",
     description:
       "24/7 emergency heating service. Call 0405 133 761 for gas ducted heating, hydronic heating and split system repairs across Melbourne.",
     url: "https://heaterservicemelbourne.com.au/contact",
