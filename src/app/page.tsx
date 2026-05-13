@@ -40,12 +40,17 @@ import ProcessOne from "@/features/home-one/ProcessOne";
 import ServicesOne from "@/features/home-one/ServicesOne";
 import SlidingTextOne from "@/features/home-one/SlidingTextOne";
 import WhyChooseOne from "@/features/home-one/WhyChooseOne";
+import HomeSEOContent from "@/features/home-one/HomeSEOContent";
 import TestimonialTwo from "@/features/home-two/TestimonialTwo";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { generateLocalBusinessSchema, generateHomepageServiceSchema } from "@/utils/seo/jsonLd";
 import React from "react";
 
 const page = () => {
   return (
     <div className="page-wrapper">
+      <JSONLDScript schema={generateLocalBusinessSchema()} id="local-business-schema" />
+      <JSONLDScript schema={generateHomepageServiceSchema()} id="homepage-service-schema" />
       <HeaderOne />
       <BannerOne />
       <AboutOne />
@@ -57,6 +62,7 @@ const page = () => {
       <BrandOne />
       <TestimonialTwo />
 
+      <HomeSEOContent />
       <FaqOne />
     
 

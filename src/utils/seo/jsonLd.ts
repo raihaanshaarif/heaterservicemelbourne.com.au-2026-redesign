@@ -162,6 +162,64 @@ export function generateLocalBusinessSchema() {
     ],
     priceRange: "$$$",
     sameAs: ["https://www.google.com/maps/place/Heating+Service+Melbourne"],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: "567",
+      reviewCount: "567",
+    },
+  };
+}
+
+export function generateHomepageServiceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Heating & Cooling Service Melbourne",
+    description:
+      "Professional heating and cooling services in Melbourne. Gas ducted heating, hydronic heating, split system air conditioning, and 24/7 emergency repairs by fully licensed technicians.",
+    url: BUSINESS_INFO.website,
+    provider: {
+      "@type": "LocalBusiness",
+      name: BUSINESS_INFO.name,
+      telephone: `+61${BUSINESS_INFO.phone.slice(1)}`,
+      url: BUSINESS_INFO.website,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: BUSINESS_INFO.address.streetAddress,
+        addressLocality: BUSINESS_INFO.address.addressLocality,
+        addressRegion: BUSINESS_INFO.address.addressRegion,
+        postalCode: BUSINESS_INFO.address.postalCode,
+        addressCountry: BUSINESS_INFO.address.addressCountry,
+      },
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Melbourne",
+      containedInPlace: { "@type": "State", name: "Victoria" },
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Heating & Cooling Services",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gas Ducted Heating Service" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hydronic Heating Installation" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Split System Air Conditioning" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Evaporative Cooling Service" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "24/7 Emergency Heating Repair" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Duct Cleaning" } },
+      ],
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: "567",
+      reviewCount: "567",
+    },
   };
 }
 
