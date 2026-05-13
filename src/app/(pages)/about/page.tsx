@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 const page: React.FC = () => {
   return (
     <>
-      <DefaultBanner title="About" />
+      <DefaultBanner title="About" asH1 />
       <AboutOne />
       <SlidingTextOne />
       <ServicesOne />

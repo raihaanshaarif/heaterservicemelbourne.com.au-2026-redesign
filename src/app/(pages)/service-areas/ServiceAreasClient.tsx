@@ -267,6 +267,7 @@ const Page: React.FC = () => {
         title="Heating & Cooling Service Areas Melbourne"
         subTitle="Service Areas"
         titleLink="/service-areas"
+        asH1
       />
 
       {/* Introduction Section */}

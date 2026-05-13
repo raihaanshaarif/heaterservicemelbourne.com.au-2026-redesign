@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 const page: React.FC = () => {
   return (
     <>
-      <DefaultBanner title="Contact" />
+      <DefaultBanner title="Contact" asH1 />
       <ContactMain />
     </>
   );

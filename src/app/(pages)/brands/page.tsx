@@ -38,6 +38,7 @@ const Page: React.FC = () => {
         title="Brands We Service"
         subTitle="Brands"
         titleLink="/brands"
+        asH1
       />
       <BrandsClient />
     </>

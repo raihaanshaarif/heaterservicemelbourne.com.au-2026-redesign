@@ -18,7 +18,7 @@ import React from "react";
 const page: React.FC = () => {
   return (
     <>
-      <DefaultBanner title="Hydronic Heating Services" />
+      <DefaultBanner title="Hydronic Heating Services" asH1 />
 
       {/* JSON-LD Schema for Local SEO */}
       <JSONLDScript

@@ -7,11 +7,13 @@ interface ThisBanner {
   title: string;
   titleLink?: string;
   subTitle?: string;
+  asH1?: boolean;
 }
 const DefaultBanner: React.FC<ThisBanner> = ({
   title,
   titleLink = "",
   subTitle = "",
+  asH1 = false,
 }) => {
   return (
     <section className="page-header">
@@ -36,7 +38,7 @@ const DefaultBanner: React.FC<ThisBanner> = ({
               loading="lazy"
             />
           </div>
-          <h3>{title}</h3>
+          {asH1 ? <h1>{title}</h1> : <h3>{title}</h3>}
           <div className="thm-breadcrumb__inner">
             <ul className="thm-breadcrumb list-unstyled">
               <li>

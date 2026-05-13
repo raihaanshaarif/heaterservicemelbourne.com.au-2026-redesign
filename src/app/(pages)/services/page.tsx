@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const page: React.FC = () => {
   return (
     <>
-      <DefaultBanner title="Services" />
+      <DefaultBanner title="Services" asH1 />
       <section className="services-one services-page">
         <div className="container">
           <div className="row">

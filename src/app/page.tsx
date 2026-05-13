@@ -51,18 +51,14 @@ const page = () => {
       <AboutOne />
       <SlidingTextOne />
       <ServicesOne />
-      {/* <SkillOne /> */}
-      {/* <ProjectOne /> */}
+ 
       <WhyChooseOne />
       <ProcessOne />
       <BrandOne />
       <TestimonialTwo />
-      {/* <CounterOne /> */}
-      {/* <VideoOne /> */}
-      {/* <TeamOne /> */}
+
       <FaqOne />
-      {/* <DownloadAppOne /> */}
-      {/* <BlogOne /> */}
+    
 
       <FooterOne />
       <StrickyHeader />
