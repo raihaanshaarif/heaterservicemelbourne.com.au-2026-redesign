@@ -10,9 +10,19 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: ["/"],
         disallow: ["/api/", "/admin/", "/_next/"],
+        crawlDelay: 1,
+      },
+      {
+        userAgent: "AdsBot-Google",
+        allow: "/",
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
       },
     ],
-    sitemap: "https://heaterservicemelbourne.com.au/sitemap.xml",
-    host: "https://heaterservicemelbourne.com.au",
+    sitemap: [
+      "https://heaterservicemelbourne.com.au/sitemap.xml",
+    ],
   };
 }
