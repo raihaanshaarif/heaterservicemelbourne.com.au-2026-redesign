@@ -114,6 +114,10 @@ const MultiPageManuList: React.FC = () => {
         <Link href="/self-care">Self Care</Link>
       </li>
 
+      <li className={currentPath.startsWith("/blog") ? "current" : ""}>
+        <Link href="/blog">Blog</Link>
+      </li>
+
       <li className={currentPath === "/contact" ? "current" : ""}>
         <Link href="/contact">Contact</Link>
       </li>

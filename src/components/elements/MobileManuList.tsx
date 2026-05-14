@@ -245,6 +245,13 @@ const MobileManuList: React.FC = () => {
       </li>
 
       <li
+        className={`${currentPath.startsWith("/blog") ? "current" : ""}`}
+        onClick={closeMobileManu}
+      >
+        <Link href="/blog">Blog</Link>
+      </li>
+
+      <li
         className={`${currentPath === "/contact" ? "current" : ""}`}
         onClick={closeMobileManu}
       >
