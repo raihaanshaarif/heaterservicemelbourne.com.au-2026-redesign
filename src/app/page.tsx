@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
+import { Suspense, lazy } from "react";
 import FooterOne from "@/components/footers/FooterOne";
 import HeaderOne from "@/components/headers/HeaderOne";
 import StrickyHeader from "@/components/headers/StrickyHeader";
 import AboutOne from "@/features/home-one/AboutOne";
+import BannerOne from "@/features/home-one/BannerOne";
+import ServicesOne from "@/features/home-one/ServicesOne";
+import SlidingTextOne from "@/features/home-one/SlidingTextOne";
+import { JSONLDScript } from "@/components/seo/JSONLDScript";
+import { generateLocalBusinessSchema, generateHomepageServiceSchema } from "@/utils/seo/jsonLd";
+import React from "react";
+
+// Lazy load below-the-fold components for faster initial page load
+const WhyChooseOne = lazy(() => import("@/features/home-one/WhyChooseOne"));
+const ProcessOne = lazy(() => import("@/features/home-one/ProcessOne"));
+const BrandOne = lazy(() => import("@/features/home-one/BrandOne"));
+const TestimonialTwo = lazy(() => import("@/features/home-two/TestimonialTwo"));
+const HomeSEOContent = lazy(() => import("@/features/home-one/HomeSEOContent"));
+const FaqOne = lazy(() => import("@/features/home-one/FaqOne"));
 
 export const metadata: Metadata = {
   title: "Heater Service Melbourne | Gas Ducted, Hydronic & Split Systems",
@@ -31,20 +46,6 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-import BannerOne from "@/features/home-one/BannerOne";
-
-import BrandOne from "@/features/home-one/BrandOne";
-
-import FaqOne from "@/features/home-one/FaqOne";
-import ProcessOne from "@/features/home-one/ProcessOne";
-import ServicesOne from "@/features/home-one/ServicesOne";
-import SlidingTextOne from "@/features/home-one/SlidingTextOne";
-import WhyChooseOne from "@/features/home-one/WhyChooseOne";
-import HomeSEOContent from "@/features/home-one/HomeSEOContent";
-import TestimonialTwo from "@/features/home-two/TestimonialTwo";
-import { JSONLDScript } from "@/components/seo/JSONLDScript";
-import { generateLocalBusinessSchema, generateHomepageServiceSchema } from "@/utils/seo/jsonLd";
-import React from "react";
 
 const page = () => {
   return (
@@ -56,15 +57,31 @@ const page = () => {
       <AboutOne />
       <SlidingTextOne />
       <ServicesOne />
- 
-      <WhyChooseOne />
-      <ProcessOne />
-      <BrandOne />
-      <TestimonialTwo />
 
-      <HomeSEOContent />
-      <FaqOne />
-    
+      {/* Lazy-load below-the-fold sections for faster initial page load */}
+      <Suspense fallback={null}>
+        <WhyChooseOne />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <ProcessOne />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <BrandOne />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <TestimonialTwo />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <HomeSEOContent />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <FaqOne />
+      </Suspense>
 
       <FooterOne />
       <StrickyHeader />
