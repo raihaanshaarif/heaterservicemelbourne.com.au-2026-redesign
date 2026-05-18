@@ -19,7 +19,27 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        // Cache static HTML pages at CDN edge for 1 hour, revalidate in background
+        source: "/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, s-maxage=3600, stale-while-revalidate=86400",
+          },
+        ],
+      },
+      {
         source: "/assets/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        // Cache Next.js static chunks aggressively
+        source: "/_next/static/(.*)",
         headers: [
           {
             key: "Cache-Control",

@@ -103,6 +103,20 @@ export const SERVICES = {
   },
 };
 
+// Pre-computed at module load time — avoids re-mapping on every render
+const _areaServed = BUSINESS_INFO.areaServed.map((suburb) => ({
+  "@type": "City",
+  name: suburb,
+  containedInPlace: {
+    "@type": "State",
+    name: "Victoria",
+    containedInPlace: {
+      "@type": "Country",
+      name: "Australia",
+    },
+  },
+}));
+
 export function generateLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
@@ -128,18 +142,7 @@ export function generateLocalBusinessSchema() {
       latitude: BUSINESS_INFO.coordinates.latitude,
       longitude: BUSINESS_INFO.coordinates.longitude,
     },
-    areaServed: BUSINESS_INFO.areaServed.map((suburb) => ({
-      "@type": "City",
-      name: suburb,
-      containedInPlace: {
-        "@type": "State",
-        name: "Victoria",
-        containedInPlace: {
-          "@type": "Country",
-          name: "Australia",
-        },
-      },
-    })),
+    areaServed: _areaServed,
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
