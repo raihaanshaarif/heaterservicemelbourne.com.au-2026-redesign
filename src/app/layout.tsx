@@ -7,6 +7,7 @@ import "swiper/swiper-bundle.css";
 import "@/assets/css/combined.css";
 import ContextProvider from "@/components/context/ContextProvider";
 import CustomLayout from "@/components/layout/CustomLayout";
+import DeferredStyles from "@/components/layout/DeferredStyles";
 
 // Replace GTM_ID below with your actual GTM container ID (e.g. "GTM-XXXXXXX")
 // Get it from: tagmanager.google.com → Admin → Container ID
@@ -101,6 +102,7 @@ export default function RootLayout({
       {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
       <body className={`${poppins.variable} ${rubik.variable}`}>
         <ContextProvider>
+          <DeferredStyles />
           <CustomLayout>{children}</CustomLayout>
         </ContextProvider>
       </body>
