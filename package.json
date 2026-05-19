@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node -e \"const fs=require('fs');['src/app/(pages)/faqs','src/app/(pages)/team'].forEach(p=>{try{fs.rmSync(p,{recursive:true,force:true})}catch(e){}});\"",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
