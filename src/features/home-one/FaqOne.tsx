@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import FaqOneImg1 from "@/assets/images/resources/faq-one-img-1.jpg";
 import Image from "next/image";
 import TextAnimation from "@/components/elements/TextAnimation";
@@ -79,7 +79,7 @@ export default function FaqOne() {
                     >
                       <h4>{item?.question}</h4>
                     </div>
-                    <motion.div
+                    <m.div
                       initial={{ y: -40, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{
@@ -96,7 +96,7 @@ export default function FaqOne() {
                         <p>{item?.answer}</p>
                       </div>
                       {/* /.inner */}
-                    </motion.div>
+                    </m.div>
                   </FadeInAdvanced>
                 ))}
               </div>

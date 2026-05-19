@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import type { ReactNode } from "react";
-import { motion, useInView } from "framer-motion";
+import { m, useInView } from "framer-motion";
 import type { Variants } from "framer-motion";
 
 type AnimationStyle = "style1" | "style2" | "style3" | "style4";
@@ -24,7 +24,7 @@ const TextAnimation: React.FC<TextAnimationProps> = ({
     if (typeof node === "string") {
       // Split string into characters
       return node.split("").map((char, index) => (
-        <motion.div
+        <m.div
           key={`char-${index}`}
           variants={getCharVariants()}
           style={{
@@ -33,7 +33,7 @@ const TextAnimation: React.FC<TextAnimationProps> = ({
           }}
         >
           {char === " " ? "\u00A0" : char}
-        </motion.div>
+        </m.div>
       ));
     }
 
@@ -139,14 +139,14 @@ const TextAnimation: React.FC<TextAnimationProps> = ({
   };
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
       {processChildren(children)}
-    </motion.div>
+    </m.div>
   );
 };
 

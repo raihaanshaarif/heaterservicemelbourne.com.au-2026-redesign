@@ -18,9 +18,11 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
     className = '',
     showCursor = true
 }) => {
-    const [typedText, setTypedText] = useState<string>('');
+    // Initialize with the first full string so SSR and first client render match
+    // (avoids CLS from the h1 jumping from 2 lines to 3 lines on hydration)
+    const [typedText, setTypedText] = useState<string>(strings[0] ?? '');
     const [currentStringIndex, setCurrentStringIndex] = useState<number>(0);
-    const [currentCharIndex, setCurrentCharIndex] = useState<number>(0);
+    const [currentCharIndex, setCurrentCharIndex] = useState<number>(strings[0]?.length ?? 0);
     const [isDeleting, setIsDeleting] = useState<boolean>(false);
 
     useEffect(() => {

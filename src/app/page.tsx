@@ -5,8 +5,10 @@ import HeaderOne from "@/components/headers/HeaderOne";
 import StrickyHeader from "@/components/headers/StrickyHeader";
 import AboutOne from "@/features/home-one/AboutOne";
 import BannerOne from "@/features/home-one/BannerOne";
-import ServicesOne from "@/features/home-one/ServicesOne";
-import SlidingTextOne from "@/features/home-one/SlidingTextOne";
+
+// Lazy-load below-the-fold components for faster initial page load
+const ServicesOne = lazy(() => import("@/features/home-one/ServicesOne"));
+const SlidingTextOne = lazy(() => import("@/features/home-one/SlidingTextOne"));
 import { JSONLDScript } from "@/components/seo/JSONLDScript";
 import { generateLocalBusinessSchema, generateHomepageServiceSchema } from "@/utils/seo/jsonLd";
 import React from "react";
@@ -55,8 +57,14 @@ const page = () => {
       <HeaderOne />
       <BannerOne />
       <AboutOne />
-      <SlidingTextOne />
-      <ServicesOne />
+
+      <Suspense fallback={null}>
+        <SlidingTextOne />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <ServicesOne />
+      </Suspense>
 
       {/* Lazy-load below-the-fold sections for faster initial page load */}
       <Suspense fallback={null}>

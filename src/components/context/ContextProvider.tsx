@@ -1,5 +1,6 @@
 "use client";
 import React, { useCallback, useMemo, useState } from 'react';
+import { LazyMotion, domAnimation } from 'framer-motion';
 import { contextType } from './contextType';
 import TransportContext from './TransportContext';
 
@@ -53,7 +54,9 @@ const ContextProvider: React.FC<{ children: React.ReactNode }> = ({ children }) 
     ]);
     return (
         <TransportContext.Provider value={info}>
-            {children}
+            <LazyMotion features={domAnimation}>
+                {children}
+            </LazyMotion>
         </TransportContext.Provider>
     );
 };

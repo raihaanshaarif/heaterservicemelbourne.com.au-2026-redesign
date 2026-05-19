@@ -1,5 +1,5 @@
 "use client";
-import { motion, type Transition } from 'framer-motion';
+import { m, type Transition } from 'framer-motion';
 import { type ReactNode, type FC } from 'react';
 
 type AnimationVariant =
@@ -149,7 +149,7 @@ const FadeInAdvanced: FC<FadeInAdvancedProps> = ({
   const { transition, ...animateProps } = animate;
 
   return (
-    <motion.div
+    <m.div
       className={className}
       initial={initial}
       whileInView={animateProps}
@@ -160,9 +160,10 @@ const FadeInAdvanced: FC<FadeInAdvancedProps> = ({
         ease: 'easeOut',
         ...transition
       }}
+      style={{ willChange: 'transform, opacity' }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 };
 
