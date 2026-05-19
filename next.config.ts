@@ -2,6 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   compress: true,
+  poweredByHeader: false,
+  experimental: {
+    optimizePackageImports: [
+      "framer-motion",
+      "swiper",
+      "lucide-react",
+      "react-circular-progressbar",
+      "yet-another-react-lightbox",
+    ],
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 31536000,

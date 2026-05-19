@@ -1,5 +1,6 @@
 "use client";
 
+import "swiper/swiper-bundle.css";
 import type { Swiper as SwiperType } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";

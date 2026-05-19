@@ -1,4 +1,6 @@
 "use client";
+import "swiper/swiper-bundle.css";
+import "yet-another-react-lightbox/styles.css";
 import { useState } from "react";
 import Project11 from "@/assets/images/project/project-1-1.jpg";
 import Project12 from "@/assets/images/project/project-1-2.jpg";

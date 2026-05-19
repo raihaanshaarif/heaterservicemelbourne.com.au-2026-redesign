@@ -1,9 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins, Rubik } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
-import "yet-another-react-lightbox/styles.css";
-import "react-circular-progressbar/dist/styles.css";
-import "swiper/swiper-bundle.css";
 import "@/assets/css/combined.css";
 import ContextProvider from "@/components/context/ContextProvider";
 import CustomLayout from "@/components/layout/CustomLayout";
@@ -26,6 +23,12 @@ const rubik = Rubik({
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#fd5523",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -99,6 +102,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-AU" data-scroll-behavior="smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      </head>
       {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
       <body className={`${poppins.variable} ${rubik.variable}`}>
         <ContextProvider>
