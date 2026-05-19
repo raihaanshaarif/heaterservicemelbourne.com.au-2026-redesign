@@ -76,9 +76,8 @@ export default function ServicesOne() {
                     <div className="services-one__btn-box">
                       <Link
                         href={service.link}
-                        aria-label={`Learn more about ${service.title}`}
                       >
-                        Read More <span className="icon-right-arrow"></span>
+                        Explore {service.title} <span className="icon-right-arrow"></span>
                       </Link>
                     </div>
                   </div>

@@ -215,9 +215,8 @@ const AboutOne: React.FC = () => {
                   <Link
                     href="/about"
                     className="thm-btn"
-                    aria-label="Read more about Heater Service Melbourne"
                   >
-                    Read More
+                    About Heater Service Melbourne
                     <span>
                       <i className="icon-right-arrow"></i>
                     </span>
