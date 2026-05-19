@@ -167,11 +167,11 @@ export function generateLocalBusinessSchema() {
     sameAs: ["https://www.google.com/maps/place/Heating+Service+Melbourne"],
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.8",
-      bestRating: "5",
-      worstRating: "1",
-      ratingCount: "567",
-      reviewCount: "567",
+      ratingValue: 4.8,
+      bestRating: 5,
+      worstRating: 1,
+      ratingCount: 567,
+      reviewCount: 567,
     },
   };
 }
@@ -214,14 +214,6 @@ export function generateHomepageServiceSchema() {
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "24/7 Emergency Heating Repair" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Duct Cleaning" } },
       ],
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      bestRating: "5",
-      worstRating: "1",
-      ratingCount: "567",
-      reviewCount: "567",
     },
   };
 }
