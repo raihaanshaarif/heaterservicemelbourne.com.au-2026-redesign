@@ -1084,6 +1084,30 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Hydronic Heating Installation Melbourne — Underfloor &amp; Radiator Systems
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                We specialise in <strong>hydronic heating installation Melbourne</strong> — from new
+                <strong>hydronic underfloor heating</strong> systems to panel radiator and boiler setups.
+                Our team designs and installs the most energy-efficient configuration for your home, with
+                transparent <strong>hydronic heating cost</strong> quoted before any work begins.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Every <strong>hydronic heating service</strong> installation is completed by a licensed gas
+                technician to Australian standards. We use quality European boilers and fittings for
+                long-lasting performance. Call 0405 133 761 for your free installation consultation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

@@ -964,6 +964,32 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Hydronic Underfloor Heating Repair Melbourne — Slab &amp; In-Floor Systems
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                We specialise in <strong>hydronic underfloor heating</strong> and{" "}
+                <strong>slab heating repair</strong> Melbourne. In-slab pipe leaks, cold zones and pressure
+                loss are diagnosed using thermal imaging and electronic leak detection — no unnecessary
+                concrete cutting. We provide expert <strong>underfloor heating repair Melbourne</strong>{" "}
+                with minimal disruption.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Our team is part of Melbourne&apos;s leading <strong>hydronic heating repairs Melbourne</strong>{" "}
+                service. From <strong>hydronic floor heating repair</strong> to pressure re-commissioning
+                after an <strong>underfloor pipe leak</strong>, we handle the full scope. Call 0405 133 761
+                for a specialist assessment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

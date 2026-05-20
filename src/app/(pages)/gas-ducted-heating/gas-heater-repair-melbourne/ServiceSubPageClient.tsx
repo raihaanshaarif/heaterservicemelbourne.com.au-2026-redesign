@@ -1017,6 +1017,32 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Gas Heater Repair Melbourne — Licensed Gas Heater Technicians
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Need to <strong>fix gas heater</strong> faults fast? Our licensed{" "}
+                <strong>gas heater technician</strong> team provides expert{" "}
+                <strong>gas heater repairs</strong> and <strong>gas heater repair service</strong> across
+                all Melbourne suburbs. From minor ignition faults to full heat exchanger replacements, we
+                diagnose and repair all ducted gas heating brands on the same visit.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Searching for <strong>gas heater service near me</strong> or{" "}
+                <strong>heating repair near me</strong>? We cover every suburb in Melbourne and carry genuine
+                parts for all major brands. Call 0405 133 761 for same-day{" "}
+                <strong>gas heater repair Melbourne</strong> — no call-out fee surprises.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

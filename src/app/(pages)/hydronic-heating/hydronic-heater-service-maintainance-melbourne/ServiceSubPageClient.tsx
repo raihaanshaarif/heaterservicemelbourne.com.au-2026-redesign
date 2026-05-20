@@ -863,6 +863,30 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Hydronic Heating Service Melbourne — Annual Servicing &amp; Maintenance
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Our licensed team provides comprehensive <strong>hydronic heating service Melbourne</strong>{" "}
+                and annual <strong>hydronic heating servicing</strong> — including system flush, glycol top-up,
+                pressure test, pump check and boiler safety inspection. Regular servicing extends system life
+                and keeps your <strong>hydronic heating cost</strong> low by catching faults early.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Our <strong>boiler service Melbourne</strong> team covers all major brands. We offer annual
+                maintenance plans for landlords, strata managers and homeowners. Every service includes a
+                written condition report. Book your <strong>hydronic heating service</strong> today.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

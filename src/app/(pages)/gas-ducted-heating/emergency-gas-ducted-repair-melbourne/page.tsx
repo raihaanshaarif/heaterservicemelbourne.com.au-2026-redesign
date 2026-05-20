@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Emergency Gas Ducted Heating Repair Melbourne",
+  title: "Emergency Gas Ducted Heating Repair Melbourne | 24/7 Same Day",
   description:
-    "Emergency gas ducted heating repair in Melbourne. Available 24/7 with fast response times. Licensed gas fitters, all brands serviced. Call 0405 133 761 now.",
+    "Emergency gas ducted heating repair Melbourne — 24/7 available. Heater not working? Same-day gas heater repair, heating repair near me, all brands. Call 0405 133 761 now.",
   keywords:
-    "emergency gas ducted heating repair melbourne, emergency gas heater repair, 24/7 ducted heating repair, same day gas heater fix melbourne",
+    "emergency gas ducted heating repair melbourne, emergency gas heater repair, 24/7 ducted heating repair, same day gas heater fix melbourne, heating repair near me, gas heater not working melbourne, ducted heating breakdown melbourne, fix gas heater melbourne",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/gas-ducted-heating/emergency-gas-ducted-repair-melbourne",
   },

@@ -1134,6 +1134,31 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Emergency Hydronic Heating Repair Melbourne — 24/7
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Our <strong>emergency hydronic heating repair Melbourne</strong> service is available
+                24 hours a day. When you have a <strong>hydronic boiler repair</strong> emergency — no
+                heat, a pipe burst or a pressure failure — our licensed technicians respond fast. We carry
+                parts for all major boiler brands for immediate <strong>hydronic heating breakdown</strong>{" "}
+                resolution.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Our team covers all types of <strong>hydronic heating repairs Melbourne</strong> — from
+                boiler faults and <strong>hydronic pipe leaks</strong> to zone valve failures and pump
+                replacements. Call 0405 133 761 now for 24/7 emergency hydronic service.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

@@ -951,6 +951,30 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Emergency Hydronic Repair Melbourne — Boiler Breakdown & Pipe Leaks
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Our <strong>emergency hydronic repair Melbourne</strong> team responds 24/7 to{" "}
+                <strong>hydronic boiler breakdown</strong>, pipe bursts, and radiator failures. As part of
+                our comprehensive <strong>hydronic heating repairs Melbourne</strong> service, we stock
+                common parts to resolve most faults in a single visit.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                We service all boiler brands — Bosch, Rinnai, Viessmann, Sime, Baxi and more. Whether your
+                <strong>hydronic heating system is not working</strong> or you have a <strong>hydronic pipe leak</strong>,
+                our emergency hydronic service team is ready. Call 0405 133 761 now.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

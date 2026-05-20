@@ -6,28 +6,28 @@ export interface FaqItem {
 export const faqDataOne: FaqItem[] = [
   {
     id: 1,
-    question: "How long does a typical installation take?",
-    answer: `Most installations are completed in a day, but more complex hydronic or multi-split systems may take 2-3 days.`,
+    question: "How much does a gas heater service cost in Melbourne?",
+    answer: `A standard gas heater service in Melbourne typically costs between $150–$280 depending on the system type and condition. We provide upfront, transparent quotes before starting any work — no hidden fees.`,
   },
   {
     id: 2,
-    question: "Do you offer emergency 24/7 services?",
-    answer: `Yes, we provide emergency heating repairs 24/7 across Melbourne to ensure your home stays warm.`,
+    question: "Can you fix a gas heater on the same day?",
+    answer: `Yes. Our licensed gas heater technicians offer same-day gas heater repair across Melbourne for most faults. We carry common replacement parts so the majority of gas heater repairs are completed in a single visit.`,
   },
   {
     id: 3,
-    question: "How often should I service my heating system?",
-    answer: `We recommend a professional service every 2 years to maintain safety, efficiency, and to comply with warranties.`,
+    question: "Are you a licensed gas heater repair technician near me?",
+    answer: `Yes, all our technicians are fully licensed gas fitters and gas heater repair specialists. We service Melbourne's eastern suburbs, inner city, and surrounding regions — often available the same day or next day.`,
   },
   {
     id: 4,
-    question: "Are your technicians licensed and insured?",
-    answer: `All our technicians are fully licensed, insured, and experienced in working with various brands and types of heating systems.`,
+    question: "How often should I get my ducted heating serviced?",
+    answer: `We recommend a professional ducted heating service every 2 years to maintain safety, efficiency, and warranty compliance. Annual servicing is recommended for older systems or homes with pets and allergies.`,
   },
   {
     id: 5,
-    question: "Do you provide transparent quotes?",
-    answer: `Yes, we provide upfront, detailed, and transparent quotes before starting any work.`,
+    question: "Do you service ducted heating in Melbourne's eastern suburbs?",
+    answer: `Yes. We cover all Melbourne eastern suburbs including Ringwood, Doncaster, Box Hill, Camberwell, Hawthorn, Croydon, Berwick, and surrounds for gas heater service, ducted heating repairs, and split system installations.`,
   },
 ];
 export const faqDataTwo: FaqItem[] = [

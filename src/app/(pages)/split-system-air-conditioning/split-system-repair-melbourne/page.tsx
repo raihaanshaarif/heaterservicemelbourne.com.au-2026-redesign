@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Split System Repair Melbourne",
+  title: "Split System Repair Melbourne | AC Repair Near Me",
   description:
-    "Expert split system repair in Melbourne. All brands serviced — Daikin, Fujitsu, Mitsubishi, Samsung and more. Same-day service available. Call 0405 133 761.",
+    "Expert split system repair Melbourne — Daikin, Fujitsu, Mitsubishi, Samsung and all brands. Air conditioner repair near me, reverse cycle repair, same-day service. Call 0405 133 761.",
   keywords:
-    "split system repair melbourne, ac repair melbourne, air conditioner not working, split system fault melbourne, Daikin repair melbourne",
+    "split system repair melbourne, ac repair melbourne, air conditioner repair near me, ac service near me, air conditioner not working, split system fault melbourne, Daikin repair melbourne, reverse cycle repair melbourne",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/split-system-air-conditioning/split-system-repair-melbourne",
   },

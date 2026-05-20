@@ -24,9 +24,9 @@ const FaqOne = lazy(() => import("@/features/home-one/FaqOne"));
 export const metadata: Metadata = {
   title: "Heater Service Melbourne | Gas Ducted, Hydronic & Split Systems",
   description:
-    "Expert heating services across Melbourne. Gas ducted heating, hydronic heating, split system air conditioning and 24/7 emergency repairs. Licensed technicians, free quotes. Call 0405 133 761.",
+    "Expert heating services across Melbourne. Gas heater repair, gas heater service, ducted heating, hydronic heating, split system air conditioning and 24/7 emergency repairs. Licensed gas heater technicians, free quotes. Call 0405 133 761.",
   keywords:
-    "heating service melbourne, gas ducted heating melbourne, hydronic heating melbourne, split system melbourne, emergency heating repair, licensed gas fitters melbourne",
+    "heating service melbourne, gas ducted heating melbourne, hydronic heating melbourne, split system melbourne, emergency heating repair, licensed gas fitters melbourne, gas heater service melbourne, gas heater repair melbourne, gas heater technician, gas heater servicing, gas heater repairs, heating repair near me, gas heater service near me, ducted heating service melbourne, hot water repairs melbourne",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au",
   },

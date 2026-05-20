@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Split System Installation Melbourne",
+  title: "Split System Installation Melbourne | Supply & Install Cost",
   description:
-    "Professional split system installation in Melbourne. Daikin, Fujitsu, Mitsubishi, Samsung supplied and installed by ARCtick licensed technicians. Free quotes.",
+    "Professional split system installation Melbourne. Daikin, Fujitsu, Mitsubishi, Samsung supplied and installed. Split system installation cost, reverse cycle installation. ARCtick licensed. Call 0405 133 761.",
   keywords:
-    "split system installation melbourne, ac installation melbourne, Daikin installation, Fujitsu split system install, reverse cycle installation melbourne",
+    "split system installation melbourne, split system installation cost, ac installation melbourne, reverse cycle installation melbourne, Daikin installation, Fujitsu split system install, split system supply and install",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/split-system-air-conditioning/split-system-installation-melbourne",
   },

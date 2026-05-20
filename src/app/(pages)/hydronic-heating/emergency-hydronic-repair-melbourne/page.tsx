@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Emergency Hydronic Heating Repair Melbourne",
+  title: "Emergency Hydronic Heating Repair Melbourne | 24/7 Boiler Repair",
   description:
-    "Emergency hydronic heating repair in Melbourne. Boiler breakdowns, pipe leaks, no heat — available 24/7. Licensed technicians. Call 0405 133 761 now.",
+    "Emergency hydronic heating repair Melbourne — boiler breakdown, pipe leaks, no heat? 24/7 hydronic heating repairs Melbourne, all brands. Fast response. Call 0405 133 761 now.",
   keywords:
-    "emergency hydronic heating repair melbourne, hydronic boiler repair, hydronic heating breakdown melbourne, 24/7 hydronic repair",
+    "emergency hydronic heating repair melbourne, hydronic boiler repair, hydronic heating breakdown melbourne, 24/7 hydronic repair, hydronic heating repairs melbourne, emergency hydronic service, hydronic pipe leak",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/hydronic-heating/emergency-hydronic-repair-melbourne",
   },

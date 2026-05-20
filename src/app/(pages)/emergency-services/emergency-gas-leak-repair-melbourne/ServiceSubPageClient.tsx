@@ -949,6 +949,30 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Gas Leak Repair Melbourne — Smell Gas? Call Immediately
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                If you <strong>smell gas</strong> in your home, do not wait. Our{" "}
+                <strong>emergency gas leak repair Melbourne</strong> team is available 24/7 for immediate
+                response. We provide expert <strong>gas leak detection Melbourne</strong> using calibrated
+                equipment to find and seal leaks safely. All technicians are licensed gas fitters.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Beyond the emergency repair, we conduct a full <strong>gas safety inspection Melbourne</strong>{" "}
+                to check all appliances and connections for <strong>carbon monoxide risk</strong>. Our written
+                safety report gives you complete peace of mind. Don&apos;t delay — call 0405 133 761 now.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

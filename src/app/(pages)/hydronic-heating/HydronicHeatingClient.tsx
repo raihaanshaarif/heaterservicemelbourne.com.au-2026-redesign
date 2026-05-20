@@ -84,6 +84,30 @@ const page: React.FC = () => {
         title="Hydronic Heating Service Areas"
         subtitle="Professional hydronic heating services available across Melbourne"
       />
+
+      {/* SEO keyword-rich content section */}
+      <section style={{ padding: "60px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "26px", fontWeight: 700, marginBottom: "16px", color: "#1a1a1a" }}>
+                Hydronic Heating Service &amp; Repairs Melbourne
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "16px" }}>
+                Our licensed technicians provide expert <strong>hydronic heating service</strong> across Melbourne.
+                Whether you need <strong>hydronic heating repairs Melbourne</strong>, routine{" "}
+                <strong>hydronic heating servicing</strong>, or a new <strong>hydronic underfloor heating</strong>{" "}
+                system installed, we have the skills and tools to do it right.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "16px" }}>
+                Wondering about <strong>hydronic heating cost</strong>? We provide upfront, transparent pricing with
+                no hidden fees. Our team services all major hydronic boiler brands and panel radiator systems.
+                Contact us today for a free quote on any <strong>hydronic heating service melbourne</strong> job.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

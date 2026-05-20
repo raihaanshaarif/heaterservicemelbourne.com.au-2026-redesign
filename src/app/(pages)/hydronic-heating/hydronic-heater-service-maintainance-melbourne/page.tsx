@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Hydronic Heating Service & Maintenance Melbourne",
+  title: "Hydronic Heating Service Melbourne | Servicing & Maintenance",
   description:
-    "Regular hydronic heating service and maintenance in Melbourne. Annual plans, flush and refill, pressure checks, efficiency tune-ups. Call 0405 133 761.",
+    "Regular hydronic heating service and hydronic heating servicing Melbourne. Annual plans, flush and refill, pressure checks. Transparent hydronic heating cost. Call 0405 133 761.",
   keywords:
-    "hydronic heating service melbourne, hydronic maintenance melbourne, boiler service melbourne, annual hydronic service, hydronic heating tune up",
+    "hydronic heating service melbourne, hydronic heating servicing, hydronic heating cost, hydronic maintenance melbourne, boiler service melbourne, annual hydronic service, hydronic heating tune up",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/hydronic-heating/hydronic-heater-service-maintainance-melbourne",
   },

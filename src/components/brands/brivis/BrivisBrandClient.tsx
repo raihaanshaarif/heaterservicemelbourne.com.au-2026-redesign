@@ -555,8 +555,33 @@ const BrivisBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Energy Star rated, Australian Standard certified, Eco-friendly
               </motion.p>
 
-            </div>
+              <motion.div
+                variants={itemVariants}
+                style={{
+                  background: "rgba(185,28,28,0.05)",
+                  border: "1px solid rgba(185,28,28,0.15)",
+                  borderRadius: "10px",
+                  padding: "24px",
+                  marginBottom: "8px",
+                }}
+              >
+                <h3 style={{ fontSize: "17px", fontWeight: 700, color: "#1a1a1a", marginBottom: "12px" }}>
+                  Brivis Ducted Heating Service Melbourne
+                </h3>
+                <p style={{ fontSize: "14px", lineHeight: "1.8", color: "#555", marginBottom: "10px" }}>
+                  We are licensed specialists in <strong>Brivis ducted heating</strong> service, repair, and
+                  installation across Melbourne. From annual <strong>Brivis central heating</strong> maintenance
+                  to urgent fault repairs, our team diagnoses and resolves all Brivis system issues fast.
+                </p>
+                <p style={{ fontSize: "14px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                  Need <strong>Brivis heating Melbourne</strong> support? Our technicians service all Brivis
+                  models including Brivis Star Pro, Brivis Coonara, and the full ducted range. We provide
+                  same-day <strong>Brivis gas heating</strong> repairs and carry genuine Brivis parts for
+                  on-the-spot fixes across all Melbourne suburbs.
+                </p>
+              </motion.div>
 
+            </div>
             <div className="col-lg-6">
               <motion.div
                 variants={itemVariants}

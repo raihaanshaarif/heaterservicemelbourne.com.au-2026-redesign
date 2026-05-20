@@ -1017,6 +1017,30 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Gas Heater Service &amp; Servicing Melbourne — Annual Maintenance
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Our licensed <strong>gas heater technician</strong> team provides thorough{" "}
+                <strong>gas heater service Melbourne</strong> and annual <strong>gas heater servicing</strong>{" "}
+                to keep your system running safely and efficiently. Every service includes a full safety check,
+                filter clean, carbon monoxide testing, and a written report.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Looking for <strong>gas heater service near me</strong>? We cover all Melbourne suburbs with
+                transparent <strong>ducted heating service cost</strong> — no hidden call-out fees. Book your
+                annual <strong>ducted heating service Melbourne</strong> today and enjoy peace of mind all winter.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

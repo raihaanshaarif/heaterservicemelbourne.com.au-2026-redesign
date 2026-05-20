@@ -977,6 +977,31 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                AC Breakdown Rescue Melbourne — Air Conditioner Repair Near Me
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                When your air conditioner fails, you need help fast. Our{" "}
+                <strong>24/7 aircon repair Melbourne</strong> team provides emergency{" "}
+                <strong>air conditioner repair near me</strong> service across all suburbs. Whether your
+                <strong>split system is not cooling</strong>, making noise or tripping the power, our
+                ARCtick certified technicians are dispatched immediately.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Looking for <strong>ac repair near me</strong> in Melbourne? We cover Daikin, Fujitsu,
+                Mitsubishi Electric, Samsung, LG, Panasonic and all other brands. Emergency same-day
+                response — call 0405 133 761 any time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

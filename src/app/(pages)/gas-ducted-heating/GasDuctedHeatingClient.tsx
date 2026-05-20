@@ -717,6 +717,32 @@ const Page: React.FC = () => {
         title="Gas Ducted Heating Service Areas"
         subtitle="Professional gas heating services available across Melbourne"
       />
+
+      {/* SEO content: replacement + suburb keywords */}
+      <section style={{ padding: "60px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "26px", fontWeight: 700, marginBottom: "16px", color: "#1a1a1a" }}>
+                Gas Ducted Heating Service &amp; Replacement Melbourne
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "16px" }}>
+                Need <strong>gas ducted heating service</strong> or a full{" "}
+                <strong>ducted heating replacement</strong>? Our licensed technicians handle everything from
+                routine maintenance to complete <strong>ducted gas heating replacement Melbourne</strong>.
+                We provide upfront <strong>ducted heating service cost</strong> estimates and competitive{" "}
+                <strong>gas ducted heating cost</strong> pricing across all Melbourne suburbs.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "16px" }}>
+                We service <strong>ducted heating Blackburn</strong>, <strong>ducted heating Ringwood</strong>,{" "}
+                <strong>ducted heating Doncaster</strong>, <strong>ducted heating Berwick</strong>, and all
+                surrounding suburbs. Whether you're in the eastern suburbs, south-east or inner Melbourne, our
+                team is ready to help with same-day <strong>gas ducted heating</strong> repairs and installation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

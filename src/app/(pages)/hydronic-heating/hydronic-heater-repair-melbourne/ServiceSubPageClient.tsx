@@ -1196,6 +1196,31 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Hydronic Heater Repair Melbourne — Boiler &amp; System Faults
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Our licensed technicians provide expert <strong>hydronic heater repair Melbourne</strong>{" "}
+                for all system faults — including <strong>hydronic boiler repair Melbourne</strong>,
+                pump failures, zone valve issues, and thermostat problems. We offer same-day attendance
+                for urgent <strong>hydronic heating repairs Melbourne</strong> across all suburbs.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                If your <strong>hydronic heating is not working</strong>, don&apos;t wait. Our{" "}
+                <strong>hydronic heating service</strong> team carries parts for Bosch, Rinnai, Viessmann,
+                Sime and other major brands. Most repairs are completed in a single visit. Call 0405 133 761
+                for fast, reliable <strong>boiler repair Melbourne</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

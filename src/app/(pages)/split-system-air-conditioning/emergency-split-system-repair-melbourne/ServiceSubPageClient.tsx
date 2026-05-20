@@ -979,6 +979,32 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Emergency Split System Repair Melbourne — 24/7 AC Breakdown
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Our <strong>emergency ac repair</strong> team is available 24/7 for{" "}
+                <strong>emergency split system repair Melbourne</strong>. Is your{" "}
+                <strong>split system not working</strong> or <strong>ac not cooling</strong>? We dispatch
+                a licensed technician immediately with parts on board to resolve most{" "}
+                <strong>air conditioner repair near me</strong> faults in one visit.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Our <strong>24/7 air conditioner repair Melbourne</strong> service covers all brands —
+                Daikin, Fujitsu, Mitsubishi, Samsung, LG, Panasonic and more. For emergency{" "}
+                <strong>split system breakdown rescue</strong> across Melbourne, call 0405 133 761 now —
+                any hour, any day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

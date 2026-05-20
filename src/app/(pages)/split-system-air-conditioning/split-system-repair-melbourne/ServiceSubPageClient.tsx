@@ -1001,6 +1001,31 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Split System Repair Melbourne — Air Conditioner Repair Near Me
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Our ARCtick certified technicians provide fast <strong>split system repair Melbourne</strong>{" "}
+                for all brands. Whether you need <strong>ac repair Melbourne</strong> for a Daikin, Fujitsu,
+                Mitsubishi Electric, Samsung or any other brand, we diagnose and repair most{" "}
+                <strong>air conditioner faults</strong> on the same visit.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Searching for <strong>air conditioner repair near me</strong> or{" "}
+                <strong>ac service near me</strong> in Melbourne? We cover every suburb with same-day
+                response. Our <strong>reverse cycle repair Melbourne</strong> service covers both cooling
+                and heating faults. Call 0405 133 761 for upfront pricing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

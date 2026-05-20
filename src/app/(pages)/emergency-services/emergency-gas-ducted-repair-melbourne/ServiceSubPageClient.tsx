@@ -981,6 +981,30 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                No Heat? Emergency Gas Ducted Repair Melbourne — 24/7
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                A <strong>ducted heating breakdown</strong> in winter is a genuine emergency. Our{" "}
+                <strong>emergency gas ducted repair Melbourne</strong> service operates 24 hours a day,
+                7 days a week. When your <strong>gas heater is not working</strong>, we dispatch a licensed
+                technician fast — with parts on board to <strong>fix gas heater</strong> faults immediately.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Whether you need <strong>heating repair near me</strong> at midnight or on a public holiday,
+                our team is ready. We service all brands — Brivis, Braemar, Rinnai, Vulcan, Ducane — with
+                genuine parts for fast resolution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

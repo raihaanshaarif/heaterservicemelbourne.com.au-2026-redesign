@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Gas Heater Repair Melbourne",
+  title: "Gas Heater Repair Melbourne | Gas Heater Technician & Servicing",
   description:
-    "Expert gas heater repair in Melbourne. All brands including Brivis, Rinnai, Braemar, Vulcan. Licensed gas fitters, same-day service available. Call 0405 133 761.",
+    "Expert gas heater repair Melbourne. Licensed gas heater technician for gas heater servicing, gas heater repairs, fix gas heater and heating repair near me. Same-day service. Call 0405 133 761.",
   keywords:
-    "gas heater repair melbourne, ducted heater repair, Brivis repair melbourne, Rinnai heater repair, gas heater not working melbourne",
+    "gas heater repair melbourne, gas heater technician, gas heater servicing, gas heater repairs, gas heater service near me, gas heater repair service, fix gas heater, heating repair near me, ducted heater repair, Brivis repair melbourne, Rinnai heater repair",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/gas-ducted-heating/gas-heater-repair-melbourne",
   },

@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import HydronicHeatingClient from "./HydronicHeatingClient";
 
 export const metadata: Metadata = {
-  title: "Hydronic Heating Melbourne",
+  title: "Hydronic Heating Service Melbourne | Repair, Underfloor & Servicing",
   description:
-    "Expert hydronic heating installation, repair and maintenance in Melbourne. Energy-efficient hydronic systems, licensed gas fitters. Free quotes, same-day service available.",
+    "Expert hydronic heating service Melbourne — hydronic underfloor heating, hydronic heating repairs, servicing and installation. Affordable hydronic heating cost. Licensed technicians, same-day service.",
   keywords:
-    "hydronic heating melbourne, hydronic heating installation, hydronic heating repair, underfloor heating melbourne, hydronic boiler service, slab heating melbourne",
+    "hydronic heating service, hydronic heating service melbourne, hydronic underfloor heating, hydronic heating repairs melbourne, hydronic heating servicing, hydronic heating cost, hydronic heating melbourne, hydronic boiler service, slab heating melbourne",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/hydronic-heating",
   },

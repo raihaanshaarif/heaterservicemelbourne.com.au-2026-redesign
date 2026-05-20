@@ -1037,6 +1037,31 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Gas Ducted Heating Installation Melbourne — Suburbs We Cover
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                We provide expert <strong>gas ducted heating installation Melbourne</strong> across all suburbs.
+                Our transparent <strong>gas ducted heating cost</strong> means no hidden fees — you get a full
+                written quote before any work starts. We service{" "}
+                <strong>ducted heating Blackburn</strong>, <strong>ducted heating Doncaster</strong>,{" "}
+                <strong>ducted heating Ringwood</strong>, <strong>ducted heating Berwick</strong> and beyond.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Every <strong>ducted gas heating installation</strong> is completed by a licensed gas technician
+                to Australian standards. We supply and install all major brands — Brivis, Braemar, Rinnai, Ducane
+                and more. Contact us today for your obligation-free installation quote.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

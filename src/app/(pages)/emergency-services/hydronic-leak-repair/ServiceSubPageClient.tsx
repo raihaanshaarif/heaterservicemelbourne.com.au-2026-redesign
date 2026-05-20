@@ -954,6 +954,31 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Hydronic Leak Repair Melbourne — Boiler, Pipe & Radiator Leaks
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                A <strong>hydronic pipe leak</strong> or <strong>boiler leak repair Melbourne</strong> job
+                requires a specialist. Our team provides expert <strong>hydronic leak repair Melbourne</strong>{" "}
+                — finding and fixing leaks in boilers, panel radiators, zone valves and underfloor pipe
+                circuits. Same-day response available.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                As part of our broader <strong>hydronic heating repairs Melbourne</strong> service, we also
+                check system pressure, glycol levels and pump operation after every leak repair.
+                A <strong>radiator leak repair Melbourne</strong> or pipe burst doesn&apos;t need to mean
+                days without heat — call 0405 133 761 for fast attendance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

@@ -1018,6 +1018,30 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Ducted Heating Replacement Melbourne — Same-Day Assessment
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Is your old heater failing? Our team handles complete <strong>ducted heating replacement</strong>{" "}
+                and <strong>ducted gas heating replacement Melbourne</strong> — including removal of the old unit
+                and full installation of a new energy-efficient system. We work with all major brands and carry
+                stock for fast turnaround.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                <strong>Gas heater replacement Melbourne</strong> pricing is provided upfront with no surprises.
+                Our licensed technicians assess your home&apos;s heating needs and recommend the right system size.
+                Book a free same-day assessment today.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

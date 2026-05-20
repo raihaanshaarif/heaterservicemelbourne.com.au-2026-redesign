@@ -1017,6 +1017,30 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Split System Installation Melbourne — Supply &amp; Install Cost
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Our ARCtick licensed team provides professional <strong>split system installation Melbourne</strong>{" "}
+                with transparent <strong>split system installation cost</strong> — no hidden fees. We supply
+                and install Daikin, Fujitsu, Mitsubishi Electric, Samsung, LG, Panasonic and all major brands.
+                Every <strong>reverse cycle installation Melbourne</strong> is completed to Australian standards.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                Whether you need a single room <strong>ac installation Melbourne</strong> or a whole-home
+                <strong>split system supply and install</strong> across multiple zones, we have the
+                expertise and stock to get it done fast. Call 0405 133 761 for your free quote today.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

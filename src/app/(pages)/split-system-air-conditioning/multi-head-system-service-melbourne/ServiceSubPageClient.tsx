@@ -999,6 +999,32 @@ const Page: React.FC = () => {
         </div>
       </section>
 
+      {/* SEO keyword content */}
+      <section style={{ padding: "56px 0", background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 mx-auto">
+              <h2 style={{ fontSize: "24px", fontWeight: 700, marginBottom: "14px", color: "#1a1a1a" }}>
+                Multi-Head Split System Melbourne — Multi-Zone Air Conditioning
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", marginBottom: "14px" }}>
+                Our ARCtick certified team installs, services and repairs <strong>multi-head split systems</strong>{" "}
+                across Melbourne. Whether you need a 2-zone or 5-zone{" "}
+                <strong>multi zone air conditioning</strong> system, we provide a complete{" "}
+                <strong>multi head AC installation</strong> with upfront{" "}
+                <strong>multi zone air conditioning cost</strong> — no hidden extras.
+              </p>
+              <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                We supply and install <strong>ducted split system Melbourne</strong> solutions and{" "}
+                <strong>multi room air conditioning</strong> systems for homes and commercial premises.
+                All major brands stocked — Daikin, Mitsubishi Electric, Fujitsu, LG. Call 0405 133 761
+                for your free multi-zone design and quote.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas Near You - Internal Linking */}
       <ServiceAreasNearYou
         limit={12}

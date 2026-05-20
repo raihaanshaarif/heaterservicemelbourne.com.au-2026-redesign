@@ -160,6 +160,8 @@ const SERVICES = [
     name: "Split System Air Conditioning",
   },
   { path: "/emergency-services", name: "Emergency Services" },
+  { path: "/hot-water-repairs", name: "Hot Water Repairs Melbourne" },
+  { path: "/carbon-monoxide-testing", name: "Carbon Monoxide Testing Melbourne" },
 ];
 
 // Service sub-pages (individual service detail pages)

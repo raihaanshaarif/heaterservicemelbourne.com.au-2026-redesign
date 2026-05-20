@@ -555,6 +555,33 @@ const BraemarBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Energy Rating 4-6 stars, HVAC Industry certified
               </motion.p>
 
+              <motion.div
+                variants={itemVariants}
+                style={{
+                  background: "rgba(185,28,28,0.05)",
+                  border: "1px solid rgba(185,28,28,0.15)",
+                  borderRadius: "10px",
+                  padding: "24px",
+                  marginBottom: "8px",
+                }}
+              >
+                <h3 style={{ fontSize: "17px", fontWeight: 700, color: "#1a1a1a", marginBottom: "12px" }}>
+                  Braemar Ducted Heating Service Melbourne
+                </h3>
+                <p style={{ fontSize: "14px", lineHeight: "1.8", color: "#555", marginBottom: "10px" }}>
+                  Our licensed technicians specialise in <strong>Braemar ducted heating service</strong> across
+                  Melbourne. Whether you need a routine <strong>Braemar ducted heating service melbourne</strong>{" "}
+                  visit, a fault diagnosis, or a full system replacement, we have the expertise to get your Braemar
+                  heater running at peak efficiency.
+                </p>
+                <p style={{ fontSize: "14px", lineHeight: "1.8", color: "#555", margin: 0 }}>
+                  We cover all Braemar models for <strong>Braemar heating and cooling melbourne</strong> needs —
+                  from the Compact Series to PowerStar high-capacity units. Our team carries genuine Braemar parts
+                  for fast, reliable repairs. Call us for <strong>braemar ducted heating</strong> repair, service,
+                  or installation anywhere in Melbourne.
+                </p>
+              </motion.div>
+
             </div>
 
             <div className="col-lg-6">

@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Emergency AC Breakdown Rescue Melbourne",
+  title: "Emergency AC Breakdown Rescue Melbourne | 24/7 Air Conditioner Repair",
   description:
-    "Emergency air conditioning breakdown rescue in Melbourne. Available 24/7 for all AC system failures. Fast response, all brands. Call 0405 133 761 now.",
+    "Emergency AC breakdown rescue Melbourne — 24/7. Split system not cooling? Air conditioner repair near me, ac not working, all brands. Fast response. Call 0405 133 761 now.",
   keywords:
-    "emergency ac breakdown melbourne, air conditioner rescue, 24/7 aircon repair melbourne, ac not working emergency, aircon breakdown rescue",
+    "emergency ac breakdown melbourne, air conditioner rescue, 24/7 aircon repair melbourne, ac not working emergency, aircon breakdown rescue, split system not cooling, air conditioner repair near me, ac repair near me",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/emergency-services/ac-breakdown-rescue-melbourne",
   },
