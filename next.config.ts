@@ -30,16 +30,6 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        // Compression headers: tell Cloudflare to use Brotli for all text content
-        source: "/(.*)",
-        headers: [
-          {
-            key: "Content-Encoding",
-            value: "br", // Brotli compression
-          },
-        ],
-      },
-      {
         // Cache static HTML pages at CDN edge for 1 hour, revalidate in background
         source: "/:path*",
         headers: [
