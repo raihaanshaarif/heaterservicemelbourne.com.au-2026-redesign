@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   productionBrowserSourceMaps: false, // Don't send source maps to clients
+  serverExternalPackages: [],
   compiler: {
     // Strip console.log from production bundles (keeps error/warn for debugging)
     removeConsole: process.env.NODE_ENV === "production"
@@ -18,8 +19,6 @@ const nextConfig: NextConfig = {
       "react-circular-progressbar",
       "yet-another-react-lightbox",
     ],
-    // Enable React Server Components streaming for faster LCP
-    serverComponentsExternalPackages: [],
   },
   images: {
     formats: ["image/avif", "image/webp"],
