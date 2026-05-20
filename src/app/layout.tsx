@@ -112,9 +112,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        
-        {/* Ensure Cloudflare uses Brotli compression */}
-        <meta httpEquiv="Content-Encoding" content="br" />
       </head>
       {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
       <body className={`${poppins.variable} ${rubik.variable}`}>
