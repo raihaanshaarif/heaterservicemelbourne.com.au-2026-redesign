@@ -1,0 +1,24 @@
+# Heater Service Melbourne — LLM Reference
+
+> Professional heating, cooling, and hydronic services across Melbourne. Expert repairs, servicing, and installation for all major brands. Call 0405 133 761.
+
+## About
+Heater Service Melbourne provides gas ducted heating, hydronic heating, split system air conditioning, and emergency repair services across metropolitan Melbourne. Based in Clayton South, VIC.
+
+## Services
+- [Gas Ducted Heating](https://heaterservicemelbourne.com.au/gas-ducted-heating)
+- [Hydronic Heating](https://heaterservicemelbourne.com.au/hydronic-heating)
+- [Split System Air Conditioning](https://heaterservicemelbourne.com.au/split-system-air-conditioning)
+- [Emergency Services](https://heaterservicemelbourne.com.au/emergency-services)
+- [Brands We Service](https://heaterservicemelbourne.com.au/brands)
+- [Service Areas](https://heaterservicemelbourne.com.au/service-areas)
+- [Self-Care Guides](https://heaterservicemelbourne.com.au/self-care)
+
+## Contact
+- Phone: 0405 133 761
+- Email: heating.melbourne@gmail.com
+- Address: 5 Frank Ave, Clayton South, Melbourne, VIC
+- Website: https://heaterservicemelbourne.com.au
+
+## Sitemap
+https://heaterservicemelbourne.com.au/sitemap.xml
