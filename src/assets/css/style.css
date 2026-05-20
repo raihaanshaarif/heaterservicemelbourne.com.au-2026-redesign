@@ -20537,3 +20537,42 @@ Why Choose Two
 /*--------------------------------------------------------------
 # End
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Service Area Cards (CSS-only hover, replaces framer-motion for TBT savings)
+--------------------------------------------------------------*/
+.area-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border: 1.5px solid rgba(185, 28, 28, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+  min-height: 90px;
+  position: relative;
+  overflow: hidden;
+}
+.area-card:hover {
+  transform: scale(1.06);
+  background: linear-gradient(135deg, #fef2f2 0%, #fde8e8 100%);
+  border-color: rgba(185, 28, 28, 0.3);
+  box-shadow: 0 12px 40px rgba(185, 28, 28, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.area-card__name {
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+.area-card__explore {
+  display: block;
+  margin-top: 0.5rem;
+  color: #b91c1c;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.area-card:hover .area-card__explore {
+  opacity: 1;
+  transform: translateX(0);
+}

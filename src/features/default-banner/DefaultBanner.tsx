@@ -1,5 +1,5 @@
 import React from "react";
-import headerImg from "@/assets/images/resources/page-header-img-1.png";
+// Header img served from /public for predictable URL
 import headerShape from "@/assets/images/shapes/page-header-shape-1.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,12 +21,15 @@ const DefaultBanner: React.FC<ThisBanner> = ({
       <div className="container">
         <div className="page-header__inner">
           <div className="page-header__img-1">
-            <Image
-              src={headerImg}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/images/page-header-img-1.webp"
               width={440}
               height={430}
               alt={`${title} page banner - Professional heating services Melbourne`}
-              priority
+              fetchPriority="high"
+              decoding="async"
+              style={{ width: '100%', height: 'auto' }}
             />
           </div>
           <div className="page-header__shape-1 float-bob-y">

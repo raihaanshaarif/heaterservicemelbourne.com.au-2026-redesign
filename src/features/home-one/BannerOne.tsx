@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BannerOneImg1 from "@/assets/images/resources/banner-one-img-1.png";
+// Hero image served from /public for predictable URL (enables effective preload)
 import BannerOneShape3 from "@/assets/images/shapes/banner-one-shape-3.png";
 import BannerOneReview11 from "@/assets/images/resources/banner-one-review-1-1.jpg";
 import BannerOneReview12 from "@/assets/images/resources/banner-one-review-1-2.jpg";
@@ -14,14 +14,15 @@ const BannerOne: React.FC = () => {
     <section className="banner-one" id="home">
       <div className="banner-one__pattern"></div>
       <div className="banner-one__img">
-        <Image
-          src={BannerOneImg1}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/images/banner-one-img-1.webp"
           width={800}
           height={500}
           alt="Professional heating service technician in Melbourne - HVAC expert"
-          sizes="(max-width: 768px) 100vw, 50vw"
-          priority
           fetchPriority="high"
+          decoding="async"
+          style={{ width: '100%', height: 'auto' }}
         />
       </div>
       <div className="banner-one__shape-3 float-bob-y">

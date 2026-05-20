@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 import Link from "next/link";
-import FadeInAdvanced from "@/components/elements/FadeInAdvanced";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -171,83 +170,19 @@ interface AreaCardProps {
 }
 
 const AreaCard: React.FC<AreaCardProps> = ({ name }) => {
-  const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
-  const [isHovered, setIsHovered] = React.useState(false);
-
+  const slug = name.toLowerCase().replace(/\s+/g, "-");
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={itemVariants}
-      whileHover={{ scale: 1.06 }}
-      className="h-100 w-100"
-      style={{ minWidth: "0" }}
+    <Link
+      href={`/service-areas/${slug}`}
+      className="text-decoration-none area-card-link h-100 d-block"
     >
-      <Link
-        href={`/service-areas/${name.toLowerCase().replace(/\s+/g, "-")}`}
-        className="text-decoration-none"
-      >
-        <motion.div
-          className="p-3 p-sm-4 rounded-4 h-100 text-center cursor-pointer d-flex flex-column align-items-center justify-content-center"
-          style={{
-            background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-            border: "1.5px solid rgba(185,28,28,0.1)",
-            boxShadow:
-              "0 4px 20px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.8)",
-            transition: "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)",
-            minHeight: "90px",
-            minWidth: "0",
-            position: "relative",
-            overflow: "hidden",
-          }}
-          onMouseEnter={(e) => {
-            setIsHovered(true);
-            (e.currentTarget as HTMLElement).style.boxShadow =
-              "0 12px 40px rgba(185,28,28,0.2), inset 0 1px 0 rgba(255,255,255,0.8)";
-            (e.currentTarget as HTMLElement).style.background =
-              "linear-gradient(135deg, #fef2f2 0%, #fde8e8 100%)";
-            (e.currentTarget as HTMLElement).style.borderColor =
-              "rgba(185,28,28,0.3)";
-          }}
-          onMouseLeave={(e) => {
-            setIsHovered(false);
-            (e.currentTarget as HTMLElement).style.boxShadow =
-              "0 4px 20px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.8)";
-            (e.currentTarget as HTMLElement).style.background =
-              "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)";
-            (e.currentTarget as HTMLElement).style.borderColor =
-              "rgba(185,28,28,0.1)";
-          }}
-        >
-          <span
-            style={{
-              color: "#1a1a1a",
-              fontWeight: 700,
-              fontSize: "1rem",
-              letterSpacing: "0.3px",
-              transition: "color 0.3s ease",
-            }}
-          >
-            {name}
-          </span>
-          <motion.div
-            initial={{ opacity: 0, x: -8 }}
-            animate={isHovered ? { opacity: 1, x: 0 } : { opacity: 0, x: -8 }}
-            transition={{ duration: 0.3 }}
-            style={{
-              marginTop: "0.5rem",
-              color: "#b91c1c",
-              fontSize: "0.85rem",
-              fontWeight: 600,
-            }}
-          >
-            <i className="fas fa-arrow-right me-1"></i>
-            Explore
-          </motion.div>
-        </motion.div>
-      </Link>
-    </motion.div>
+      <div className="area-card p-3 p-sm-4 rounded-4 h-100 text-center d-flex flex-column align-items-center justify-content-center">
+        <span className="area-card__name">{name}</span>
+        <span className="area-card__explore">
+          <i className="fas fa-arrow-right me-1"></i>Explore
+        </span>
+      </div>
+    </Link>
   );
 };
 

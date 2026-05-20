@@ -106,7 +106,8 @@ export default function RootLayout({
         {/* Preload critical resources to reduce LCP */}
         <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" />
         <link rel="preload" href="/assets/css/style.css" as="style" />
-        <link rel="preload" href="/assets/images/resources/banner-one-img-1.png" as="image" />
+        {/* Hero image - WebP, URL matches src attribute in BannerOne.tsx for effective preload */}
+        <link rel="preload" href="/assets/images/banner-one-img-1.webp" as="image" type="image/webp" />
         
         {/* Preconnect to Google fonts and analytics */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
