@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
+  productionBrowserSourceMaps: false, // Don't send source maps to clients
   compiler: {
     // Strip console.log from production bundles (keeps error/warn for debugging)
     removeConsole: process.env.NODE_ENV === "production"
@@ -17,6 +18,8 @@ const nextConfig: NextConfig = {
       "react-circular-progressbar",
       "yet-another-react-lightbox",
     ],
+    // Enable React Server Components streaming for faster LCP
+    serverComponentsExternalPackages: [],
   },
   images: {
     formats: ["image/avif", "image/webp"],
@@ -27,11 +30,13 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // Compression headers: tell Cloudflare to use Brotli for all text content
         source: "/(.*)",
         headers: [
-          { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "X-Frame-Options", value: "DENY" },
-          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          {
+            key: "Content-Encoding",
+            value: "br", // Brotli compression
+          },
         ],
       },
       {
