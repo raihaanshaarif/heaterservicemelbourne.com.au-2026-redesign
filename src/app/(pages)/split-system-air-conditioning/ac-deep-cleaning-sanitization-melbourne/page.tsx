@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "AC Deep Cleaning Melbourne | Split System Clean & Sanitization",
+  title: "AC Deep Cleaning & Sanitization Melbourne",
   description:
     "Professional split system AC deep cleaning and sanitization Melbourne. Mould removal, restore efficiency, improve air quality. AC service cost upfront. All brands. Call 0405 133 761.",
   keywords:

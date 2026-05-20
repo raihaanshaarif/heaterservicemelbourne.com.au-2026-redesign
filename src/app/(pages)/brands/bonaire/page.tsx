@@ -3,8 +3,7 @@ import BonaireBrandClient from "@/components/brands/bonaire/BonaireBrandClient";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
-  title:
-    "Bonaire Air Conditioning Installation & Repair Melbourne | Expert Service",
+  title: "Bonaire AC Installation & Repair Melbourne",
   description:
     "Professional Bonaire ducted heating, evaporative cooling & repair services in Melbourne. Emergency repairs, installation & maintenance available 24/7. Same-day service.",
   keywords:

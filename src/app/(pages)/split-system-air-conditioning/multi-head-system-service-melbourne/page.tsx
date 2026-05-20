@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Multi-Head Split System Melbourne | Multi-Zone Air Conditioning",
+  title: "Multi-Head Split System Melbourne",
   description:
     "Expert multi-head split system and multi-zone air conditioning Melbourne. Installation, service and repair. Multi room air conditioning, ducted split system. Free quotes. Call 0405 133 761.",
   keywords:

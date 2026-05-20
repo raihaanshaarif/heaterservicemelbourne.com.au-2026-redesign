@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Hydronic Heating Installation Melbourne | Underfloor & Radiator",
+  title: "Hydronic Heating Installation Melbourne",
   description:
     "Expert hydronic heating installation Melbourne — hydronic underfloor heating, radiators, boilers. Transparent hydronic heating cost, free quotes. Licensed gas technicians. Call 0405 133 761.",
   keywords:

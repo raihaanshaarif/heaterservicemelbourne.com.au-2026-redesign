@@ -97,20 +97,10 @@ const FooterOne: React.FC = () => {
                     <h3 className="footer-widget__title">Our Services</h3>
                   </div>
                   <ul className="footer-widget__link list-unstyled">
-                    <li>
-                      <Link href="/hydronic-heating">Hydronic Heating</Link>
-                    </li>
-                    <li>
-                      <Link href="/gas-ducted-heating">Gas Ducted Heating</Link>
-                    </li>
-                    <li>
-                      <Link href="/split-system-air-conditioning">
-                        Split Systems
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/emergency-services">Emergency Services</Link>
-                    </li>
+                    <li><Link href="/gas-ducted-heating">Gas Ducted Heating</Link></li>
+                    <li><Link href="/hydronic-heating">Hydronic Heating</Link></li>
+                    <li><Link href="/split-system-air-conditioning">Split System AC</Link></li>
+                    <li><Link href="/emergency-services">Emergency Services</Link></li>
                   </ul>
                 </div>
               </FadeInAdvanced>
@@ -160,6 +150,38 @@ const FooterOne: React.FC = () => {
                   </ul>
                 </div>
               </FadeInAdvanced>
+            </div>
+          </div>
+          <div className="row" style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "20px", marginTop: "20px" }}>
+            <div className="col-12">
+              <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.45)", marginBottom: "8px", textTransform: "uppercase", letterSpacing: "1px" }}>
+                Service Areas
+              </p>
+              <ul className="list-unstyled" style={{ display: "flex", flexWrap: "wrap", gap: "6px 18px", margin: 0 }}>
+                {([["berwick","Berwick"],["box-hill","Box Hill"],["brighton","Brighton"],["bundoora","Bundoora"],["caulfield","Caulfield"],["chadstone","Chadstone"],["clayton","Clayton"],["dandenong","Dandenong"],["doncaster","Doncaster"],["epping","Epping"],["essendon","Essendon"],["ferntree-gully","Ferntree Gully"],["frankston","Frankston"],["glen-waverley","Glen Waverley"],["hallam","Hallam"],["lilydale","Lilydale"],["melbourne-cbd","Melbourne CBD"],["mornington","Mornington"],["mount-waverley","Mt Waverley"],["narre-warren","Narre Warren"],["oakleigh","Oakleigh"],["pakenham","Pakenham"],["ringwood","Ringwood"],["rowville","Rowville"],["sandringham","Sandringham"],["springvale","Springvale"],["st-kilda","St Kilda"],["toorak","Toorak"],["werribee","Werribee"],["wheelers-hill","Wheelers Hill"]] as [string,string][]).map(([slug, label]) => (
+                  <li key={slug} style={{ margin: 0 }}>
+                    <Link href={`/service-areas/${slug}`} style={{ fontSize: "12px", color: "rgba(255,255,255,0.55)" }}>
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="row" style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "20px", marginTop: "20px" }}>
+            <div className="col-12">
+              <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.45)", marginBottom: "8px", textTransform: "uppercase", letterSpacing: "1px" }}>
+                Brand Self-Care Guides
+              </p>
+              <ul className="list-unstyled" style={{ display: "flex", flexWrap: "wrap", gap: "6px 18px", margin: 0 }}>
+                {([["actronair","Actronair"],["braemar","Braemar"],["breezair","Breezair"],["brivis","Brivis"],["carrier","Carrier"],["celair","Celair"],["fujitsu","Fujitsu"],["haier","Haier"],["hitachi","Hitachi"],["kaden","Kaden"],["lg","LG"],["mitsubishi-electric","Mitsubishi"],["panasonic","Panasonic"],["rinnai","Rinnai"],["samsung","Samsung"],["sharp","Sharp"],["toshiba","Toshiba"],["vulcan","Vulcan"],["york","York"]] as [string,string][]).map(([slug, label]) => (
+                  <li key={slug} style={{ margin: 0 }}>
+                    <Link href={`/self-care/${slug}`} style={{ fontSize: "12px", color: "rgba(255,255,255,0.55)" }}>
+                      {label} Self-Care
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

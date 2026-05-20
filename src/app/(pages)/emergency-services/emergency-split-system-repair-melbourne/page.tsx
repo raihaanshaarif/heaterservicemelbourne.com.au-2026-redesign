@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Emergency Split System Repair Melbourne | 24/7 AC Not Working",
+  title: "Emergency Split System Repair Melbourne",
   description:
     "Emergency split system repair Melbourne — AC not working or not cooling? 24/7 air conditioner repair, split system breakdown rescue, all brands. Call 0405 133 761 now.",
   keywords:

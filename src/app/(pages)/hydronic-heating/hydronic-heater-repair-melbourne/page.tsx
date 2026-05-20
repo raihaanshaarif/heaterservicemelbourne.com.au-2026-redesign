@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Hydronic Heater Repair Melbourne | Boiler & System Fault Repairs",
+  title: "Hydronic Heater Repair Melbourne",
   description:
     "Professional hydronic heater repair Melbourne. Diagnose and fix all hydronic system faults. Part of our hydronic heating repairs Melbourne and hydronic heating service. Same-day. Call 0405 133 761.",
   keywords:

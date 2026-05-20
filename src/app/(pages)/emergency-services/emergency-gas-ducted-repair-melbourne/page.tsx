@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Emergency Gas Ducted Repair Melbourne | 24/7 No Heat Fix",
+  title: "Emergency Gas Ducted Repair Melbourne",
   description:
     "Emergency gas ducted repair Melbourne — no heat in winter? 24/7 same-day heating repair near me. Gas heater not working, ducted heating breakdown fixed fast. Call 0405 133 761.",
   keywords:

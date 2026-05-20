@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Gas Heater Replacement Melbourne | Ducted Heating Replacement",
+  title: "Gas Heater Replacement Melbourne",
   description:
     "Gas heater replacement and ducted heating replacement Melbourne. Replace old inefficient systems — ducted gas heating replacement, upfront pricing. Call 0405 133 761.",
   keywords:

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HotWaterRepairsClient from "./HotWaterRepairsClient";
 
 export const metadata: Metadata = {
-  title: "Hot Water Repairs Melbourne | Same Day Hot Water Service",
+  title: "Hot Water Repairs Melbourne | Same Day",
   description:
     "Fast hot water repairs Melbourne. Expert hot water system repair, hot water replacement, same day hot water service. Licensed technicians, no hot water? Call 0405 133 761.",
   keywords:
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://heaterservicemelbourne.com.au/hot-water-repairs",
   },
   openGraph: {
-    title: "Hot Water Repairs Melbourne | Same Day Hot Water Service",
+    title: "Hot Water Repairs Melbourne | Same Day",
     description:
       "Fast hot water repairs Melbourne. Expert hot water system repair and replacement. Same day service available. Call 0405 133 761.",
     url: "https://heaterservicemelbourne.com.au/hot-water-repairs",

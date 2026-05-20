@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Underfloor Slab Heating Repair Melbourne | Hydronic Floor Heating",
+  title: "Underfloor Slab Heating Repair Melbourne",
   description:
     "Specialist hydronic underfloor heating and slab heating repair Melbourne. In-slab pipe leak detection, pressure testing, re-commissioning. Part of hydronic heating repairs Melbourne. Call 0405 133 761.",
   keywords:

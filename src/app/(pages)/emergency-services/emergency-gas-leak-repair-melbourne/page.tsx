@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Emergency Gas Leak Repair Melbourne | Smell Gas? Call Now",
+  title: "Emergency Gas Leak Repair Melbourne",
   description:
     "Emergency gas leak repair Melbourne — smell gas? Call 0405 133 761 immediately. Licensed 24/7 gas leak detection, carbon monoxide risk assessment, gas safety inspection. Fast response.",
   keywords:

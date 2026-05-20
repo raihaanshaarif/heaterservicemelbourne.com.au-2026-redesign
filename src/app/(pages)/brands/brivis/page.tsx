@@ -3,7 +3,7 @@ import BrivisBrandClient from "@/components/brands/brivis/BrivisBrandClient";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
-  title: "Brivis Ducted Heating Service Melbourne | Repair & Maintenance",
+  title: "Brivis Ducted Heating Service Melbourne",
   description: "Licensed Brivis ducted heating service Melbourne. Expert Brivis central heating, Brivis gas heating repairs and installation. Same-day service available. Call 0405 133 761.",
   keywords: "brivis ducted heating, brivis ducted heating service, brivis central heating, brivis gas heating, brivis heating melbourne, brivis service melbourne, brivis heating and cooling",
   openGraph: {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Split System Repair Melbourne | AC Repair Near Me",
+  title: "Split System Repair Melbourne",
   description:
     "Expert split system repair Melbourne — Daikin, Fujitsu, Mitsubishi, Samsung and all brands. Air conditioner repair near me, reverse cycle repair, same-day service. Call 0405 133 761.",
   keywords:

@@ -66,12 +66,7 @@ const HeaderThree: React.FC = () => {
                                     </form>
                                 </div>
                             </div>
-                            <div className="main-menu-three__social">
-                                <Link href="#"><i className="fab fa-twitter"></i></Link>
-                                <Link href="#"><i className="fab fa-facebook"></i></Link>
-                                <Link href="#"><i className="fab fa-pinterest-p"></i></Link>
-                                <Link href="#"><i className="fab fa-instagram"></i></Link>
-                            </div>
+
                         </div>
                     </div>
                 </div>

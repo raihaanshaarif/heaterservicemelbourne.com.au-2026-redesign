@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Split System Installation Melbourne | Supply & Install Cost",
+  title: "Split System Installation Melbourne",
   description:
     "Professional split system installation Melbourne. Daikin, Fujitsu, Mitsubishi, Samsung supplied and installed. Split system installation cost, reverse cycle installation. ARCtick licensed. Call 0405 133 761.",
   keywords:

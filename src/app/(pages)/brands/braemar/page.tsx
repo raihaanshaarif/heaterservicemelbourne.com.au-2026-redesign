@@ -3,7 +3,7 @@ import BraemarBrandClient from "@/components/brands/braemar/BraemarBrandClient";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
-  title: "Braemar Ducted Heating Service Melbourne | Repair & Installation",
+  title: "Braemar Ducted Heating Service Melbourne",
   description: "Licensed Braemar ducted heating service Melbourne. Expert Braemar heating and cooling Melbourne — repair, installation and maintenance. Same-day service available. Call 0405 133 761.",
   keywords: "braemar ducted heating service melbourne, braemar ducted heating service, braemar heating and cooling melbourne, braemar ducted heating, braemar heating, braemar heater, braemar ducted gas heating melbourne",
   openGraph: {

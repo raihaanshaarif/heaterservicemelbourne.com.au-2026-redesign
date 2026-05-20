@@ -141,20 +141,7 @@ const FooterTwo: React.FC = () => {
                     </div>
                     <div className="result"></div>
                   </form>
-                  <div className="site-footer-two__social">
-                    <Link href="#">
-                      <i className="icon-facebook-app-symbol"></i>
-                    </Link>
-                    <Link href="#">
-                      <i className="icon-twitter1"></i>
-                    </Link>
-                    <Link href="#">
-                      <i className="icon-instagram"></i>
-                    </Link>
-                    <Link href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </Link>
-                  </div>
+
                 </div>
               </FadeInAdvanced>
             </div>

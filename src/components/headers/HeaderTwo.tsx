@@ -57,12 +57,7 @@ const HeaderTwo: React.FC = () => {
                             </div>
                             <p className="main-menu-two__top-text">Mon - Fri: 09:00 - 05:00</p>
                         </div>
-                        <div className="main-menu-two__social">
-                            <Link href="#"><i className="fab fa-twitter"></i></Link>
-                            <Link href="#"><i className="fab fa-facebook"></i></Link>
-                            <Link href="#"><i className="fab fa-pinterest-p"></i></Link>
-                            <Link href="#"><i className="fab fa-instagram"></i></Link>
-                        </div>
+
                     </div>
                 </div>
             </div>

@@ -4,12 +4,6 @@ import FadeInAdvanced from "../elements/FadeInAdvanced";
 import SiteFooterThreeShape1 from "@/assets/images/shapes/site-footer-three-shape-1.png";
 import SiteFooterThreeShape2 from "@/assets/images/shapes/site-footer-three-shape-2.png";
 import FooterLogo from "@/assets/images/resources/footer-logo.png";
-import FooterWidgetInstagramImg1 from "@/assets/images/project/footer-widget-instagram-img-1.jpg";
-import FooterWidgetInstagramImg2 from "@/assets/images/project/footer-widget-instagram-img-2.jpg";
-import FooterWidgetInstagramImg3 from "@/assets/images/project/footer-widget-instagram-img-3.jpg";
-import FooterWidgetInstagramImg4 from "@/assets/images/project/footer-widget-instagram-img-4.jpg";
-import FooterWidgetInstagramImg5 from "@/assets/images/project/footer-widget-instagram-img-5.jpg";
-import FooterWidgetInstagramImg6 from "@/assets/images/project/footer-widget-instagram-img-6.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -53,20 +47,7 @@ const FooterThree: React.FC = () => {
                     aliquam nibh auctor elitsed libero pharetra consequat and
                     fad sociis conubia favorite to risus.
                   </p>
-                  <div className="site-footer-three__social">
-                    <Link href="#">
-                      <i className="icon-facebook-app-symbol"></i>
-                    </Link>
-                    <Link href="#">
-                      <i className="icon-twitter"></i>
-                    </Link>
-                    <Link href="#">
-                      <i className="icon-instagram"></i>
-                    </Link>
-                    <Link href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </Link>
-                  </div>
+
                 </div>
               </FadeInAdvanced>
             </div>
@@ -131,92 +112,60 @@ const FooterThree: React.FC = () => {
             </div>
             <div className="col-xl-3 col-lg-6 col-md-6">
               <FadeInAdvanced variant={"fadeInUp"} delay={400}>
-                <div className="footer-widget-three__column footer-widget-three__instagram">
+                <div className="footer-widget-three__column footer-widget-three__services">
                   <div className="footer-widget-three__title-box">
-                    <h3 className="footer-widget-three__title">Instagram</h3>
+                    <h3 className="footer-widget-three__title">Service Areas</h3>
                   </div>
-                  <ul className="footer-widget-three__instagram-list list-unstyled clearfix">
-                    <li>
-                      <div className="footer-widget-three__instagram-img">
-                        <Image
-                          src={FooterWidgetInstagramImg1}
-                          width={83}
-                          height={83}
-                          alt="Image"
-                        />
-                        <Link href="/project-details">
-                          <span className="fab fa-instagram"></span>
-                        </Link>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="footer-widget-three__instagram-img">
-                        <Image
-                          src={FooterWidgetInstagramImg2}
-                          width={83}
-                          height={83}
-                          alt="Image"
-                        />
-                        <Link href="/project-details">
-                          <span className="fab fa-instagram"></span>
-                        </Link>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="footer-widget-three__instagram-img">
-                        <Image
-                          src={FooterWidgetInstagramImg3}
-                          width={83}
-                          height={83}
-                          alt="Image"
-                        />
-                        <Link href="/project-details">
-                          <span className="fab fa-instagram"></span>
-                        </Link>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="footer-widget-three__instagram-img">
-                        <Image
-                          src={FooterWidgetInstagramImg4}
-                          width={83}
-                          height={83}
-                          alt="Image"
-                        />
-                        <Link href="/project-details">
-                          <span className="fab fa-instagram"></span>
-                        </Link>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="footer-widget-three__instagram-img">
-                        <Image
-                          src={FooterWidgetInstagramImg5}
-                          width={83}
-                          height={83}
-                          alt="Image"
-                        />
-                        <Link href="/project-details">
-                          <span className="fab fa-instagram"></span>
-                        </Link>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="footer-widget-three__instagram-img">
-                        <Image
-                          src={FooterWidgetInstagramImg6}
-                          width={83}
-                          height={83}
-                          alt="Image"
-                        />
-                        <Link href="/project-details">
-                          <span className="fab fa-instagram"></span>
-                        </Link>
-                      </div>
-                    </li>
+                  <ul className="footer-widget-three__link list-unstyled" style={{ columns: 2, columnGap: "12px" }}>
+                    <li><Link href="/service-areas/berwick">Berwick</Link></li>
+                    <li><Link href="/service-areas/box-hill">Box Hill</Link></li>
+                    <li><Link href="/service-areas/brighton">Brighton</Link></li>
+                    <li><Link href="/service-areas/bundoora">Bundoora</Link></li>
+                    <li><Link href="/service-areas/caulfield">Caulfield</Link></li>
+                    <li><Link href="/service-areas/chadstone">Chadstone</Link></li>
+                    <li><Link href="/service-areas/clayton">Clayton</Link></li>
+                    <li><Link href="/service-areas/dandenong">Dandenong</Link></li>
+                    <li><Link href="/service-areas/doncaster">Doncaster</Link></li>
+                    <li><Link href="/service-areas/epping">Epping</Link></li>
+                    <li><Link href="/service-areas/essendon">Essendon</Link></li>
+                    <li><Link href="/service-areas/ferntree-gully">Ferntree Gully</Link></li>
+                    <li><Link href="/service-areas/frankston">Frankston</Link></li>
+                    <li><Link href="/service-areas/glen-waverley">Glen Waverley</Link></li>
+                    <li><Link href="/service-areas/hallam">Hallam</Link></li>
+                    <li><Link href="/service-areas/lilydale">Lilydale</Link></li>
+                    <li><Link href="/service-areas/melbourne-cbd">Melbourne CBD</Link></li>
+                    <li><Link href="/service-areas/mornington">Mornington</Link></li>
+                    <li><Link href="/service-areas/mount-waverley">Mt Waverley</Link></li>
+                    <li><Link href="/service-areas/narre-warren">Narre Warren</Link></li>
+                    <li><Link href="/service-areas/oakleigh">Oakleigh</Link></li>
+                    <li><Link href="/service-areas/pakenham">Pakenham</Link></li>
+                    <li><Link href="/service-areas/ringwood">Ringwood</Link></li>
+                    <li><Link href="/service-areas/rowville">Rowville</Link></li>
+                    <li><Link href="/service-areas/sandringham">Sandringham</Link></li>
+                    <li><Link href="/service-areas/springvale">Springvale</Link></li>
+                    <li><Link href="/service-areas/st-kilda">St Kilda</Link></li>
+                    <li><Link href="/service-areas/toorak">Toorak</Link></li>
+                    <li><Link href="/service-areas/werribee">Werribee</Link></li>
+                    <li><Link href="/service-areas/wheelers-hill">Wheelers Hill</Link></li>
                   </ul>
                 </div>
               </FadeInAdvanced>
+            </div>
+          </div>
+          <div className="row" style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "24px", marginTop: "24px" }}>
+            <div className="col-12">
+              <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.5)", marginBottom: "10px", textTransform: "uppercase", letterSpacing: "1px" }}>
+                Brand Self-Care Guides
+              </p>
+              <ul className="list-unstyled" style={{ display: "flex", flexWrap: "wrap", gap: "8px 20px", margin: 0 }}>
+                {[["actronair","Actronair"],["braemar","Braemar"],["breezair","Breezair"],["brivis","Brivis"],["carrier","Carrier"],["celair","Celair"],["fujitsu","Fujitsu"],["haier","Haier"],["hitachi","Hitachi"],["kaden","Kaden"],["lg","LG"],["mitsubishi-electric","Mitsubishi"],["panasonic","Panasonic"],["rinnai","Rinnai"],["samsung","Samsung"],["sharp","Sharp"],["toshiba","Toshiba"],["vulcan","Vulcan"],["york","York"]].map(([slug, label]) => (
+                  <li key={slug} style={{ margin: 0 }}>
+                    <Link href={`/self-care/${slug}`} style={{ fontSize: "13px", color: "rgba(255,255,255,0.6)" }}>
+                      {label} Self-Care
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HydronicHeatingClient from "./HydronicHeatingClient";
 
 export const metadata: Metadata = {
-  title: "Hydronic Heating Service Melbourne | Repair, Underfloor & Servicing",
+  title: "Hydronic Heating Service Melbourne",
   description:
     "Expert hydronic heating service Melbourne — hydronic underfloor heating, hydronic heating repairs, servicing and installation. Affordable hydronic heating cost. Licensed technicians, same-day service.",
   keywords:

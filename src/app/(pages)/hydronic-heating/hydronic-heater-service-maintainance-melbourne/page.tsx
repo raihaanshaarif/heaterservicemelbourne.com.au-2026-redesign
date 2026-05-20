@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Hydronic Heating Service Melbourne | Servicing & Maintenance",
+  title: "Hydronic Heating Servicing Melbourne",
   description:
     "Regular hydronic heating service and hydronic heating servicing Melbourne. Annual plans, flush and refill, pressure checks. Transparent hydronic heating cost. Call 0405 133 761.",
   keywords:

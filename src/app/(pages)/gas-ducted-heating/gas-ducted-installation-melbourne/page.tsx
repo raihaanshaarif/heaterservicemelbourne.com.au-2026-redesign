@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Gas Ducted Heating Installation Melbourne | Supply & Install",
+  title: "Gas Ducted Heating Installation Melbourne",
   description:
     "Expert gas ducted heating installation Melbourne. New systems supplied and installed. Upfront gas ducted heating cost, free quotes. Blackburn, Doncaster, Ringwood, Berwick. Call 0405 133 761.",
   keywords:

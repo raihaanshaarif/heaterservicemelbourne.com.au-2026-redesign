@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Hydronic Leak Repair Melbourne | Boiler & Pipe Leak Specialists",
+  title: "Hydronic Leak Repair Melbourne",
   description:
     "Expert hydronic leak repair Melbourne — boiler leaks, pipe bursts, radiator leaks. Part of our hydronic heating repairs Melbourne service. Same-day, licensed techs. Call 0405 133 761.",
   keywords:

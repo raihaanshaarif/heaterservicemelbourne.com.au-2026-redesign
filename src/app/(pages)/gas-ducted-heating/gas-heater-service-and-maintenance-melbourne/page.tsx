@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Gas Heater Service Melbourne | Gas Heater Servicing & Maintenance",
+  title: "Gas Heater Service & Maintenance Melbourne",
   description:
     "Professional gas heater service and gas heater servicing Melbourne. Gas heater service near me, annual maintenance, carbon monoxide testing. Licensed gas heater technicians. Call 0405 133 761.",
   keywords:

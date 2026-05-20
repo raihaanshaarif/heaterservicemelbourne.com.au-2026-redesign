@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GasDuctedHeatingClient from "./GasDuctedHeatingClient";
 
 export const metadata: Metadata = {
-  title: "Gas Ducted Heating Melbourne | Service, Repair & Replacement",
+  title: "Gas Ducted Heating Service Melbourne",
   description:
     "Expert gas ducted heating service Melbourne — ducted heating replacement, ducted gas heating replacement, repair and installation. Servicing Blackburn, Ringwood, Doncaster, Berwick & all suburbs.",
   keywords:

@@ -101,7 +101,7 @@ const WhyChooseOne: React.FC = () => {
                     <i className="fas fa-cogs"></i>
                   </div>
 
-                  <h6 className="section-title__tagline">Why Choose us</h6>
+                  <p className="section-title__tagline">Why Choose us</p>
 
                   <span className="section-title__tagline-border"></span>
                   <div className="section-title__shape-2">

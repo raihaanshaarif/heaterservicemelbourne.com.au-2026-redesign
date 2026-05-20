@@ -21,7 +21,7 @@ export default function BlogOne() {
             <div className="section-title__shape-1">
               <i className="fas fa-cogs"></i>
             </div>
-            <h6 className="section-title__tagline">Blog & News</h6>
+            <p className="section-title__tagline">Blog & News</p>
             <span className="section-title__tagline-border"></span>
             <div className="section-title__shape-2">
               <i className="fas fa-cogs"></i>
