@@ -169,7 +169,7 @@ const FooterOne: React.FC = () => {
         <div className="container">
           <div className="site-footer__bottom-inner">
             <p className="site-footer__bottom-text">
-              © Copyright 2026 by <a href="#">Heater Service Melbourne</a> All
+              © Copyright 2026 by <a href="https://heaterservicemelbourne.com.au/">Heater Service Melbourne</a> All
               Rights Reserved.
             </p>
             <ul className="list-unstyled site-footer__bottom-menu">
