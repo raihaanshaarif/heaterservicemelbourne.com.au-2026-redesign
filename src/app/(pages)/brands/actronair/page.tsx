@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import ActronAirBrandClient from "@/components/brands/actronair/ActronAirBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "ActronAir Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function ActronAirPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - ActronAir Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/actronair.png",
-            description: "Expert ActronAir heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/actronair",
-          }),
-        }}
+      <DefaultBanner
+        title="ActronAir Services"
+        subTitle="ActronAir"
+        titleLink="/brands/actronair"
+        asH1
       />
       <ActronAirBrandClient />
     </>

@@ -555,19 +555,6 @@ const SamsungBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Energy Star certified, SmartThings certified, Samsung Quality assured
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "WindFree comfort mode eliminates cold air drafts for perfect warmth"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

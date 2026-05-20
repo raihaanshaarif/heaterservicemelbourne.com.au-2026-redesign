@@ -555,19 +555,6 @@ const ToshibaBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Energy Star certified, Japanese Standard certified, HVAC proven
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "ForceFlow technology delivers powerful heating even in extreme cold"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

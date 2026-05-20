@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import BraemarBrandClient from "@/components/brands/braemar/BraemarBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "Braemar Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function BraemarPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - Braemar Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/braemar.png",
-            description: "Expert Braemar heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/braemar",
-          }),
-        }}
+      <DefaultBanner
+        title="Braemar Services"
+        subTitle="Braemar"
+        titleLink="/brands/braemar"
+        asH1
       />
       <BraemarBrandClient />
     </>

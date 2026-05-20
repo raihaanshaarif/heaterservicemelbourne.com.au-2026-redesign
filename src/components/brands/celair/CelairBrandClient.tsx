@@ -555,19 +555,6 @@ const CelairBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Australian standard certified, Noise performance rated, Compact specialist
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Silent-Comfort technology delivers whisper-quiet heating for peaceful homes"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

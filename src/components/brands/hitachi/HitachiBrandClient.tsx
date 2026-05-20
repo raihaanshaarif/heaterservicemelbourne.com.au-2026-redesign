@@ -555,19 +555,6 @@ const HitachiBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Energy Star certified, Japanese top efficiency rated, Industrial proven
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Twin Rotary Compressor technology reduces vibration and noise significantly"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

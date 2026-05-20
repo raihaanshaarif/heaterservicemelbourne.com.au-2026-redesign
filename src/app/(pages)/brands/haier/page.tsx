@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import HaierBrandClient from "@/components/brands/haier/HaierBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "Haier Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function HaierPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - Haier Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/haier.png",
-            description: "Expert Haier heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/haier",
-          }),
-        }}
+      <DefaultBanner
+        title="Haier Services"
+        subTitle="Haier"
+        titleLink="/brands/haier"
+        asH1
       />
       <HaierBrandClient />
     </>

@@ -555,19 +555,6 @@ const MitsubishiElectricBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Energy Star certified, ASHP member, Global sustainability leader
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Advanced inverter compressor maintains comfort while minimizing energy use"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

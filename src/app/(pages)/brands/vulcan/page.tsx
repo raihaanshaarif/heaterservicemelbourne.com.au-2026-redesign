@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import VulcanBrandClient from "@/components/brands/vulcan/VulcanBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "Vulcan Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function VulcanPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - Vulcan Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/vulcan.png",
-            description: "Expert Vulcan heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/vulcan",
-          }),
-        }}
+      <DefaultBanner
+        title="Vulcan Services"
+        subTitle="Vulcan"
+        titleLink="/brands/vulcan"
+        asH1
       />
       <VulcanBrandClient />
     </>

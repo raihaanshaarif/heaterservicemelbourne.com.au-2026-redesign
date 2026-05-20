@@ -57,20 +57,7 @@ const FooterOne: React.FC = () => {
                     offer expert repairs, service, and installation across
                     Clayton South and surrounding areas.
                   </p>
-                  <div className="site-footer__social">
-                    <Link href="#">
-                      <i className="icon-facebook-app-symbol"></i>
-                    </Link>
-                    <Link href="#">
-                      <i className="icon-twitter1"></i>
-                    </Link>
-                    <Link href="#">
-                      <i className="icon-instagram"></i>
-                    </Link>
-                    <Link href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </Link>
-                  </div>
+               
                 </div>
               </FadeInAdvanced>
             </div>

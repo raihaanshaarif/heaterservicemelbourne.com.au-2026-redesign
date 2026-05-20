@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import RinnaiBrandClient from "@/components/brands/rinnai/RinnaiBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "Rinnai Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function RinnaiPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - Rinnai Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/rinnai.png",
-            description: "Expert Rinnai heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/rinnai",
-          }),
-        }}
+      <DefaultBanner
+        title="Rinnai Services"
+        subTitle="Rinnai"
+        titleLink="/brands/rinnai"
+        asH1
       />
       <RinnaiBrandClient />
     </>

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import BonaireBrandClient from "@/components/brands/bonaire/BonaireBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title:
@@ -23,5 +24,15 @@ export const metadata: Metadata = {
 };
 
 export default function BonaireBrandPage() {
-  return <BonaireBrandClient />;
+  return (
+    <>
+      <DefaultBanner
+        title="Bonaire Services"
+        subTitle="Bonaire"
+        titleLink="/brands/bonaire"
+        asH1
+      />
+      <BonaireBrandClient />
+    </>
+  );
 }

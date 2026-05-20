@@ -555,19 +555,6 @@ const KadenBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> European Quality certified, ISO 9001, District Heating specialist
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Hydro-Comfort technology perfect for apartment blocks and shared heating"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

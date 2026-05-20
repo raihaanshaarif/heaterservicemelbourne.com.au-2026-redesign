@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import PanasonicBrandClient from "@/components/brands/panasonic/PanasonicBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "Panasonic Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function PanasonicPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - Panasonic Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/panasonic.png",
-            description: "Expert Panasonic heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/panasonic",
-          }),
-        }}
+      <DefaultBanner
+        title="Panasonic Services"
+        subTitle="Panasonic"
+        titleLink="/brands/panasonic"
+        asH1
       />
       <PanasonicBrandClient />
     </>

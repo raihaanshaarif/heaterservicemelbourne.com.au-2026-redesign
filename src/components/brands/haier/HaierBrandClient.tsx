@@ -555,19 +555,6 @@ const HaierBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Energy Star certified, UL certified, Global warranty support
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Smart IoT integration at affordable price point for budget-conscious buyers"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

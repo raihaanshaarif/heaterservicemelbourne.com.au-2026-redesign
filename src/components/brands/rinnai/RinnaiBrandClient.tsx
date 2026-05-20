@@ -554,20 +554,6 @@ const RinnaiBrandClient: React.FC = () => {
               >
                 <strong>Certifications & Recognition:</strong> Energy Star certified, Gas Safety certified, Industry endorsed
               </motion.p>
-
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Modulating burner technology provides the most efficient gas heating available"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

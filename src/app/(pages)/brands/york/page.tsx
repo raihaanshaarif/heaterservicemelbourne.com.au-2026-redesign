@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import YorkBrandClient from "@/components/brands/york/YorkBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "York Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function YorkPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - York Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/york.png",
-            description: "Expert York heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/york",
-          }),
-        }}
+      <DefaultBanner
+        title="York Services"
+        subTitle="York"
+        titleLink="/brands/york"
+        asH1
       />
       <YorkBrandClient />
     </>

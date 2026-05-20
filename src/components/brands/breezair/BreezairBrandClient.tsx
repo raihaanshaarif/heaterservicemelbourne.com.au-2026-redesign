@@ -555,19 +555,6 @@ const BreezairBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Australian Standard certified, Energy efficient rating, Sustainability leader
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Unique hybrid evaporative-heating system perfect for dry Australian climate"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

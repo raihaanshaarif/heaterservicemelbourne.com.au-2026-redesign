@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import SharpBrandClient from "@/components/brands/sharp/SharpBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "Sharp Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function SharpPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - Sharp Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/sharp.png",
-            description: "Expert Sharp heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/sharp",
-          }),
-        }}
+      <DefaultBanner
+        title="Sharp Services"
+        subTitle="Sharp"
+        titleLink="/brands/sharp"
+        asH1
       />
       <SharpBrandClient />
     </>

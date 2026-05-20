@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import MitsubishiElectricBrandClient from "@/components/brands/mitsubishi-electric/MitsubishiElectricBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "Mitsubishi Electric Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function MitsubishiElectricPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - Mitsubishi Electric Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/mitsubishi-electric.png",
-            description: "Expert Mitsubishi Electric heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/mitsubishi-electric",
-          }),
-        }}
+      <DefaultBanner
+        title="Mitsubishi Electric Services"
+        subTitle="Mitsubishi Electric"
+        titleLink="/brands/mitsubishi-electric"
+        asH1
       />
       <MitsubishiElectricBrandClient />
     </>

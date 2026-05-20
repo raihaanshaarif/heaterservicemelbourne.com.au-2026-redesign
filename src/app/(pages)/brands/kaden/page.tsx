@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import KadenBrandClient from "@/components/brands/kaden/KadenBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "Kaden Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function KadenPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - Kaden Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/kaden.png",
-            description: "Expert Kaden heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/kaden",
-          }),
-        }}
+      <DefaultBanner
+        title="Kaden Services"
+        subTitle="Kaden"
+        titleLink="/brands/kaden"
+        asH1
       />
       <KadenBrandClient />
     </>

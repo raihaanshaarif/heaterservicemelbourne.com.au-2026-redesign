@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import CarrierBrandClient from "@/components/brands/carrier/CarrierBrandClient";
+import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
   title: "Carrier Heating Services Melbourne",
@@ -21,29 +22,11 @@ export const metadata: Metadata = {
 export default function CarrierPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Heater Service Melbourne - Carrier Specialists",
-            image: "https://heaterservicemelbourne.com.au/assets/images/brands/carrier.png",
-            description: "Expert Carrier heating system services in Melbourne",
-            telephone: "+61405133761",
-            email: "heating.melbourne@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Melbourne",
-              postalCode: "3169",
-              addressRegion: "VIC",
-              addressCountry: "AU",
-            },
-            serviceArea: { "@type": "City", name: "Melbourne" },
-            areaServed: "AU",
-            url: "https://heaterservicemelbourne.com.au/brands/carrier",
-          }),
-        }}
+      <DefaultBanner
+        title="Carrier Services"
+        subTitle="Carrier"
+        titleLink="/brands/carrier"
+        asH1
       />
       <CarrierBrandClient />
     </>

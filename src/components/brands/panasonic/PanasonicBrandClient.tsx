@@ -555,19 +555,6 @@ const PanasonicBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> ISO 9001 certified, Energy Star Champion, EPEAT Gold
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Nanoe-X air purification technology integrated into heating systems"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

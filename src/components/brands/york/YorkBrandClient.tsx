@@ -555,19 +555,6 @@ const YorkBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Energy Star certified, AHRI listed, Commercial proven
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Commercial HVAC engineering adapted for residential reliability"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">

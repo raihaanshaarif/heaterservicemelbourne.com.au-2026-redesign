@@ -555,19 +555,6 @@ const BrivisBrandClient: React.FC = () => {
                 <strong>Certifications & Recognition:</strong> Energy Star rated, Australian Standard certified, Eco-friendly
               </motion.p>
 
-              <motion.p
-                variants={itemVariants}
-                style={{
-                  fontSize: "14px",
-                  lineHeight: "1.8",
-                  color: "#666",
-                  fontStyle: "italic",
-                  borderLeft: "3px solid #b91c1c",
-                  paddingLeft: "20px",
-                }}
-              >
-                "Specifically designed for Australia's varied climates with adaptive heating"
-              </motion.p>
             </div>
 
             <div className="col-lg-6">
