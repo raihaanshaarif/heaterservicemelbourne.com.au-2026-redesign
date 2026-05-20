@@ -8,16 +8,6 @@ import { useEffect } from "react";
  * path, saving ~200 KiB and ~3,350 ms of blocking time.
  */
 const DEFERRED_STYLESHEETS = [
-  "/_next/static/css/animate.min.css",
-  "/_next/static/css/custom-animate.css",
-  "/_next/static/css/font-awesome-all.css",
-  "/_next/static/css/flaticon.css",
-  "/_next/static/css/nice-select.css",
-];
-
-// Paths relative to /assets served from public or via Next.js
-// We import them as static asset URLs by referencing the public folder paths
-const ASSET_STYLESHEETS = [
   "/assets/css/animate.min.css",
   "/assets/css/custom-animate.css",
   "/assets/css/font-awesome-all.css",
@@ -27,15 +17,28 @@ const ASSET_STYLESHEETS = [
 
 export default function DeferredStyles() {
   useEffect(() => {
-    ASSET_STYLESHEETS.forEach((href) => {
+    // Load deferred stylesheets using media="print" trick to avoid render-blocking
+    DEFERRED_STYLESHEETS.forEach((href) => {
+      // Skip if already in DOM
       if (document.querySelector(`link[href="${href}"]`)) return;
+      
       const link = document.createElement("link");
       link.rel = "stylesheet";
       link.href = href;
-      link.media = "print";
+      link.media = "print"; // Browsers don't block on print media
+      
+      // Switch to 'all' after load completes
       link.onload = () => {
         link.media = "all";
       };
+      
+      // Fallback: if onload doesn't fire (some browsers), switch after delay
+      setTimeout(() => {
+        if (link.media === "print") {
+          link.media = "all";
+        }
+      }, 2000);
+      
       document.head.appendChild(link);
     });
   }, []);
