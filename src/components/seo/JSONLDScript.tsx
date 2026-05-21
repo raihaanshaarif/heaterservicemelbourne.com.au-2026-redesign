@@ -1,27 +1,23 @@
-"use client";
-
-import Script from "next/script";
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 
 interface JSONLDScriptProps {
-  schema: Record<string, any>;
+  schema: Record<string, unknown>;
   id?: string;
 }
 
 /**
  * JSON-LD Schema Script Component
- * Renders structured data for better SEO
+ * Server-rendered for SEO crawlers that disable JavaScript.
  * Usage: <JSONLDScript schema={generateLocalBusinessSchema()} />
  */
 export const JSONLDScript: FC<JSONLDScriptProps> = ({ schema, id }) => {
   return (
-    <Script
+    <script
       id={id || "json-ld-schema"}
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(schema),
       }}
-      strategy="afterInteractive"
     />
   );
 };
@@ -31,7 +27,7 @@ export const JSONLDScript: FC<JSONLDScriptProps> = ({ schema, id }) => {
  * Renders multiple structured data schemas
  */
 export const MultipleJSONLDScripts: FC<{
-  schemas: Array<{ schema: Record<string, any>; id: string }>;
+  schemas: Array<{ schema: Record<string, unknown>; id: string }>;
 }> = ({ schemas }) => {
   return (
     <>
