@@ -17,6 +17,11 @@ export const SEOBreadcrumbs: React.FC<SEOBreadcrumbsProps> = ({
   items,
   schema = true,
 }) => {
+  const BASE_URL = "https://heaterservicemelbourne.com.au";
+
+  const toAbsoluteUrl = (url: string) =>
+    url.startsWith("http") ? url : `${BASE_URL}${url.startsWith("/") ? url : `/${url}`}`;
+
   // Generate JSON-LD BreadcrumbList schema
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -25,7 +30,7 @@ export const SEOBreadcrumbs: React.FC<SEOBreadcrumbsProps> = ({
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.url,
+      item: toAbsoluteUrl(item.url),
     })),
   };
 
