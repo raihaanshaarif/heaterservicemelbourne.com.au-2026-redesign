@@ -41,7 +41,7 @@ const DefaultBanner: React.FC<ThisBanner> = ({
               loading="lazy"
             />
           </div>
-          {asH1 ? <h1>{title}</h1> : <h3>{title}</h3>}
+          {asH1 ? <h1 style={{ color: "#fff" }}>{title}</h1> : <h3 style={{ color: "#fff" }}>{title}</h3>}
           <div className="thm-breadcrumb__inner">
             <ul className="thm-breadcrumb list-unstyled">
               <li>

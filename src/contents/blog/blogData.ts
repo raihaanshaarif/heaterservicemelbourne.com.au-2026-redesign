@@ -18,7 +18,7 @@ const blogData: BlogPost[] = [
     slug: "/blog/expert-heating-repairs-melbourne-winter",
     category: "Repair Guide",
     date: "May 15, 2026",
-    image: "/assets/images/blog/blog-2-1.jpg",
+    image: "/assets/images/blog/blog-1-1.jpg",
     authorImage: "/assets/images/blog/blog-one-author-img-1.jpg",
     authorName: "Faisal Khan",
     excerpt:
