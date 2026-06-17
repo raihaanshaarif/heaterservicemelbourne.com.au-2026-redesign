@@ -3,9 +3,9 @@ import ActronAirBrandClient from "@/components/brands/actronair/ActronAirBrandCl
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
-  title: "ActronAir Heating Services Melbourne",
-  description: "Expert ActronAir heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
-  keywords: "ActronAir Melbourne, ActronAir repair, ActronAir installation, heating systems, air conditioning",
+  title: "ActronAir Fault Codes & Air Conditioning Services Melbourne",
+  description: "Expert ActronAir heating and air conditioning system repair, installation and maintenance across Melbourne. ActronAir fault codes diagnosis. Same-day service and 24/7 emergency support available.",
+  keywords: "actron air fault codes, ActronAir Melbourne, ActronAir repair, ActronAir installation, heating systems, air conditioning",
   openGraph: {
     title: "ActronAir Services Melbourne | Expert Technicians",
     description: "Professional ActronAir system installation, repair and maintenance. Same-day emergency service.",

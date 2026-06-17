@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import GasDuctedHeatingClient from "./GasDuctedHeatingClient";
 
 export const metadata: Metadata = {
-  title: "Gas Ducted Heating Service Melbourne",
+  title: "Gas Ducted Heating Service & Repair Melbourne | Duct Heating Specialists",
   description:
-    "Expert gas ducted heating service Melbourne — ducted heating replacement, ducted gas heating replacement, repair and installation. Servicing Blackburn, Ringwood, Doncaster, Berwick & all suburbs.",
+    "Expert gas ducted heating repair, service and installation Melbourne. Gas ducted heating repairs, ducted heating repair and service specialists. Fast response, all brands, licensed technicians. Call 0405 133 761.",
   keywords:
-    "gas ducted heating, gas ducted heating service, gas ducted heating melbourne, ducted heating replacement, ducted gas heating replacement melbourne, ducted heating service cost, gas ducted heating cost, ducted heating blackburn, ducted heating ringwood, ducted heating doncaster, ducted heating berwick",
+    "gas ducted heating repair, gas ducted heating repairs, gas ducted heating service, ducted heating repair near me, ducted heating service, duct heating service, gas ducted heater service, gas ducted heating melbourne, ducted heating replacement, ducted gas heating replacement, ducted heating service cost, gas ducted heating cost, ducted heating blackburn, ducted heating ringwood, ducted heating doncaster, ducted heating berwick, gas ducted heating installation, ducted heating installation",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/gas-ducted-heating",
   },

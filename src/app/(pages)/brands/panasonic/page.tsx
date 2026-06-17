@@ -3,9 +3,9 @@ import PanasonicBrandClient from "@/components/brands/panasonic/PanasonicBrandCl
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
-  title: "Panasonic Heating Services Melbourne",
-  description: "Expert Panasonic heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
-  keywords: "Panasonic Melbourne, Panasonic repair, Panasonic installation, heating systems, air conditioning",
+  title: "Panasonic Air Conditioner Service & Repair Melbourne",
+  description: "Expert Panasonic air conditioner service, repair, installation and maintenance across Melbourne. Panasonic air conditioning specialists with same-day service and 24/7 emergency support.",
+  keywords: "panasonic air conditioner service melbourne, panasonic air conditioner service, panasonic air conditioner repair, panasonic air conditioning, panasonic repair, panasonic installation, panasonic melbourne",
   openGraph: {
     title: "Panasonic Services Melbourne | Expert Technicians",
     description: "Professional Panasonic system installation, repair and maintenance. Same-day emergency service.",

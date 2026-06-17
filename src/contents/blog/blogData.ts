@@ -200,6 +200,126 @@ const blogData: BlogPost[] = [
       <p>Finally, prioritizing energy efficiency in your heating solutions can lead to significant savings on your energy bills and reduce your environmental impact. By optimizing your ducted or hydronic heating system for performance and considering energy-efficient upgrades, you can enjoy a warm and comfortable home while minimizing your carbon footprint. With the right care and attention, your heating system can provide reliable and efficient warmth for many winters to come.</p>
     `,
   },
+  {
+   
+    id: 3,
+    title: "Gas heater maintenance tips every Australian homeowner needs",
+    slug: "/blog/gas-heater-maintenance-tips-australian-homeowner",
+    category: "Maintenance Guide",
+    date: "June 11, 2026",
+    image: "/assets/images/blog/blog-2-3.jpg",
+    authorImage: "/assets/images/blog/blog-one-author-img-2.jpg",
+    authorName: "Faisal Khan",
+    excerpt:
+      "Most gas heater problems don't come out of nowhere. Learn the essential gas heater maintenance tips every Australian homeowner needs to stay safe and warm.",
+    content: `
+      <p>Most gas heater problems don't come out of nowhere. They build slowly, and many common gas heater faults are preventable with regular maintenance and annual servicing. Not with expensive service contracts or complicated tools, but with a clear understanding of what to check yourself, what to leave strictly alone, and when to pick up the phone. Staying on top of gas heater maintenance each season is genuinely one of the more straightforward things a homeowner can do to protect both their household and their heating budget.</p>
+
+      <p>The stakes are real. A poorly maintained gas heater doesn't just break down at the worst possible time. It can produce carbon monoxide, a colourless, odourless gas that causes serious harm before most people realise anything is wrong. That's not alarm-raising for its own sake. It's the primary reason keeping your gas heater in good condition deserves more attention than most homeowners currently give it.</p>
+
+      <p>The team at Heater Service Melbourne sees the same avoidable problems every winter across Melbourne suburbs: dirty burners, blocked flues, and heaters that haven't had a professional inspection in years. This guide covers what needs doing, who needs to do it, and what it should cost.</p>
+
+      <h3>Warning signs your gas heater needs attention now</h3>
+      <p>Some faults are visible and some aren't, but most give you some kind of signal before they become serious. Knowing what to look for is the first step.</p>
+
+      <h4>Flame colour and combustion clues</h4>
+      <p>A healthy gas heater burns a steady, predominantly blue flame. Yellow, orange, or flickering flames indicate incomplete combustion. This is one of the earliest visible signs that something is wrong with the burner or air supply, and it should not be ignored or dismissed as normal wear.</p>
+
+      <h4>Smells, soot, and physical signs around the unit</h4>
+      <p>A rotten egg smell means a gas leak. Leave immediately, don't use any switches or phones inside the property, and call the gas emergency line from outside. Soot marks or scorch discolouration around the unit or flue outlet are a separate but equally serious concern. They suggest combustion gases are not venting properly and may be entering the living space.</p>
+
+      <h4>Symptoms that might point to carbon monoxide exposure</h4>
+      <p>Headaches, dizziness, nausea, or unusual fatigue that ease when you leave the house are classic indicators of CO exposure. The gas itself has no smell, which is what makes it dangerous. If anyone in the household experiences these symptoms during or after heater use, stop using the appliance immediately, get fresh air, and arrange a professional inspection before the heater goes back on.</p>
+
+      <h3>Gas heater maintenance: what you can safely check yourself before winter</h3>
+      <p>There's a reasonable set of checks any homeowner can do without tools and without any risk. These don't replace a professional service, but they're worth doing at the start of each heating season as part of routine gas appliance maintenance.</p>
+
+      <h4>Cleaning the filter and checking airflow clearance</h4>
+      <p>Most ducted gas heaters have a return air filter that accumulates dust and debris between uses. On ducted systems, a clogged filter forces the unit to work harder and can trigger overheating or premature cycling, check your manufacturer's guidance for cleaning intervals and recommended filter replacement schedules. Clean or replace the filter before the heater runs regularly each season. Also check that furniture, boxes, or curtains aren't blocking any registers or return air vents in the home.</p>
+
+      <h4>Visual inspection of the unit and flue outlet</h4>
+      <p>Walk around the heater and look for rust, corrosion, cracks, or any visible damage. Then check the flue outlet on the outside of the home and confirm it's clear of debris or bird nests. For wall-mounted or room-sealed units, verify the terminal grille is unobstructed. Anything that looks unusual warrants a call to a licensed technician before the heater is used for the season.</p>
+
+      <h4>Testing the pilot light and basic operational checks</h4>
+      <p>Turn the heater on and watch the startup sequence. The pilot light should ignite cleanly and stay lit without repeated attempts. The unit should reach operating temperature without cycling on and off in short bursts. Any behaviour that deviates from normal is a reason to book a professional inspection rather than wait and see what happens.</p>
+
+      <h3>What only a licensed gasfitter can legally do</h3>
+      <p>This is not a grey area. Certain gas heater servicing tasks are restricted by law to licensed technicians, and the reasons are practical, not bureaucratic.</p>
+
+      <h4>Tasks that require a gasfitter's licence in Australia</h4>
+      <p>Servicing internal gas components, including the burner, ignitor, pilot assembly, gas pressure, seals, and heat exchanger, is classified as gasfitting work under Australian regulations. In Victoria, this requires a licence or registration with a Type A appliance servicing endorsement. Other states have equivalent licensing requirements. An unlicensed person performing gasfitting work is likely operating illegally and may also jeopardise insurance or warranty cover. Check your insurer's terms and your state regulator's guidance for specifics.</p>
+
+      <h4>Carbon monoxide testing and flue inspection</h4>
+      <p>Accurate combustion analysis and CO testing require calibrated instruments typically used by licensed technicians, not consumer-grade tools. A licensed technician uses that equipment to verify that exhaust gases are within safe limits and that the flue is venting correctly to the outside. This is the most critical safety check in any gas heater inspection, and skipping it because a service looked cheap on paper is a false economy. For authoritative advice on recognising and responding to carbon monoxide risks see the guidance on carbon monoxide poisoning in the home.</p>
+
+      <h4>Why asking to see the licence card matters</h4>
+      <p>Before any technician starts work, ask to see their licence card. In Victoria, the card shows the specific endorsements the person holds, including whether they're authorised for Type A appliance servicing. In other states, the relevant licensing authority's website allows you to verify registration. It takes one minute and removes all ambiguity about who is doing the work in your home.</p>
+
+      <h3>How often should gas heater maintenance be carried out professionally?</h3>
+      <p>Annual servicing is the most widely recommended interval for domestic gas heaters across Australia. Manufacturers, heating specialists, and Energy Safe Victoria all point to yearly service as the benchmark for maintaining safety, efficiency, and warranty compliance. A heater that runs through Melbourne's four-to-five month heating season accumulates wear, dust, and combustion residue. Twelve months is a sensible reset point for any seasonal gas heater maintenance routine. For further reading on recommended service intervals see this article on how often to service gas-ducted heating.</p>
+
+      <p>Under Victorian regulations, gas heaters in rental properties must receive a safety check from a licensed or appropriately registered gasfitter at least every two years. This is a legal obligation for landlords and property managers, not a recommendation they can choose to defer. Owner-occupiers are not subject to the same mandatory interval, but servicing annually is well-advised given the safety implications of leaving a gas appliance unchecked for extended periods.</p>
+
+      <h3>Gas heater maintenance checklist: what a standard service includes</h3>
+      <p>Understanding what you're paying for matters, particularly when comparing quotes from different providers. A legitimate heater tune-up is not just a visual check and a wipe-down.</p>
+
+      <h4>The core inspection and cleaning tasks</h4>
+      <p>A thorough flued gas heater service covers the following:</p>
+      <ul>
+        <li>Visual inspection of the entire unit for damage or deterioration</li>
+        <li>Burner cleaning and assessment</li>
+        <li>Ignitor and pilot light inspection</li>
+        <li>Thermocouple check</li>
+        <li>Gas pressure test and adjustment to manufacturer specification</li>
+        <li>Heat exchanger inspection for cracks or corrosion</li>
+        <li>Check of all seals and gas connections for leaks or wear</li>
+      </ul>
+      <p>Each of these components contributes to both safety and efficiency, and each is affected by a full season of regular use.</p>
+
+      <h4>Safety testing and operational verification</h4>
+      <p>A gas heater service and repair visit should commonly include a carbon monoxide test and combustion analysis, a flue integrity and clearance check, and testing of all safety controls including limit switches and thermostats. The technician should finish with a full operational test run to confirm the heater starts, heats, and cycles correctly before they leave the property. A written service record is a reasonable expectation from any professional job.</p>
+
+      <h4>What to ask when comparing quotes</h4>
+      <p>Not all service offerings are equal. Ask specifically whether a CO test is included, whether the heat exchanger will be inspected, and whether the technician holds the relevant gas servicing endorsement for your state. If the answer to any of these is unclear or evasive, move on to the next provider.</p>
+
+      <h3>What to budget and how to choose the right technician</h3>
+      <p>Pricing transparency helps you make a confident decision. Here's what the numbers actually look like for Melbourne homeowners.</p>
+
+      <h4>Typical service costs in Melbourne and across Australia</h4>
+      <p>A standard domestic gas heater service in Melbourne typically costs between $180 and $300. The variation reflects heater type, complexity, and what the technician finds during the inspection. Repairs, where required, are generally quoted separately after the visit. Getting two or three quotes is sensible practice, especially for older systems where additional work may be involved. For broader information on service signs and likely costs see this guide to gas heater service signs and costs.</p>
+
+      <h4>What drives the cost up or down</h4>
+      <p>Call-out fees, heater age, accessibility, and whether the visit is a routine Rinnai heater service or an emergency repair all affect the final bill. Emergency and after-hours callouts carry a premium over standard bookings. Scheduling a service before winter starts, rather than during a cold snap when demand peaks, is the simplest way to control both cost and availability.</p>
+
+      <h4>Why choosing a specialist matters more than choosing the cheapest quote</h4>
+      <p>Heater Service Melbourne provides licensed gas heater servicing across all Melbourne suburbs, with transparent on-site quotes and no hidden fees. Their technicians hold the appropriate Victorian gasfitting endorsements and include CO testing and flue inspection as part of every standard service. Over 567 customer reviews averaging 4.8 stars provides a reasonable basis for confidence. For a job where safety is the primary concern, experience and verified licensing credentials matter far more than saving twenty dollars on the quote.</p>
+
+      <h3>The bottom line on keeping your gas heater safe</h3>
+      <p>Regular gas heater maintenance is not complicated, but it requires a clear split between what you manage and what a licensed professional handles. The DIY checks are straightforward. The professional tasks are non-negotiable. A breakdown mid-winter is the expensive version of this decision.</p>
+
+      <p>The key decisions are simple: service annually, check for warning signs each season, know what a proper service should include, and always verify a technician's licence before they start work. None of that requires specialist knowledge, it just requires following through. Our Heating Self-Care Guide Melbourne | Heater Service Melbourne has a short checklist you can use to record the seasonal checks you can safely do yourself.</p>
+
+      <p>If your heater hasn't been serviced this year, or if anything in this guide sounds familiar, booking a gas heater service before winter is the right call. Heater Service Melbourne operates 24/7, services all Melbourne suburbs, and can have a licensed technician on-site with a transparent quote. Act before the cold snap hits, not after.</p>
+
+      <h3>Frequently asked questions about gas heater maintenance</h3>
+      <h4>How often should gas heater maintenance be done?</h4>
+      <p>Annual gas heater maintenance is the standard recommendation from manufacturers and Energy Safe Victoria. Rental properties in Victoria are legally required to have a safety check at least every two years, but once a year is the sensible benchmark for all households.</p>
+
+      <h4>How long does a gas heater maintenance visit take?</h4>
+      <p>A standard service typically takes between 45 minutes and 90 minutes, depending on the heater type, its condition, and whether any faults are found during the inspection. More complex ducted systems or older appliances may take longer.</p>
+
+      <h4>What's included in a flued gas heater service?</h4>
+      <p>A proper flued gas heater service should cover burner cleaning, heat exchanger inspection, gas pressure testing, flue integrity check, CO testing and combustion analysis, and a full operational test run. Always ask for a written service record once the job is complete.</p>
+
+      <h4>What does gas heater maintenance cost in Melbourne?</h4>
+      <p>Melbourne gas heater maintenance typically costs between $180 and $300 for a standard domestic service. Emergency callouts and after-hours visits carry a premium. Getting two or three quotes before committing is reasonable, particularly for older systems.</p>
+
+      <h4>Can I do gas heater maintenance myself?</h4>
+      <p>Homeowners can safely carry out basic seasonal checks, cleaning filters, inspecting for visible damage, checking the flue outlet, and observing the startup sequence. Any work involving internal gas components, burner servicing, or CO testing must be carried out by a licensed gasfitter with the appropriate endorsement.</p>
+    `,
+
+  },
+ 
 ];
 
 export default blogData;

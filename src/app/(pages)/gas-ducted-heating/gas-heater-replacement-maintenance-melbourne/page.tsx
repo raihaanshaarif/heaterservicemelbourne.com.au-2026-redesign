@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "Gas Heater Replacement Melbourne",
+  title: "Gas Heater Replacement & Upgrade Melbourne",
   description:
-    "Gas heater replacement and ducted heating replacement Melbourne. Replace old inefficient systems — ducted gas heating replacement, upfront pricing. Call 0405 133 761.",
+    "Gas heater replacement and ducted heating replacement Melbourne. Replace old inefficient systems with energy-efficient upgrades — ducted gas heating replacement, upfront pricing. Call 0405 133 761.",
   keywords:
-    "gas heater replacement melbourne, ducted heating replacement, ducted gas heating replacement melbourne, replace old gas heater, gas heater swap melbourne, ducted heater upgrade, energy efficient heating replacement",
+    "gas heater replacement melbourne, replacing gas heater, replace gas heater, ducted heating replacement, ducted gas heating replacement melbourne, ducted heating unit replacement melbourne, gas ducted heater replacement, gas heater replacement maintenance melbourne, replace old gas heater, gas heater swap melbourne, ducted heater upgrade, energy efficient heating replacement",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/gas-ducted-heating/gas-heater-replacement-maintenance-melbourne",
   },

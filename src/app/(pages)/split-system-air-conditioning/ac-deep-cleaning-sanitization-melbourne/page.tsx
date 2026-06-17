@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import ServiceSubPageClient from "./ServiceSubPageClient";
 
 export const metadata: Metadata = {
-  title: "AC Deep Cleaning & Sanitization Melbourne",
+  title: "AC Deep Cleaning & Sanitization Melbourne | Deep Clean Aircon",
   description:
-    "Professional split system AC deep cleaning and sanitization Melbourne. Mould removal, restore efficiency, improve air quality. AC service cost upfront. All brands. Call 0405 133 761.",
+    "Professional split system AC deep cleaning, deep clean aircon and sanitization Melbourne. Deep cleaning ac, mould removal, restore efficiency, improve air quality. AC service cost upfront. All brands. Call 0405 133 761.",
   keywords:
-    "AC deep cleaning melbourne, split system cleaning melbourne, air conditioner sanitization, ac mould removal melbourne, split system service clean, ac service cost, air conditioner deep clean",
+    "AC deep cleaning melbourne, deep cleaning ac, deep clean aircon, split system cleaning melbourne, air conditioner sanitization, ac mould removal melbourne, split system service clean, ac service cost, air conditioner deep clean",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au/split-system-air-conditioning/ac-deep-cleaning-sanitization-melbourne",
   },

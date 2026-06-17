@@ -22,11 +22,11 @@ const HomeSEOContent = lazy(() => import("@/features/home-one/HomeSEOContent"));
 const FaqOne = lazy(() => import("@/features/home-one/FaqOne"));
 
 export const metadata: Metadata = {
-  title: "Heater Service Melbourne | Gas Ducted, Hydronic & Split Systems",
+  title: "Heater Services & Repairs Melbourne | Central Heating, Gas & Split Systems",
   description:
-    "Expert heating services across Melbourne. Gas heater repair, gas heater service, ducted heating, hydronic heating, split system air conditioning and 24/7 emergency repairs. Licensed gas heater technicians, free quotes. Call 0405 133 761.",
+    "Expert heater services and repairs across Melbourne. Gas ducted heating, hydronic heating, split systems, central heating repairs & servicing. Heating repair specialists available near you. 24/7 emergency service. Licensed technicians. Call 0405 133 761.",
   keywords:
-    "heating service melbourne, gas ducted heating melbourne, hydronic heating melbourne, split system melbourne, emergency heating repair, licensed gas fitters melbourne, gas heater service melbourne, gas heater repair melbourne, gas heater technician, gas heater servicing, gas heater repairs, heating repair near me, gas heater service near me, ducted heating service melbourne, hot water repairs melbourne",
+    "heater service, heater services, heater repair, heater repairs, heater servicing, heating service, heating services, heating repair, heating repairs, heating servicing, central heating services, central heating repairs, central heating servicing melbourne, heater service near me, heating repair near me, heating servicing near me, service heater near me, specialised heating and cooling, gas ducted heating service, gas ducted heating repairs, ducted heating repair near me, duct heating service, melbourne heating repairs, central heating services melbourne, gas heater service melbourne, gas heater repair melbourne, emergency heating repair, rinnai gas heaters service, panasonic air conditioner service melbourne, kaden air conditioning",
   alternates: {
     canonical: "https://heaterservicemelbourne.com.au",
   },

@@ -3,9 +3,9 @@ import RinnaiBrandClient from "@/components/brands/rinnai/RinnaiBrandClient";
 import DefaultBanner from "@/features/default-banner/DefaultBanner";
 
 export const metadata: Metadata = {
-  title: "Rinnai Heating Services Melbourne",
-  description: "Expert Rinnai heating system repair, installation and maintenance across Melbourne. Same-day service and 24/7 emergency support available.",
-  keywords: "Rinnai Melbourne, Rinnai repair, Rinnai installation, heating systems, air conditioning",
+  title: "Rinnai Gas Heaters Service & Repair Melbourne",
+  description: "Expert Rinnai gas heaters service, repair, installation and maintenance across Melbourne. Rinnai heating system specialists with same-day service and 24/7 emergency support.",
+  keywords: "rinnai gas heaters service, rinnai gas heaters, rinnai heating service, rinnai heater service, rinnai repair, rinnai installation, rinnai melbourne",
   openGraph: {
     title: "Rinnai Services Melbourne | Expert Technicians",
     description: "Professional Rinnai system installation, repair and maintenance. Same-day emergency service.",
