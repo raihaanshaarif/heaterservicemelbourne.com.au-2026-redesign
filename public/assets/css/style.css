@@ -12244,6 +12244,47 @@ Services
   margin-bottom: 16px;
 }
 
+.services-one__sub-list {
+  position: relative;
+  display: block;
+  margin: 16px 0 20px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.services-one__sub-list li {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--tanspot-gray);
+}
+
+.services-one__sub-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--tanspot-base);
+  border-radius: 50%;
+}
+
+.services-one__sub-list li a {
+  color: var(--tanspot-black);
+  font-weight: 500;
+  transition: all 200ms linear;
+  transition-delay: 0.1s;
+}
+
+.services-one__sub-list li a:hover {
+  color: var(--tanspot-base);
+  padding-left: 5px;
+}
+
 .services-one__btn-box {
   position: relative;
   display: block;

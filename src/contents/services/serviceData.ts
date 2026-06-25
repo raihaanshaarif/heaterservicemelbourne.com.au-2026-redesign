@@ -26,6 +26,7 @@ export interface ServiceItem {
   image: string | StaticImageData;
   iconClass: string;
   text: string;
+  subServices?: Array<{ title: string; link: string }>;
 }
 export const servicesData: ServiceItem[] = [
   {
@@ -36,6 +37,13 @@ export const servicesData: ServiceItem[] = [
     iconClass: "icon-professional-services",
     count: "01",
     text: "Professional repairs, service, and installation of premium hydronic heating systems.",
+    subServices: [
+      { title: "Hydronic Heater Installation", link: "/hydronic-heating/hydronic-heater-installation-melbourne" },
+      { title: "Hydronic Heater Repair", link: "/hydronic-heating/hydronic-heater-repair-melbourne" },
+      { title: "Hydronic Heater Service & Maintenance", link: "/hydronic-heating/hydronic-heater-service-maintainance-melbourne" },
+      { title: "Underfloor Heating Repair", link: "/hydronic-heating/underfloor-slab-heating-repair-melbourne" },
+      { title: "Emergency Hydronic Repair", link: "/hydronic-heating/emergency-hydronic-repair-melbourne" },
+    ],
   },
   {
     id: 2,
@@ -45,6 +53,13 @@ export const servicesData: ServiceItem[] = [
     iconClass: "icon-professional-services",
     count: "02",
     text: "Expert maintenance and installation for efficient gas ducted heating in Melbourne.",
+    subServices: [
+      { title: "Gas Heater Installation", link: "/gas-ducted-heating/gas-ducted-installation-melbourne" },
+      { title: "Gas Heater Repair", link: "/gas-ducted-heating/gas-heater-repair-melbourne" },
+      { title: "Gas Heater Service & Tuneup", link: "/gas-ducted-heating/gas-heater-service-and-maintenance-melbourne" },
+      { title: "Gas Heater Replacement & Maintenance", link: "/gas-ducted-heating/gas-heater-replacement-maintenance-melbourne" },
+      { title: "Emergency Gas Heater Repair", link: "/gas-ducted-heating/emergency-gas-ducted-repair-melbourne" },
+    ],
   },
   {
     id: 3,
@@ -54,6 +69,13 @@ export const servicesData: ServiceItem[] = [
     iconClass: "icon-professional-services",
     count: "03",
     text: "Installation and repair of high-performance split system heating and cooling.",
+    subServices: [
+      { title: "Split System Installation", link: "/split-system-air-conditioning/split-system-installation-melbourne" },
+      { title: "AC Repair & Fault Finding", link: "/split-system-air-conditioning/split-system-repair-melbourne" },
+      { title: "Deep Cleaning & Sanitization", link: "/split-system-air-conditioning/ac-deep-cleaning-sanitization-melbourne" },
+      { title: "Multi-Head System Service", link: "/split-system-air-conditioning/multi-head-system-service-melbourne" },
+      { title: "Emergency Split System Repair", link: "/split-system-air-conditioning/emergency-split-system-repair-melbourne" },
+    ],
   },
   {
     id: 4,
@@ -63,6 +85,14 @@ export const servicesData: ServiceItem[] = [
     iconClass: "icon-truck",
     count: "04",
     text: "24/7 emergency heating repairs to keep your home warm when you need it most.",
+    subServices: [
+      { title: "Emergency Hydronic Repair", link: "/emergency-services/emergency-hydronic-repair-melbourne" },
+      { title: "Gas Ducted Emergency Repair", link: "/emergency-services/emergency-gas-ducted-repair-melbourne" },
+      { title: "Split System Emergency Repair", link: "/emergency-services/emergency-split-system-repair-melbourne" },
+      { title: "24/7 Breakdown Rescue", link: "/emergency-services/ac-breakdown-rescue-melbourne" },
+      { title: "Emergency Gas Leak Repair", link: "/emergency-services/emergency-gas-leak-repair-melbourne" },
+      { title: "Hydronic Leak Repair", link: "/emergency-services/hydronic-leak-repair" },
+    ],
   },
 ];
 

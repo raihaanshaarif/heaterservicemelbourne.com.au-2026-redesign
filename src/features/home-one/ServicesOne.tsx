@@ -74,6 +74,15 @@ export default function ServicesOne() {
                       <Link href={service.link}>{service.title}</Link>
                     </h4>
                     <p className="services-one__text">{service.text}</p>
+                    {service.subServices && service.subServices.length > 0 && (
+                      <ol className="services-one__sub-list">
+                        {service.subServices.map((subService, index) => (
+                          <li key={index}>
+                            <Link href={subService.link}>{subService.title}</Link>
+                          </li>
+                        ))}
+                      </ol>
+                    )}
                     <div className="services-one__btn-box">
                       <Link
                         href={service.link}

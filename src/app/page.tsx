@@ -56,15 +56,19 @@ const page = () => {
       <JSONLDScript schema={generateHomepageServiceSchema()} id="homepage-service-schema" />
       <HeaderOne />
       <BannerOne />
-      <AboutOne />
+        <Suspense fallback={null}>
+        <ServicesOne />
+      </Suspense>
+       <Suspense fallback={null}>
+          <AboutOne />
+       </Suspense>
+     
 
       <Suspense fallback={null}>
         <SlidingTextOne />
       </Suspense>
 
-      <Suspense fallback={null}>
-        <ServicesOne />
-      </Suspense>
+    
 
       {/* Lazy-load below-the-fold sections for faster initial page load */}
       <Suspense fallback={null}>
