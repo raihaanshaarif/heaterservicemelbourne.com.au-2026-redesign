@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback, useMemo } from 'react';
 
 interface TypingEffectProps {
     strings: string[];
@@ -18,16 +18,19 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
     className = '',
     showCursor = true
 }) => {
+    // Memoize strings to prevent unnecessary recalculations
+    const memoizedStrings = useMemo(() => strings, [strings]);
+    
     // Initialize with the first full string so SSR and first client render match
     // (avoids CLS from the h1 jumping from 2 lines to 3 lines on hydration)
-    const [typedText, setTypedText] = useState<string>(strings[0] ?? '');
+    const [typedText, setTypedText] = useState<string>(memoizedStrings[0] ?? '');
     const [currentStringIndex, setCurrentStringIndex] = useState<number>(0);
-    const [currentCharIndex, setCurrentCharIndex] = useState<number>(strings[0]?.length ?? 0);
+    const [currentCharIndex, setCurrentCharIndex] = useState<number>(memoizedStrings[0]?.length ?? 0);
     const [isDeleting, setIsDeleting] = useState<boolean>(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            const currentString = strings[currentStringIndex];
+            const currentString = memoizedStrings[currentStringIndex];
 
             if (!isDeleting) {
                 if (currentCharIndex < currentString.length) {
@@ -42,13 +45,13 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
                     setCurrentCharIndex(prev => prev - 1);
                 } else {
                     setIsDeleting(false);
-                    setCurrentStringIndex((prev) => (prev + 1) % strings.length);
+                    setCurrentStringIndex((prev) => (prev + 1) % memoizedStrings.length);
                 }
             }
         }, isDeleting ? deleteSpeed : typeSpeed);
 
         return () => clearTimeout(timer);
-    }, [currentCharIndex, currentStringIndex, isDeleting, strings, typeSpeed, deleteSpeed, pauseDuration]);
+    }, [currentCharIndex, currentStringIndex, isDeleting, memoizedStrings, typeSpeed, deleteSpeed, pauseDuration]);
 
     return (
         <span className={className}>
@@ -63,4 +66,4 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
     );
 };
 
-export default TypingEffect;
+export default React.memo(TypingEffect);

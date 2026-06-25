@@ -39,7 +39,7 @@ export default function DeferredStyles() {
         if (link.media === "print") {
           link.media = "all";
         }
-      }, 2000);
+      }, 3000); // Increased timeout from 2s to 3s for slower networks
       
       document.head.appendChild(link);
     });

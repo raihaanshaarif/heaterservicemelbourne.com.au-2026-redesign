@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 // Hero image served from /public for predictable URL (enables effective preload)
 import BannerOneShape3 from "@/assets/images/shapes/banner-one-shape-3.png";
 import BannerOneReview11 from "@/assets/images/resources/banner-one-review-1-1.jpg";
@@ -9,19 +9,27 @@ import Image from "next/image";
 import TypingEffect from "@/components/elements/TypingEffect";
 import Link from "next/link";
 import CounterUp from "@/components/elements/CounterUp";
+
 const BannerOne: React.FC = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    // Defer TypingEffect rendering to improve FCP
+    setIsMounted(true);
+  }, []);
+
   return (
     <section className="banner-one" id="home">
       <div className="banner-one__pattern"></div>
       <div className="banner-one__img">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src="/assets/images/banner-one-img-1.webp"
           width={800}
           height={500}
           alt="Professional heating service technician in Melbourne - HVAC expert"
-          fetchPriority="high"
-          decoding="async"
+          priority={true}
+          quality={85}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 800px"
           style={{ width: '100%', height: 'auto' }}
         />
       </div>
@@ -46,9 +54,11 @@ const BannerOne: React.FC = () => {
               {" "}
               Heating & <br />
               Hydronic Repairs <br />
-              <TypingEffect
-                strings={["Service", "Repair", "Maintenance", "24/7 Emergency"]}
-              />
+              {isMounted && (
+                <TypingEffect
+                  strings={["Service", "Repair", "Maintenance", "24/7 Emergency"]}
+                />
+              )}
             </h1>
             <p className="banner-one__text">
               Expert heating solutions in Melbourne. We specialize in Hydronic,{" "}
