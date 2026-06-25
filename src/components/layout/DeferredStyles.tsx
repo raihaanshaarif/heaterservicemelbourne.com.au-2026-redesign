@@ -3,16 +3,17 @@
 import { useEffect } from "react";
 
 /**
- * Defers non-critical CSS (animations, form widgets) until after
+ * Defers non-critical CSS (animations, icons, form widgets) until after
  * the page has painted. This removes them from the render-blocking critical
  * path.
  * 
- * Removed bloat: Font Awesome (~100KB CSS + 400KB fonts), Flaticon (~30KB),
- * animate.min.css (~50KB). Total savings: ~580KB.
- * Icons now use lucide-react (tree-shakeable, no external CSS needed).
+ * Note: Icons (Font Awesome & Flaticon) are required for UI functionality.
+ * Deferred to improve initial page load without blocking render.
  */
 const DEFERRED_STYLESHEETS = [
   "/assets/css/custom-animate.css",
+  "/assets/css/font-awesome-all.css",
+  "/assets/css/flaticon.css",
   "/assets/css/nice-select.css",
 ];
 

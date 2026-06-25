@@ -2,7 +2,6 @@
 /*--------------------------------------------------------------
 # Critical styles — loaded synchronously (layout, typography, components)
 --------------------------------------------------------------*/
-/* Bootstrap removed - was 200KB+ of mostly unused framework CSS.
-   Using native CSS Grid/Flexbox and custom components instead. */
+@import '../css/bootstrap.min.css';
 @import '../css/style.css';
 @import '../css/responsive.css';
