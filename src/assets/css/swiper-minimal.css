@@ -1,0 +1,21 @@
+/**
+ * Optimized Swiper CSS - Only Core + Navigation + Pagination
+ * Replaces swiper-bundle.css (30KB+) with minimal required styles (~8KB)
+ * 
+ * Import this instead of 'swiper/swiper-bundle.css' in components
+ */
+
+/* Swiper Core */
+@import 'swiper/css';
+
+/* Swiper Navigation module */
+@import 'swiper/css/navigation';
+
+/* Swiper Pagination module */
+@import 'swiper/css/pagination';
+
+/* Swiper Autoplay (no CSS needed, but included for completeness) */
+/* Autoplay is JavaScript-only, no CSS required */
+
+/* Swiper EffectFade module (used in MainSlider) */
+@import 'swiper/css/effect-fade';

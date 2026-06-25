@@ -1,5 +1,6 @@
 "use client";
 
+import "@/assets/css/swiper-minimal.css";
 import ActronAir from "../../assets/images/brands/ActronAir.png";
 import Bonaire from "../../assets/images/brands/Bonaire.png";
 import Braemar from "../../assets/images/brands/Braemar.png";

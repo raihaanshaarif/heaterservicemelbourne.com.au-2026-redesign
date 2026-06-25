@@ -1,5 +1,5 @@
 "use client";
-import "swiper/swiper-bundle.css";
+import "@/assets/css/swiper-minimal.css";
 import "yet-another-react-lightbox/styles.css";
 import { useState } from "react";
 import Project11 from "@/assets/images/project/project-1-1.jpg";

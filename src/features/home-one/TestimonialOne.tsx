@@ -1,5 +1,6 @@
 "use client";
 
+import "@/assets/css/swiper-minimal.css";
 import Testimonial11 from "@/assets/images/testimonial/testimonial-1-1.jpg";
 import Testimonial12 from "@/assets/images/testimonial/testimonial-1-2.jpg";
 import Testimonial13 from "@/assets/images/testimonial/testimonial-1-3.jpg";

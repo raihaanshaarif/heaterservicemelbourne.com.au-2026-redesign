@@ -1,5 +1,6 @@
 "use client";
 
+import "@/assets/css/swiper-minimal.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import TextAnimation from "@/components/elements/TextAnimation";

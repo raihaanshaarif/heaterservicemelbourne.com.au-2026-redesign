@@ -1,5 +1,6 @@
 "use client";
 
+import "@/assets/css/swiper-minimal.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import ServicesTwo21 from "@/assets/images/services/services-two-2-1.jpg";

@@ -1,5 +1,5 @@
 "use client";
-import "swiper/swiper-bundle.css";
+import "@/assets/css/swiper-minimal.css";
 import { useState } from "react";
 import Team21 from "@/assets/images/team/team-2-1.jpg";
 import Team22 from "@/assets/images/team/team-2-2.jpg";
