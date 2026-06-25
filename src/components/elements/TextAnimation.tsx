@@ -2,8 +2,7 @@
 
 import React, { useRef } from "react";
 import type { ReactNode } from "react";
-import { m, useInView } from "framer-motion";
-import type { Variants } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 type AnimationStyle = "style1" | "style2" | "style3" | "style4";
 
@@ -16,137 +15,33 @@ const TextAnimation: React.FC<TextAnimationProps> = ({
   children,
   animationStyle = "style2",
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const { ref, inView } = useInView({ 
+    triggerOnce: true, 
+    threshold: 0.3 
+  });
 
-  // Function to recursively process children and split text
-  const processChildren = (node: ReactNode): ReactNode => {
-    if (typeof node === "string") {
-      // Split string into characters
-      return node.split("").map((char, index) => (
-        <m.div
-          key={`char-${index}`}
-          variants={getCharVariants()}
-          style={{
-            display: "inline-block",
-            whiteSpace: char === " " ? "pre" : "normal",
-          }}
-        >
-          {char === " " ? "\u00A0" : char}
-        </m.div>
-      ));
-    }
-
-    if (React.isValidElement(node)) {
-      // If it's a React element (like <span>), process its children recursively
-      const element = node as React.ReactElement<{ children?: ReactNode }>;
-      return React.cloneElement(element, {
-        children: React.Children.map(element.props.children, (child) =>
-          processChildren(child)
-        ),
-      });
-    }
-
-    if (Array.isArray(node)) {
-      return node.map((child, index) => (
-        <React.Fragment key={index}>{processChildren(child)}</React.Fragment>
-      ));
-    }
-
-    return node;
-  };
-
-  const getCharVariants = (): Variants => {
+  const getAnimationClass = (): string => {
     switch (animationStyle) {
       case "style1":
-        return {
-          hidden: {
-            opacity: 0,
-            y: "90%",
-            rotateX: -40,
-          },
-          visible: {
-            opacity: 1,
-            y: 0,
-            rotateX: 0,
-            transition: {
-              duration: 1,
-              ease: [0.175, 0.885, 0.32, 1.275],
-            },
-          },
-        };
-
+        return "text-anim-slide-up";
       case "style2":
-        return {
-          hidden: {
-            opacity: 0,
-            x: 50,
-          },
-          visible: {
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 1,
-              ease: [0.175, 0.885, 0.32, 1.275],
-            },
-          },
-        };
-
+        return "text-anim-slide-left";
       case "style3":
-        return {
-          hidden: {
-            opacity: 0,
-          },
-          visible: {
-            opacity: 1,
-            transition: {
-              duration: 1,
-              ease: [0.175, 0.885, 0.32, 1.275],
-            },
-          },
-        };
-
+        return "text-anim-fade";
       case "style4":
-        return {
-          hidden: {
-            opacity: 0,
-          },
-          visible: {
-            opacity: 1,
-            transition: {
-              duration: 1,
-              ease: [0.175, 0.885, 0.32, 1.275],
-            },
-          },
-        };
-
+        return "text-anim-fade";
       default:
-        return {
-          hidden: { opacity: 0 },
-          visible: { opacity: 1 },
-        };
+        return "text-anim-fade";
     }
-  };
-
-  const containerVariants: Variants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.02,
-        delayChildren: 0,
-      },
-    },
   };
 
   return (
-    <m.div
+    <div
       ref={ref}
-      variants={containerVariants}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
+      className={`text-animation ${getAnimationClass()} ${inView ? "in-view" : ""}`}
     >
-      {processChildren(children)}
-    </m.div>
+      {children}
+    </div>
   );
 };
 

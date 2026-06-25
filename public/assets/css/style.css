@@ -55,6 +55,60 @@ body.locked {
   overflow: hidden;
 }
 
+/* ========================================
+   Text Animation - CSS-based (replaces Framer Motion)
+   ======================================== */
+
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.text-animation {
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.text-animation.text-anim-slide-up.in-view {
+  animation-name: slideUpFadeIn;
+}
+
+.text-animation.text-anim-slide-left.in-view {
+  animation-name: slideLeftFadeIn;
+}
+
+.text-animation.text-anim-fade.in-view {
+  animation-name: fadeIn;
+}
+
 a {
   color: var(--tanspot-base);
   -webkit-transition: all 500ms ease;
