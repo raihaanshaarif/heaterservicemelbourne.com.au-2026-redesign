@@ -103,17 +103,6 @@ export default function RootLayout({
   return (
     <html lang="en-AU" data-scroll-behavior="smooth">
       <head>
-        {/* Inline critical CSS for above-the-fold hero section */}
-        <style dangerouslySetInnerHTML={{__html: `
-          *{box-sizing:border-box;margin:0;padding:0}
-          body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#333}
-          .banner-one{position:relative;min-height:100vh;display:flex;align-items:center}
-          .banner-one__img{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
-          .banner-one__img img{width:100%;height:100%;object-fit:cover}
-          .container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px;position:relative;z-index:2}
-          @media(max-width:768px){.banner-one{min-height:70vh}}
-        `}} />
-        
         {/* Preload critical resources to reduce LCP */}
         <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" />
         <link rel="preload" href="/assets/css/style.css" as="style" />
