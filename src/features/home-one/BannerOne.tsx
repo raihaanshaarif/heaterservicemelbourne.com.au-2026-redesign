@@ -24,12 +24,12 @@ const BannerOne: React.FC = () => {
       <div className="banner-one__img">
         <Image
           src="/assets/images/banner-one-img-1.webp"
-          width={800}
-          height={500}
+          width={704}
+          height={384}
           alt="Professional heating service technician in Melbourne - HVAC expert"
           priority={true}
           quality={85}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 800px"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 704px"
           style={{ width: '100%', height: 'auto' }}
         />
       </div>

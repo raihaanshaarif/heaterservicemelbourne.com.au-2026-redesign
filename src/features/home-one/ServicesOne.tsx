@@ -59,8 +59,9 @@ export default function ServicesOne() {
                     <div className="services-one__img">
                       <Image
                         src={service?.image}
-                        width={308}
-                        height={256}
+                        width={300}
+                        height={250}
+                        quality={70}
                         alt={`${service?.title} service in Melbourne - Professional heating solutions`}
                         loading="lazy"
                       />

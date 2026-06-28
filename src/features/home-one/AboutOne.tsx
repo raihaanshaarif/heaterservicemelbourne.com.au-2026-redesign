@@ -26,8 +26,10 @@ const AboutOne: React.FC = () => {
                   <div className="about-one__img">
                     <Image
                       src={AboutOneImg1}
-                      width={500}
-                      height={600}
+                      width={382}
+                      height={395}
+                      quality={70}
+                      loading="lazy"
                       style={{ width: "100%", height: "auto" }}
                       alt="About Heating Service Melbourne - Professional HVAC team and hydronic heating expertise"
                     />
