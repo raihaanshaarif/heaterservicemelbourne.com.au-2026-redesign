@@ -3562,16 +3562,21 @@ xs sidebar
 }
 
 .banner-one__pattern {
-  background-image: url("../images/shapes/banner-ong-pattern.png");
+  /* Replace image with CSS pattern to eliminate LCP blockage */
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(185, 28, 28, 0.015),
+      rgba(185, 28, 28, 0.015) 10px,
+      rgba(239, 68, 68, 0.01) 10px,
+      rgba(239, 68, 68, 0.01) 20px
+    );
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.02;
+  opacity: 1;
   z-index: -1;
 }
 
@@ -3757,16 +3762,21 @@ xs sidebar
 }
 
 .banner-two__pattern {
-  background-image: url("../images/shapes/banner-two-pattern.png");
+  /* Replace image with CSS pattern to eliminate LCP blockage */
+  background: 
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.015),
+      rgba(255, 255, 255, 0.015) 10px,
+      rgba(200, 200, 200, 0.01) 10px,
+      rgba(200, 200, 200, 0.01) 20px
+    );
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.02;
+  opacity: 1;
   z-index: -1;
 }
 
@@ -17020,16 +17030,21 @@ Product Description
 }
 
 .main-slider__pattern-bg {
-  background-image: url("../images/shapes/main-slider-pattern.png");
+  /* Replace image with CSS pattern to eliminate LCP blockage */
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(185, 28, 28, 0.015),
+      rgba(185, 28, 28, 0.015) 12px,
+      rgba(239, 68, 68, 0.01) 12px,
+      rgba(239, 68, 68, 0.01) 24px
+    );
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.02;
+  opacity: 1;
   z-index: -1;
 }
 
