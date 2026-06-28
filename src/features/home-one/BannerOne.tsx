@@ -12,24 +12,10 @@ import CounterUp from "@/components/elements/CounterUp";
 
 const BannerOne: React.FC = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const [showDecorations, setShowDecorations] = useState(false);
 
   useEffect(() => {
     // Defer TypingEffect rendering to improve FCP
     setIsMounted(true);
-  }, []);
-
-  useEffect(() => {
-    // Defer decorative shape rendering to improve LCP
-    // Using requestIdleCallback to render after main content
-    if (typeof window !== "undefined" && "requestIdleCallback" in window) {
-      const id = requestIdleCallback(() => setShowDecorations(true), { timeout: 800 });
-      return () => cancelIdleCallback(id);
-    } else {
-      // Fallback for browsers without requestIdleCallback
-      const timer = setTimeout(() => setShowDecorations(true), 800);
-      return () => clearTimeout(timer);
-    }
   }, []);
 
   return (
@@ -47,17 +33,16 @@ const BannerOne: React.FC = () => {
           style={{ width: '100%', height: 'auto' }}
         />
       </div>
-      {showDecorations && (
-        <div className="banner-one__shape-3 float-bob-y">
-          <Image
-            src={BannerOneShape3}
-            width={286}
-            height={270}
-            alt=""
-            loading="lazy"
-          />
-        </div>
-      )}
+      <div className="banner-one__shape-3 float-bob-y">
+        <Image
+          src={BannerOneShape3}
+          width={286}
+          height={270}
+          alt=""
+          loading="lazy"
+          quality={75}
+        />
+      </div>
       <div className="banner-one__line-shpae1"></div>
       <div className="banner-one__line-shpae2"></div>
       <div className="container">
