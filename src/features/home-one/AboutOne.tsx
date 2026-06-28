@@ -28,7 +28,7 @@ const AboutOne: React.FC = () => {
                       src={AboutOneImg1}
                       width={382}
                       height={395}
-                      quality={55}
+                      quality={40}
                       loading="lazy"
                       sizes="(max-width: 640px) 320px, (max-width: 768px) 382px, 382px"
                       style={{ width: "100%", height: "auto" }}

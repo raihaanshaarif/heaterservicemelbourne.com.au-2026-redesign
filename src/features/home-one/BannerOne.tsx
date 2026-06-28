@@ -28,13 +28,13 @@ const BannerOne: React.FC = () => {
           height={384}
           alt="Professional heating service technician in Melbourne - HVAC expert"
           priority={true}
-          quality={60}
-          sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 704px"
+          quality={40}
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 1024px, 704px"
           style={{ width: '100%', height: 'auto' }}
           fetchPriority="high"
         />
       </div>
-      <div className="banner-one__shape-3 float-bob-y">
+      <div className="banner-one__shape-3 float-bob-y" style={{display: 'none'}}>
         <Image
           src={BannerOneShape3}
           width={286}

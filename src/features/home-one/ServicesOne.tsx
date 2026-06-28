@@ -61,7 +61,7 @@ export default function ServicesOne() {
                         src={service?.image}
                         width={300}
                         height={250}
-                        quality={55}
+                        quality={40}
                         alt={`${service?.title} service in Melbourne - Professional heating solutions`}
                         loading="lazy"
                         sizes="(max-width: 640px) 280px, (max-width: 768px) 300px, 300px"

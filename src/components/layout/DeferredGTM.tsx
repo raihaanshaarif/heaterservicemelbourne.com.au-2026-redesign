@@ -24,9 +24,9 @@ export default function DeferredGTM({ gtmId }: DeferredGTMProps) {
       navigator.userAgent
     );
     
-    // Mobile: 300ms delay (CPU/network constraints)
+    // Mobile: 500ms delay (more aggressive for slow CPUs/networks)
     // Desktop: 50ms delay (faster hardware)
-    const delay = isMobile ? 300 : 50;
+    const delay = isMobile ? 500 : 50;
     
     const timer = setTimeout(() => setIsReady(true), delay);
     return () => clearTimeout(timer);
