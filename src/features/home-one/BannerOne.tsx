@@ -28,9 +28,10 @@ const BannerOne: React.FC = () => {
           height={384}
           alt="Professional heating service technician in Melbourne - HVAC expert"
           priority={true}
-          quality={85}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 704px"
+          quality={60}
+          sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 704px"
           style={{ width: '100%', height: 'auto' }}
+          fetchPriority="high"
         />
       </div>
       <div className="banner-one__shape-3 float-bob-y">
