@@ -353,6 +353,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Advanced thermal imaging camera detecting underfloor heating leaks in Melbourne slab systems"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

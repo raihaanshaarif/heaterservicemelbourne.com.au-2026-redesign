@@ -414,6 +414,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Emergency split system repair Melbourne – licensed technician diagnosing and repairing failed split system air conditioner"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

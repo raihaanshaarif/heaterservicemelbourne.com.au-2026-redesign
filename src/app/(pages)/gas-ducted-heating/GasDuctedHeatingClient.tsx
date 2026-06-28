@@ -274,6 +274,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Gas ducted heating Melbourne – licensed gas heater technician servicing a ducted heating system"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

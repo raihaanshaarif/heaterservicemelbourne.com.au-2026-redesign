@@ -412,6 +412,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Hydronic heating leak repair Melbourne – specialist detecting and repairing hydronic pipe leak"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

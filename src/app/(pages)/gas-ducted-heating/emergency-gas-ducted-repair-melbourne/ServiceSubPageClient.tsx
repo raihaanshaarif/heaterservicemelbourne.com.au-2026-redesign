@@ -388,6 +388,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Emergency gas ducted heating repair Melbourne – licensed gas fitter responding to after-hours heating emergency"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

@@ -905,6 +905,7 @@ const SelfCareClient: React.FC = () => {
                           alignItems: "center",
                           justifyContent: "center",
                           marginBottom: "12px",
+                          aspectRatio: "80 / 60",
                         }}
                       >
                         <Image

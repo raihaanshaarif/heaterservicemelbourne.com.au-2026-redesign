@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import MainSliderMap1 from '@/assets/images/shapes/main-slider-map-1.png';
+import SliderBg1 from '@/assets/images/backgrounds/slider-1-1.jpg';
+import SliderBg2 from '@/assets/images/backgrounds/slider-1-2.jpg';
+import SliderBg3 from '@/assets/images/backgrounds/slider-1-3.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -33,8 +36,15 @@ const MainSlider: React.FC = () => {
                         <SwiperSlide>
                             <div className={`swiper-slide ${activeIndex === 0 ? 'swiper-slide-active' : ''}`}>
                                 <div className="main-slider__pattern-bg"></div>
-                                <div className="main-slider__bg-box">
-                                    <div className="main-slider__bg bg_11"></div>
+                                <div className="main-slider__bg-box" style={{position: 'relative'}}>
+                                    <Image 
+                                        src={SliderBg1} 
+                                        alt="Fastest & Secure Logistics"
+                                        fill
+                                        priority
+                                        quality={90}
+                                        style={{objectFit: 'cover', objectPosition: 'center'}}
+                                    />
                                 </div>
                                 <div className="main-slider__shape-1"></div>
                                 <div className="main-slider__shape-2"></div>
@@ -66,8 +76,14 @@ const MainSlider: React.FC = () => {
                         <SwiperSlide>
                             <div className={`swiper-slide ${activeIndex === 1 ? 'swiper-slide-active' : ''}`}>
                                 <div className="main-slider__pattern-bg"></div>
-                                <div className="main-slider__bg-box">
-                                    <div className="main-slider__bg bg_12"></div>
+                                <div className="main-slider__bg-box" style={{position: 'relative'}}>
+                                    <Image 
+                                        src={SliderBg2} 
+                                        alt="100% Satisfaction - Smart Logistic & Transportation Solutions"
+                                        fill
+                                        quality={90}
+                                        style={{objectFit: 'cover', objectPosition: 'center'}}
+                                    />
                                 </div>
                                 <div className="main-slider__shape-1"></div>
                                 <div className="main-slider__shape-2"></div>
@@ -103,8 +119,14 @@ const MainSlider: React.FC = () => {
                         <SwiperSlide>
                             <div className={`swiper-slide ${activeIndex === 2 ? 'swiper-slide-active' : ''}`}>
                                 <div className="main-slider__pattern-bg"></div>
-                                <div className="main-slider__bg-box">
-                                    <div className="main-slider__bg bg_13"></div>
+                                <div className="main-slider__bg-box" style={{position: 'relative'}}>
+                                    <Image 
+                                        src={SliderBg3} 
+                                        alt="International Logistics - Air Logistics, Cargo Solutions & Business"
+                                        fill
+                                        quality={90}
+                                        style={{objectFit: 'cover', objectPosition: 'center'}}
+                                    />
                                 </div>
                                 <div className="main-slider__shape-1"></div>
                                 <div className="main-slider__shape-2"></div>

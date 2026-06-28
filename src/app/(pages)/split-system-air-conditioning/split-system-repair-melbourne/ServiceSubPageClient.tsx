@@ -384,6 +384,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Split system repair Melbourne – ARCtick licensed technician diagnosing a split system air conditioning fault"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

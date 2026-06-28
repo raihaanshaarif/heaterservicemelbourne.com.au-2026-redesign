@@ -384,6 +384,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="AC deep cleaning Melbourne – technician performing professional split system deep clean and sanitization"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

@@ -388,6 +388,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Multi-head split system service Melbourne – technician servicing multi-zone air conditioning system"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

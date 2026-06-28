@@ -413,6 +413,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="24/7 heating and cooling breakdown rescue Melbourne – emergency technician attending all-system breakdown"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

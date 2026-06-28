@@ -429,6 +429,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Emergency gas leak repair Melbourne –   licensed gas fitter using detection equipment to locate and fix gas leak"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

@@ -386,6 +386,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Gas ducted heating service Melbourne – licensed gas fitter performing annual maintenance on a ducted heating system"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

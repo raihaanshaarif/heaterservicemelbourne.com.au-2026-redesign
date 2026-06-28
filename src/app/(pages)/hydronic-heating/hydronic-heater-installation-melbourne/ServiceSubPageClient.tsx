@@ -380,6 +380,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Professional hydronic heating system installation for Melbourne homes - expert technician working on radiator installation"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",

@@ -411,6 +411,8 @@ const Page: React.FC = () => {
                   src={ServiceDetailsImg1}
                   alt="Emergency hydronic heating repair Melbourne – licensed technician repairing hydronic boiler system"
                   className="img-fluid rounded-4"
+                  width={500}
+                  height={400}
                   priority
                   style={{
                     width: "100%",
