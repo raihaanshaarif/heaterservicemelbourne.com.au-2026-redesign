@@ -39,7 +39,7 @@ const BannerOne: React.FC = () => {
           width={286}
           height={270}
           alt=""
-          loading="lazy"
+          priority={true}
         />
       </div>
       <div className="banner-one__line-shpae1"></div>
