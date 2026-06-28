@@ -9,8 +9,13 @@ import { useEffect } from "react";
  * 
  * Note: Icons (Font Awesome & Flaticon) are required for UI functionality.
  * Deferred to improve initial page load without blocking render.
+ * 
+ * Combined.css includes bootstrap, style.css, and responsive.css which are
+ * also deferred here to prevent 1,110ms render-blocking delay identified in
+ * PageSpeed Insights.
  */
 const DEFERRED_STYLESHEETS = [
+  "/assets/css/combined.css", // Main styles (bootstrap + styling) - deferred to prevent render-blocking
   "/assets/css/custom-animate.css",
   "/assets/css/font-awesome-all.css",
   "/assets/css/flaticon.css",

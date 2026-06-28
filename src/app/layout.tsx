@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins, Rubik } from "next/font/google";
-import "@/assets/css/combined.css";
 import ContextProvider from "@/components/context/ContextProvider";
 import CustomLayout from "@/components/layout/CustomLayout";
 import DeferredStyles from "@/components/layout/DeferredStyles";
@@ -103,6 +102,17 @@ export default function RootLayout({
   return (
     <html lang="en-AU" data-scroll-behavior="smooth">
       <head>
+        {/* Critical inline CSS for layout integrity while deferred CSS loads */}
+        <style dangerouslySetInnerHTML={{__html: `
+          html { scroll-behavior: smooth; }
+          body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
+          * { box-sizing: border-box; }
+          .container, .container-fluid { width: 100%; margin: 0 auto; padding: 0 15px; }
+          img { max-width: 100%; height: auto; display: block; }
+          a { text-decoration: none; color: inherit; }
+          button { border: none; background: none; cursor: pointer; font-family: inherit; }
+        `}} />
+        
         {/* Preload critical resources to reduce LCP */}
         <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" />
         <link rel="preload" href="/assets/css/style.css" as="style" />
