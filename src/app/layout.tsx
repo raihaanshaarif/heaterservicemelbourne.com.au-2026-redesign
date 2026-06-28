@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins, Rubik } from "next/font/google";
-import { GoogleTagManager } from "@next/third-parties/google";
 import "@/assets/css/combined.css";
 import ContextProvider from "@/components/context/ContextProvider";
 import CustomLayout from "@/components/layout/CustomLayout";
 import DeferredStyles from "@/components/layout/DeferredStyles";
+import DeferredGTM from "@/components/layout/DeferredGTM";
 
 // Replace GTM_ID below with your actual GTM container ID (e.g. "GTM-XXXXXXX")
 // Get it from: tagmanager.google.com → Admin → Container ID
@@ -114,7 +114,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
-      {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
+      {GTM_ID && <DeferredGTM gtmId={GTM_ID} />}
       <body className={`${poppins.variable} ${rubik.variable}`}>
         <ContextProvider>
           <DeferredStyles />
